@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.0" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
-  <xs:include schemaLocation="../documentation/schema.xsd"/>
-  <xs:include schemaLocation="../application-profile/schema.xsd"/>
   <xs:include schemaLocation="../data-service/schema.xsd"/>
-  <xs:include schemaLocation="../checksum/schema.xsd"/>
-  <xs:include schemaLocation="../media-type/schema.xsd"/>
+  <xs:include schemaLocation="../application-profile/schema.xsd"/>
+  <xs:include schemaLocation="../documentation/schema.xsd"/>
   <xs:include schemaLocation="../file/schema.xsd"/>
   <xs:include schemaLocation="../format/schema.xsd"/>
+  <xs:include schemaLocation="../media-type/schema.xsd"/>
+  <xs:include schemaLocation="../checksum/schema.xsd"/>
   <xs:complexType name="distribution">
     <xs:choice>
-      <xs:element name="distribution_-_data_service">
+      <xs:element name="distribution_data_service">
         <xs:complexType sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DataService">
           <xs:annotation>
             <xs:documentation xml:lang="en">
@@ -33,34 +33,6 @@
                 </xs:simpleContent>
               </xs:complexType>
             </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="description">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  description - A free-text account of the Distribution.
-                </xs:documentation>
-              </xs:annotation>
-              <xs:complexType>
-                <xs:simpleContent>
-                  <xs:extension base="xs:string">
-                    <xs:attribute ref="xml:lang" use="required"/>
-                  </xs:extension>
-                </xs:simpleContent>
-              </xs:complexType>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="documentation" type="ccmm:documentation" sawsdl:modelReference="http://xmlns.com/foaf/0.1/page">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  has documentation - A page or document about this Distribution.
-                </xs:documentation>
-              </xs:annotation>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="specification" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  conforms to specification - An established standard to which the distribution conforms.
-                </xs:documentation>
-              </xs:annotation>
-            </xs:element>
             <xs:element minOccurs="0" maxOccurs="unbounded" name="access_service" type="ccmm:data_service" sawsdl:modelReference="http://www.w3.org/ns/dcat#accessService">
               <xs:annotation>
                 <xs:documentation xml:lang="cs">
@@ -80,10 +52,38 @@
                 </xs:documentation>
               </xs:annotation>
             </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="specification" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  conforms to specification - An established standard to which the distribution conforms.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="documentation" type="ccmm:documentation" sawsdl:modelReference="http://xmlns.com/foaf/0.1/page">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has documentation - A page or document about this Distribution.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="description">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  description - A free-text account of the Distribution.
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element name="distribution_-_downloadable_file">
+      <xs:element name="distribution_downloadable_file">
         <xs:complexType sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile">
           <xs:annotation>
             <xs:documentation xml:lang="en">
@@ -105,58 +105,6 @@
                   </xs:extension>
                 </xs:simpleContent>
               </xs:complexType>
-            </xs:element>
-            <xs:element name="byte_size" type="xs:integer" sawsdl:modelReference="http://www.w3.org/ns/dcat#byteSize">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  byte size - The size of a Distribution in bytes. 
-                </xs:documentation>
-              </xs:annotation>
-            </xs:element>
-            <xs:element minOccurs="0" name="checksum" type="ccmm:checksum" sawsdl:modelReference="http://spdx.org/rdf/terms#checksum">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  has checksum - A mechanism that can be used to verify that the contents of a distribution have not changed.
-                </xs:documentation>
-              </xs:annotation>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="conforms_to_schema" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  conforms to schema - An established standard to which the distribution conforms.
-                </xs:documentation>
-              </xs:annotation>
-            </xs:element>
-            <xs:element minOccurs="0" name="media_type" type="ccmm:media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#mediaType">
-              <xs:annotation>
-                <xs:documentation xml:lang="ar">
-                  نوع الميديا - يجب استخدام هذه الخاصية إذا كان نوع الملف معرف ضمن IANA
-                </xs:documentation>
-                <xs:documentation xml:lang="cs">
-                  typ média - Typ média distribuce definovaný v IANA.
-                </xs:documentation>
-                <xs:documentation xml:lang="da">
-                  medietype - Medietypen for distributionen som den er defineret af IANA.
-                </xs:documentation>
-                <xs:documentation xml:lang="el">
-                  τύπος μέσου - Η ιδιότητα αυτή ΘΑ ΠΡΕΠΕΙ να χρησιμοποιείται όταν ο τύπος μέσου μίας διανομής είναι ορισμένος στο IANA, αλλιώς η ιδιότητα dcterms:format ΔΥΝΑΤΑΙ να χρησιμοποιηθεί με διαφορετικές τιμές.
-                </xs:documentation>
-                <xs:documentation xml:lang="en">
-                  media type - The media type of the distribution as defined by IANA
-                </xs:documentation>
-                <xs:documentation xml:lang="es">
-                  tipo de media - Esta propiedad debe ser usada cuando está definido el tipo de media de la distribución en IANA, de otra manera dcterms:format puede ser utilizado con diferentes valores
-                </xs:documentation>
-                <xs:documentation xml:lang="fr">
-                  type de média - Cette propriété doit être utilisée quand c'est définit le type de média de la distribution en IANA, sinon dcterms:format DOIT être utilisé avec différentes valeurs.
-                </xs:documentation>
-                <xs:documentation xml:lang="it">
-                  tipo di media - Il tipo di media della distribuzione come definito da IANA
-                </xs:documentation>
-                <xs:documentation xml:lang="ja">
-                  メディア・タイプ - このプロパティーは、配信のメディア・タイプがIANAで定義されているときに使用すべきで（SHOULD）、そうでない場合には、dcterms:formatを様々な値と共に使用できます（MAY）。
-                </xs:documentation>
-              </xs:annotation>
             </xs:element>
             <xs:element maxOccurs="unbounded" name="access_url" type="ccmm:file" sawsdl:modelReference="http://www.w3.org/ns/dcat#accessURL">
               <xs:annotation>
@@ -220,10 +168,62 @@
                 </xs:documentation>
               </xs:annotation>
             </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="conforms_to_schema" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  conforms to schema - An established standard to which the distribution conforms.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
             <xs:element name="format" type="ccmm:format" sawsdl:modelReference="http://purl.org/dc/terms/format">
               <xs:annotation>
                 <xs:documentation xml:lang="en">
                   has format - The file format of the distribution.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="media_type" type="ccmm:media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#mediaType">
+              <xs:annotation>
+                <xs:documentation xml:lang="ar">
+                  نوع الميديا - يجب استخدام هذه الخاصية إذا كان نوع الملف معرف ضمن IANA
+                </xs:documentation>
+                <xs:documentation xml:lang="cs">
+                  typ média - Typ média distribuce definovaný v IANA.
+                </xs:documentation>
+                <xs:documentation xml:lang="da">
+                  medietype - Medietypen for distributionen som den er defineret af IANA.
+                </xs:documentation>
+                <xs:documentation xml:lang="el">
+                  τύπος μέσου - Η ιδιότητα αυτή ΘΑ ΠΡΕΠΕΙ να χρησιμοποιείται όταν ο τύπος μέσου μίας διανομής είναι ορισμένος στο IANA, αλλιώς η ιδιότητα dcterms:format ΔΥΝΑΤΑΙ να χρησιμοποιηθεί με διαφορετικές τιμές.
+                </xs:documentation>
+                <xs:documentation xml:lang="en">
+                  media type - The media type of the distribution as defined by IANA
+                </xs:documentation>
+                <xs:documentation xml:lang="es">
+                  tipo de media - Esta propiedad debe ser usada cuando está definido el tipo de media de la distribución en IANA, de otra manera dcterms:format puede ser utilizado con diferentes valores
+                </xs:documentation>
+                <xs:documentation xml:lang="fr">
+                  type de média - Cette propriété doit être utilisée quand c'est définit le type de média de la distribution en IANA, sinon dcterms:format DOIT être utilisé avec différentes valeurs.
+                </xs:documentation>
+                <xs:documentation xml:lang="it">
+                  tipo di media - Il tipo di media della distribuzione come definito da IANA
+                </xs:documentation>
+                <xs:documentation xml:lang="ja">
+                  メディア・タイプ - このプロパティーは、配信のメディア・タイプがIANAで定義されているときに使用すべきで（SHOULD）、そうでない場合には、dcterms:formatを様々な値と共に使用できます（MAY）。
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="byte_size" type="xs:integer" sawsdl:modelReference="http://www.w3.org/ns/dcat#byteSize">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  byte size - The size of a Distribution in bytes. 
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="checksum" type="ccmm:checksum" sawsdl:modelReference="http://spdx.org/rdf/terms#checksum">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has checksum - A mechanism that can be used to verify that the contents of a distribution have not changed.
                 </xs:documentation>
               </xs:annotation>
             </xs:element>

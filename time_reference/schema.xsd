@@ -73,6 +73,10 @@
           </xs:annotation>
           <xs:sequence>
             <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+            <xs:choice>
+              <xs:element name="date_time" type="xs:dateTime" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDateTime"/>
+              <xs:element name="date" type="xs:date" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDate"/>
+            </xs:choice>
             <xs:element minOccurs="0" name="date_information" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#dateInformation">
               <xs:annotation>
                 <xs:documentation xml:lang="en">
@@ -94,10 +98,6 @@
                 </xs:documentation>
               </xs:annotation>
             </xs:element>
-            <xs:choice>
-              <xs:element name="date_time" type="xs:dateTime" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDateTime"/>
-              <xs:element name="date" type="xs:date" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDate"/>
-            </xs:choice>
           </xs:sequence>
         </xs:complexType>
       </xs:element>

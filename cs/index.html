@@ -10939,16 +10939,16 @@
     </thead>
     <tbody>
         <tr>
-            <td><code></code>xml</code></td>
-            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td></td>
-        </tr>
-        <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
           <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td></td>
         </tr>
         <tr>
             <td><code></code>ccmm</code></td>
@@ -11056,13 +11056,13 @@
           element <a href="#element-ccmm:agent-ccmm:organization-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
+          element <a href="#element-ccmm:agent-ccmm:organization-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
+      </li>
+      <li>
           element <a href="#element-ccmm:agent-ccmm:organization-ccmm:name"><code>&lt;name&gt;</code></a> [1..1]
       </li>
       <li>
           element <a href="#element-ccmm:agent-ccmm:organization-ccmm:alternate_name"><code>&lt;alternate_name&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:agent-ccmm:organization-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:agent-ccmm:organization-ccmm:contact_point"><code>&lt;contact_point&gt;</code></a> [0..*]
@@ -11098,6 +11098,63 @@
 
 
     
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:agent-ccmm:organization-ccmm:identifier">
+  <h4>Element <code>&lt;organization&gt;</code> / <code>&lt;identifier&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Agent"><strong>Agent</strong></a>
+          (Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Agent.hasIdentifier"><strong>has identifier</strong></a>
+          (has identifier)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:agent-ccmm:organization"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Identifier">Identifier</a>
+        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
+      </dd>
+
 
 
     
@@ -11199,63 +11256,6 @@
     
   </dl>
 </section>
-<section id="element-ccmm:agent-ccmm:organization-ccmm:identifier">
-  <h4>Element <code>&lt;organization&gt;</code> / <code>&lt;identifier&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          
-          z obecnější třídy
-          
-        </i>
-
-          <a href="#Agent"><strong>Agent</strong></a>
-          (Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.)
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          mající vlastnost
-          
-          
-        </i>
-
-          <a href="#Agent.hasIdentifier"><strong>has identifier</strong></a>
-          (has identifier)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:agent-ccmm:organization"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Identifier">Identifier</a>
-        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
 <section id="element-ccmm:agent-ccmm:organization-ccmm:contact_point">
   <h4>Element <code>&lt;organization&gt;</code> / <code>&lt;contact_point&gt;</code></h4>
 
@@ -11347,6 +11347,9 @@
           element <a href="#element-ccmm:agent-ccmm:person-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
+          element <a href="#element-ccmm:agent-ccmm:person-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
+      </li>
+      <li>
           element <a href="#element-ccmm:agent-ccmm:person-ccmm:name"><code>&lt;name&gt;</code></a> [1..1]
       </li>
       <li>
@@ -11354,9 +11357,6 @@
       </li>
       <li>
           element <a href="#element-ccmm:agent-ccmm:person-ccmm:family_name"><code>&lt;family_name&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:agent-ccmm:person-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:agent-ccmm:person-ccmm:contact_point"><code>&lt;contact_point&gt;</code></a> [0..*]
@@ -11395,6 +11395,63 @@
 
 
     
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:agent-ccmm:person-ccmm:identifier">
+  <h4>Element <code>&lt;person&gt;</code> / <code>&lt;identifier&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Agent"><strong>Agent</strong></a>
+          (Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Agent.hasIdentifier"><strong>has identifier</strong></a>
+          (has identifier)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:agent-ccmm:person"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Identifier">Identifier</a>
+        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
+      </dd>
+
 
 
     
@@ -11529,63 +11586,6 @@
 
 
     
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:agent-ccmm:person-ccmm:identifier">
-  <h4>Element <code>&lt;person&gt;</code> / <code>&lt;identifier&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          
-          z obecnější třídy
-          
-        </i>
-
-          <a href="#Agent"><strong>Agent</strong></a>
-          (Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.)
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          mající vlastnost
-          
-          
-        </i>
-
-          <a href="#Agent.hasIdentifier"><strong>has identifier</strong></a>
-          (has identifier)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:agent-ccmm:person"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Identifier">Identifier</a>
-        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
-      </dd>
-
 
 
     
@@ -11748,7 +11748,7 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../documentation/schema.xsd">../documentation/schema.xsd</a></td>
+          <td><a href="../data-service/schema.xsd">../data-service/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -11760,19 +11760,7 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../data-service/schema.xsd">../data-service/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0.0">https://schema.ccmm.cz/research-data/1.0.0</a></td>
-          <td><a href="../checksum/schema.xsd">../checksum/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../media-type/schema.xsd">../media-type/schema.xsd</a></td>
+          <td><a href="../documentation/schema.xsd">../documentation/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -11785,6 +11773,18 @@
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../format/schema.xsd">../format/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../media-type/schema.xsd">../media-type/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../checksum/schema.xsd">../checksum/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -11837,18 +11837,18 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_data_service"><code>&lt;distribution_-_data_service&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_data_service"><code>&lt;distribution_data_service&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"><code>&lt;distribution_-_downloadable_file&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"><code>&lt;distribution_downloadable_file&gt;</code></a> [1..1]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_data_service">
-  <h4>Element <code>&lt;distribution_-_data_service&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_data_service">
+  <h4>Element <code>&lt;distribution_data_service&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -11878,22 +11878,22 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_data_service-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:title"><code>&lt;title&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_data_service-ccmm:title"><code>&lt;title&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:description"><code>&lt;description&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_data_service-ccmm:access_service"><code>&lt;access_service&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:documentation"><code>&lt;documentation&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_data_service-ccmm:specification"><code>&lt;specification&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:specification"><code>&lt;specification&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_data_service-ccmm:documentation"><code>&lt;documentation&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:access_service"><code>&lt;access_service&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_data_service-ccmm:description"><code>&lt;description&gt;</code></a> [0..*]
       </li>
   </ul>
 
@@ -11903,8 +11903,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:iri">
-  <h4>Element <code>&lt;distribution_-_data_service&gt;</code> / <code>&lt;iri&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_data_service-ccmm:iri">
+  <h4>Element <code>&lt;distribution_data_service&gt;</code> / <code>&lt;iri&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -11914,7 +11914,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_data_service"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_data_service"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -11934,8 +11934,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:title">
-  <h4>Element <code>&lt;distribution_-_data_service&gt;</code> / <code>&lt;title&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_data_service-ccmm:title">
+  <h4>Element <code>&lt;distribution_data_service&gt;</code> / <code>&lt;title&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -11966,7 +11966,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_data_service"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_data_service"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -11986,141 +11986,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:description">
-  <h4>Element <code>&lt;distribution_-_data_service&gt;</code> / <code>&lt;description&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Distribution-DataService.Description"><strong>description</strong></a>
-          (A free-text account of the Distribution.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_data_service"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href=""><code></code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:documentation">
-  <h4>Element <code>&lt;distribution_-_data_service&gt;</code> / <code>&lt;documentation&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Distribution-DataService.hasDocumentation"><strong>has documentation</strong></a>
-          (A page or document about this Distribution.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_data_service"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:documentation"><code>ccmm:documentation</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Documentation">Documentation</a>
-        (A textual resource intended for human consumption that contains information about the data service.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:specification">
-  <h4>Element <code>&lt;distribution_-_data_service&gt;</code> / <code>&lt;specification&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Distribution-DataService.conformsToSpecification"><strong>conforms to specification</strong></a>
-          (An established standard to which the distribution conforms.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_data_service"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:application_profile"><code>ccmm:application_profile</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#ApplicationProfile">Application profile</a>
-        (A standard or other specification to which a metadata record conforms.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_data_service-ccmm:access_service">
-  <h4>Element <code>&lt;distribution_-_data_service&gt;</code> / <code>&lt;access_service&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_data_service-ccmm:access_service">
+  <h4>Element <code>&lt;distribution_data_service&gt;</code> / <code>&lt;access_service&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12140,7 +12007,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..*</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_data_service"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_data_service"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -12165,8 +12032,141 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_data_service-ccmm:specification">
+  <h4>Element <code>&lt;distribution_data_service&gt;</code> / <code>&lt;specification&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Distribution-DataService.conformsToSpecification"><strong>conforms to specification</strong></a>
+          (An established standard to which the distribution conforms.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_data_service"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:application_profile"><code>ccmm:application_profile</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ApplicationProfile">Application profile</a>
+        (A standard or other specification to which a metadata record conforms.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:distribution-ccmm:distribution_data_service-ccmm:documentation">
+  <h4>Element <code>&lt;distribution_data_service&gt;</code> / <code>&lt;documentation&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Distribution-DataService.hasDocumentation"><strong>has documentation</strong></a>
+          (A page or document about this Distribution.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_data_service"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:documentation"><code>ccmm:documentation</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Documentation">Documentation</a>
+        (A textual resource intended for human consumption that contains information about the data service.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:distribution-ccmm:distribution_data_service-ccmm:description">
+  <h4>Element <code>&lt;distribution_data_service&gt;</code> / <code>&lt;description&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Distribution-DataService.Description"><strong>description</strong></a>
+          (A free-text account of the Distribution.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_data_service"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href=""><code></code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12196,31 +12196,31 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:title"><code>&lt;title&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:title"><code>&lt;title&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:byte_size"><code>&lt;byte_size&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:access_url"><code>&lt;access_url&gt;</code></a> [1..*]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:checksum"><code>&lt;checksum&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:download_url"><code>&lt;download_url&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:conforms_to_schema"><code>&lt;conforms_to_schema&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:conforms_to_schema"><code>&lt;conforms_to_schema&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:media_type"><code>&lt;media_type&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:format"><code>&lt;format&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:access_url"><code>&lt;access_url&gt;</code></a> [1..*]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:media_type"><code>&lt;media_type&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:download_url"><code>&lt;download_url&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:byte_size"><code>&lt;byte_size&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:format"><code>&lt;format&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:checksum"><code>&lt;checksum&gt;</code></a> [0..1]
       </li>
   </ul>
 
@@ -12230,8 +12230,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:iri">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;iri&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:iri">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;iri&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12241,7 +12241,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -12261,8 +12261,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:title">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;title&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:title">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;title&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12293,7 +12293,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -12313,8 +12313,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:byte_size">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;byte_size&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:access_url">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;access_url&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12326,70 +12326,29 @@
           
         </i>
 
-          <a href="#Distribution-DownloadableFile.byteSize"><strong>byte size</strong></a>
-          (The size of a Distribution in bytes. )
+          <a href="#Distribution-DownloadableFile.accessUrl"><strong>přístupová adresa</strong></a>
+          (URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL.)
 
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
+      <dd>1..*</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
 
     
       <dt>Typ elementu</dt>
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemainteger"><code>xs:integer</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:checksum">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;checksum&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Distribution-DataService.hasChecksum"><strong>has checksum</strong></a>
-          (A mechanism that can be used to verify that the contents of a distribution have not changed.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:checksum"><code>ccmm:checksum</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:file"><code>ccmm:file</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#Checksum">Checksum</a>
-        (A value that allows the contents of a file to be authenticated.)
+        <a href="#Resource">File</a>
+        (Digital resource representing collection of data.)
       </dd>
 
 
@@ -12400,8 +12359,54 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:conforms_to_schema">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;conforms_to_schema&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:download_url">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;download_url&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Distribution-DownloadableFile.downloadUrl"><strong>URL souboru ke stažení</strong></a>
+          (URL souboru ke stažení v daném formátu, například CSV nebo RDF soubor. Formát je popsán vlastností distribuce dcterms:format a/nebo dcat:mediaType.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:file"><code>ccmm:file</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Resource">File</a>
+        (Digital resource representing collection of data.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:conforms_to_schema">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;conforms_to_schema&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12421,7 +12426,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..*</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -12446,8 +12451,54 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:media_type">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;media_type&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:format">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;format&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Distribution-DownloadableFile.hasFormat"><strong>has format</strong></a>
+          (The file format of the distribution.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:format"><code>ccmm:format</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Format">Format</a>
+        (Format of downloadable file.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:media_type">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;media_type&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12467,7 +12518,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -12492,8 +12543,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:access_url">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;access_url&gt;</code></h4>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:byte_size">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;byte_size&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -12505,121 +12556,70 @@
           
         </i>
 
-          <a href="#Distribution-DownloadableFile.accessUrl"><strong>přístupová adresa</strong></a>
-          (URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:file"><code>ccmm:file</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Resource">File</a>
-        (Digital resource representing collection of data.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:download_url">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;download_url&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Distribution-DownloadableFile.downloadUrl"><strong>URL souboru ke stažení</strong></a>
-          (URL souboru ke stažení v daném formátu, například CSV nebo RDF soubor. Formát je popsán vlastností distribuce dcterms:format a/nebo dcat:mediaType.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:file"><code>ccmm:file</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Resource">File</a>
-        (Digital resource representing collection of data.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution-ccmm:distribution_-_downloadable_file-ccmm:format">
-  <h4>Element <code>&lt;distribution_-_downloadable_file&gt;</code> / <code>&lt;format&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Distribution-DownloadableFile.hasFormat"><strong>has format</strong></a>
-          (The file format of the distribution.)
+          <a href="#Distribution-DownloadableFile.byteSize"><strong>byte size</strong></a>
+          (The size of a Distribution in bytes. )
 
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:distribution-ccmm:distribution_-_downloadable_file"></a></dd>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
 
     
       <dt>Typ elementu</dt>
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:format"><code>ccmm:format</code></a>.
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemainteger"><code>xs:integer</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:distribution-ccmm:distribution_downloadable_file-ccmm:checksum">
+  <h4>Element <code>&lt;distribution_downloadable_file&gt;</code> / <code>&lt;checksum&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Distribution-DataService.hasChecksum"><strong>has checksum</strong></a>
+          (A mechanism that can be used to verify that the contents of a distribution have not changed.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:distribution-ccmm:distribution_downloadable_file"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:checksum"><code>ccmm:checksum</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#Format">Format</a>
-        (Format of downloadable file.)
+        <a href="#Checksum">Checksum</a>
+        (A value that allows the contents of a file to be authenticated.)
       </dd>
 
 
@@ -12997,6 +12997,12 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -13004,12 +13010,6 @@
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -13082,6 +13082,9 @@
           element <a href="#element-ccmm:resource-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
+          element <a href="#element-ccmm:resource-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
+      </li>
+      <li>
           element <a href="#element-ccmm:resource-ccmm:title"><code>&lt;title&gt;</code></a> [0..1]
       </li>
       <li>
@@ -13092,9 +13095,6 @@
       </li>
       <li>
           element <a href="#element-ccmm:resource-ccmm:time_reference"><code>&lt;time_reference&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:resource-ccmm:resource_type"><code>&lt;resource_type&gt;</code></a> [0..1]
@@ -13130,6 +13130,52 @@
 
 
     
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:resource-ccmm:identifier">
+  <h4>Element <code>&lt;identifier&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.hasIdentifier"><strong>has identifier</strong></a>
+          (Relation to resource identifier.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Identifier">Identifier</a>
+        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
+      </dd>
+
 
 
     
@@ -13302,52 +13348,6 @@
       <dd>
         <a href="#TimeInterval">Time interval</a>
         (A temporal entity with an extent or duration)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:identifier">
-  <h4>Element <code>&lt;identifier&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.hasIdentifier"><strong>has identifier</strong></a>
-          (Relation to resource identifier.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Identifier">Identifier</a>
-        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
       </dd>
 
 
@@ -14277,12 +14277,6 @@
           element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
-      </li>
-      <li>
             výběr jednoho prvku [1..1]
             <ul>
                 <ul style="margin-top: 0;">
@@ -14295,6 +14289,12 @@
   </ul>
 
             </ul>
+      </li>
+      <li>
+          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -14323,6 +14323,68 @@
       <dt>Obsah</dt>
       <dd>
           Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_time">
+  <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_time&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemadateTime"><code>xs:dateTime</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date">
+  <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemadate"><code>xs:date</code></a>.
       </dd>
 
 
@@ -14444,68 +14506,6 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_time">
-  <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_time&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemadateTime"><code>xs:dateTime</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date">
-  <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemadate"><code>xs:date</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
 
 
 </section>
@@ -14612,13 +14612,13 @@
           element <a href="#element-ccmm:funding_reference-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:funding_reference-ccmm:funding_program"><code>&lt;funding_program&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:funding_reference-ccmm:local_identifier"><code>&lt;local_identifier&gt;</code></a> [0..1]
       </li>
       <li>
           element <a href="#element-ccmm:funding_reference-ccmm:award_title"><code>&lt;award_title&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:funding_reference-ccmm:local_identifier"><code>&lt;local_identifier&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:funding_reference-ccmm:funding_program"><code>&lt;funding_program&gt;</code></a> [0..1]
       </li>
       <li>
           element <a href="#element-ccmm:funding_reference-ccmm:funder"><code>&lt;funder&gt;</code></a> [1..*]
@@ -14659,8 +14659,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:funding_reference-ccmm:funding_program">
-  <h4>Element <code>&lt;funding_program&gt;</code></h4>
+<section id="element-ccmm:funding_reference-ccmm:local_identifier">
+  <h4>Element <code>&lt;local_identifier&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -14672,8 +14672,8 @@
           
         </i>
 
-          <a href="#FundingReference.fundingProgram"><strong>funding program</strong></a>
-          (Reference to the specific funding program.)
+          <a href="#FundingReference.localIdentifier"><strong>local identifier</strong></a>
+          (The code assigned by the funder to a sponsored award (grant).)
 
     </dd>
 
@@ -14687,7 +14687,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
       </dd>
 
 
@@ -14741,8 +14741,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:funding_reference-ccmm:local_identifier">
-  <h4>Element <code>&lt;local_identifier&gt;</code></h4>
+<section id="element-ccmm:funding_reference-ccmm:funding_program">
+  <h4>Element <code>&lt;funding_program&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -14754,8 +14754,8 @@
           
         </i>
 
-          <a href="#FundingReference.localIdentifier"><strong>local identifier</strong></a>
-          (The code assigned by the funder to a sponsored award (grant).)
+          <a href="#FundingReference.fundingProgram"><strong>funding program</strong></a>
+          (Reference to the specific funding program.)
 
     </dd>
 
@@ -14769,7 +14769,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
       </dd>
 
 
@@ -14871,14 +14871,8 @@
     </thead>
     <tbody>
         <tr>
-            <td><code></code>xml</code></td>
-            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td></td>
-        </tr>
-        <tr>
             <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0.0">https://schema.ccmm.cz/research-data/1.0.0</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../access-rights/schema.xsd">../access-rights/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -14887,6 +14881,12 @@
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td>
           <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td></td>
         </tr>
         <tr>
             <td><code></code>ccmm</code></td>
@@ -14952,13 +14952,13 @@
           element <a href="#element-ccmm:terms_of_use-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:terms_of_use-ccmm:description"><code>&lt;description&gt;</code></a> [0..*]
-      </li>
-      <li>
           element <a href="#element-ccmm:terms_of_use-ccmm:access_rights"><code>&lt;access_rights&gt;</code></a> [1..1]
       </li>
       <li>
           element <a href="#element-ccmm:terms_of_use-ccmm:license"><code>&lt;license&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:terms_of_use-ccmm:description"><code>&lt;description&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:terms_of_use-ccmm:contact_point"><code>&lt;contact_point&gt;</code></a> [0..*]
@@ -14987,47 +14987,6 @@
       <dt>Obsah</dt>
       <dd>
           Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:terms_of_use-ccmm:description">
-  <h4>Element <code>&lt;description&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#TermsOfUse.Description"><strong>description</strong></a>
-          (Descriptive text on details of rights and licensing.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:terms_of_use"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href=""><code></code></a>.
       </dd>
 
 
@@ -15132,6 +15091,47 @@
     
   </dl>
 </section>
+<section id="element-ccmm:terms_of_use-ccmm:description">
+  <h4>Element <code>&lt;description&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#TermsOfUse.Description"><strong>description</strong></a>
+          (Descriptive text on details of rights and licensing.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:terms_of_use"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href=""><code></code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
 <section id="element-ccmm:terms_of_use-ccmm:contact_point">
   <h4>Element <code>&lt;contact_point&gt;</code></h4>
 
@@ -15223,13 +15223,13 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../resource-agent-role-type/schema.xsd">../resource-agent-role-type/schema.xsd</a></td>
+          <td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td>
+          <td><a href="../resource-agent-role-type/schema.xsd">../resource-agent-role-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -15290,10 +15290,10 @@
           element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:role"><code>&lt;role&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:relation"><code>&lt;relation&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:relation"><code>&lt;relation&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:role"><code>&lt;role&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -15323,52 +15323,6 @@
 
 
     
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource_to_agent_relationship-ccmm:role">
-  <h4>Element <code>&lt;role&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#ResourceToAgentRelationship.hadRole"><strong>sehraná role</strong></a>
-          (Funkce entity či agenta ve vztahu k jiné entitě či zdroji.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource_to_agent_relationship"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_agent_role_type"><code>ccmm:resource_agent_role_type</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#AlternateTitleType">Resource agent role type</a>
-        (Role of the agent in the relationship to the resource. )
-      </dd>
-
 
 
     
@@ -15413,6 +15367,52 @@
       <dd>
         <a href="#Agent">Organization</a>
         (Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:resource_to_agent_relationship-ccmm:role">
+  <h4>Element <code>&lt;role&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#ResourceToAgentRelationship.hadRole"><strong>sehraná role</strong></a>
+          (Funkce entity či agenta ve vztahu k jiné entitě či zdroji.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:resource_to_agent_relationship"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:resource_agent_role_type"><code>ccmm:resource_agent_role_type</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#AlternateTitleType">Resource agent role type</a>
+        (Role of the agent in the relationship to the resource. )
       </dd>
 
 
@@ -17455,10 +17455,10 @@
           element <a href="#element-ccmm:subject-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:subject-ccmm:definition"><code>&lt;definition&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:subject-ccmm:title"><code>&lt;title&gt;</code></a> [1..*]
       </li>
       <li>
-          element <a href="#element-ccmm:subject-ccmm:title"><code>&lt;title&gt;</code></a> [1..*]
+          element <a href="#element-ccmm:subject-ccmm:definition"><code>&lt;definition&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:subject-ccmm:classification_code"><code>&lt;classification_code&gt;</code></a> [0..1]
@@ -17502,8 +17502,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:subject-ccmm:definition">
-  <h4>Element <code>&lt;definition&gt;</code></h4>
+<section id="element-ccmm:subject-ccmm:title">
+  <h4>Element <code>&lt;title&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -17515,13 +17515,13 @@
           
         </i>
 
-          <a href="#Subject.definition"><strong>definition</strong></a>
-          (Definition of the subject in the given context.)
+          <a href="#Subject.title"><strong>title</strong></a>
+          (Title of the subject.)
 
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
+      <dd>1..*</dd>
       <dt>Nadřazený element</dt>
       <dd><a href="#type-ccmm:subject"></a></dd>
 
@@ -17543,8 +17543,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:subject-ccmm:title">
-  <h4>Element <code>&lt;title&gt;</code></h4>
+<section id="element-ccmm:subject-ccmm:definition">
+  <h4>Element <code>&lt;definition&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -17556,13 +17556,13 @@
           
         </i>
 
-          <a href="#Subject.title"><strong>title</strong></a>
-          (Title of the subject.)
+          <a href="#Subject.definition"><strong>definition</strong></a>
+          (Definition of the subject in the given context.)
 
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..*</dd>
+      <dd>0..*</dd>
       <dt>Nadřazený element</dt>
       <dd><a href="#type-ccmm:subject"></a></dd>
 
@@ -17716,13 +17716,7 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../repository/schema.xsd">../repository/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../application-profile/schema.xsd">../application-profile/schema.xsd</a></td>
+          <td><a href="../language-system/schema.xsd">../language-system/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -17734,7 +17728,13 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../language-system/schema.xsd">../language-system/schema.xsd</a></td>
+          <td><a href="../application-profile/schema.xsd">../application-profile/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../repository/schema.xsd">../repository/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -17795,22 +17795,22 @@
           element <a href="#element-ccmm:metadata_record-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
+          element <a href="#element-ccmm:metadata_record-ccmm:language"><code>&lt;language&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:metadata_record-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [1..*]
+      </li>
+      <li>
           element <a href="#element-ccmm:metadata_record-ccmm:date_updated"><code>&lt;date_updated&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:metadata_record-ccmm:date_created"><code>&lt;date_created&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:metadata_record-ccmm:original_repository"><code>&lt;original_repository&gt;</code></a> [0..*]
-      </li>
-      <li>
           element <a href="#element-ccmm:metadata_record-ccmm:conforms_to_standard"><code>&lt;conforms_to_standard&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:metadata_record-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [1..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:metadata_record-ccmm:language"><code>&lt;language&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:metadata_record-ccmm:original_repository"><code>&lt;original_repository&gt;</code></a> [0..*]
       </li>
   </ul>
 
@@ -17840,6 +17840,98 @@
 
 
     
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:metadata_record-ccmm:language">
+  <h4>Element <code>&lt;language&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#MetadataRecord.hasLanguage"><strong>language</strong></a>
+          (A language used in the textual metadata describing titles, descriptions of the metadata record.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:metadata_record"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:language_system"><code>ccmm:language_system</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#LanguageSystem">Language system</a>
+        (A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:metadata_record-ccmm:qualified_relation">
+  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#MetadataRecord.qualifiedRelation"><strong>kvalifikovaný vztah</strong></a>
+          (Odkaz na popis vztahu s jiným zdrojem.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:metadata_record"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
+        (An association class for attaching additional information to a relationship between Resource and Agent.)
+      </dd>
+
 
 
     
@@ -17930,52 +18022,6 @@
     
   </dl>
 </section>
-<section id="element-ccmm:metadata_record-ccmm:original_repository">
-  <h4>Element <code>&lt;original_repository&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#MetadataRecord.hasOriginalRepository"><strong>has original repository</strong></a>
-          (Link to the repository in which the metadata were originally stored and curated.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:metadata_record"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:repository"><code>ccmm:repository</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Repository">Katalog</a>
-        (Řízená kolekce metadat o datových sadách a datových službách)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
 <section id="element-ccmm:metadata_record-ccmm:conforms_to_standard">
   <h4>Element <code>&lt;conforms_to_standard&gt;</code></h4>
 
@@ -18022,8 +18068,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:metadata_record-ccmm:qualified_relation">
-  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
+<section id="element-ccmm:metadata_record-ccmm:original_repository">
+  <h4>Element <code>&lt;original_repository&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -18035,54 +18081,8 @@
           
         </i>
 
-          <a href="#MetadataRecord.qualifiedRelation"><strong>kvalifikovaný vztah</strong></a>
-          (Odkaz na popis vztahu s jiným zdrojem.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:metadata_record"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-        (An association class for attaching additional information to a relationship between Resource and Agent.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:metadata_record-ccmm:language">
-  <h4>Element <code>&lt;language&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#MetadataRecord.hasLanguage"><strong>language</strong></a>
-          (A language used in the textual metadata describing titles, descriptions of the metadata record.)
+          <a href="#MetadataRecord.hasOriginalRepository"><strong>has original repository</strong></a>
+          (Link to the repository in which the metadata were originally stored and curated.)
 
     </dd>
 
@@ -18096,14 +18096,14 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:language_system"><code>ccmm:language_system</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:repository"><code>ccmm:repository</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#LanguageSystem">Language system</a>
-        (A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.)
+        <a href="#Repository">Katalog</a>
+        (Řízená kolekce metadat o datových sadách a datových službách)
       </dd>
 
 
@@ -18344,18 +18344,6 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../description/schema.xsd">../description/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../metadata-record/schema.xsd">../metadata-record/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -18368,13 +18356,7 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../location/schema.xsd">../location/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../provenance-statement/schema.xsd">../provenance-statement/schema.xsd</a></td>
+          <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -18392,25 +18374,13 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../subject/schema.xsd">../subject/schema.xsd</a></td>
+          <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../validation-result/schema.xsd">../validation-result/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../distribution/schema.xsd">../distribution/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code></code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td>
+          <td><a href="../language-system/schema.xsd">../language-system/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -18422,19 +18392,49 @@
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../subject/schema.xsd">../subject/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../description/schema.xsd">../description/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../location/schema.xsd">../location/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
           <td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
+          <td><a href="../distribution/schema.xsd">../distribution/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code></code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../language-system/schema.xsd">../language-system/schema.xsd</a></td>
+          <td><a href="../validation-result/schema.xsd">../validation-result/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code></code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../provenance-statement/schema.xsd">../provenance-statement/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -18495,7 +18495,10 @@
           element <a href="#element-ccmm:dataset-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:publication_year"><code>&lt;publication_year&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:dataset-ccmm:metadata_identification"><code>&lt;metadata_identification&gt;</code></a> [1..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [1..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:version"><code>&lt;version&gt;</code></a> [0..1]
@@ -18504,55 +18507,52 @@
           element <a href="#element-ccmm:dataset-ccmm:title"><code>&lt;title&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:description"><code>&lt;description&gt;</code></a> [0..*]
-      </li>
-      <li>
           element <a href="#element-ccmm:dataset-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:is_described_by"><code>&lt;is_described_by&gt;</code></a> [1..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [1..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:location"><code>&lt;location&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:provenance"><code>&lt;provenance&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [2..*]
       </li>
       <li>
+          element <a href="#element-ccmm:dataset-ccmm:publication_year"><code>&lt;publication_year&gt;</code></a> [1..1]
+      </li>
+      <li>
           element <a href="#element-ccmm:dataset-ccmm:time_reference"><code>&lt;time_reference&gt;</code></a> [1..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:subject"><code>&lt;subject&gt;</code></a> [1..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:validation_result"><code>&lt;validation_result&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:distribution"><code>&lt;distribution&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:funding_reference"><code>&lt;funding_reference&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:terms_of_use"><code>&lt;terms_of_use&gt;</code></a> [1..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:related_resource"><code>&lt;related_resource&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:resource_type"><code>&lt;resource_type&gt;</code></a> [0..1]
       </li>
       <li>
+          element <a href="#element-ccmm:dataset-ccmm:primary_language"><code>&lt;primary_language&gt;</code></a> [0..1]
+      </li>
+      <li>
           element <a href="#element-ccmm:dataset-ccmm:other_language"><code>&lt;other_language&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:primary_language"><code>&lt;primary_language&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:dataset-ccmm:terms_of_use"><code>&lt;terms_of_use&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:subject"><code>&lt;subject&gt;</code></a> [1..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:description"><code>&lt;description&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:location"><code>&lt;location&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:funding_reference"><code>&lt;funding_reference&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:related_resource"><code>&lt;related_resource&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:distribution"><code>&lt;distribution&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:validation_result"><code>&lt;validation_result&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:dataset-ccmm:provenance"><code>&lt;provenance&gt;</code></a> [0..*]
       </li>
   </ul>
 
@@ -18590,223 +18590,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:dataset-ccmm:publication_year">
-  <h4>Element <code>&lt;publication_year&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.publicationYear"><strong>publication year</strong></a>
-          (The year when the item was or will be made publicly available.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemagYear"><code>xs:gYear</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:version">
-  <h4>Element <code>&lt;version&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.version"><strong>version</strong></a>
-          (The version indicator (name or identifier) of a resource.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:title">
-  <h4>Element <code>&lt;title&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.title"><strong>title</strong></a>
-          (A name given to the dataset.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:description">
-  <h4>Element <code>&lt;description&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasDescription"><strong>has description</strong></a>
-          (Relation to the description of a dataset.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:description"><code>ccmm:description</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Description">Description</a>
-        (All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:alternate_title">
-  <h4>Element <code>&lt;alternate_title&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasAlternateTitle"><strong>has alternate title</strong></a>
-          
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:alternate_title"><code>ccmm:alternate_title</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#AlternateTitle">Alternate title</a>
-        (Alternate title of the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:is_described_by">
-  <h4>Element <code>&lt;is_described_by&gt;</code></h4>
+<section id="element-ccmm:dataset-ccmm:metadata_identification">
+  <h4>Element <code>&lt;metadata_identification&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -18897,8 +18682,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:dataset-ccmm:location">
-  <h4>Element <code>&lt;location&gt;</code></h4>
+<section id="element-ccmm:dataset-ccmm:version">
+  <h4>Element <code>&lt;version&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -18910,13 +18695,13 @@
           
         </i>
 
-          <a href="#Dataset.hasLocation"><strong>has location</strong></a>
-          (The geographical area covered by the dataset.)
+          <a href="#Dataset.version"><strong>version</strong></a>
+          (The version indicator (name or identifier) of a resource.)
 
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
+      <dd>0..1</dd>
       <dt>Nadřazený element</dt>
       <dd><a href="#type-ccmm:dataset"></a></dd>
 
@@ -18925,16 +18710,11 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:location"><code>ccmm:location</code></a>.
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
       </dd>
 
 
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Location">Location</a>
-        (Spatial region, named place or geometry representation of a place related to the dataset. )
-      </dd>
-
+    
 
 
     
@@ -18943,8 +18723,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:dataset-ccmm:provenance">
-  <h4>Element <code>&lt;provenance&gt;</code></h4>
+<section id="element-ccmm:dataset-ccmm:title">
+  <h4>Element <code>&lt;title&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -18956,8 +18736,49 @@
           
         </i>
 
-          <a href="#Dataset.hasProvenance"><strong>has provenance</strong></a>
-          (A statement about the lineage of a Dataset.)
+          <a href="#Dataset.title"><strong>title</strong></a>
+          (A name given to the dataset.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:alternate_title">
+  <h4>Element <code>&lt;alternate_title&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasAlternateTitle"><strong>has alternate title</strong></a>
+          
 
     </dd>
 
@@ -18971,14 +18792,14 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:provenance_statement"><code>ccmm:provenance_statement</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:alternate_title"><code>ccmm:alternate_title</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#ProvenanceStatement">Provenance Statement</a>
-        (Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.)
+        <a href="#AlternateTitle">Alternate title</a>
+        (Alternate title of the resource.)
       </dd>
 
 
@@ -19035,6 +18856,47 @@
     
   </dl>
 </section>
+<section id="element-ccmm:dataset-ccmm:publication_year">
+  <h4>Element <code>&lt;publication_year&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.publicationYear"><strong>publication year</strong></a>
+          (The year when the item was or will be made publicly available.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemagYear"><code>xs:gYear</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
 <section id="element-ccmm:dataset-ccmm:time_reference">
   <h4>Element <code>&lt;time_reference&gt;</code></h4>
 
@@ -19071,282 +18933,6 @@
       <dd>
         <a href="#TimeInterval">Time interval</a>
         (A temporal entity with an extent or duration)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:subject">
-  <h4>Element <code>&lt;subject&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasSubject"><strong>has subject</strong></a>
-          (Dataset described using a subject.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:subject"><code>ccmm:subject</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Subject">Subject</a>
-        (Subject, keyword, classification code, or key phrase describing the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:validation_result">
-  <h4>Element <code>&lt;validation_result&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasValidationResult"><strong>has validation result</strong></a>
-          (Reference to the report about the dataset validation.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:validation_result"><code>ccmm:validation_result</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#ValidationResult">Validation result</a>
-        (Class describing the result of validation testing. It may include validation of metadata, data and/or web services accessing the data.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:distribution">
-  <h4>Element <code>&lt;distribution&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasDistribution"><strong>has distribution</strong></a>
-          (Dostupná distribuce datové sady.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:distribution"><code>ccmm:distribution</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Distribution-DataService">Distribution - data service</a>
-        (Physical embodiment of the dataset distribution as a particular data service. )
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:funding_reference">
-  <h4>Element <code>&lt;funding_reference&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasFundingReference"><strong>has funding reference</strong></a>
-          (Has reference for funding of a dataset acquisition.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:funding_reference"><code>ccmm:funding_reference</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#FundingReference">Funding reference</a>
-        (Information about financial support (funding) for the resource being registered.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:terms_of_use">
-  <h4>Element <code>&lt;terms_of_use&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasTermsOfUse"><strong>has terms of use</strong></a>
-          (Terms under which the dataset may be accessed.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:terms_of_use"><code>ccmm:terms_of_use</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#TermsOfUse">Terms of use</a>
-        (Terms of use defines overall conditions and rights regarding access and usage  of dataset. )
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:related_resource">
-  <h4>Element <code>&lt;related_resource&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Dataset.hasRelatedResource"><strong>has related resource</strong></a>
-          (Reference to the resource in any way related to the described dataset.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Resource">Resource</a>
-        (Resource represents any resource, physical or digital, that is related to the described dataset. )
       </dd>
 
 
@@ -19403,6 +18989,52 @@
     
   </dl>
 </section>
+<section id="element-ccmm:dataset-ccmm:primary_language">
+  <h4>Element <code>&lt;primary_language&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasOtherLanguage"><strong>has other language</strong></a>
+          (Any other languages of the Dataset.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:language_system"><code>ccmm:language_system</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#LanguageSystem">Language system</a>
+        (A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
 <section id="element-ccmm:dataset-ccmm:other_language">
   <h4>Element <code>&lt;other_language&gt;</code></h4>
 
@@ -19449,8 +19081,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:dataset-ccmm:primary_language">
-  <h4>Element <code>&lt;primary_language&gt;</code></h4>
+<section id="element-ccmm:dataset-ccmm:terms_of_use">
+  <h4>Element <code>&lt;terms_of_use&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -19462,13 +19094,13 @@
           
         </i>
 
-          <a href="#Dataset.hasOtherLanguage"><strong>has other language</strong></a>
-          (Any other languages of the Dataset.)
+          <a href="#Dataset.hasTermsOfUse"><strong>has terms of use</strong></a>
+          (Terms under which the dataset may be accessed.)
 
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
+      <dd>1..1</dd>
       <dt>Nadřazený element</dt>
       <dd><a href="#type-ccmm:dataset"></a></dd>
 
@@ -19477,14 +19109,382 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:language_system"><code>ccmm:language_system</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:terms_of_use"><code>ccmm:terms_of_use</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#LanguageSystem">Language system</a>
-        (A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.)
+        <a href="#TermsOfUse">Terms of use</a>
+        (Terms of use defines overall conditions and rights regarding access and usage  of dataset. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:subject">
+  <h4>Element <code>&lt;subject&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasSubject"><strong>has subject</strong></a>
+          (Dataset described using a subject.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:subject"><code>ccmm:subject</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Subject">Subject</a>
+        (Subject, keyword, classification code, or key phrase describing the resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:description">
+  <h4>Element <code>&lt;description&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasDescription"><strong>has description</strong></a>
+          (Relation to the description of a dataset.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:description"><code>ccmm:description</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Description">Description</a>
+        (All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:location">
+  <h4>Element <code>&lt;location&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasLocation"><strong>has location</strong></a>
+          (The geographical area covered by the dataset.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:location"><code>ccmm:location</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Location">Location</a>
+        (Spatial region, named place or geometry representation of a place related to the dataset. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:funding_reference">
+  <h4>Element <code>&lt;funding_reference&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasFundingReference"><strong>has funding reference</strong></a>
+          (Has reference for funding of a dataset acquisition.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:funding_reference"><code>ccmm:funding_reference</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#FundingReference">Funding reference</a>
+        (Information about financial support (funding) for the resource being registered.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:related_resource">
+  <h4>Element <code>&lt;related_resource&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasRelatedResource"><strong>has related resource</strong></a>
+          (Reference to the resource in any way related to the described dataset.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Resource">Resource</a>
+        (Resource represents any resource, physical or digital, that is related to the described dataset. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:distribution">
+  <h4>Element <code>&lt;distribution&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasDistribution"><strong>has distribution</strong></a>
+          (Dostupná distribuce datové sady.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:distribution"><code>ccmm:distribution</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Distribution-DataService">Distribution - data service</a>
+        (Physical embodiment of the dataset distribution as a particular data service. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:validation_result">
+  <h4>Element <code>&lt;validation_result&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasValidationResult"><strong>has validation result</strong></a>
+          (Reference to the report about the dataset validation.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:validation_result"><code>ccmm:validation_result</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ValidationResult">Validation result</a>
+        (Class describing the result of validation testing. It may include validation of metadata, data and/or web services accessing the data.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:dataset-ccmm:provenance">
+  <h4>Element <code>&lt;provenance&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Dataset.hasProvenance"><strong>has provenance</strong></a>
+          (A statement about the lineage of a Dataset.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:dataset"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:provenance_statement"><code>ccmm:provenance_statement</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ProvenanceStatement">Provenance Statement</a>
+        (Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.)
       </dd>
 
 
@@ -20691,7 +20691,7 @@
 
   <dl>
     <dt>Definováno v namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.0.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    <dd><code>https://schema.ccmm.cz/research-data/1.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
   </dl>
 
 <section>
@@ -22536,7 +22536,7 @@
 
   <dl>
     <dt>Definováno v namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.0.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    <dd><code>https://schema.ccmm.cz/research-data/1.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
   </dl>
 
 <section>
@@ -23173,9 +23173,6 @@
           element <a href="#element-ccmm:time_instant-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
-      </li>
-      <li>
             výběr jednoho prvku [1..1]
             <ul>
                 <ul style="margin-top: 0;">
@@ -23188,6 +23185,9 @@
   </ul>
 
             </ul>
+      </li>
+      <li>
+          element <a href="#element-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
       </li>
   </ul>
 
@@ -23213,58 +23213,6 @@
       <dt>Obsah</dt>
       <dd>
           Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:time_instant-ccmm:date_information">
-  <h4>Element <code>&lt;date_information&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          
-          z obecnější třídy
-          
-        </i>
-
-          <a href="#TimeReference"><strong>Time reference</strong></a>
-          (A temporal interval or instant on which something relevant to the resource has happened.)
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          mající vlastnost
-          
-          
-        </i>
-
-          <a href="#TimeReference.dateInformation"><strong>date information</strong></a>
-          (Additional information to the date in text form.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:time_instant"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href=""><code></code></a>.
       </dd>
 
 
@@ -23339,6 +23287,58 @@
     
   </dl>
 </section>
+<section id="element-ccmm:time_instant-ccmm:date_information">
+  <h4>Element <code>&lt;date_information&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#TimeReference"><strong>Time reference</strong></a>
+          (A temporal interval or instant on which something relevant to the resource has happened.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#TimeReference.dateInformation"><strong>date information</strong></a>
+          (Additional information to the date in text form.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:time_instant"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href=""><code></code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
 
 
 </section>
@@ -23363,7 +23363,7 @@
 
   <dl>
     <dt>Definováno v namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.0.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    <dd><code>https://schema.ccmm.cz/research-data/1.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
   </dl>
 
 <section>

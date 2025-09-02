@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.0" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
-  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:include schemaLocation="../identifier/schema.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
   <xs:include schemaLocation="../contact-details/schema.xsd"/>
   <xs:include schemaLocation="../organization/schema.xsd"/>
   <xs:complexType name="agent">
@@ -15,6 +15,13 @@
           </xs:annotation>
           <xs:sequence>
             <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has identifier - has identifier
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
             <xs:element name="name" type="xs:string" sawsdl:modelReference="http://xmlns.com/foaf/0.1/name">
               <xs:annotation>
                 <xs:documentation xml:lang="en">
@@ -35,13 +42,6 @@
                   </xs:extension>
                 </xs:simpleContent>
               </xs:complexType>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  has identifier - has identifier
-                </xs:documentation>
-              </xs:annotation>
             </xs:element>
             <xs:element minOccurs="0" maxOccurs="unbounded" name="contact_point" type="ccmm:contact_details" sawsdl:modelReference="http://www.w3.org/ns/dcat#contactPoint">
               <xs:annotation>
@@ -86,6 +86,13 @@
           </xs:annotation>
           <xs:sequence>
             <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has identifier - has identifier
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
             <xs:element name="name" type="xs:string" sawsdl:modelReference="http://xmlns.com/foaf/0.1/name">
               <xs:annotation>
                 <xs:documentation xml:lang="en">
@@ -104,13 +111,6 @@
               <xs:annotation>
                 <xs:documentation xml:lang="en">
                   family name - The family name associated with the person.
-                </xs:documentation>
-              </xs:annotation>
-            </xs:element>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
-              <xs:annotation>
-                <xs:documentation xml:lang="en">
-                  has identifier - has identifier
                 </xs:documentation>
               </xs:annotation>
             </xs:element>

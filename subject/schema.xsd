@@ -10,10 +10,10 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="definition" sawsdl:modelReference="http://www.w3.org/2004/02/skos/core#definition">
+      <xs:element maxOccurs="unbounded" name="title" sawsdl:modelReference="http://purl.org/dc/terms/title">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            definition - Definition of the subject in the given context.
+            title - Title of the subject.
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>
@@ -24,10 +24,10 @@
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element maxOccurs="unbounded" name="title" sawsdl:modelReference="http://purl.org/dc/terms/title">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="definition" sawsdl:modelReference="http://www.w3.org/2004/02/skos/core#definition">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            title - Title of the subject.
+            definition - Definition of the subject in the given context.
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>

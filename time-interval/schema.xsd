@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.0.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.0" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.0" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
-  <xs:import namespace="https://schema.ccmm.cz/research-data/1.0" schemaLocation="../date-type/schema.xsd"/>
-  <xs:import namespace="https://schema.ccmm.cz/research-data/1.0" schemaLocation="../time-instant/schema.xsd"/>
+  <xs:include schemaLocation="../date-type/schema.xsd"/>
+  <xs:include schemaLocation="../time-instant/schema.xsd"/>
   <xs:complexType name="time_interval" sawsdl:modelReference="http://www.w3.org/2006/time#Interval">
     <xs:annotation>
       <xs:documentation xml:lang="en">

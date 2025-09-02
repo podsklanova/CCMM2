@@ -1,5 +1,8 @@
 CHANGELOG
 ---------------------------------------
+### 2025-09-02 - Minor changes
+* changing order of elements in XML and XSD
+
 ### 2025-08-04 - Minor release 1.0.1
 * published sample XML metadata file
 * minor changes in structure (added label etc.)
