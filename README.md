@@ -35,3 +35,82 @@ On [this link](https://github.com/techlib/CCMM/blob/main/ccmm_sample.xml) is loc
 
 [Project to open in DataSpecer](https://github.com/techlib/CCMM/blob/main/Czech%20Core%20Metadata%20Model-backup.zip) is also part of the repository. You may import it into your instance of Dataspecer.
 
+## Dataspcer XSD inconsistency
+
+Dataspecer still does not support some features and has some known bugs In the meantime, after generating XSD files from datasoecer, the following changes must be done manually:
+1. in license-document, add element iri
+    ```
+     <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="label" sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#label">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            label - Label of the license document.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    ```
+
+1. in geometry, add gml namespace, import gml, change gml element to ref=gml:AbstractFeature and add srsName to wkt
+    ```
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    ```
+
+   ``` 
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+      schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+   ```
+
+   ```
+   <xs:element minOccurs="0" maxOccurs="unbounded" ref="gml:AbstractGeometry"
+       sawsdl:modelReference="http://www.opengis.net/ont/geosparql#asGML">
+       <xs:annotation>
+         <xs:documentation xml:lang="en">GML - Representation of
+               geometry object as GML Literal.</xs:documentation>
+       </xs:annotation>
+   </xs:element>
+   ```
+
+   ```   
+   <xs:element minOccurs="0" maxOccurs="unbounded" name="wkt"
+   sawsdl:modelReference="http://www.opengis.net/ont/geosparql#asWKT">
+       <xs:annotation>
+         <xs:documentation xml:lang="en"> WKT - Representation of geometry
+           object as WKT Literal.</xs:documentation>
+       </xs:annotation>
+       <xs:complexType>
+         <xs:simpleContent>
+           <xs:extension base="xs:string">
+             <xs:attribute name="srsName" type="xs:anyURI" use="optional"/>
+           </xs:extension>
+         </xs:simpleContent>
+       </xs:complexType>
+    </xs:element>
+    ```
+1. in location, add gml namespace, import gml and change bounding-box type to gml:EnvelopeType
+   ```
+   xmlns:gml="http://www.opengis.net/gml/3.2"
+   ```
+
+   ``` 
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+      schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+   ```
+
+   ```
+   <xs:element minOccurs="0" maxOccurs="unbounded" name="bounding_box" type="gml:EnvelopeType"
+    sawsdl:modelReference="http://www.w3.org/ns/dcat#bbox">
+     <xs:annotation>
+       <xs:documentation xml:lang="en"> bounding box - Bounding box of the location geometry.
+       </xs:documentation>
+     </xs:annotation>
+   </xs:element>
+   ```

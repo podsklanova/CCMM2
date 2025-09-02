@@ -3,47 +3,16 @@
     xmlns="https://schema.ccmm.cz/research-data/1.0" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <iri>https://organization.cz/dataset_server/dataset_id</iri>
-    <publication_year>2025</publication_year>
-    <version>1.0.23</version>
-    <title>Kvalita ovzduší ve středních čechách 2024</title>
-    <description>
-        <description_text>Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
-            roce 2024.</description_text>
-        <description_type>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract</iri>
-            <label>Abstract</label>
-        </description_type>
-    </description>
-    <alternate_title>
-        <title xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.</title>
-        <alternate_title_type>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle</iri>
-            <label xml:lang="cs">Přeložený název</label>
-            <label xml:lang="en">Translated title</label>
-        </alternate_title_type>
-    </alternate_title>
-    <is_described_by>
-        <iri>https://original-catalogue/dataset_metadata_id</iri>
+    <metadata_identification>
         <!-- references the original metadata IRI -->
-        <date_updated>2025-07-25</date_updated>
-        <date_created>2025-04-28</date_created>
-        <original_repository>
-            <iri>https://original-repository.cz</iri>
-        </original_repository>
-        <conforms_to_standard>
-            <iri>https://www.iso.org/standard/80275.html</iri>
-            <label xml:lang="">ISO 19115-1:2014/Amd 2:2020</label>
-        </conforms_to_standard>
+        <iri>https://original-catalogue/dataset_metadata_id</iri>
+        <language>
+            <iri>http://publications.europa.eu/resource/authority/language/CES</iri>
+            <label xml:lang="cs">čeština</label>
+        </language>
         <qualified_relation>
-            <role>
-                <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager</iri>
-                <label xml:lang="en">data manager</label>
-            </role>
             <relation>
                 <person>
-                    <name>Novák</name>
-                    <given_name>Jan</given_name>
-                    <family_name>Novák</family_name>
                     <identifier>
                         <iri>https://orcid.org/0030-04X2-2030-4X26</iri>
                         <value>0030-04X2-2030-4X26</value>
@@ -52,6 +21,9 @@
                             <label xml:lang="">ORCID</label>
                         </scheme>
                     </identifier>
+                    <name>Novák</name>
+                    <given_name>Jan</given_name>
+                    <family_name>Novák</family_name>
                     <contact_point>
                         <email>jan.novak@email.com</email>
                         <phone>+0112345678</phone>
@@ -72,12 +44,21 @@
                     </affiliation>
                 </person>
             </relation>
+            <role>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager</iri>
+                <label xml:lang="en">data manager</label>
+            </role>
         </qualified_relation>
-        <language>
-            <iri>http://publications.europa.eu/resource/authority/language/CES</iri>
-            <label xml:lang="cs">čeština</label>
-        </language>
-    </is_described_by>
+        <date_updated>2025-07-25</date_updated>
+        <date_created>2025-04-28</date_created>
+        <conforms_to_standard>
+            <iri>https://www.iso.org/standard/80275.html</iri>
+            <label xml:lang="">ISO 19115-1:2014/Amd 2:2020</label>
+        </conforms_to_standard>
+        <original_repository>
+            <iri>https://original-repository.cz</iri>
+        </original_repository>
+    </metadata_identification>
     <identifier>
         <!-- identifier of dataset -->
         <iri>https://doi.org/25.45321</iri>
@@ -96,6 +77,189 @@
             <label xml:lang="cs">Organizační identifikační schéma</label>
         </scheme>
     </identifier>
+    <version>1.0.23</version>
+    <title>Kvalita ovzduší ve středních čechách 2024</title>
+    <alternate_title>
+        <title xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.</title>
+        <alternate_title_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle</iri>
+            <label xml:lang="cs">Přeložený název</label>
+            <label xml:lang="en">Translated title</label>
+        </alternate_title_type>
+    </alternate_title>
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0030-04X2-2030-4X26</iri>
+                    <value>0030-04X2-2030-4X26</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Novák</name>
+                <given_name>Jan</given_name>
+                <family_name>Novák</family_name>
+                <contact_point>
+                    <email>jan.novak@email.com</email>
+                    <phone>+0112345678</phone>
+                    <address>
+                        <full_address>Dlouhá 15, 11000, Praha 1</full_address>
+                    </address>
+                </contact_point>
+                <affiliation>
+                    <name>Univerzita Karlova</name>
+                    <identifier>
+                        <iri>https://ror.org/024d6js02</iri>
+                        <value>024d6js02</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">creator</label>
+        </role>
+    </qualified_relation>
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0023-0802-44X6-26X0</iri>
+                    <value>0023-0802-44X6-26X0</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Ivan Janouch</name>
+                <given_name>Ivan</given_name>
+                <family_name>Janouch</family_name>
+                <contact_point>
+                    <email>256384@muni.cz</email>
+                    <phone>+420876543219</phone>
+                    <address>
+                        <full_address>Pražská 3, 60200, Brno</full_address>
+                    </address>
+                </contact_point>
+                <affiliation>
+                    <name>Masarykova Univerzita</name>
+                    <identifier>
+                        <iri>https://ror.org/02j46qs45</iri>
+                        <value>02j46qs45</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher</iri>
+            <label xml:lang="en">publisher</label>
+        </role>
+    </qualified_relation>
+    <publication_year>2025</publication_year>
+    <time_reference>
+        <time_instant>
+            <date_time>2025-04-27T12:00:01+02:00</date_time>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
+                <label xml:lang="en">Date Created</label>
+                <label xml:lang="cs">Datum vytvoření datové sady</label>
+            </date_type>
+        </time_instant>
+    </time_reference>
+    <time_reference>
+        <time_interval>
+            <beginning_time_instant>
+                <date>2024-01-01</date>
+            </beginning_time_instant>
+            <end_time_instant>
+                <date>2024-12-31</date>
+            </end_time_instant>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
+                <label xml:lang="en">Date Collected</label>
+                <label xml:lang="cs">Datum sběru dat</label>
+            </date_type>
+        </time_interval>
+    </time_reference>
+    <resource_type>
+        <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
+        <label xml:lang="cs">datová sada</label>
+        <label xml:lang="en">dataset</label>
+    </resource_type>
+    <primary_language>
+        <iri>http://publications.europa.eu/resource/authority/language/CES</iri>
+    </primary_language>    
+    <other_language>
+        <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
+    </other_language>
+    <terms_of_use>
+        <access_rights>
+            <iri>https://vocabularies.coar-repositories.org/access_rights/c_abf2/</iri>
+            <label xml:lang="en">open access</label>
+            <!-- coar access rights does not have czech translation -->
+        </access_rights>
+        <license>
+            <iri>https://creativecommons.org/licenses/by/4.0/</iri>
+            <label xml:lang="en">Attribution 4.0 International</label>
+        </license>
+        <description xml:lang="cs">Textový popis toho, jak je možné s datovou sadou
+            nakládat.</description>
+        <contact_point>
+            <!-- this contact point serves as contaxct to get more information aboutterms of use -->
+            <person>
+                <name>Pavlína Doležalová</name>
+                <contact_point>
+                    <email>pavlina.dolezalova@organizace.cz</email>
+                    <phone>+420784512963</phone>
+                </contact_point>
+            </person>
+        </contact_point>
+    </terms_of_use>
+    <subject>
+        <!-- Frascati Ford keyword is mandatory -->
+        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509</iri>
+        <title xml:lang="cs">Environmentální vědy</title>
+        <classification_code>10511</classification_code>
+        <subject_scheme>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+            <!-- not sure if link here or to identifier of some authority behind frascati ford -->
+            <label xml:lang="en">Frascati Ford</label>
+        </subject_scheme>
+    </subject>
+    <subject>
+        <title xml:lang="cs">kvalita ovzduší</title>
+    </subject>
+    <subject>
+        <iri>http://inspire.ec.europa.eu/theme/ef</iri>
+        <title xml:lang="en">Environmental monitoring facilities</title>
+        <definition xml:lang="en">Location and operation of environmental monitoring facilities
+            includes observation and measurement of emissions, of the state of environmental media
+            and of other ecosystem parameters (biodiversity, ecological conditions of vegetation,
+            etc.) by or on behalf of public authorities.</definition>
+        <classification_code>EF</classification_code>
+        <subject_scheme>
+            <iri>https://inspire.ec.europa.eu/theme/</iri>
+            <label xml:lang="en">INSPIRE theme register</label>
+        </subject_scheme>
+    </subject>
+    <description>
+        <description_text>Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
+            roce 2024.</description_text>
+        <description_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract</iri>
+            <label>Abstract</label>
+        </description_type>
+    </description>
     <location>
         <!-- this sample shows all ways of representing location -->
         <bounding_box>
@@ -16664,248 +16828,25 @@
             <label xml:lang="en">Collected in</label>
         </relation_type>
     </location>
-    <provenance/>
-    <!-- provenance is in the current state a placeholdoer for extensions -->
-    <qualified_relation>
-        <role>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
-            <label xml:lang="en">creator</label>
-        </role>
-        <relation>
-            <person>
-                <name>Novák</name>
-                <given_name>Jan</given_name>
-                <family_name>Novák</family_name>
-                <identifier>
-                    <iri>https://orcid.org/0030-04X2-2030-4X26</iri>
-                    <value>0030-04X2-2030-4X26</value>
-                    <scheme>
-                        <iri>https://orcid.org/</iri>
-                        <label xml:lang="">ORCID</label>
-                    </scheme>
-                </identifier>
-                <contact_point>
-                    <email>jan.novak@email.com</email>
-                    <phone>+0112345678</phone>
-                    <address>
-                        <full_address>Dlouhá 15, 11000, Praha 1</full_address>
-                    </address>
-                </contact_point>
-                <affiliation>
-                    <name>Univerzita Karlova</name>
-                    <identifier>
-                        <iri>https://ror.org/024d6js02</iri>
-                        <value>024d6js02</value>
-                        <scheme>
-                            <iri>https://ror.org/</iri>
-                            <label xml:lang="">ROR</label>
-                        </scheme>
-                    </identifier>
-                </affiliation>
-            </person>
-        </relation>
-    </qualified_relation>
-    <qualified_relation>
-        <role>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher</iri>
-            <label xml:lang="en">publisher</label>
-        </role>
-        <relation>
-            <person>
-                <name>Ivan Janouch</name>
-                <given_name>Ivan</given_name>
-                <family_name>Janouch</family_name>
-                <identifier>
-                    <iri>https://orcid.org/0023-0802-44X6-26X0</iri>
-                    <value>0023-0802-44X6-26X0</value>
-                    <scheme>
-                        <iri>https://orcid.org/</iri>
-                        <label xml:lang="">ORCID</label>
-                    </scheme>
-                </identifier>
-                <contact_point>
-                    <email>256384@muni.cz</email>
-                    <phone>+420876543219</phone>
-                    <address>
-                        <full_address>Pražská 3, 60200, Brno</full_address>
-                    </address>
-                </contact_point>
-                <affiliation>
-                    <name>Masarykova Univerzita</name>
-                    <identifier>
-                        <iri>https://ror.org/02j46qs45</iri>
-                        <value>02j46qs45</value>
-                        <scheme>
-                            <iri>https://ror.org/</iri>
-                            <label xml:lang="">ROR</label>
-                        </scheme>
-                    </identifier>
-                </affiliation>
-            </person>
-        </relation>
-    </qualified_relation>
-    <time_reference>
-        <time_instant>
-            <date_type>
-                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
-                <label xml:lang="en">Date Created</label>
-                <label xml:lang="cs">Datum vytvoření datové sady</label>
-            </date_type>
-            <date_time>2025-04-27T12:00:01+02:00</date_time>
-        </time_instant>
-    </time_reference>
-    <time_reference>
-        <time_interval>
-            <beginning_time_instant>
-                <date>2024-01-01</date>
-            </beginning_time_instant>
-            <end_time_instant>
-                <date>2024-12-31</date>
-            </end_time_instant>
-            <date_type>
-                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
-                <label xml:lang="en">Date Collected</label>
-                <label xml:lang="cs">Datum sběru dat</label>
-            </date_type>
-        </time_interval>
-    </time_reference>
-    <subject>
-        <!-- Frrascati Ford keyword is mandatory -->
-        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509</iri>
-        <title xml:lang="cs">Environmentální vědy</title>
-        <classification_code>10511</classification_code>
-        <subject_scheme>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <!-- not sure if link here or to identifier of som eauthority behind frascati ford -->
-            <label xml:lang="en">Frascati Ford</label>
-        </subject_scheme>
-    </subject>
-    <subject>
-        <title xml:lang="cs">kvalita ovzduší</title>
-    </subject>
-    <subject>
-        <iri>http://inspire.ec.europa.eu/theme/ef</iri>
-        <definition xml:lang="en">Location and operation of environmental monitoring facilities
-            includes observation and measurement of emissions, of the state of environmental media
-            and of other ecosystem parameters (biodiversity, ecological conditions of vegetation,
-            etc.) by or on behalf of public authorities.</definition>
-        <title xml:lang="en">Environmental monitoring facilities</title>
-        <classification_code>EF</classification_code>
-        <subject_scheme>
-            <iri>https://inspire.ec.europa.eu/theme/</iri>
-            <label xml:lang="en">INSPIRE theme register</label>
-        </subject_scheme>
-    </subject>
-    <validation_result/>
-    <!-- validation is in the current state a placeholdoer for extensions -->
-    <distribution>
-        <distribution_-_data_service>
-            <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
-            <!-- persistent idenftifier of a service, usualy same as access point -->
-            <title xml:lang="cs">Služba WMS pro prohlížení dat o kvalitě ovzduší</title>
-            <description xml:lang="cs">Prohlížecí služba (WMS) byla vytvořena na základě dat ČHMÚ a
-                obsahuje vrstvy: 1) Zóny a aglomerace hodnocení a řízení kvality ovzduší; 2) Státní
-                síť imisního monitoringu; 3) Pole koncentrací látek znečišťující ovzduší v gridu 1x1
-                km (Imisní limity pro ochranu lidského zdraví; Imisní limity pro ochranu ekosystémů
-                a vegetace); 4) Přehledy (data) naměřené na stanicích Státní imisní sítě
-                (Koncentrace látek znečišťujících ovzduší, pro které jsou stanoveny imisní limity
-                pro ochranu lidského zdraví; Koncentrace polutantů, pro které jsou stanoveny imisní
-                limity pro ochranu ekosystémů a vegetace) pro rok 2023.</description>
-            <documentation>
-                <iri>https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/</iri>
-                <!-- human readable documentation of this one specific service instance -->
-            </documentation>
-            <specification>
-                <iri/>
-                <label xml:lang="cs">NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
-                    se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové
-                    služby</label>
-            </specification>
-            <access_service>
-                <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
-                <endpoint_url>
-                    <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
-                    <title>Endpoint of WMS service Air quality</title>
-                </endpoint_url>
-            </access_service>
-        </distribution_-_data_service>
-    </distribution>
-    <distribution>
-        <distribution_-_downloadable_file>
-            <iri>http://portal.chmi.cz/AQ_DATA</iri>
-            <title xml:lang="cs">Kvalita ovzduší</title>
-            <byte_size>256</byte_size>
-            <checksum>
-                <checksum_value>9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</checksum_value>
-                <algorithm>https://www.iana.org/go/rfc6920</algorithm>
-            </checksum>
-            <conforms_to_schema>
-                <iri>https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd</iri>
-                <label xml:lang="en">Environmental monitoring facilities</label>
-            </conforms_to_schema>
-            <media_type>
-                <iri>https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP</iri>
-                <label xml:lang="en">ZIP</label>
-            </media_type>
-            <access_url>
-                <!-- shall contain information about how to download data -->
-                <iri>https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy</iri>
-                <label xml:lang="cs">Oddělení informačního systému kvality ovzduší - odkazy</label>
-            </access_url>
-            <download_url>
-                <!-- link to direct access data -->
-                <iri>https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip</iri>
-                <label xml:lang="cs">Datová sada ve formátu Geopackage</label>
-                <label xml:lang="en">Dataset in Geopackage format</label>
-            </download_url>
-            <format>
-                <iri>https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG</iri>
-                <label xml:lang="en">GeoPackage</label>
-            </format>
-        </distribution_-_downloadable_file>
-    </distribution>
     <funding_reference>
         <iri>https://funder-org.org/grants/123456789</iri>
-        <funding_program>https://funder-org.org/program/abcdefgh</funding_program>
-        <award_title>Program for air pollution research</award_title>
         <local_identifier>https://doi.org/award-identifier</local_identifier>
+        <award_title>Program for air pollution research</award_title>
+        <funding_program>https://funder-org.org/program/abcdefgh</funding_program>
         <funder>
             <organization>
                 <iri>https://ror.org/01pv73b02</iri>
-                <name>Grantová agentura České republiky</name>
                 <identifier>
                     <value>01pv73b02</value>
                     <scheme>
                         <iri>https://ror.org/</iri>
                         <label xml:lang="">ROR</label>
                     </scheme>
-                </identifier>
+                </identifier>                
+                <name>Grantová agentura České republiky</name>
             </organization>
         </funder>
     </funding_reference>
-    <terms_of_use>
-        <description xml:lang="cs">Textový popis toho, jak je možné s datovou sadou
-            nakládat.</description>
-        <access_rights>
-            <iri>https://vocabularies.coar-repositories.org/access_rights/c_abf2/</iri>
-            <label xml:lang="en">open access</label>
-            <!-- coar access rights does not have czech translation -->
-        </access_rights>
-        <license>
-            <iri>https://creativecommons.org/licenses/by/4.0/</iri>
-            <label xml:lang="en">Attribution 4.0 International</label>
-        </license>
-        <contact_point>
-            <!-- this contact point serves as contaxct to get more information aboutterms of use -->
-            <person>
-                <name>Pavlína Doležalová</name>
-                <contact_point>
-                    <email>pavlina.dolezalova@organizace.cz</email>
-                    <phone>+420784512963</phone>
-                </contact_point>
-            </person>
-        </contact_point>
-    </terms_of_use>
     <!-- examples of related resources -->
     <!-- legislative document -->
     <related_resource>
@@ -16961,15 +16902,74 @@
             <label xml:lang="en">has metadata</label>
         </resource_relation_type>
     </related_resource>
-    <resource_type>
-        <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
-        <label xml:lang="cs">datová sada</label>
-        <label xml:lang="en">dataset</label>
-    </resource_type>
-    <other_language>
-        <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
-    </other_language>
-    <primary_language>
-        <iri>http://publications.europa.eu/resource/authority/language/CES</iri>
-    </primary_language>
+    <distribution>
+        <distribution_data_service>
+            <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
+            <!-- persistent idenftifier of a service, usualy same as access point -->
+            <title xml:lang="cs">Služba WMS pro prohlížení dat o kvalitě ovzduší</title>
+            <access_service>
+                <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
+                <endpoint_url>
+                    <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
+                    <title>Endpoint of WMS service Air quality</title>
+                </endpoint_url>
+            </access_service>
+            <specification>
+                <iri/>
+                <label xml:lang="cs">NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
+                    se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové
+                    služby</label>
+            </specification>
+            <documentation>
+                <iri>https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/</iri>
+                <!-- human readable documentation of this one specific service instance -->
+            </documentation>
+            <description xml:lang="cs">Prohlížecí služba (WMS) byla vytvořena na základě dat ČHMÚ a
+                obsahuje vrstvy: 1) Zóny a aglomerace hodnocení a řízení kvality ovzduší; 2) Státní
+                síť imisního monitoringu; 3) Pole koncentrací látek znečišťující ovzduší v gridu 1x1
+                km (Imisní limity pro ochranu lidského zdraví; Imisní limity pro ochranu ekosystémů
+                a vegetace); 4) Přehledy (data) naměřené na stanicích Státní imisní sítě
+                (Koncentrace látek znečišťujících ovzduší, pro které jsou stanoveny imisní limity
+                pro ochranu lidského zdraví; Koncentrace polutantů, pro které jsou stanoveny imisní
+                limity pro ochranu ekosystémů a vegetace) pro rok 2023.</description>
+        </distribution_data_service>
+    </distribution>
+    <distribution>
+        <distribution_downloadable_file>
+            <iri>http://portal.chmi.cz/AQ_DATA</iri>
+            <title xml:lang="cs">Kvalita ovzduší</title>
+            <access_url>
+                <!-- shall contain information about how to download data -->
+                <iri>https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy</iri>
+                <label xml:lang="cs">Oddělení informačního systému kvality ovzduší - odkazy</label>
+            </access_url>
+            <download_url>
+                <!-- link to direct access data -->
+                <iri>https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip</iri>
+                <label xml:lang="cs">Datová sada ve formátu Geopackage</label>
+                <label xml:lang="en">Dataset in Geopackage format</label>
+            </download_url>
+            <conforms_to_schema>
+                <iri>https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd</iri>
+                <label xml:lang="en">Environmental monitoring facilities</label>
+            </conforms_to_schema>
+            <format>
+                <iri>https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG</iri>
+                <label xml:lang="en">GeoPackage</label>
+            </format>
+            <media_type>
+                <iri>https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP</iri>
+                <label xml:lang="en">ZIP</label>
+            </media_type>
+            <byte_size>256</byte_size>
+            <checksum>
+                <checksum_value>9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</checksum_value>
+                <algorithm>https://www.iana.org/go/rfc6920</algorithm>
+            </checksum>
+        </distribution_downloadable_file>
+    </distribution>
+    <validation_result/>
+    <!-- validation is in the current state a placeholdoer for extensions -->
+    <provenance/>
+    <!-- provenance is in the current state a placeholdoer for extensions -->
 </dataset>
