@@ -36,12 +36,19 @@
             geometry object as GML Literal. </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="wkt" type="xs:anySimpleType"
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="wkt"
         sawsdl:modelReference="http://www.opengis.net/ont/geosparql#asWKT">
         <xs:annotation>
-          <xs:documentation xml:lang="en">WKT - Representation of geometry
+          <xs:documentation xml:lang="en"> WKT - Representation of geometry
             object as WKT Literal. </xs:documentation>
         </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="srsName" type="xs:anyURI" use="optional"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
