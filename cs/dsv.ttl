@@ -587,9 +587,9 @@
     dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;
-    skos:definition "Title of the resource related to the dataset."@en;
+    skos:definition "Title of the resource."@en;
     dsv:cardinality cardinality:01;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#relatedItemTitle>;
+    dsv:property dct:title;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
 
@@ -654,6 +654,19 @@
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasType>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ResourceRelationType.
+
+<https://model.ccmm.cz/research-data/Resource.hasAlternateTitle> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :AlternateTitle.
 :ResourceToAgentRelationship dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Resource to agent relationship"@en;

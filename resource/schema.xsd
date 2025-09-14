@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:include schemaLocation="../identifier/schema.xsd"/>
+  <xs:include schemaLocation="../alternate-title/schema.xsd"/>
   <xs:include schemaLocation="../resource-to-agent-relationship/schema.xsd"/>
   <xs:include schemaLocation="../time_reference/schema.xsd"/>
   <xs:include schemaLocation="../resource-type/schema.xsd"/>
@@ -20,10 +21,17 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="title" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#relatedItemTitle">
+      <xs:element minOccurs="0" name="title" type="xs:string" sawsdl:modelReference="http://purl.org/dc/terms/title">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            title - Title of the resource related to the dataset.
+            title - Title of the resource.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_alternate_title" type="ccmm:alternate_title" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has alternate title
           </xs:documentation>
         </xs:annotation>
       </xs:element>
