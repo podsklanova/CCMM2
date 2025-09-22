@@ -1410,7 +1410,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location.geometry>
 ];
-    dsv:cardinality cardinality:01;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Geometry.
 
@@ -1454,6 +1454,7 @@
     a dsv:TermProfile;
     skos:prefLabel "well known text literal"@en;
     skos:definition "Representation of geometry object as WKT Literal."@en;
+    dsv:cardinality cardinality:01;
     dsv:property <http://www.opengis.net/ont/geosparql#asWKT>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#wktLiteral>.
@@ -1463,6 +1464,7 @@
     a dsv:TermProfile;
     skos:prefLabel "geography markup language literal"@en;
     skos:definition "Representation of geometry object as GML Literal."@en;
+    dsv:cardinality cardinality:01;
     dsv:property <http://www.opengis.net/ont/geosparql#asGML>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.opengis.net/ont/geosparql#gmlLiteral>.
