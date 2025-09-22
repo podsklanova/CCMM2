@@ -922,6 +922,8 @@
     a dsv:TermProfile;
     skos:prefLabel "has original repository"@en;
     skos:definition "Link to the repository in which the metadata were originally stored and curated."@en;
+    skos:scopeNote "Original repository is a repository where the original metadata was harvested from or where it was created and/or published. There is always exactly one original repository. \nIf metadata record is harvested form other repository, make sure to include the first repository from which it was harvested."@en;
+    dsv:cardinality cardinality:11;
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#originalRepository>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Repository.

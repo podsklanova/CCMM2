@@ -7737,7 +7737,7 @@
                     <td>
                       <a href="#Repository">Katalog</a>
               
-                          [0..*]
+                          [1..1]
               
                   </td>
                   </tr>
@@ -7762,6 +7762,11 @@
                       </td>
                     </tr>
               
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>Original repository is a repository where the original metadata was harvested from or where it was created and/or published. There is always exactly one original repository. 
+              If metadata record is harvested form other repository, make sure to include the first repository from which it was harvested. (@en)</td>
+                  </tr>
                 </table>
               </section>    <section id="MetadataRecord.qualifiedRelation">
                 <h4>kvalifikovaný vztah</h4>
@@ -19045,7 +19050,7 @@
           element <a href="#element-ccmm:metadata_record-ccmm:conforms_to_standard"><code>&lt;conforms_to_standard&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:metadata_record-ccmm:original_repository"><code>&lt;original_repository&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:metadata_record-ccmm:original_repository"><code>&lt;original_repository&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -19322,7 +19327,7 @@
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
+      <dd>1..1</dd>
       <dt>Nadřazený element</dt>
       <dd><a href="#type-ccmm:metadata_record"></a></dd>
 
