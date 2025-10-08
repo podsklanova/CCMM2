@@ -349,7 +349,7 @@
         <iri>http://data.europa.eu/eli/dir/2008/50/oj</iri>
         <title>Směrnice Evropského parlamentu a Rady 2008/50/ES ze dne 21. května 2008 o kvalitě
             vnějšího ovzduší a čistším ovzduší pro Evropu</title>
-        <resource_url>https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050"%26"qid=1754039487879</resource_url>
+        <resource_url>https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050&qid=1754039487879</resource_url>
         <resource_type>
             <iri>http://purl.org/coar/resource_type/c_18cf/</iri>
             <label xml:lang="en">text</label>
@@ -390,7 +390,7 @@
         <iri>https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</iri>
         <title>Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích
             stanicích</title>
-        <resource_url>https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</resource_url>
+        <resource_url>https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</resource_url>
         <!-- coar does not contain resourc etype metadata -->
         <resource_relation_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata</iri>
