@@ -28,7 +28,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_alternate_title" type="ccmm:alternate_title" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="alternate_title" type="ccmm:alternate_title" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has alternate title
@@ -70,6 +70,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="resource" type="ccmm:resource"/>
