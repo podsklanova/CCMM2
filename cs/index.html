@@ -203,16 +203,43 @@
       defer
     ></script>
     <script class="remove">
-      // All config options at https://respec.org/docs/
-      var respecConfig = {
-        specStatus: "base",
-        editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
-        //github: "some-org/mySpec",
-        shortName: "todo",
-        //xref: "web-platform",
-        //group: "my-working-group",
-      };
-    </script>
+    // All config options at https://respec.org/docs/
+    var respecConfig = {
+      specStatus: "base",
+      editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
+      //github: "some-org/mySpec",
+      shortName: "todo",
+      historyURI: null,
+      //thisVersion: "https://xx.github.io/yy/",
+      //latestVersion: "https://xx.github.io/yy/",
+      //publishDate: "2025-09-29",
+      //github: "https://github.com/org/repo",
+      //xref: "web-platform",
+      //group: "my-working-group",
+      //otherLinks: [{
+      //    key: "Repository",
+      //    data: [{
+      //        value: "GitHub",
+      //        href: "https://github.com/org/repo"
+      //    }],
+      //}],
+      localBiblio: {
+            "DCAT-AP": {
+                title: "DCAT Application Profile for data portals in Europe",
+                href: "https://semiceu.github.io/DCAT-AP/releases/3.0.1/",
+                date: "2024"
+            },
+            "GeoDCAT-AP": {
+                title: "GeoDCAT Application Profile for data portals in Europe",
+                href: "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0/",
+                date: "2024"
+            },
+            "DCAT-AP-HVD": {
+                title: "DCAT-AP HVD Application Profile",
+                href: "https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/",
+                date: "2024"
+            }
+        },};</script>
     
     <style>
       .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
@@ -241,10 +268,13 @@
     <p class="copyright"></p>
     <section id="abstract">
       <p>
-        Tento soubor dokumentuje
-        <strong>Czech Core Metadata Model</strong> (@en).</p>
+      Tento soubor dokumentuje
+      <strong>Czech Core Metadata Model</strong> (@en).</p>
     </section>
-
+    <section>
+      <h2>Úvod</h2>
+      <p>Toto je úvod</p>
+      </section>
     <section>
       <h2>Přehled</h2>
 
@@ -4629,7 +4659,7 @@
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
               
                           [0..*]
               
@@ -12152,7 +12182,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -12946,7 +12976,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -14294,7 +14324,7 @@
           element <a href="#element-ccmm:resource-ccmm:title"><code>&lt;title&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:resource-ccmm:has_alternate_title"><code>&lt;has_alternate_title&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:resource-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:resource-ccmm:resource_url"><code>&lt;resource_url&gt;</code></a> [0..1]
@@ -14434,8 +14464,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:resource-ccmm:has_alternate_title">
-  <h4>Element <code>&lt;has_alternate_title&gt;</code></h4>
+<section id="element-ccmm:resource-ccmm:alternate_title">
+  <h4>Element <code>&lt;alternate_title&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -15144,7 +15174,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -16138,7 +16168,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -16719,7 +16749,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -16903,7 +16933,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -17087,7 +17117,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -17271,7 +17301,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -17455,7 +17485,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -17639,7 +17669,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -17823,7 +17853,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -18447,7 +18477,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -18631,7 +18661,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -19400,7 +19430,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -21012,7 +21042,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -21251,7 +21281,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -21523,7 +21553,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -21707,7 +21737,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -22169,7 +22199,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -22528,7 +22558,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -22678,7 +22708,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -22862,7 +22892,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -23046,7 +23076,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -23230,7 +23260,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -23414,7 +23444,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -23598,7 +23628,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -23782,7 +23812,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -23966,7 +23996,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -24150,7 +24180,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -24334,7 +24364,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
     </tbody>
@@ -24605,7 +24635,7 @@
         <tr>
             <td><code>xml</code></td>
             <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
         <tr>
@@ -24679,13 +24709,13 @@
           element <a href="#element-ccmm:time_interval-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_interval-ccmm:has_date_type"><code>&lt;has_date_type&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:time_interval-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_interval-ccmm:has_end"><code>&lt;has_end&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:time_interval-ccmm:end"><code>&lt;end&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_interval-ccmm:has_beginning"><code>&lt;has_beginning&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:time_interval-ccmm:beginning"><code>&lt;beginning&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -24775,8 +24805,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_interval-ccmm:has_date_type">
-  <h4>Element <code>&lt;has_date_type&gt;</code></h4>
+<section id="element-ccmm:time_interval-ccmm:date_type">
+  <h4>Element <code>&lt;date_type&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -24832,8 +24862,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_interval-ccmm:has_end">
-  <h4>Element <code>&lt;has_end&gt;</code></h4>
+<section id="element-ccmm:time_interval-ccmm:end">
+  <h4>Element <code>&lt;end&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -24878,8 +24908,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_interval-ccmm:has_beginning">
-  <h4>Element <code>&lt;has_beginning&gt;</code></h4>
+<section id="element-ccmm:time_interval-ccmm:beginning">
+  <h4>Element <code>&lt;beginning&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -25080,7 +25110,24 @@
 <p>
   Seznam schémat, jež jsou tímto schématem importovány a použity.
 </p>
-  <i>Nic není importováno.</i>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Lokace schématu</th>
+        <th>Dokumentace</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
+          <td></td>
+        </tr>
+    </tbody>
+  </table>
 </section>
 
 <section>
@@ -25201,7 +25248,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
+          Obsahem elementu je typ <a href=""><code></code></a>.
       </dd>
 
 
@@ -25257,6 +25304,12 @@
       </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
+          <td></td>
+        </tr>
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
@@ -25388,7 +25441,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
+          Obsahem elementu je typ <a href=""><code></code></a>.
       </dd>
 
 
