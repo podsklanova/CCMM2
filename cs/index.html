@@ -8077,6 +8077,8 @@
               <tr>
                 <td>IRI profilovaných tříd</td>
                 <td>
+                    
+                    <a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>
                 </td>
               </tr>
               <tr>
@@ -8096,13 +8098,42 @@
                   <td>Hierarchie</td>
                   <td>
                     <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                
+                profil
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument">License Document (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument">dcat-dap:LicenseDocument</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://purl.org/dc/terms/LicenseDocument">License Document (@en)</a> (<a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>)
+                  <br />Definice: <i>A legal document giving official permission to do something with a resource.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://purl.org/dc/terms/RightsStatement">Rights Statement (@en)</a> (<a href="http://purl.org/dc/terms/RightsStatement">dcterms:RightsStatement</a>)
+                  <br />Definice: <i>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
                     </ul>
                   </td>
                 </tr>
           
               <tr>
                 <td>Popis použití v profilu</td>
-                <td> (@en)</td>
+                <td>A legal document giving official permission to do something with a resource. (@en)</td>
               </tr>
             </table>
           
@@ -16360,7 +16391,7 @@
 
         <dt>Význam</dt>
       <dd>
-        <a href="">License Document</a>
+        <a href="#LicenseDocument">License Document</a>
         (A legal document giving official permission to do something with a resource.)
       </dd>
 
@@ -22604,7 +22635,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="">License Document</a>
+        <a href="#LicenseDocument">License Document</a>
         (A legal document giving official permission to do something with a resource.)
       </dd>
 
@@ -22614,11 +22645,45 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
+          element <a href="#element-ccmm:license_document-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
           element <a href="#element-ccmm:license_document-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
       </li>
   </ul>
 
 
+  </dl>
+</section>
+<section id="element-ccmm:license_document-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:license_document"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
   </dl>
 </section>
 <section id="element-ccmm:license_document-ccmm:label">

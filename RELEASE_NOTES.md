@@ -1,5 +1,8 @@
 CHANGELOG
 ---------------------------------------
+### 2025-10-21 - Minor changes
+* solved issues from milestone 1.1.0
+
 ### 2025-09-02 - Minor changes
 * changing order of elements in XML and XSD
 
