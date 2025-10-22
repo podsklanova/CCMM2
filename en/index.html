@@ -7310,6 +7310,8 @@
               <tr>
                 <td>Profiled class IRI(s)</td>
                 <td>
+                    
+                    <a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>
                 </td>
               </tr>
               <tr>
@@ -7329,13 +7331,42 @@
                   <td>Hierarchy</td>
                   <td>
                     <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                
+                class profile
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument">License Document</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument">dcat-dap:LicenseDocument</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://purl.org/dc/terms/LicenseDocument">License Document</a> (<a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>)
+                  <br />Definition: <i>A legal document giving official permission to do something with a resource.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> (<a href="http://purl.org/dc/terms/RightsStatement">dcterms:RightsStatement</a>)
+                  <br />Definition: <i>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
                     </ul>
                   </td>
                 </tr>
           
               <tr>
                 <td>Usage note</td>
-                <td></td>
+                <td>A legal document giving official permission to do something with a resource.</td>
               </tr>
             </table>
           
@@ -16361,7 +16392,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="">License Document</a>
+        <a href="#LicenseDocument">License Document</a>
         (A legal document giving official permission to do something with a resource.)
       </dd>
 
@@ -22605,7 +22636,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="">License Document</a>
+        <a href="#LicenseDocument">License Document</a>
         (A legal document giving official permission to do something with a resource.)
       </dd>
 
@@ -22615,11 +22646,45 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
+          element <a href="#element-ccmm:license_document-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
           element <a href="#element-ccmm:license_document-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
       </li>
   </ul>
 
 
+  </dl>
+</section>
+<section id="element-ccmm:license_document-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:license_document"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
   </dl>
 </section>
 <section id="element-ccmm:license_document-ccmm:label">
