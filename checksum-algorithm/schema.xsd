@@ -8,6 +8,7 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element name="iri" type="xs:anyURI"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="checksum_algorithm" type="ccmm:checksum_algorithm"/>
