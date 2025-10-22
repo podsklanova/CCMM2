@@ -28,4 +28,3 @@
   </xs:complexType>
   <xs:element name="license_document" type="ccmm:license_document"/>
 </xs:schema>
-
