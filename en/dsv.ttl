@@ -1663,8 +1663,8 @@
 <https://model.ccmm.cz/research-data/Resource.resourceURL> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "resource URL"@en;
-    skos:definition "Resolvable URL representing the resource, preferably human readable."@en;
-    skos:scopeNote "In case it is filled, it must be filled the same in c:iri.\nIf there are more resolvable IRIs, Resource URL shall link to human readable version, machine readable ID is always in c:iri."@en;
+    skos:definition "Human readable resolvable URL representing the resource."@en;
+    skos:scopeNote "Resource URL represents human readable resolvable representation of the resource. Same url must be aslo in c:iri."@en;
     dsv:cardinality cardinality:01;
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#resourceUrl>;
     dsv:domain :Resource;

@@ -38,7 +38,7 @@
       <xs:element minOccurs="0" name="resource_url" type="xs:anyURI" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            resource URL - Resolvable URL representing the resource, preferably human readable.
+            resource URL - Human readable resolvable URL representing the resource.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
