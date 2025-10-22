@@ -472,7 +472,7 @@
 				<div style="position: absolute; background-color: light-dark(white, black); transform: translate(-50%, -50%) translate(980px, 1040px); text-align: center; pointer-events: all; white-space: pre-line; padding: 5px; border-radius: 15px;">has related resource</div>
 				<div style="position: absolute; background-color: light-dark(white, black); transform: translate(1ch, -2em) translate(980px, 1280px);">[0..*]</div>
 				<div style="position: absolute; background-color: light-dark(white, black); transform: translate(-50%, -50%) translate(987.982px, 495.72px); text-align: center; pointer-events: all; white-space: pre-line; padding: 5px; border-radius: 15px;">has terms of use
-(has version)</div>
+(has rights)</div>
 				<div style="position: absolute; background-color: light-dark(white, black); transform: translate(1ch) translate(1067.96px, 470px);">[1..1]</div>
 				<div style="position: absolute; background-color: light-dark(white, black); transform: translate(-50%, -50%) translate(854px, 319px); text-align: center; pointer-events: all; white-space: pre-line; padding: 5px; border-radius: 15px;">has funding reference</div>
 				<div style="position: absolute; background-color: light-dark(white, black); transform: translate(1ch) translate(854px, 138px);">[0..*]</div>
