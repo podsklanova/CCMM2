@@ -487,9 +487,8 @@
 <https://model.ccmm.cz/research-data/Dataset.hasTermsOfUse> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has terms of use"@en;
-    skos:definition "Terms under which the dataset may be accessed."@en;
     dsv:cardinality cardinality:11;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#hasVersion>;
+    dsv:property <https://model.ccmm.cz/vocabulary/datacite#hasRights>;
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :TermsOfUse.
