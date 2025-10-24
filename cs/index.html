@@ -2939,7 +2939,7 @@
               </tr>
               <tr>
                 <td>Definice</td>
-                <td>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</td>
+                <td>Konceptuální entita představující publikovaná data.</td>
               </tr>
           
                 <tr>
@@ -2948,6 +2948,19 @@
                     <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
                                     profiluje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset">Datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset">dcat-ap:Dataset</a>)
+                  <br />Definice: <i>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset">Datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
                 třídu
                 
                 <a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
@@ -2960,6 +2973,59 @@
                 <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
                   <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
                   <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Katalogizovaný zdroj</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Resource">dcat-dap:Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CataloguedResource">Katalogizovaný zdroj</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Resource">dcat-ap:Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Katalogizovaný zdroj</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Resource">dcat-dap:Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Katalogizovaný zdroj</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definice: <i>Zdroj publikovaný či řízený jediným činitelem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
                   </ul>
           
                       </li>
@@ -14273,7 +14339,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -14651,7 +14717,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -15168,7 +15234,7 @@
 <section>
 <h3>Přehled XML struktury</h3>
 <p>
-  Tato sekce popisuje XSD zachycující strukturu pro <i>Time reference</i>, jež je definováno v souboru <a href="../time_reference/schema.xsd"><code>../time_reference/schema.xsd</code></a>.
+  Tato sekce popisuje XSD zachycující strukturu pro <i>Time reference</i>, jež je definováno v souboru <a href="../time-reference/schema.xsd"><code>../time-reference/schema.xsd</code></a>.
 </p>
 
   <dl>
@@ -15216,15 +15282,15 @@
 <section>
   <h4>Kořenové entity XSD schématu</h4>
   <ul>
-      <li>element <a href="#element-ccmm:time_reference"><code>time_reference</code></a></li>
+      <li>element <a href="#element-ccmm:element"><code>element</code></a></li>
 
-      <li> komplexní typ <a href="#type-ccmm:time_reference"><code>time_reference</code></a></li>
+      <li> komplexní typ <a href="#type-ccmm:type"><code>type</code></a></li>
   </ul>
 </section>
 
 
-<section id="element-ccmm:time_reference">
-  <h4>Kořenový element <code>&lt;time_reference&gt;</code></h4>
+<section id="element-ccmm:element">
+  <h4>Kořenový element <code>&lt;element&gt;</code></h4>
   <dl>
     
 
@@ -15233,7 +15299,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -15247,8 +15313,8 @@
 </section>
 
 
-<section id="type-ccmm:time_reference">
-  <h4>Kořenový komplexní typ <code>time_reference</code></h4>
+<section id="type-ccmm:type">
+  <h4>Kořenový komplexní typ <code>type</code></h4>
   <dl>
     
 
@@ -15257,17 +15323,17 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval">
+<section id="element-ccmm:type-ccmm:time_interval">
   <h4>Element <code>&lt;time_interval&gt;</code></h4>
 
   <dl>
@@ -15278,7 +15344,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:time_reference"></a></dd>
+      <dd><a href="#type-ccmm:type"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15298,19 +15364,19 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:beginning_time_instant"><code>&lt;beginning_time_instant&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:beginning_time_instant"><code>&lt;beginning_time_instant&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:end_time_instant"><code>&lt;end_time_instant&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:end_time_instant"><code>&lt;end_time_instant&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -15320,7 +15386,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:iri">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:iri">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -15331,7 +15397,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15351,7 +15417,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:beginning_time_instant">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:beginning_time_instant">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;beginning_time_instant&gt;</code></h4>
 
   <dl>
@@ -15372,7 +15438,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15397,7 +15463,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:end_time_instant">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:end_time_instant">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;end_time_instant&gt;</code></h4>
 
   <dl>
@@ -15418,7 +15484,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15443,7 +15509,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:date_information">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:date_information">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;date_information&gt;</code></h4>
 
   <dl>
@@ -15475,7 +15541,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15495,7 +15561,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:date_type">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:date_type">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;date_type&gt;</code></h4>
 
   <dl>
@@ -15527,7 +15593,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15552,7 +15618,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant">
+<section id="element-ccmm:type-ccmm:time_instant">
   <h4>Element <code>&lt;time_instant&gt;</code></h4>
 
   <dl>
@@ -15563,7 +15629,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:time_reference"></a></dd>
+      <dd><a href="#type-ccmm:type"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15583,27 +15649,27 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
             výběr jednoho prvku [1..1]
             <ul>
                 <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_time"><code>&lt;date_time&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date_time"><code>&lt;date_time&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date"><code>&lt;date&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date"><code>&lt;date&gt;</code></a> [1..1]
       </li>
   </ul>
 
             </ul>
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -15613,7 +15679,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:iri">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:iri">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -15624,7 +15690,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15644,7 +15710,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_time">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date_time">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_time&gt;</code></h4>
 
   <dl>
@@ -15655,7 +15721,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15675,7 +15741,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date&gt;</code></h4>
 
   <dl>
@@ -15686,7 +15752,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15706,7 +15772,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_information">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date_information">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_information&gt;</code></h4>
 
   <dl>
@@ -15738,7 +15804,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -15758,7 +15824,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_type">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date_type">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_type&gt;</code></h4>
 
   <dl>
@@ -15790,7 +15856,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -19664,7 +19730,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -19777,7 +19843,7 @@
         <dt>Význam</dt>
       <dd>
         <a href="#Dataset">Datová sada</a>
-        (Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.)
+        (Konceptuální entita představující publikovaná data.)
       </dd>
 
 
@@ -20219,7 +20285,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -25607,7 +25673,7 @@
             <tr><td>XML schéma</td><td><a href="../contact-details/schema.xsd">../contact-details/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../location/schema.xsd">../location/schema.xsd</a></td></tr>
-            <tr><td>XML schéma</td><td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../terms-of-use/schema.xsd">../terms-of-use/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td></tr>

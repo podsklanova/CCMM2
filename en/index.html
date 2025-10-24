@@ -2824,7 +2824,7 @@
               </tr>
               <tr>
                 <td>Definition</td>
-                <td>A collection of data, published or curated by a single source, and available for access or download in one or more representations.</td>
+                <td>A conceptual entity that represents the information published. </td>
               </tr>
           
                 <tr>
@@ -2833,6 +2833,19 @@
                     <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
                                     profiles
+                
+                class profile
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset">dcat-ap:Dataset</a>)
+                  <br />Definition: <i>A conceptual entity that represents the information published.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                
+                class profile
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
                 class
                 
                 <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
@@ -2845,6 +2858,59 @@
                 <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
                   <br />Definition: <i>Resource published or curated by a single agent.</i>
                   <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializes
+                
+                class profile
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Resource">dcat-dap:Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializes
+                
+                class profile
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CataloguedResource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Resource">dcat-ap:Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                
+                class profile
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Resource">dcat-dap:Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
                   </ul>
           
                       </li>
@@ -14274,7 +14340,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -14652,7 +14718,7 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+          The content of the element is of type <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -15169,7 +15235,7 @@
 <section>
 <h3>Overview of XML Structure</h3>
 <p>
-  This section describes the XSD capturing the structure for <i>Time reference</i>, which is defined in the file <a href="../time_reference/schema.xsd"><code>../time_reference/schema.xsd</code></a>.
+  This section describes the XSD capturing the structure for <i>Time reference</i>, which is defined in the file <a href="../time-reference/schema.xsd"><code>../time-reference/schema.xsd</code></a>.
 </p>
 
   <dl>
@@ -15217,15 +15283,15 @@
 <section>
   <h4>Root Entities of the XSD Schema</h4>
   <ul>
-      <li>element <a href="#element-ccmm:time_reference"><code>time_reference</code></a></li>
+      <li>element <a href="#element-ccmm:element"><code>element</code></a></li>
 
-      <li> complex type <a href="#type-ccmm:time_reference"><code>time_reference</code></a></li>
+      <li> complex type <a href="#type-ccmm:type"><code>type</code></a></li>
   </ul>
 </section>
 
 
-<section id="element-ccmm:time_reference">
-  <h4>Root element <code>&lt;time_reference&gt;</code></h4>
+<section id="element-ccmm:element">
+  <h4>Root element <code>&lt;element&gt;</code></h4>
   <dl>
     
 
@@ -15234,7 +15300,7 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+          The content of the element is of type <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -15248,8 +15314,8 @@
 </section>
 
 
-<section id="type-ccmm:time_reference">
-  <h4>Root complex type <code>time_reference</code></h4>
+<section id="type-ccmm:type">
+  <h4>Root complex type <code>type</code></h4>
   <dl>
     
 
@@ -15258,17 +15324,17 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval">
+<section id="element-ccmm:type-ccmm:time_interval">
   <h4>Element <code>&lt;time_interval&gt;</code></h4>
 
   <dl>
@@ -15279,7 +15345,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_reference"></a></dd>
+      <dd><a href="#type-ccmm:type"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15299,19 +15365,19 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:beginning_time_instant"><code>&lt;beginning_time_instant&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:beginning_time_instant"><code>&lt;beginning_time_instant&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:end_time_instant"><code>&lt;end_time_instant&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:end_time_instant"><code>&lt;end_time_instant&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -15321,7 +15387,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:iri">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:iri">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -15332,7 +15398,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>0..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15352,7 +15418,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:beginning_time_instant">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:beginning_time_instant">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;beginning_time_instant&gt;</code></h4>
 
   <dl>
@@ -15373,7 +15439,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15398,7 +15464,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:end_time_instant">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:end_time_instant">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;end_time_instant&gt;</code></h4>
 
   <dl>
@@ -15419,7 +15485,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15444,7 +15510,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:date_information">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:date_information">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;date_information&gt;</code></h4>
 
   <dl>
@@ -15476,7 +15542,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>0..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15496,7 +15562,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_interval-ccmm:date_type">
+<section id="element-ccmm:type-ccmm:time_interval-ccmm:date_type">
   <h4>Element <code>&lt;time_interval&gt;</code> / <code>&lt;date_type&gt;</code></h4>
 
   <dl>
@@ -15528,7 +15594,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_interval"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_interval"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15553,7 +15619,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant">
+<section id="element-ccmm:type-ccmm:time_instant">
   <h4>Element <code>&lt;time_instant&gt;</code></h4>
 
   <dl>
@@ -15564,7 +15630,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_reference"></a></dd>
+      <dd><a href="#type-ccmm:type"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15584,27 +15650,27 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
             choice of one item [1..1]
             <ul>
                 <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_time"><code>&lt;date_time&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date_time"><code>&lt;date_time&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date"><code>&lt;date&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date"><code>&lt;date&gt;</code></a> [1..1]
       </li>
   </ul>
 
             </ul>
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -15614,7 +15680,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:iri">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:iri">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -15625,7 +15691,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>0..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15645,7 +15711,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_time">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date_time">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_time&gt;</code></h4>
 
   <dl>
@@ -15656,7 +15722,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15676,7 +15742,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date&gt;</code></h4>
 
   <dl>
@@ -15687,7 +15753,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15707,7 +15773,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_information">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date_information">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_information&gt;</code></h4>
 
   <dl>
@@ -15739,7 +15805,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>0..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Element type</dt>
@@ -15759,7 +15825,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_reference-ccmm:time_instant-ccmm:date_type">
+<section id="element-ccmm:type-ccmm:time_instant-ccmm:date_type">
   <h4>Element <code>&lt;time_instant&gt;</code> / <code>&lt;date_type&gt;</code></h4>
 
   <dl>
@@ -15791,7 +15857,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#element-ccmm:time_reference-ccmm:time_instant"></a></dd>
+      <dd><a href="#element-ccmm:type-ccmm:time_instant"></a></dd>
 
     
       <dt>Element type</dt>
@@ -19665,7 +19731,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -19778,7 +19844,7 @@
         <dt>Meaning</dt>
       <dd>
         <a href="#Dataset">Dataset</a>
-        (A collection of data, published or curated by a single source, and available for access or download in one or more representations.)
+        (A conceptual entity that represents the information published. )
       </dd>
 
 
@@ -20220,7 +20286,7 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+          The content of the element is of type <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -25609,7 +25675,7 @@
             <tr><td>XML schema</td><td><a href="../contact-details/schema.xsd">../contact-details/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../location/schema.xsd">../location/schema.xsd</a></td></tr>
-            <tr><td>XML schema</td><td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td></tr>
+            <tr><td>XML schema</td><td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../terms-of-use/schema.xsd">../terms-of-use/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td></tr>
