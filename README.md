@@ -31,6 +31,8 @@ Each subdirectory contains structured models formalized in XSD (schema.xsd). The
 
 On [this link](https://github.com/techlib/CCMM/blob/main/ccmm_sample.xml) is located sample XML representation of CCMM metadata. Sample refers to made up air quality data with links and relation to existing resources, introducing most of the usecases that users may encounter.
 
+The file [`dataset-mini.xml`](https://github.com/techlib/CCMM/blob/examples/examples/dataset-mini/dataset-mini.xml) (currently available in the `examples` branch) provides a minimal valid CCMM dataset example showing only mandatory and conditionally mandatory elements.
+
 ## Dataspecer project
 
 [Project to open in DataSpecer](https://github.com/techlib/CCMM/blob/main/Czech%20Core%20Metadata%20Model-backup.zip) is also part of the repository. You may import it into your instance of Dataspecer.
