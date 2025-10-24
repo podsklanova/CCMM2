@@ -1257,12 +1257,8 @@
 <https://model.ccmm.cz/research-data/Dataset.publicationYear> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "publication year"@en;
+    skos:definition "The year when the dataset was or will be made publicly available."@en;
     skos:scopeNote "If TimeReference with dateType \"Issued\" is present, year in that date and publicationYear must be the same“"@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>
-];
     dsv:cardinality cardinality:11;
     dsv:property <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>;
     dsv:domain :Dataset;

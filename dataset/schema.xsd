@@ -99,7 +99,7 @@
       <xs:element name="publication_year" type="xs:gYear" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            publication year - The year when the item was or will be made publicly available.
+            publication year - The year when the dataset was or will be made publicly available.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
