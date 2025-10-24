@@ -4,7 +4,7 @@
   <xs:include schemaLocation="../identifier/schema.xsd"/>
   <xs:include schemaLocation="../alternate-title/schema.xsd"/>
   <xs:include schemaLocation="../resource-to-agent-relationship/schema.xsd"/>
-  <xs:include schemaLocation="../time_reference/schema.xsd"/>
+  <xs:include schemaLocation="../time-reference/schema.xsd"/>
   <xs:include schemaLocation="../resource-type/schema.xsd"/>
   <xs:include schemaLocation="../language-system/schema.xsd"/>
   <xs:include schemaLocation="../terms-of-use/schema.xsd"/>
@@ -22,7 +22,7 @@
         قائمة بيانات - قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها
       </xs:documentation>
       <xs:documentation xml:lang="cs">
-        Datová sada - Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.
+        Datová sada - Konceptuální entita představující publikovaná data.
       </xs:documentation>
       <xs:documentation xml:lang="da">
         Datasæt - En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
@@ -31,7 +31,7 @@
         Σύνολο Δεδομένων - Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.
       </xs:documentation>
       <xs:documentation xml:lang="en">
-        Dataset - A collection of data, published or curated by a single source, and available for access or download in one or more representations.
+        Dataset - A conceptual entity that represents the information published. 
       </xs:documentation>
       <xs:documentation xml:lang="es">
         Conjunto de datos - Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.
@@ -103,7 +103,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element maxOccurs="unbounded" name="time_reference" type="ccmm:time_reference" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference">
+      <xs:element maxOccurs="unbounded" name="time_reference" type="ccmm:type" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has time reference - Reference to events related to the dataset.
