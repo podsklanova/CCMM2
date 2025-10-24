@@ -3,7 +3,7 @@
   <xs:include schemaLocation="../time-instant/schema.xsd"/>
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:include schemaLocation="../date-type/schema.xsd"/>
-  <xs:complexType name="time_reference">
+  <xs:complexType name="type">
     <xs:choice>
       <xs:element name="time_interval">
         <xs:complexType sawsdl:modelReference="http://www.w3.org/2006/time#Interval">
@@ -105,5 +105,5 @@
       </xs:element>
     </xs:choice>
   </xs:complexType>
-  <xs:element name="time_reference" type="ccmm:time_reference"/>
+  <xs:element name="element" type="ccmm:type"/>
 </xs:schema>
