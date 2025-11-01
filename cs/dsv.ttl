@@ -1257,8 +1257,12 @@
 <https://model.ccmm.cz/research-data/Dataset.publicationYear> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "publication year"@en;
-    skos:definition "The year when the dataset was or will be made publicly available."@en;
     skos:scopeNote "If TimeReference with dateType \"Issued\" is present, year in that date and publicationYear must be the same“"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>
+];
     dsv:cardinality cardinality:11;
     dsv:property <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>;
     dsv:domain :Dataset;
@@ -1401,15 +1405,12 @@
 <https://model.ccmm.cz/research-data/Distribution.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title>
-];
+    skos:definition "A name given to the distribution."@en;
     dsv:cardinality cardinality:11;
+    dsv:property dct:title;
     dsv:domain :Distribution;
     a dsv:DatatypePropertyProfile;
-    dsv:datatypePropertyRange rdf:langString.
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
 
 <https://model.ccmm.cz/research-data/Distribution-DownloadableFile.byteSize> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1949,5 +1950,21 @@
     skos:definition "Label of the description type."@en;
     dsv:property rdfs:label;
     dsv:domain :DescriptionType;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://model.ccmm.cz/research-data/ChecksumAlgorithm.label> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource rdfs:label
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource rdfs:label
+];
+    dsv:property rdfs:label;
+    dsv:domain :ChecksumAlgorithm;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
