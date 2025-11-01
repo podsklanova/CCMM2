@@ -19,19 +19,12 @@
           </xs:annotation>
           <xs:sequence>
             <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-            <xs:element name="title">
+            <xs:element name="title" type="xs:string" sawsdl:modelReference="http://purl.org/dc/terms/title">
               <xs:annotation>
                 <xs:documentation xml:lang="en">
-                  title
+                  title - A name given to the distribution.
                 </xs:documentation>
               </xs:annotation>
-              <xs:complexType>
-                <xs:simpleContent>
-                  <xs:extension base="xs:string">
-                    <xs:attribute ref="xml:lang" use="required"/>
-                  </xs:extension>
-                </xs:simpleContent>
-              </xs:complexType>
             </xs:element>
             <xs:element minOccurs="0" maxOccurs="unbounded" name="access_service" type="ccmm:data_service" sawsdl:modelReference="http://www.w3.org/ns/dcat#accessService">
               <xs:annotation>
@@ -93,19 +86,12 @@
           </xs:annotation>
           <xs:sequence>
             <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-            <xs:element name="title">
+            <xs:element name="title" type="xs:string" sawsdl:modelReference="http://purl.org/dc/terms/title">
               <xs:annotation>
                 <xs:documentation xml:lang="en">
-                  title
+                  title - A name given to the distribution.
                 </xs:documentation>
               </xs:annotation>
-              <xs:complexType>
-                <xs:simpleContent>
-                  <xs:extension base="xs:string">
-                    <xs:attribute ref="xml:lang" use="required"/>
-                  </xs:extension>
-                </xs:simpleContent>
-              </xs:complexType>
             </xs:element>
             <xs:element maxOccurs="unbounded" name="access_url" type="ccmm:file" sawsdl:modelReference="http://www.w3.org/ns/dcat#accessURL">
               <xs:annotation>
