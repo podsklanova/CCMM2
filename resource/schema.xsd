@@ -3,7 +3,7 @@
   <xs:include schemaLocation="../identifier/schema.xsd"/>
   <xs:include schemaLocation="../alternate-title/schema.xsd"/>
   <xs:include schemaLocation="../resource-to-agent-relationship/schema.xsd"/>
-  <xs:include schemaLocation="../time_reference/schema.xsd"/>
+  <xs:include schemaLocation="../time-reference/schema.xsd"/>
   <xs:include schemaLocation="../resource-type/schema.xsd"/>
   <xs:include schemaLocation="../resource-relation-type/schema.xsd"/>
   <xs:complexType name="resource" sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#Resource">
