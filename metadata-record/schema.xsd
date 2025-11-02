@@ -76,7 +76,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="conforms_to_standard" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
+      <xs:element maxOccurs="unbounded" name="conforms_to_standard" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             conforms to standard - An established standard to which the metadata record conforms.
