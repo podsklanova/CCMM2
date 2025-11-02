@@ -677,7 +677,7 @@
     skos:definition "An established standard to which the metadata record conforms."@en;
     skos:scopeNote "This property SHOULD be used to indicate the standard or profile that was used to describe cataloged resource content."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.conformsTo>;
-    dsv:cardinality cardinality:0n;
+    dsv:cardinality cardinality:1n;
     dsv:domain :MetadataRecord;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ApplicationProfile.
