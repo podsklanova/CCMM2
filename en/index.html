@@ -20256,7 +20256,24 @@
 <p>
   List of schemas that are imported and used by this schema.
 </p>
-  <i>Nothing is imported.</i>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Schema Location</th>
+        <th>Documentation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../checksum-algorithm/schema.xsd">../checksum-algorithm/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+    </tbody>
+  </table>
 </section>
 
 <section>
@@ -20421,11 +20438,16 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+          The content of the element is of type <a href="#type-ccmm:checksum_algorithm"><code>ccmm:checksum_algorithm</code></a>.
       </dd>
 
 
-    
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#ChecksumAlgorithm">Checksum algorithm</a>
+        (Algorithm used for Checksums.)
+      </dd>
+
 
 
     
@@ -23115,7 +23137,24 @@
 <p>
   List of schemas that are imported and used by this schema.
 </p>
-  <i>Nothing is imported.</i>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Schema Location</th>
+        <th>Documentation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
+          <td></td>
+        </tr>
+    </tbody>
+  </table>
 </section>
 
 <section>
@@ -23169,6 +23208,9 @@
       <li>
           element <a href="#element-ccmm:checksum_algorithm-ccmm:iri"><code>&lt;iri&gt;</code></a> [1..1]
       </li>
+      <li>
+          element <a href="#element-ccmm:checksum_algorithm-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
+      </li>
   </ul>
 
 
@@ -23193,6 +23235,47 @@
       <dt>Content</dt>
       <dd>
           The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:checksum_algorithm-ccmm:label">
+  <h4>Element <code>&lt;label&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          property
+          
+          
+        </i>
+
+          <a href="#ChecksumAlgorithm.label"><strong>label</strong></a>
+          (A human-readable name for the subject.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..*</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:checksum_algorithm"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href=""><code></code></a>.
       </dd>
 
 
@@ -25073,7 +25156,7 @@
 <section>
 <h3>Overview of XML Structure</h3>
 <p>
-  This section describes the XSD capturing the structure for <i>Time representation</i>, which is defined in the file <a href="../time_representation/schema.xsd"><code>../time_representation/schema.xsd</code></a>.
+  This section describes the XSD capturing the structure for <i>Time representation</i>, which is defined in the file <a href="../time-representation/schema.xsd"><code>../time-representation/schema.xsd</code></a>.
 </p>
 
   <dl>
@@ -25115,15 +25198,15 @@
 <section>
   <h4>Root Entities of the XSD Schema</h4>
   <ul>
-      <li>element <a href="#element-ccmm:time_representation"><code>time_representation</code></a></li>
+      <li>element <a href="#element-ccmm:element"><code>element</code></a></li>
 
-      <li> complex type <a href="#type-ccmm:time_representation"><code>time_representation</code></a></li>
+      <li> complex type <a href="#type-ccmm:type"><code>type</code></a></li>
   </ul>
 </section>
 
 
-<section id="element-ccmm:time_representation">
-  <h4>Root element <code>&lt;time_representation&gt;</code></h4>
+<section id="element-ccmm:element">
+  <h4>Root element <code>&lt;element&gt;</code></h4>
   <dl>
     
 
@@ -25132,7 +25215,7 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:time_representation"><code>ccmm:time_representation</code></a>.
+          The content of the element is of type <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -25146,8 +25229,8 @@
 </section>
 
 
-<section id="type-ccmm:time_representation">
-  <h4>Root complex type <code>time_representation</code></h4>
+<section id="type-ccmm:type">
+  <h4>Root complex type <code>type</code></h4>
   <dl>
     
 
@@ -25156,17 +25239,17 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-ccmm:time_representation-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_representation-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:type-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-ccmm:time_representation-ccmm:time_interval">
+<section id="element-ccmm:type-ccmm:time_interval">
   <h4>Element <code>&lt;time_interval&gt;</code></h4>
 
   <dl>
@@ -25177,7 +25260,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_representation"></a></dd>
+      <dd><a href="#type-ccmm:type"></a></dd>
 
     
       <dt>Element type</dt>
@@ -25202,7 +25285,7 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_representation-ccmm:time_instant">
+<section id="element-ccmm:type-ccmm:time_instant">
   <h4>Element <code>&lt;time_instant&gt;</code></h4>
 
   <dl>
@@ -25213,7 +25296,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>1..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_representation"></a></dd>
+      <dd><a href="#type-ccmm:type"></a></dd>
 
     
       <dt>Element type</dt>
@@ -25427,7 +25510,7 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:time_representation"><code>ccmm:time_representation</code></a>.
+          The content of the element is of type <a href="#type-ccmm:type"><code>ccmm:type</code></a>.
       </dd>
 
 
@@ -25620,7 +25703,7 @@
             <tr><td>XML schema</td><td><a href="../distribution-data-service/schema.xsd">../distribution-data-service/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../person/schema.xsd">../person/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../distribution-downloadable-file/schema.xsd">../distribution-downloadable-file/schema.xsd</a></td></tr>
-            <tr><td>XML schema</td><td><a href="../time_representation/schema.xsd">../time_representation/schema.xsd</a></td></tr>
+            <tr><td>XML schema</td><td><a href="../time-representation/schema.xsd">../time-representation/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
