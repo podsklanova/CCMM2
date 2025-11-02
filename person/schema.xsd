@@ -11,7 +11,7 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has identifier - has identifier
@@ -39,7 +39,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_contact_point" type="ccmm:contact_details" sawsdl:modelReference="http://www.w3.org/ns/dcat#contactPoint">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="contact_point" type="ccmm:contact_details" sawsdl:modelReference="http://www.w3.org/ns/dcat#contactPoint">
         <xs:annotation>
           <xs:documentation xml:lang="ar">
             عنوان اتصال - تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard
@@ -70,7 +70,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_affiliation" type="ccmm:organization" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="affiliation" type="ccmm:organization" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has affiliation - Affiliation of the person to an organization.

@@ -19,7 +19,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_access_service" type="ccmm:data_service" sawsdl:modelReference="http://www.w3.org/ns/dcat#accessService">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="access_service" type="ccmm:data_service" sawsdl:modelReference="http://www.w3.org/ns/dcat#accessService">
         <xs:annotation>
           <xs:documentation xml:lang="cs">
             služba pro přístup k datům - Umístění či přístupový bod zpřístupňující distribuci datové sady.
@@ -45,7 +45,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_documentation" type="ccmm:documentation" sawsdl:modelReference="http://xmlns.com/foaf/0.1/page">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="documentation" type="ccmm:documentation" sawsdl:modelReference="http://xmlns.com/foaf/0.1/page">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has documentation - A page or document about this Distribution.

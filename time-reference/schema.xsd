@@ -11,7 +11,7 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-      <xs:element name="has_temporal_representation" type="ccmm:time_representation" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation">
+      <xs:element name="temporal_representation" type="ccmm:type" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has temporal representation
