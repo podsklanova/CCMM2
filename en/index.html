@@ -11612,8 +11612,8 @@
                                   specializes
                 
                 class profile
-                <a href="#TimeReference">Time reference</a> (<a href="https://model.ccmm.cz/research-data/TimeReference">https://model.ccmm.cz/research-data/TimeReference</a>)
-                  <br />Definition: <i>A temporal interval or instant on which something relevant to the resource has happened.</i>
+                <a href="#TimeRepresentation">Time representation</a> (<a href="https://model.ccmm.cz/research-data/TimeRepresentation">https://model.ccmm.cz/research-data/TimeRepresentation</a>)
+                  <br />Definition: <i>Representation of time reference as a temporal interval or instant on which something relevant to the resource has happened.</i>
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -11831,8 +11831,8 @@
                                   specializes
                 
                 class profile
-                <a href="#TimeReference">Time reference</a> (<a href="https://model.ccmm.cz/research-data/TimeReference">https://model.ccmm.cz/research-data/TimeReference</a>)
-                  <br />Definition: <i>A temporal interval or instant on which something relevant to the resource has happened.</i>
+                <a href="#TimeRepresentation">Time representation</a> (<a href="https://model.ccmm.cz/research-data/TimeRepresentation">https://model.ccmm.cz/research-data/TimeRepresentation</a>)
+                  <br />Definition: <i>Representation of time reference as a temporal interval or instant on which something relevant to the resource has happened.</i>
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -12011,7 +12011,7 @@
                 <td>Profiled class IRI(s)</td>
                 <td>
                     
-                    <a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>
+                    <a href="https://model.ccmm.cz/vocabulary/ccmm#TimeReference">https://model.ccmm.cz/vocabulary/ccmm#TimeReference</a>
                 </td>
               </tr>
               <tr>
@@ -12024,7 +12024,7 @@
               </tr>
               <tr>
                 <td>Definition</td>
-                <td>A temporal interval or instant on which something relevant to the resource has happened.</td>
+                <td>An object representing time reference relevant to some event related to the resource has happened.</td>
               </tr>
           
                 <tr>
@@ -12035,8 +12035,8 @@
                                     profiles
                 class
                 
-                <a href="http://www.w3.org/2006/time#TemporalEntity">Temporal entity</a> (<a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>)
-                  <br />Definition: <i>A temporal interval or instant.</i>
+                <a href="https://techlib.github.io/CCMM-V/en/#TimeReference">Time reference</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#TimeReference">https://model.ccmm.cz/vocabulary/ccmm#TimeReference</a>)
+                  <br />Definition: <i>A date on which something relative to the resource has happened.</i>
                   <ul style="list-style-type: disclosure-closed;">
                   </ul>
           
@@ -12186,7 +12186,114 @@
                     <td></td>
                   </tr>
                 </table>
+              </section>    <section id="TimeReference.hasTemporalRepresentation">
+                <h4>has temporal representation</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation">https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/TimeReference.hasTemporalRepresentation">https://model.ccmm.cz/research-data/TimeReference.hasTemporalRepresentation</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>has temporal representation</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#TimeReference">Time reference</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#TimeRepresentation">Time representation</a>
+              
+                          [1..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#hasTemporalRepresentation">has temporal representation</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation">https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
               </section>
+          </section>          <section id="TimeRepresentation">
+            <h4>Time representation</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/TimeRepresentation">https://model.ccmm.cz/research-data/TimeRepresentation</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Time representation</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>Representation of time reference as a temporal interval or instant on which something relevant to the resource has happened.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/2006/time#TemporalEntity">Temporal entity</a> (<a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>)
+                  <br />Definition: <i>A temporal interval or instant.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#TimeReference"></a> → <a href="#TimeReference.hasTemporalRepresentation"></a></li>
+              </ul>
+          
+          
           </section>          <section id="ValidationResult">
             <h4>Validation result</h4>
           
@@ -13100,7 +13207,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time-interval/schema.xsd">../time-interval/schema.xsd</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -13484,8 +13591,8 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#TimeInterval">Time interval</a>
-        (A temporal entity with an extent or duration)
+        <a href="#TimeReference">Time reference</a>
+        (An object representing time reference relevant to some event related to the resource has happened.)
       </dd>
 
 
@@ -13965,191 +14072,6 @@
       <dd>
         <a href="#AlternateTitleType">Location relation type</a>
         (Relation of the dataset to the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-
-</section>
-      </section>
-      <section>
-      <h2>
-        Data structure specification for
-        Time reference
-      </h2>
-      <p>Data structure for Time reference. A temporal interval or instant on which something relevant to the resource has happened.</p>
-
-      
-
-
-
-
-
-
-<section>
-<h3>Overview of XML Structure</h3>
-<p>
-  This section describes the XSD capturing the structure for <i>Time reference</i>, which is defined in the file <a href="../time_reference/schema.xsd"><code>../time_reference/schema.xsd</code></a>.
-</p>
-
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.0</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
-
-<section>
-<h4>Imports</h4>
-<p>
-  List of schemas that are imported and used by this schema.
-</p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Schema Location</th>
-        <th>Documentation</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time-interval/schema.xsd">../time-interval/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time-instant/schema.xsd">../time-instant/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h4>Root Entities of the XSD Schema</h4>
-  <ul>
-      <li>element <a href="#element-ccmm:time_reference"><code>time_reference</code></a></li>
-
-      <li> complex type <a href="#type-ccmm:time_reference"><code>time_reference</code></a></li>
-  </ul>
-</section>
-
-
-<section id="element-ccmm:time_reference">
-  <h4>Root element <code>&lt;time_reference&gt;</code></h4>
-  <dl>
-    
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-      </dl>
-</section>
-
-
-<section id="type-ccmm:time_reference">
-  <h4>Root complex type <code>time_reference</code></h4>
-  <dl>
-    
-
-        <dt>Content  - choice of one element from the set
-
-</dt>
-      <ul style="margin-top: 0;">
-      <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:time_reference-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
-      </li>
-  </ul>
-
-
-  </dl>
-</section>
-<section id="element-ccmm:time_reference-ccmm:time_interval">
-  <h4>Element <code>&lt;time_interval&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>1..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_reference"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:time_interval"><code>ccmm:time_interval</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#TimeInterval">Time interval</a>
-        (A temporal entity with an extent or duration)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:time_reference-ccmm:time_instant">
-  <h4>Element <code>&lt;time_instant&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>1..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_reference"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:time_instant"><code>ccmm:time_instant</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#TimeInstant">Time instant</a>
-        (A temporal entity with zero extent or duration.)
       </dd>
 
 
@@ -18009,7 +17931,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../time-interval/schema.xsd">../time-interval/schema.xsd</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -18570,8 +18492,8 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#TimeInterval">Time interval</a>
-        (A temporal entity with an extent or duration)
+        <a href="#TimeReference">Time reference</a>
+        (An object representing time reference relevant to some event related to the resource has happened.)
       </dd>
 
 
@@ -22756,24 +22678,7 @@
 <p>
   List of schemas that are imported and used by this schema.
 </p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Schema Location</th>
-        <th>Documentation</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>xml</code></td>
-            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
-          <td></td>
-        </tr>
-    </tbody>
-  </table>
+  <i>Nothing is imported.</i>
 </section>
 
 <section>
@@ -22840,9 +22745,6 @@
   </ul>
 
             </ul>
-      </li>
-      <li>
-          element <a href="#element-ccmm:time_instant-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
       </li>
   </ul>
 
@@ -22942,58 +22844,6 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_instant-ccmm:date_information">
-  <h4>Element <code>&lt;date_information&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          
-          from a more general class
-          
-        </i>
-
-          <a href="#TimeReference"><strong>Time reference</strong></a>
-          (A temporal interval or instant on which something relevant to the resource has happened.)
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          having property
-          
-          
-        </i>
-
-          <a href="#TimeReference.dateInformation"><strong>date information</strong></a>
-          (Additional information to the date in text form.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_instant"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href=""><code></code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
 
 </section>
       </section>
@@ -23037,18 +22887,6 @@
       </tr>
     </thead>
     <tbody>
-        <tr>
-            <td><code>xml</code></td>
-            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
-          <td></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
-          <td><a href="../date-type/schema.xsd">../date-type/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
@@ -23111,16 +22949,10 @@
           element <a href="#element-ccmm:time_interval-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:time_interval-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:time_interval-ccmm:date_type"><code>&lt;date_type&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:time_interval-ccmm:beginning"><code>&lt;beginning&gt;</code></a> [1..1]
       </li>
       <li>
           element <a href="#element-ccmm:time_interval-ccmm:end"><code>&lt;end&gt;</code></a> [1..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:time_interval-ccmm:beginning"><code>&lt;beginning&gt;</code></a> [1..1]
       </li>
   </ul>
 
@@ -23158,117 +22990,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_interval-ccmm:date_information">
-  <h4>Element <code>&lt;date_information&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          
-          from a more general class
-          
-        </i>
-
-          <a href="#TimeReference"><strong>Time reference</strong></a>
-          (A temporal interval or instant on which something relevant to the resource has happened.)
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          having property
-          
-          
-        </i>
-
-          <a href="#TimeReference.dateInformation"><strong>date information</strong></a>
-          (Additional information to the date in text form.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_interval"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href=""><code></code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:time_interval-ccmm:date_type">
-  <h4>Element <code>&lt;date_type&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          
-          from a more general class
-          
-        </i>
-
-          <a href="#TimeReference"><strong>Time reference</strong></a>
-          (A temporal interval or instant on which something relevant to the resource has happened.)
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          having property
-          
-          
-        </i>
-
-          <a href="#TimeReference.hasDateType"><strong>has date type</strong></a>
-          (Reference to the codelist of date types.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>1..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:time_interval"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:date_type"><code>ccmm:date_type</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#AlternateTitleType">Date type</a>
-        (Type of a date in relation to the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:time_interval-ccmm:end">
-  <h4>Element <code>&lt;end&gt;</code></h4>
+<section id="element-ccmm:time_interval-ccmm:beginning">
+  <h4>Element <code>&lt;beginning&gt;</code></h4>
 
   <dl>
     <dt>Meaning</dt>
@@ -23280,8 +23003,8 @@
           
         </i>
 
-          <a href="#TimeInterval.hasEnd"><strong>has end</strong></a>
-          (Time instant representing the end of a temporal interval.)
+          <a href="#TimeInterval.hasBeginning"><strong>has beginning</strong></a>
+          (Time instant representing the beginning of a temporal interval.)
 
     </dd>
 
@@ -23313,8 +23036,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:time_interval-ccmm:beginning">
-  <h4>Element <code>&lt;beginning&gt;</code></h4>
+<section id="element-ccmm:time_interval-ccmm:end">
+  <h4>Element <code>&lt;end&gt;</code></h4>
 
   <dl>
     <dt>Meaning</dt>
@@ -23326,8 +23049,8 @@
           
         </i>
 
-          <a href="#TimeInterval.hasBeginning"><strong>has beginning</strong></a>
-          (Time instant representing the beginning of a temporal interval.)
+          <a href="#TimeInterval.hasEnd"><strong>has end</strong></a>
+          (Time instant representing the end of a temporal interval.)
 
     </dd>
 
@@ -25333,6 +25056,485 @@
 
 </section>
       </section>
+      <section>
+      <h2>
+        Data structure specification for
+        Time representation
+      </h2>
+      <p>Data structure for Time representation. Representation of time reference as a temporal interval or instant on which something relevant to the resource has happened.</p>
+
+      
+
+
+
+
+
+
+<section>
+<h3>Overview of XML Structure</h3>
+<p>
+  This section describes the XSD capturing the structure for <i>Time representation</i>, which is defined in the file <a href="../time_representation/schema.xsd"><code>../time_representation/schema.xsd</code></a>.
+</p>
+
+  <dl>
+    <dt>Defined in namespace</dt>
+    <dd><code>https://schema.ccmm.cz/research-data/1.0</code> (preferred prefix: <code>ccmm</code>)</dd>
+  </dl>
+
+<section>
+<h4>Imports</h4>
+<p>
+  List of schemas that are imported and used by this schema.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Schema Location</th>
+        <th>Documentation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../time-interval/schema.xsd">../time-interval/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../time-instant/schema.xsd">../time-instant/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h4>Root Entities of the XSD Schema</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:time_representation"><code>time_representation</code></a></li>
+
+      <li> complex type <a href="#type-ccmm:time_representation"><code>time_representation</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:time_representation">
+  <h4>Root element <code>&lt;time_representation&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:time_representation"><code>ccmm:time_representation</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:time_representation">
+  <h4>Root complex type <code>time_representation</code></h4>
+  <dl>
+    
+
+        <dt>Content  - choice of one element from the set
+
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:time_representation-ccmm:time_interval"><code>&lt;time_interval&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:time_representation-ccmm:time_instant"><code>&lt;time_instant&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:time_representation-ccmm:time_interval">
+  <h4>Element <code>&lt;time_interval&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>1..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:time_representation"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:time_interval"><code>ccmm:time_interval</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#TimeInterval">Time interval</a>
+        (A temporal entity with an extent or duration)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:time_representation-ccmm:time_instant">
+  <h4>Element <code>&lt;time_instant&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>1..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:time_representation"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:time_instant"><code>ccmm:time_instant</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#TimeInstant">Time instant</a>
+        (A temporal entity with zero extent or duration.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
+      <section>
+      <h2>
+        Data structure specification for
+        Time reference
+      </h2>
+      <p>Data structure for Time reference. An object representing time reference relevant to some event related to the resource has happened.</p>
+
+      
+
+
+
+
+
+
+<section>
+<h3>Overview of XML Structure</h3>
+<p>
+  This section describes the XSD capturing the structure for <i>Time reference</i>, which is defined in the file <a href="../time-reference/schema.xsd"><code>../time-reference/schema.xsd</code></a>.
+</p>
+
+  <dl>
+    <dt>Defined in namespace</dt>
+    <dd><code>https://schema.ccmm.cz/research-data/1.0</code> (preferred prefix: <code>ccmm</code>)</dd>
+  </dl>
+
+<section>
+<h4>Imports</h4>
+<p>
+  List of schemas that are imported and used by this schema.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Schema Location</th>
+        <th>Documentation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../time-interval/schema.xsd">../time-interval/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.0">https://schema.ccmm.cz/research-data/1.0</a></td>
+          <td><a href="../date-type/schema.xsd">../date-type/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
+          <td></td>
+        </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h4>Root Entities of the XSD Schema</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:time_reference"><code>time_reference</code></a></li>
+
+      <li> complex type <a href="#type-ccmm:time_reference"><code>time_reference</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:time_reference">
+  <h4>Root element <code>&lt;time_reference&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:time_reference">
+  <h4>Root complex type <code>time_reference</code></h4>
+  <dl>
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#TimeReference">Time reference</a>
+        (An object representing time reference relevant to some event related to the resource has happened.)
+      </dd>
+
+
+        <dt>Content 
+ - elements in this order
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:time_reference-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:time_reference-ccmm:has_temporal_representation"><code>&lt;has_temporal_representation&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:time_reference-ccmm:has_date_type"><code>&lt;has_date_type&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:time_reference-ccmm:date_information"><code>&lt;date_information&gt;</code></a> [0..1]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:time_reference-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:time_reference"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:time_reference-ccmm:has_temporal_representation">
+  <h4>Element <code>&lt;has_temporal_representation&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          property
+          
+          
+        </i>
+
+          <a href="#TimeReference.hasTemporalRepresentation"><strong>has temporal representation</strong></a>
+          
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>1..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:time_reference"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:time_representation"><code>ccmm:time_representation</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#TimeInterval">Time interval</a>
+        (A temporal entity with an extent or duration)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:time_reference-ccmm:has_date_type">
+  <h4>Element <code>&lt;has_date_type&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          property
+          
+          
+        </i>
+
+          <a href="#TimeReference.hasDateType"><strong>has date type</strong></a>
+          (Reference to the codelist of date types.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>1..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:time_reference"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:date_type"><code>ccmm:date_type</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#AlternateTitleType">Date type</a>
+        (Type of a date in relation to the resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:time_reference-ccmm:date_information">
+  <h4>Element <code>&lt;date_information&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          property
+          
+          
+        </i>
+
+          <a href="#TimeReference.dateInformation"><strong>date information</strong></a>
+          (Additional information to the date in text form.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:time_reference"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href=""><code></code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
 
     <section>
       <h2>Used prefixes</h2>
@@ -25378,7 +25580,6 @@
             <tr><td>XML schema</td><td><a href="../contact-details/schema.xsd">../contact-details/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../location/schema.xsd">../location/schema.xsd</a></td></tr>
-            <tr><td>XML schema</td><td><a href="../time_reference/schema.xsd">../time_reference/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../terms-of-use/schema.xsd">../terms-of-use/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td></tr>
@@ -25419,6 +25620,8 @@
             <tr><td>XML schema</td><td><a href="../distribution-data-service/schema.xsd">../distribution-data-service/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../person/schema.xsd">../person/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../distribution-downloadable-file/schema.xsd">../distribution-downloadable-file/schema.xsd</a></td></tr>
+            <tr><td>XML schema</td><td><a href="../time_representation/schema.xsd">../time_representation/schema.xsd</a></td></tr>
+            <tr><td>XML schema</td><td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>

@@ -403,10 +403,10 @@
     skos:scopeNote "Use IRI identifier from the register http://purl.org/coar/access_right/."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>;
     a dsv:ClassProfile.
-:TimeReference dct:isPartOf <https://model.ccmm.cz/research-data/>;
+:TimeRepresentation dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:prefLabel "Time reference"@en, "entidad temporal"@es;
-    skos:definition "A temporal interval or instant on which something relevant to the resource has happened."@en, "Un intervalo temporal o un instante."@es;
+    skos:prefLabel "Time representation"@en, "entidad temporal"@es;
+    skos:definition "Representation of time reference as a temporal interval or instant on which something relevant to the resource has happened."@en, "Un intervalo temporal o un instante."@es;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/2006/time#TemporalEntity>.
 :TimeInstant dct:isPartOf <https://model.ccmm.cz/research-data/>;
@@ -414,13 +414,13 @@
     skos:prefLabel "Time instant"@en, "instante de tiempo."@es;
     skos:definition "A temporal entity with zero extent or duration."@en, "Una entidad temporal con una extensión o duración cero."@es;
     skos:scopeNote "Use for representation of time reference with zero extent or duration."@en;
-    dsv:specializes :TimeReference;
+    dsv:specializes :TimeRepresentation;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/2006/time#Instant>.
 :TimeInterval dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:scopeNote "Use for representation of time reference represented as an interval. Interval is represented by beginning and end time instants."@en;
-    dsv:specializes :TimeReference, :TimeReference;
+    dsv:specializes :TimeRepresentation, :TimeRepresentation;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -474,6 +474,16 @@
 ];
     a dsv:ClassProfile;
     dsv:class <https://model.ccmm.cz/vocabulary/datacite#DescriptionType>.
+:TimeReference dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:definition "An object representing time reference relevant to some event related to the resource has happened."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#TimeReference>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://model.ccmm.cz/vocabulary/ccmm#TimeReference>.
 
 <https://model.ccmm.cz/research-data/Dataset.hasRelatedResource> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1229,6 +1239,20 @@
     dsv:domain :Resource;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :AlternateTitle.
+
+<https://model.ccmm.cz/research-data/TimeReference.hasTemporalRepresentation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has temporal representation"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation>;
+    dsv:domain :TimeReference;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :TimeRepresentation.
 
 <https://model.ccmm.cz/research-data/Dataset.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
