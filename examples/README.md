@@ -1,19 +1,21 @@
-# CCMM Examples
+# CCMM Examples (v1.1.0)
+
+**IMPORTANT NOTE** (7th November 2025): These examples were originally prepared against CCMM 1.0.0 and have now been ported to be updated for CCMM 1.1.0. Element ordering, property names, and/or cardinalities may differ; each example has to be revalidated.
 
 This branch contains **illustrative examples of CCMM XML**, created by converting source records 
 from the Czech national “catch-all” repository of datasets:  
 https://data.narodni-repozitar.cz/
 
-In addition, a model reference record in `examples/ccmm_sample.xml` illustrates both mandatory 
-and optional elements defined by the CCMM model. It can be used for future JSON→XML conversions and documentation alignment.  
-The file `dataset-mini.xml` then provides a minimal valid CCMM dataset example showing only mandatory and profile-mandatory elements.
+In addition, a model reference record in `examples/ccmm_sample.xml` illustrates both **mandatory 
+and optional elements** defined by the **CCMM 1.1.0** model. It can be used for **future JSON→XML conversions**, **validation** and **documentation alignment**.  
+The file `dataset-mini.xml` then provides a **minimal valid CCMM 1.1.0** dataset example showing only **mandatory** and **profile-mandatory** elements.
 
 ## What this is
 
-- A small collection of **example CCMM XML files** showing how real-world repository records can be represented in the CCMM profile.
+- A small collection of **example CCMM XML 1.1.0 files** showing how real-world repository records can be represented in the CCMM profile.
 - The examples are intentionally diverse and annotated via XML comments where useful. They are **not normative** and may highlight open modelling questions.
 - The file "dataset-mini.xml" is an example of a valid CCMM dataset containing only the minimal set of mandatory and conditionally mandatory elements.
-- The file "ccmm_sample.xml" serves as a model reference record based on the CCMM schema. It is a fictional example that includes both mandatory and optional dataset elements and can be used  
+- The file "ccmm_sample.xml" serves as a model reference record based on the CCMM schema (v1.1.0). It is a fictional example that includes both mandatory and optional dataset elements and can be used  
 as a basis for future JSON→XML conversions and documentation consistency checks.
 
 ## Data source & conversion
@@ -56,6 +58,6 @@ xml-validate.py # optional helper script
 
 ## Validation (optional)
 
-`xml-validate.py` can validate example CCMM XML files against the profile XSD.  
+`xml-validate.py` can validate example CCMM XML files against the CCMM 1.1.0 profile XSD.  
 Requirements: Python 3.10+; `pip install xmlschema`.  
 The script uses `dataset/schema.xsd` at the CCMM repo root and prints `Valid XML` or a list of schema errors.
