@@ -36,6 +36,9 @@
     <conforms_to_standard>
         <iri>https://schema.ccmm.cz/research-data/1.0.1</iri>
     </conforms_to_standard>
+       <original_repository>
+            <iri>https://data.narodni-repozitar.cz</iri>
+       </original_repository>
   </metadata_identification>
 
   <!-- (1-1) Identifier -->
