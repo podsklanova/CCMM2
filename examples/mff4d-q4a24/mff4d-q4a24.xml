@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Poznámka: Tento komentář je pouze informativní a není součástí metadat.
+     CS: Převod z JSON (mff4d-q4a24) → CCMM XML
+     Autor převodu: Pavel Kotlík
+     Datum převodu: 2025-10-16
+     Zdroj JSON/URI: https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24
+
+EN: Conversion JSON (mff4d-q4a24) → CCMM XML
+     Converted by: Pavel Kotlík
+     Conversion date: 2025-10-16
+     Source JSON/URI: https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24
+-->
+<dataset
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.0 https://model.ccmm.cz/research-data/schema/dataset/schema.xsd"
+    xmlns="https://schema.ccmm.cz/research-data/1.0"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- IRI for Dataset should ideally be a DOI (if available) -->
+    <iri>https://doi.org/10.48700/datst.mff4d-q4a24</iri>
+    <metadata_identification>
+        <!-- references the original "metadata" IRI -->
+        <iri>https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24</iri>
+        <!-- This metadata record is in English Q: does this mean that rest of the metadata record
+        wont have english mutation for labels? And in analogy, how is it with language of the dataset that can
+        also be in English only -->
+        <language>
+            <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
+            <label xml:lang="en">English</label>
+        </language>
+        <!-- Qualified relation — Data Manager. "Unknown" placeholder used when the information is absent or embargoed -->
+        <qualified_relation>
+            <relation>
+                <person>
+                    <!-- DataCite standard values for unknown information -->
+                    <name>:unkn</name>
+                    <given_name>:unkn</given_name>
+                    <family_name>:unkn</family_name>
+                </person>
+            </relation>
+            <role>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager</iri>
+                <label xml:lang="en">Data manager</label>
+                <label xml:lang="cs">Manažer dat</label>
+            </role>
+        </qualified_relation>
+        <!-- Metadata record dates -->
+        <date_updated>2025-10-14</date_updated>
+        <date_created>2024-11-07</date_created>
+        <conforms_to_standard>
+            <iri>https://schema.ccmm.cz/research-data/1.0.1</iri>
+            <label xml:lang="">CCMM RD 1.0.1</label>
+        </conforms_to_standard>
+        <conforms_to_standard>
+            <iri>https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json</iri>
+            <label xml:lang="en">NR Datasets JSON Schema v1.0.0</label>
+        </conforms_to_standard>
+        <original_repository>
+            <iri>https://data.narodni-repozitar.cz</iri>
+        </original_repository>
+    </metadata_identification>
+    <!-- identifier of dataset (and within organization) -->
+    <identifier>
+        <iri>https://doi.org/10.48700/datst.mff4d-q4a24</iri>
+        <value>10.48700/datst.mff4d-q4a24</value>
+        <scheme>
+            <iri>https://doi.org/</iri>
+            <label xml:lang="">DOI</label>
+        </scheme>
+    </identifier>
+    <!-- Ad Název (v hlavním UI je anglický název označen jako "překlad názvu" a oficiální je český,
+    ačkoliv v samotných metadatech je jen anglický- Q. tak který zvolit za hlavní) -->
+    <title>Data k rukopisu AuAg nanoklastry - podmínky zrání a dopad vybraných kovových kationtů na luminiscenci AuAg nanoklastrů</title>
+    <alternate_title>
+        <title xml:lang="en">Data for Au–Ag luminescent nanoclusters: maturing conditions and Cu(II)/Fe(III) impact</title>
+        <alternate_title_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle</iri>
+            <label xml:lang="cs">Přeložený název</label>
+            <label xml:lang="en">Translated Title</label>
+        </alternate_title_type>
+    </alternate_title>
+    <!-- 1) Veronika Svačinová — Creator -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0003-4782-9484</iri>
+                    <value>0000-0003-4782-9484</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Svačinová, Veronika</name>
+                <given_name>Veronika</given_name>
+                <family_name>Svačinová</family_name>
+                <affiliation>
+                    <name>Univerzita Palackého v Olomouci</name>
+                    <identifier>
+                        <iri>https://ror.org/04qxnmv42</iri>
+                        <value>04qxnmv42</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61989592</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- 2) Tomáš Pluháček — Creator -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0002-7417-0016</iri>
+                    <value>0000-0002-7417-0016</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Pluháček, Tomáš</name>
+                <given_name>Tomáš</given_name>
+                <family_name>Pluháček</family_name>
+                <affiliation>
+                    <name>Univerzita Palackého v Olomouci</name>
+                    <identifier>
+                        <iri>https://ror.org/04qxnmv42</iri>
+                        <value>04qxnmv42</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61989592</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- 3) Martin Petr — Creator -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0002-7334-6147</iri>
+                    <value>0000-0002-7334-6147</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Petr, Martin</name>
+                <given_name>Martin</given_name>
+                <family_name>Petr</family_name>
+                <affiliation>
+                    <name>Univerzita Palackého v Olomouci</name>
+                    <identifier>
+                        <iri>https://ror.org/04qxnmv42</iri>
+                        <value>04qxnmv42</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61989592</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- 4) Karolína Šišková — Creator -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0003-1417-0919</iri>
+                    <value>0000-0003-1417-0919</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Šišková, Karolína</name>
+                <given_name>Karolína</given_name>
+                <family_name>Šišková</family_name>
+                <affiliation>
+                    <name>Univerzita Palackého v Olomouci</name>
+                    <identifier>
+                        <iri>https://ror.org/04qxnmv42</iri>
+                        <value>04qxnmv42</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61989592</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- Publisher -->
+    <qualified_relation>
+        <relation>
+            <organization>
+                <identifier>
+                    <iri>https://ror.org/04qxnmv42</iri>
+                    <value>04qxnmv42</value>
+                    <scheme>
+                        <iri>https://ror.org/</iri>
+                        <label xml:lang="">ROR</label>
+                    </scheme>
+                </identifier>
+                <identifier>
+                    <value>61989592</value>
+                    <scheme>
+                        <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                        <label xml:lang="cs">IČO</label>
+                    </scheme>
+                </identifier>
+                <name>Univerzita Palackého v Olomouci</name>
+            </organization>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher</iri>
+            <label xml:lang="en">Publisher</label>
+            <label xml:lang="cs">Vydavatel</label>
+        </role>
+    </qualified_relation>
+    <publication_year>2024</publication_year>
+    <!-- Date Issued is being inferred as in previous JSON to represent same as Date Available
+    unless this is explicitly differentiated in the metadata record -->
+    <time_reference>
+        <time_instant>
+            <!-- Using <date> instead of <date_time> is allowed by the time_instant definition and
+            is recommended when the JSON provides only a date -->
+            <date>2024-11-07</date>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued</iri>
+                <label xml:lang="en">Date Issued</label>
+                <label xml:lang="cs">Datum vydání datasetu</label>
+            </date_type>
+        </time_instant>
+    </time_reference>
+    <!-- Year & Time references -->
+    <time_reference>
+        <time_interval>
+            <beginning_time_instant>
+                <date>2022-07-03</date>
+            </beginning_time_instant>
+            <end_time_instant>
+                <date>2024-11-05</date>
+            </end_time_instant>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
+                <label xml:lang="en">Date Created</label>
+                <label xml:lang="cs">Datum vytvoření datasetu</label>
+            </date_type>
+        </time_interval>
+    </time_reference>
+    <time_reference>
+        <time_interval>
+            <beginning_time_instant>
+                <date>2022-07-03</date>
+            </beginning_time_instant>
+            <end_time_instant>
+                <date>2024-11-05</date>
+            </end_time_instant>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
+                <label xml:lang="en">Date Collected</label>
+                <label xml:lang="cs">Datum sběru dat</label>
+            </date_type>
+        </time_interval>
+    </time_reference>
+    <time_reference>
+        <time_instant>
+            <date>2024-11-07</date>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available</iri>
+                <label xml:lang="en">Date Available</label>
+                <label xml:lang="cs">Datum zveřejnění datasetu</label>
+            </date_type>
+        </time_instant>
+    </time_reference>
+    <resource_type>
+        <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
+        <label xml:lang="cs">datová sada</label>
+        <label xml:lang="en">dataset</label>
+    </resource_type>
+    <!-- Languages of dataset -->
+    <primary_language>
+        <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
+        <label xml:lang="en">English</label>
+    </primary_language>
+    <!-- Terms of use -->
+    <terms_of_use>
+        <access_rights>
+            <iri>http://purl.org/coar/access_right/c_abf2</iri>
+            <label xml:lang="en">open access</label>
+            <label xml:lang="cs">otevřený přístup</label>
+        </access_rights>
+        <license>
+            <iri>https://creativecommons.org/licenses/by/4.0/</iri>
+            <label xml:lang="en">Creative Commons Attribution 4.0 International License</label>
+            <label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</label>
+        </license>
+    </terms_of_use>
+    <!-- Subjects: Frascati SubjectCategory -->
+    <subject>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000</iri>
+        <title xml:lang="cs">Technické vědy, inženýrství</title>
+        <title xml:lang="en">Engineering and technology</title>
+        <classification_code>20000</classification_code>
+        <subject_scheme>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+            <label xml:lang="en">Frascati Fields of Science</label>
+        </subject_scheme>
+    </subject>
+    <subject>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000</iri>
+        <title xml:lang="cs">Nanotechnologie</title>
+        <title xml:lang="en">Nano-technology</title>
+        <classification_code>21000</classification_code>
+        <subject_scheme>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+            <label xml:lang="en">Frascati Fields of Science</label>
+        </subject_scheme>
+    </subject>
+    <subject>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21001</iri>
+        <title xml:lang="cs">Nanomateriály (výroba a vlastnosti)</title>
+        <title xml:lang="en">Nano-materials (production and properties)</title>
+        <classification_code>21001</classification_code>
+        <subject_scheme>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+            <label xml:lang="en">Frascati Fields of Science</label>
+        </subject_scheme>
+    </subject>
+    <!-- Keywords (free terms) -->
+    <subject>
+        <title xml:lang="en">bimetallic nanocluster</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">gold-silver nanocluster</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">protein template</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">luminescent nanocomposite</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">fluorescent nanocomposite</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">synergistic effect</title>
+    </subject>
+    <!-- Descriptions (with cleaned aHTML/JSON formatting; description text and labels are according to v1.0 and thus without language tags) -->
+    <description>
+        <description_text>Gold-silver synergism has been well documented in many scientific works dealing with luminescent nanostructures that are exploitable in biomedical and environmental application. Frequently, the ratio of Au : Ag in synthetic mixtures was varied to influence the extent of Au-Ag synergism of the resulting luminescent gold-silver nanoclusters (LGSN). However, in our approach, a new step, maturing under differing conditions using the same Au : Ag ratio (5 : 1), has been investigated systematically for the very first time. As referent systems, monometallic gold nanoclusters (AuNCs) and protein treated by the conditions of synthesis and maturing were prepared and investigated. The selected types of maturing conditions led to distinct changes in fluorescence characteristics and, consequently, Au-Ag synergism extent (evaluated as the ratio of fluorescence quantum yields (FQY) of GSNC vs. AuNCs). The best synergism was obtained for GSNC matured at 37°C for 2.5h. The stability of luminescent signal of these GSNC was tested in the presence of an excess (till 20 mM) of Cu (II) and/or Fe (III) ions (crucial cofactors in living systems). The same metallic ions concentration caused different extents of GSNC luminescence quenching, for which a plausible reasoning is suggested.</description_text>
+        <description_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
+            <label>Abstract</label>
+        </description_type>
+    </description>
+    <description>
+        <description_text>The data set is related to the characterization of luminescent AuAg nanoclusters being synthesized in the laboratory of Dept. of Experimental Physics, Faculty of Science, Palacký University Olomouc. The laboratory synthesis is followed by varying maturing conditions and subsequently by purification of the nanocomposites. Then, the characterization of gold-silver luminescent nanoclusters embedded in protein-matrix is performed by means of several experimental techniques available such as: UV-vis spectroscopy, fluorescence spectroscopy, circular dischroism, dynamic light scattering, zeta potential measurements, inductively coupled plasma mass spectrometry, X-ray photoelectron spectroscopy, high-resolution scanning transmission electron microscopy, energy dispersive spectroscopy. Based on fluorescence quantum yield, synergism of AuAg is assessed. Finally, the impact of selected metal cations (copper and ferric ions) on AuAg nanocomposite luminescence is evaluated.</description_text>
+        <description_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
+            <label>Methods</label>
+        </description_type>
+    </description>
+    <description>
+        <description_text>The sets of experimental data were recorded on several instruments within Palacký University Olomouc. In cases where possible (UV-vis, fluorescence, DLS, zeta potential, XPS, CD), the data are in csv format enabling any replotting.</description_text>
+        <description_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo</iri>
+            <label>Technical Info</label>
+        </description_type>
+    </description>
+    <!-- Funding reference -->
+    <funding_reference>
+        <local_identifier>GA19-03207S</local_identifier>
+        <award_title>Bimetallic and trimetallic fluorescent nanoclusters: synthesis, physico-chemical properties, and application in bio-imaging</award_title>
+        <funding_program>standard</funding_program>
+        <funder>
+            <organization>
+                <identifier>
+                    <iri>https://ror.org/01pv73b02</iri>
+                    <value>01pv73b02</value>
+                    <scheme>
+                        <iri>https://ror.org/</iri>
+                        <label xml:lang="">ROR</label>
+                    </scheme>
+                </identifier>
+                <identifier>
+                    <value>48549037</value>
+                    <scheme>
+                        <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                        <label xml:lang="cs">IČO</label>
+                    </scheme>
+                </identifier>
+                <name>Grantová agentura České republiky</name>
+                <alternate_name xml:lang="en">Czech Science Foundation</alternate_name>
+            </organization>
+        </funder>
+    </funding_reference>
+    <funding_reference>
+        <local_identifier>LM2023066</local_identifier>
+        <award_title>Nanomaterials and Nanotechnologies for Environment Protection and Sustainable Future</award_title>
+        <funding_program>LM – Projekty velkých výzkumných infrastruktur (2010–2026)</funding_program>
+        <funder>
+            <organization>
+                <identifier>
+                    <iri>https://ror.org/037n8p820</iri>
+                    <value>037n8p820</value>
+                    <scheme>
+                        <iri>https://ror.org/</iri>
+                        <label xml:lang="">ROR</label>
+                    </scheme>
+                </identifier>
+                <identifier>
+                    <value>00022985</value>
+                    <scheme>
+                        <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                        <label xml:lang="cs">IČO</label>
+                    </scheme>
+                </identifier>
+                <name>Ministerstvo školství, mládeže a tělovýchovy</name>
+                <alternate_name xml:lang="en">Ministry of Education, Youth and Sports of the Czech Republic</alternate_name>
+            </organization>
+        </funder>
+    </funding_reference>
+    <funding_reference>
+        <local_identifier>TN02000069</local_identifier>
+        <award_title>National centre of competence for Materials, Advanced Technologies, Coatings and their Applications</award_title>
+        <funding_program>TN – Národní centra kompetence (2018–2028)</funding_program>
+        <funder>
+            <organization>
+                <identifier>
+                    <iri>https://ror.org/04v0fk911</iri>
+                    <value>04v0fk911</value>
+                    <scheme>
+                        <iri>https://ror.org/</iri>
+                        <label xml:lang="">ROR</label>
+                    </scheme>
+                </identifier>
+                <identifier>
+                    <value>72050365</value>
+                    <scheme>
+                        <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                        <label xml:lang="cs">IČO</label>
+                    </scheme>
+                </identifier>
+                <name>Technologická agentura České republiky</name>
+                <alternate_name xml:lang="en">Technology Agency of the Czech Republic</alternate_name>
+            </organization>
+        </funder>
+    </funding_reference>
+    <!-- Related resource -->
+    <related_resource>
+        <identifier>
+            <iri>https://doi.org/10.1098/rsos.241385</iri>
+            <value>10.1098/rsos.241385</value>
+            <scheme>
+                <iri>https://doi.org/</iri>
+                <label xml:lang="">DOI</label>
+            </scheme>
+        </identifier>
+        <title>Maturing conditions of bimetallic nanocomposites as a new factor influencing Au–Ag synergism and impact of Cu(II) and/or Fe(III) on luminescence</title>
+        <resource_type>
+            <iri>http://purl.org/coar/resource_type/c_6501</iri>
+            <label xml:lang="en">journal article</label>
+            <label xml:lang="cs">článek v odborném časopisu</label>
+        </resource_type>
+        <resource_relation_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy</iri>
+            <label xml:lang="cs">je na něj odkazováno z (čeho)</label>
+            <label xml:lang="en">is referenced by</label>
+        </resource_relation_type>
+    </related_resource>
+    <!-- Distribution -->
+    <distribution>
+        <distribution_downloadable_file>
+            <iri>
+                https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24/files/Data%20raw%20all.zip</iri>
+            <title xml:lang="en">Data raw all (ZIP)</title>
+            <access_url>
+                <iri>https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24/files/</iri>
+                <label xml:lang="cs">Soubory datové sady v NR</label>
+                <label xml:lang="en">Dataset files (NR)</label>
+            </access_url>
+            <download_url>
+                <iri>
+                    https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24/files/Data%20raw%20all.zip</iri>
+                <label xml:lang="cs">Data raw all.zip</label>
+                <label xml:lang="en">Data raw all.zip</label>
+            </download_url>
+            <format>
+                <iri>http://publications.europa.eu/resource/authority/file-type/ZIP</iri>
+                <label xml:lang="cs">ZIP</label>
+                <label xml:lang="en">ZIP</label>
+            </format>
+            <media_type>
+                <iri>http://www.iana.org/assignments/media-types/application/zip</iri>
+                <label xml:lang="en">application/zip</label>
+            </media_type>
+            <byte_size>21995187</byte_size>
+            <!-- This JSON record has only "etag:" for checksum without a value/code — checksum is optional -->
+        </distribution_downloadable_file>
+    </distribution>
+    <validation_result />
+    <provenance />
+</dataset>

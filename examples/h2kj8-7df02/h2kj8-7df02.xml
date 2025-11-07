@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Poznámka: Tento komentář je pouze informativní a není součástí metadat.
+     CS: Převod z JSON (h2kj8-7df02) → CCMM XML
+     Autor převodu: Pavel Kotlík
+     Datum převodu: 2025-10-10
+     Zdroj JSON/URI: https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02
+
+EN: Conversion JSON (h2kj8-7df02) → CCMM XML
+     Converted by: Pavel Kotlík
+     Conversion date: 2025-10-10
+     Source JSON/URI: https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02
+-->
+<dataset
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.0 https://model.ccmm.cz/research-data/schema/dataset/schema.xsd"
+    xmlns="https://schema.ccmm.cz/research-data/1.0" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!-- IRI for Dataset (landing page of the record) - ideally DOI -->
+    <iri>https://doi.org/10.48700/datst.h2kj8-7df02</iri>
+    <!-- Metadata identification (about this metadata record) -->
+    <metadata_identification>
+        <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02</iri>
+        <!-- Language(s) of this metadata record -->
+        <language>
+            <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
+            <label xml:lang="en">English</label>
+        </language>
+        <!-- Qualified relation — Data Manager; placeholder as JSON lacks this info -->
+        <qualified_relation>
+            <relation>
+                <person>
+                    <name>:unkn</name>
+                    <given_name>:unkn</given_name>
+                    <family_name>:unkn</family_name>
+                </person>
+            </relation>
+            <role>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager</iri>
+                <label xml:lang="en">Data manager</label>
+                <label xml:lang="cs">Manažer dat</label>
+            </role>
+        </qualified_relation>
+        <!-- Dates of this metadata record -->
+        <date_updated>2025-10-11</date_updated>
+        <date_created>2025-02-06</date_created>
+        <!-- Standards of the metadata record (incl. in the original/source repository) -->
+        <conforms_to_standard>
+            <iri>https://schema.ccmm.cz/research-data/1.0.1</iri>
+            <label xml:lang="">CCMM RD 1.0.1</label>
+        </conforms_to_standard>
+        <conforms_to_standard>
+            <iri>https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json</iri>
+            <label xml:lang="en">NR Datasets JSON Schema v1.0.0</label>
+        </conforms_to_standard>
+        <original_repository>
+            <iri>https://data.narodni-repozitar.cz</iri>
+        </original_repository>
+    </metadata_identification>
+    <!-- Identifiers -->
+    <identifier>
+        <iri>https://doi.org/10.48700/datst.h2kj8-7df02</iri>
+        <value>10.48700/datst.h2kj8-7df02</value>
+        <scheme>
+            <iri>https://doi.org/</iri>
+            <label xml:lang="">DOI</label>
+        </scheme>
+    </identifier>
+    <!-- Title is only in English as this is not a bilingual record -->
+    <title>Absorption and emission spectra and fluorescence lifetimes of lissamine rhodamine B in Caelyx-like liposomes</title>
+    <!-- Creator: David Davidović -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0002-2847-1934</iri>
+                    <value>0000-0002-2847-1934</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Davidović, David</name>
+                <given_name>David</given_name>
+                <family_name>Davidović</family_name>
+                <affiliation>
+                    <name>J. Heyrovsky Institute of Physical Chemistry of the CAS</name>
+                    <identifier>
+                        <iri>https://ror.org/02sat5y74</iri>
+                        <value>02sat5y74</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61388955</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- Creator: Nestor Lopez Mora -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0001-9803-6885</iri>
+                    <value>0000-0001-9803-6885</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Lopez Mora, Nestor</name>
+                <given_name>Nestor</given_name>
+                <family_name>Lopez Mora</family_name>
+                <affiliation>
+                    <name>J. Heyrovsky Institute of Physical Chemistry of the CAS</name>
+                    <identifier>
+                        <iri>https://ror.org/02sat5y74</iri>
+                        <value>02sat5y74</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61388955</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- Creator: Radek Šachl -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0002-0441-3908</iri>
+                    <value>0000-0002-0441-3908</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Šachl, Radek</name>
+                <given_name>Radek</given_name>
+                <family_name>Šachl</family_name>
+                <affiliation>
+                    <name>J. Heyrovsky Institute of Physical Chemistry of the CAS</name>
+                    <identifier>
+                        <iri>https://ror.org/02sat5y74</iri>
+                        <value>02sat5y74</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61388955</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- Creator: Martin Hof -->
+    <qualified_relation>
+        <relation>
+            <person>
+                <identifier>
+                    <iri>https://orcid.org/0000-0003-2884-3037</iri>
+                    <value>0000-0003-2884-3037</value>
+                    <scheme>
+                        <iri>https://orcid.org/</iri>
+                        <label xml:lang="">ORCID</label>
+                    </scheme>
+                </identifier>
+                <name>Hof, Martin</name>
+                <given_name>Martin</given_name>
+                <family_name>Hof</family_name>
+                <affiliation>
+                    <name>J. Heyrovsky Institute of Physical Chemistry of the CAS</name>
+                    <identifier>
+                        <iri>https://ror.org/02sat5y74</iri>
+                        <value>02sat5y74</value>
+                        <scheme>
+                            <iri>https://ror.org/</iri>
+                            <label xml:lang="">ROR</label>
+                        </scheme>
+                    </identifier>
+                    <identifier>
+                        <value>61388955</value>
+                        <scheme>
+                            <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                            <label xml:lang="cs">IČO</label>
+                        </scheme>
+                    </identifier>
+                </affiliation>
+            </person>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
+        </role>
+    </qualified_relation>
+    <!-- Publisher (organization) -->
+    <qualified_relation>
+        <relation>
+            <organization>
+                <identifier>
+                    <iri>https://ror.org/02sat5y74</iri>
+                    <value>02sat5y74</value>
+                    <scheme>
+                        <iri>https://ror.org/</iri>
+                        <label xml:lang="">ROR</label>
+                    </scheme>
+                </identifier>
+                <identifier>
+                    <value>61388955</value>
+                    <scheme>
+                        <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                        <label xml:lang="cs">IČO</label>
+                    </scheme>
+                </identifier>
+                <name>Ústav fyzikální chemie J. Heyrovského AV ČR</name>
+                <alternate_name xml:lang="en">J. Heyrovsky Institute of Physical Chemistry of the CAS</alternate_name>
+            </organization>
+        </relation>
+        <role>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher</iri>
+            <label xml:lang="en">Publisher</label>
+            <label xml:lang="cs">Vydavatel</label>
+        </role>
+    </qualified_relation>
+    <!-- Year & Time references -->
+    <publication_year>2025</publication_year>
+    <time_reference>
+        <!-- DOPLNIT Time interval s Date Issued -->
+        <time_interval>
+            <beginning_time_instant>
+                <date>2024-01-09</date>
+            </beginning_time_instant>
+            <end_time_instant>
+                <date>2024-01-10</date>
+            </end_time_instant>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
+                <label xml:lang="en">Date Created</label>
+                <label xml:lang="cs">Datum vytvoření datasetu</label>
+            </date_type>
+        </time_interval>
+    </time_reference>
+    <time_reference>
+        <time_interval>
+            <beginning_time_instant>
+                <date>2023-01-01</date>
+            </beginning_time_instant>
+            <end_time_instant>
+                <date>2023-12-31</date>
+            </end_time_instant>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
+                <label xml:lang="en">Date Collected</label>
+                <label xml:lang="cs">Datum sběru dat</label>
+            </date_type>
+        </time_interval>
+    </time_reference>
+    <time_reference>
+        <time_instant>
+            <date>2025-02-05</date>
+            <date_type>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available</iri>
+                <label xml:lang="en">Date Available</label>
+                <label xml:lang="cs">Datum zveřejnění datasetu</label>
+            </date_type>
+        </time_instant>
+    </time_reference>
+    <!-- Resource type -->
+    <resource_type>
+        <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
+        <label xml:lang="cs">datová sada</label>
+        <label xml:lang="en">dataset</label>
+    </resource_type>
+    <!-- Languages of dataset -->
+    <primary_language>
+        <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
+        <label xml:lang="en">English</label>
+    </primary_language>
+    <!-- Terms of use -->
+    <terms_of_use>
+        <access_rights>
+            <iri>http://purl.org/coar/access_right/c_abf2</iri>
+            <label xml:lang="en">open access</label>
+            <label xml:lang="cs">otevřený přístup</label>
+        </access_rights>
+        <license>
+            <iri>https://creativecommons.org/licenses/by/4.0/</iri>
+            <label xml:lang="en">Creative Commons Attribution 4.0 International License</label>
+            <label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</label>
+        </license>
+    </terms_of_use>
+    <!-- Subjects - controlled vocabulary FRASCATI SubjectCategory - all category levels as separate
+    subject entries -->
+    <subject>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000</iri>
+        <title xml:lang="cs">Přírodní vědy</title>
+        <title xml:lang="en">Natural sciences</title>
+        <classification_code>10000</classification_code>
+        <subject_scheme>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+            <label xml:lang="en">Frascati Fields of Science</label>
+        </subject_scheme>
+    </subject>
+    <subject>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600</iri>
+        <title xml:lang="cs">Biologie</title>
+        <title xml:lang="en">Biological sciences</title>
+        <classification_code>10600</classification_code>
+        <subject_scheme>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+            <label xml:lang="en">Frascati Fields of Science</label>
+        </subject_scheme>
+    </subject>
+    <subject>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10610</iri>
+        <title xml:lang="cs">Biofyzika</title>
+        <title xml:lang="en">Biophysics</title>
+        <classification_code>10610</classification_code>
+        <subject_scheme>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
+            <label xml:lang="en">Frascati Fields of Science</label>
+        </subject_scheme>
+    </subject>
+    <!-- Subject keywords (free terms) -->
+    <subject>
+        <title xml:lang="en">Rhodamine B</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">Caelyx-like liposomes</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">absorption spectra</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">fluorescence lifetime</title>
+    </subject>
+    <subject>
+        <title xml:lang="en">nanomedicine</title>
+    </subject>
+    <!-- Description -->
+    <description>
+        <description_text>This dataset presents absorption and emission spectra and fluorescence lifetimes of lissamine rhodamine B in Caelyx-like liposomes used in the study as drug carries for nanomedicine.</description_text>
+        <description_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
+            <label>Abstract</label>
+        </description_type>
+    </description>
+    <!-- The JSON "methods" section lacks clarity due to numerous HTML formatting tags. This should be fixed in the repository record, as it prevents it from being efficiently mapped as an additional <description> element with the specific DescriptionType "methods" -->
+    <description>
+        <description_text>Liposomes were prepared as above described, with minor adjustments. Briefly explained, dried lipid films with desired molar percentage DOPE-LR were rehydrated in PBS (pH 7.4) and subsequently extruded to form liposomes. The lipid suspension was passed 31 times through a 100 μm polycarbonate filter in an Avanti Mini-Extruder (Avanti Polar Lipids, Inc., Alabaster, USA) at &gt;10 °C above highest Tm. Liposome stock solution (10 mM) was diluted 30 times in PBS to a final lipid concentration of 0.33 mM. 40% FBS solutions were formulated in PBS. Samples were vortexed and measured immediately. The data is presented in the form of an amplitude-weighted averaged lifetime. Every point was measured 3 times for the same sample preparation. The samples were measured in PBS and PBS supplemented with 40% serum. Absorption spectroscopy profiles were recorded with a Shimadzu UV2600 spectrophotometer (Kyoto, Japan) at 25 °C and 65 °C in 0.5 cm Hellma Analytics quartz cuvettes (Hellma GmbH &amp; Co. KG, Müllheim, Germany). Fluorescence steady-state and lifetime measurements were carried out with a Picoquant FluoTime300 spectrofluorometer (Picoquant, Berlin, Germany) at 25 °C in 0.5 cm Hellma Analytics quartz cuvettes.</description_text>
+        <description_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
+            <label>Methods</label>
+        </description_type>
+    </description>
+    <!-- Funding reference -->
+    <funding_reference>
+        <local_identifier>GX19-26854X</local_identifier>
+        <award_title>Concert of lipids, ions, and proteins in cell membrane dynamics and function</award_title>
+        <funding_program>GAČR EXPRO</funding_program>
+        <funder>
+            <organization>
+                <identifier>
+                    <iri>https://ror.org/01pv73b02</iri>
+                    <value>01pv73b02</value>
+                    <scheme>
+                        <iri>https://ror.org/</iri>
+                        <label xml:lang="">ROR</label>
+                    </scheme>
+                </identifier>
+                <!-- Funding reference - organization identifier of a type IČO -->
+                <identifier>
+                    <value>48549037</value>
+                    <scheme>
+                        <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                        <label xml:lang="cs">IČO</label>
+                    </scheme>
+                </identifier>
+                <name>Czech Science Foundation</name>
+                <alternate_name xml:lang="cs">Grantová agentura České republiky</alternate_name>
+            </organization>
+        </funder>
+    </funding_reference>
+    <!-- Related resource (is referenced by a journal article); type from COAR not as "text" as in
+    sample.xml but "journal article" -->
+    <related_resource>
+        <identifier>
+            <iri>https://doi.org/10.1016/j.jconrel.2024.05.034</iri>
+            <value>10.1016/j.jconrel.2024.05.034</value>
+            <scheme>
+                <iri>https://doi.org/</iri>
+                <label xml:lang="">DOI</label>
+            </scheme>
+        </identifier>
+        <title>Lipid conjugate dissociation analysis improves the in vivo understanding of lipid-based nanomedicine</title>
+        <resource_type>
+            <iri>http://purl.org/coar/resource_type/c_6501</iri>
+            <label xml:lang="en">journal article</label>
+            <label xml:lang="cs">článek v odborném časopisu</label>
+        </resource_type>
+        <resource_relation_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy</iri>
+            <label xml:lang="en">is referenced by</label>
+            <label xml:lang="cs">je na něj odkazováno z (čeho)</label>
+        </resource_relation_type>
+    </related_resource>
+    <!-- Distribution — INFORMATION to be verified in terms of media_type and format statement in
+    JSON and XML -->
+    <distribution>
+        <distribution_downloadable_file>
+            <iri>
+                https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02/files/raw%20data%20Fig%204.xlsx</iri>
+            <title xml:lang="en">raw data Fig 4.xlsx</title>
+            <access_url>
+                <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02/files/</iri>
+                <label xml:lang="cs">Soubory datové sady v NR</label>
+                <label xml:lang="en">Dataset files (NR)</label>
+            </access_url>
+            <download_url>
+                <iri>
+                    https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02/files/raw%20data%20Fig%204.xlsx</iri>
+                <label xml:lang="cs">raw data Fig 4.xlsx</label>
+                <label xml:lang="en">raw data Fig 4.xlsx</label>
+            </download_url>
+            <format>
+                <!-- Authoritative/technical IRI for the file format - "format"/"media_type"; Label
+                "Excel (.xlsx)" or "XLSX"? -->
+                <iri>http://publications.europa.eu/resource/authority/file-type/XLSX</iri>
+                <label xml:lang="cs">XLSX</label>
+                <label xml:lang="en">XLSX</label>
+            </format>
+            <media_type>
+                <iri>
+                    https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</iri>
+                <label xml:lang="en">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</label>
+            </media_type>
+            <byte_size>51817</byte_size>
+            <!-- checksum omitted; JSON had empty etag -->
+        </distribution_downloadable_file>
+    </distribution>
+    <!-- "validation_result" is currently a placeholder for extensions; the model anticipates such
+    extensions. Their placement is intended to keep validation passing, since the XSD accepts them -->
+    <validation_result />
+    <provenance />
+    <!-- "provenance" is currently a placeholder for extensions -->
+</dataset>
