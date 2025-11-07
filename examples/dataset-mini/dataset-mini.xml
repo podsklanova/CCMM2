@@ -84,12 +84,14 @@
   <!-- (1..n) Must contain at least one time reference "Created"; it must include either 
        a time_instant or a time_interval -->
   <time_reference>
-    <time_instant>
-      <date>2024-05-01</date>
-      <date_type>
-        <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
-      </date_type>
-    </time_instant>
+       <temporal_representation>
+            <time_instant>
+                 <date>2024-05-01</date>
+                 <date_type>
+                      <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
+                 </date_type>
+            </time_instant>
+       </temporal_representation>
   </time_reference>
 
   <!-- (1-1) Terms of use: access rights and license -->
