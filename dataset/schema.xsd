@@ -13,6 +13,7 @@
   <xs:include schemaLocation="../location/schema.xsd"/>
   <xs:include schemaLocation="../funding-reference/schema.xsd"/>
   <xs:include schemaLocation="../resource/schema.xsd"/>
+  <xs:include schemaLocation="../distribution/schema.xsd"/>
   <xs:include schemaLocation="../distribution-data-service/schema.xsd"/>
   <xs:include schemaLocation="../validation-result/schema.xsd"/>
   <xs:include schemaLocation="../provenance-statement/schema.xsd"/>
