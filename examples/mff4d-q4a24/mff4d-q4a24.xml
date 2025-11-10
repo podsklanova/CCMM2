@@ -246,6 +246,7 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
     <qualified_relation>
         <relation>
             <organization>
+                <name>Univerzita Palackého v Olomouci</name>
                 <identifier>
                     <iri>https://ror.org/04qxnmv42</iri>
                     <value>04qxnmv42</value>
@@ -261,7 +262,6 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Univerzita Palackého v Olomouci</name>
             </organization>
         </relation>
         <role>
@@ -428,6 +428,7 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
         <funding_program>standard</funding_program>
         <funder>
             <organization>
+                <name>Grantová agentura České republiky</name>
                 <identifier>
                     <iri>https://ror.org/01pv73b02</iri>
                     <value>01pv73b02</value>
@@ -443,7 +444,6 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Grantová agentura České republiky</name>
                 <alternate_name xml:lang="en">Czech Science Foundation</alternate_name>
             </organization>
         </funder>
@@ -454,6 +454,7 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
         <funding_program>LM – Projekty velkých výzkumných infrastruktur (2010–2026)</funding_program>
         <funder>
             <organization>
+                <name>Ministerstvo školství, mládeže a tělovýchovy</name>
                 <identifier>
                     <iri>https://ror.org/037n8p820</iri>
                     <value>037n8p820</value>
@@ -469,7 +470,6 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Ministerstvo školství, mládeže a tělovýchovy</name>
                 <alternate_name xml:lang="en">Ministry of Education, Youth and Sports of the Czech Republic</alternate_name>
             </organization>
         </funder>
@@ -480,6 +480,7 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
         <funding_program>TN – Národní centra kompetence (2018–2028)</funding_program>
         <funder>
             <organization>
+                <name>Technologická agentura České republiky</name>
                 <identifier>
                     <iri>https://ror.org/04v0fk911</iri>
                     <value>04v0fk911</value>
@@ -495,7 +496,6 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Technologická agentura České republiky</name>
                 <alternate_name xml:lang="en">Technology Agency of the Czech Republic</alternate_name>
             </organization>
         </funder>

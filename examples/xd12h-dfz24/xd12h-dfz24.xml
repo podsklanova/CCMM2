@@ -417,6 +417,7 @@ EN: Conversion JSON (sample) → CCMM XML
     <qualified_relation>
         <relation>
             <organization>
+                <name>Jihočeská univerzita v Českých Budějovicích</name>
                 <identifier>
                     <iri>https://ror.org/033n3pw66</iri>
                     <value>033n3pw66</value>
@@ -432,7 +433,6 @@ EN: Conversion JSON (sample) → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Jihočeská univerzita v Českých Budějovicích</name>
             </organization>
         </relation>
         <role>
@@ -625,6 +625,7 @@ Conclusion: Research should focus on the role of low health literacy in people s
         <funding_program>Program na podporu aplikovaného výzkumu a inovací SIGMA</funding_program>
         <funder>
             <organization>
+                <name>Technologická agentura České republiky</name>
                 <identifier>
                     <iri>https://ror.org/04v0fk911</iri>
                     <value>04v0fk911</value>
@@ -640,7 +641,6 @@ Conclusion: Research should focus on the role of low health literacy in people s
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Technologická agentura České republiky</name>
             </organization>
         </funder>
     </funding_reference>

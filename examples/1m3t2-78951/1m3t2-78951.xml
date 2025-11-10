@@ -242,6 +242,7 @@ EN: Conversion JSON → CCMM XML
     <qualified_relation>
         <relation>
             <organization>
+                <name>Ústav fyzikální chemie J. Heyrovského AV ČR</name>
                 <identifier>
                     <iri>https://ror.org/02sat5y74</iri>
                     <value>02sat5y74</value>
@@ -257,9 +258,6 @@ EN: Conversion JSON → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <!-- <Name> organizace uvedeno jen jednou a typ xs:string - musíme proto případně
-                použít jednu jaz. verzi, jsou-li v JSONu obě jaz. mutace -->
-                <name>Ústav fyzikální chemie J. Heyrovského AV ČR</name>
             </organization>
         </relation>
         <role>

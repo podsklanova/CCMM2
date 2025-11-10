@@ -234,6 +234,7 @@ EN: Conversion JSON (h2kj8-7df02) → CCMM XML
     <qualified_relation>
         <relation>
             <organization>
+                <name>Ústav fyzikální chemie J. Heyrovského AV ČR</name>
                 <identifier>
                     <iri>https://ror.org/02sat5y74</iri>
                     <value>02sat5y74</value>
@@ -249,7 +250,6 @@ EN: Conversion JSON (h2kj8-7df02) → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Ústav fyzikální chemie J. Heyrovského AV ČR</name>
                 <alternate_name xml:lang="en">J. Heyrovsky Institute of Physical Chemistry of the CAS</alternate_name>
             </organization>
         </relation>
@@ -397,6 +397,7 @@ EN: Conversion JSON (h2kj8-7df02) → CCMM XML
         <funding_program>GAČR EXPRO</funding_program>
         <funder>
             <organization>
+                <name>Czech Science Foundation</name>
                 <identifier>
                     <iri>https://ror.org/01pv73b02</iri>
                     <value>01pv73b02</value>
@@ -413,7 +414,6 @@ EN: Conversion JSON (h2kj8-7df02) → CCMM XML
                         <label xml:lang="cs">IČO</label>
                     </scheme>
                 </identifier>
-                <name>Czech Science Foundation</name>
                 <alternate_name xml:lang="cs">Grantová agentura České republiky</alternate_name>
             </organization>
         </funder>

@@ -336,15 +336,15 @@
         <funding_program>https://funder-org.org/program/abcdefgh</funding_program>
         <funder>
             <organization>
-                <iri>https://ror.org/01pv73b02</iri>
+                <name>Grantová agentura České republiky</name>
                 <identifier>
+                    <iri>https://ror.org/01pv73b02</iri>
                     <value>01pv73b02</value>
                     <scheme>
                         <iri>https://ror.org/</iri>
                         <label xml:lang="">ROR</label>
                     </scheme>
                 </identifier>                
-                <name>Grantová agentura České republiky</name>
             </organization>
         </funder>
     </funding_reference>

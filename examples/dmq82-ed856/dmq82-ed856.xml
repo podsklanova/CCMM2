@@ -316,22 +316,22 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
   <qualified_relation>
     <relation>
       <organization>
-        <identifier>
-          <iri>https://ror.org/00hzjtg80</iri>
-          <value>00hzjtg80</value>
-          <scheme>
-            <iri>https://ror.org/</iri>
-            <label xml:lang="">ROR</label>
-          </scheme>
-        </identifier>
-        <identifier>
-          <value>26316919</value>
-          <scheme>
-            <iri>https://www.wikidata.org/entity/Q42302581</iri>
-            <label xml:lang="cs">IČO</label>
-          </scheme>
-        </identifier>
-        <name>COMTES FHT</name>
+          <name>COMTES FHT</name>
+          <identifier>
+              <iri>https://ror.org/00hzjtg80</iri>
+              <value>00hzjtg80</value>
+              <scheme>
+                  <iri>https://ror.org/</iri>
+                  <label xml:lang="">ROR</label>
+              </scheme>
+          </identifier>
+          <identifier>
+              <value>26316919</value>
+              <scheme>
+                  <iri>https://www.wikidata.org/entity/Q42302581</iri>
+                  <label xml:lang="cs">IČO</label>
+              </scheme>
+          </identifier>
       </organization>
     </relation>
     <role>
