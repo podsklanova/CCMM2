@@ -470,7 +470,7 @@ EN: Conversion JSON (sample) → CCMM XML
             <date_type>
                 <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
                 <label xml:lang="en">Date Created</label>
-                <label xml:lang="cs">Datum vytvoření datasetu</label>
+                <label xml:lang="cs">Datum vytvoření</label>
             </date_type>
     </time_reference>
     <time_reference>
@@ -487,7 +487,7 @@ EN: Conversion JSON (sample) → CCMM XML
             <date_type>
                 <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
                 <label xml:lang="en">Date Collected</label>
-                <label xml:lang="cs">Datum sběru dat</label>
+                <label xml:lang="cs">Datum sběru</label>
             </date_type>
     </time_reference>
     <time_reference>
@@ -499,7 +499,7 @@ EN: Conversion JSON (sample) → CCMM XML
             <date_type>
                 <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available</iri>
                 <label xml:lang="en">Date Available</label>
-                <label xml:lang="cs">Datum zveřejnění datasetu</label>
+                <label xml:lang="cs">Datum zveřejnění</label>
             </date_type>
     </time_reference>
     <resource_type>
