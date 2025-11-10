@@ -419,12 +419,12 @@
                     <title>Endpoint of WMS service Air quality</title>
                 </endpoint_url>
             </access_service>
-            <specification>
+            <conforms_to_specification>
                 <iri/>
                 <label xml:lang="cs">NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
                     se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové
                     služby</label>
-            </specification>
+            </conforms_to_specification>
             <documentation>
                 <iri>https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/</iri>
                 <!-- human readable documentation of this one specific service instance -->
