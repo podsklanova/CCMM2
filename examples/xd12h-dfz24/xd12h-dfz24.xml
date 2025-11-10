@@ -443,56 +443,64 @@ EN: Conversion JSON (sample) → CCMM XML
     </qualified_relation>
     <publication_year>2026</publication_year>
     <time_reference>
+        <temporal_representation>
         <time_instant>
             <!-- Using <date> instead of <date_time> is allowed by the time_instant definition and
             is recommended when the JSON provides only a date -->
             <date>2026-11-30</date>
+        </time_instant>
+        </temporal_representation>
             <date_type>
                 <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued</iri>
                 <label xml:lang="en">Date Issued</label>
                 <label xml:lang="cs">Datum vydání datasetu</label>
             </date_type>
-        </time_instant>
     </time_reference>
     <time_reference>
+        <temporal_representation>
         <time_interval>
-            <beginning_time_instant>
+            <beginning>
                 <date>2024-05-01</date>
-            </beginning_time_instant>
-            <end_time_instant>
+            </beginning>
+            <end>
                 <date>2024-06-30</date>
-            </end_time_instant>
+            </end>
+        </time_interval>
+        </temporal_representation>
             <date_type>
                 <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
                 <label xml:lang="en">Date Created</label>
                 <label xml:lang="cs">Datum vytvoření datasetu</label>
             </date_type>
-        </time_interval>
     </time_reference>
     <time_reference>
+        <temporal_representation>
         <time_interval>
-            <beginning_time_instant>
+            <beginning>
                 <date>2024-02-01</date>
-            </beginning_time_instant>
-            <end_time_instant>
+            </beginning>
+            <end>
                 <date>2024-04-30</date>
-            </end_time_instant>
+            </end>
+        </time_interval>
+        </temporal_representation>
             <date_type>
                 <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
                 <label xml:lang="en">Date Collected</label>
                 <label xml:lang="cs">Datum sběru dat</label>
             </date_type>
-        </time_interval>
     </time_reference>
     <time_reference>
+        <temporal_representation>
         <time_instant>
             <date>2026-11-30</date>
+        </time_instant>
+        </temporal_representation>
             <date_type>
                 <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available</iri>
                 <label xml:lang="en">Date Available</label>
                 <label xml:lang="cs">Datum zveřejnění datasetu</label>
             </date_type>
-        </time_instant>
     </time_reference>
     <resource_type>
         <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
