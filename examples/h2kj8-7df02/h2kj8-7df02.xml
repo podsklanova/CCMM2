@@ -447,7 +447,7 @@ EN: Conversion JSON (h2kj8-7df02) → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02/files/raw%20data%20Fig%204.xlsx</iri>
-            <title xml:lang="en">raw data Fig 4.xlsx</title>
+            <title>raw data Fig 4.xlsx</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/h2kj8-7df02/files/</iri>
                 <label xml:lang="cs">Soubory datové sady v NR</label>

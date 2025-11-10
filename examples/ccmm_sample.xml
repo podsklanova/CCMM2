@@ -407,7 +407,7 @@
         <distribution_data_service>
             <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
             <!-- persistent idenftifier of a service, usualy same as access point -->
-            <title xml:lang="cs">Služba WMS pro prohlížení dat o kvalitě ovzduší</title>
+            <title>Služba WMS pro prohlížení dat o kvalitě ovzduší</title>
             <access_service>
                 <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
                 <endpoint_url>
@@ -438,7 +438,7 @@
     <distribution>
         <distribution_downloadable_file>
             <iri>http://portal.chmi.cz/AQ_DATA</iri>
-            <title xml:lang="cs">Kvalita ovzduší</title>
+            <title>Kvalita ovzduší</title>
             <access_url>
                 <!-- shall contain information about how to download data -->
                 <iri>https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy</iri>

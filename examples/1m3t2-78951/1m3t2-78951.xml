@@ -474,7 +474,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf</iri>
-            <title xml:lang="en">CebecauerTkadlec_GACR2026_MindMap.pdf</title>
+            <title>CebecauerTkadlec_GACR2026_MindMap.pdf</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -498,7 +498,7 @@ EN: Conversion JSON → CCMM XML
     <distribution>
         <distribution_downloadable_file>
             <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/ReadMe.txt</iri>
-            <title xml:lang="en">ReadMe.txt</title>
+            <title>ReadMe.txt</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -523,7 +523,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif</iri>
-            <title xml:lang="en">Supp_Fig2A_NE_DNAchannel.tif</title>
+            <title>Supp_Fig2A_NE_DNAchannel.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -548,7 +548,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif</iri>
-            <title xml:lang="en">Supp_Fig2A_NE_Merge_5um.tif</title>
+            <title>Supp_Fig2A_NE_Merge_5um.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -573,7 +573,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif</iri>
-            <title xml:lang="en">Supp_Fig2A_NE_processedSMLM.tif</title>
+            <title>Supp_Fig2A_NE_processedSMLM.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -598,7 +598,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif</iri>
-            <title xml:lang="en">Supp_Fig2B_citH3_DNAchannel.tif</title>
+            <title>Supp_Fig2B_citH3_DNAchannel.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -623,7 +623,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif</iri>
-            <title xml:lang="en">Supp_Fig2B_citH3_Merge_5um.tif</title>
+            <title>Supp_Fig2B_citH3_Merge_5um.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -648,7 +648,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif</iri>
-            <title xml:lang="en">Supp_Fig2B_citH3_processedSMLM.tif</title>
+            <title>Supp_Fig2B_citH3_processedSMLM.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -673,7 +673,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif</iri>
-            <title xml:lang="en">Supp_Fig2C_MPO_DNAchannel.tif</title>
+            <title>Supp_Fig2C_MPO_DNAchannel.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -698,7 +698,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif</iri>
-            <title xml:lang="en">Supp_Fig2C_MPO_Merge_5um.tif</title>
+            <title>Supp_Fig2C_MPO_Merge_5um.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -723,7 +723,7 @@ EN: Conversion JSON → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif</iri>
-            <title xml:lang="en">Supp_Fig2C_MPO_processedSMLM.tif</title>
+            <title>Supp_Fig2C_MPO_processedSMLM.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
                 <label xml:lang="en">Dataset files (NR)</label>
@@ -750,7 +750,7 @@ EN: Conversion JSON → CCMM XML
             IRI) -->
             <iri>
                 https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf</iri>
-            <title xml:lang="en">Supplementary_Figures.pdf</title>
+            <title>Supplementary_Figures.pdf</title>
             <access_url>
                 <!-- Entry point / landing page listing the dataset’s files; it should include information on how to access/download files -->
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>

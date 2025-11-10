@@ -527,7 +527,7 @@ EN: Conversion JSON (mff4d-q4a24) → CCMM XML
         <distribution_downloadable_file>
             <iri>
                 https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24/files/Data%20raw%20all.zip</iri>
-            <title xml:lang="en">Data raw all (ZIP)</title>
+            <title>Data raw all (ZIP)</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/general/datasets/mff4d-q4a24/files/</iri>
                 <label xml:lang="cs">Soubory datové sady v NR</label>

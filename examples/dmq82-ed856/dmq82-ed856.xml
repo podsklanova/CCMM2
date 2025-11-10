@@ -534,7 +534,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
   <distribution>
     <distribution_downloadable_file>
       <iri>https://data.narodni-repozitar.cz/general/datasets/dmq82-ed856/files/REPO.tar</iri>
-      <title xml:lang="en">REPO.tar</title>
+      <title>REPO.tar</title>
       <access_url>
         <iri>https://data.narodni-repozitar.cz/general/datasets/dmq82-ed856/files/</iri>
         <label xml:lang="cs">Soubory datové sady v NR</label>

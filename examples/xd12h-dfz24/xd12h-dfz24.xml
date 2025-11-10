@@ -655,7 +655,7 @@ Conclusion: Research should focus on the role of low health literacy in people s
             IRI). If missing, one might reuse the JSON download_url -->
             <iri>
                 https://data.narodni-repozitar.cz/general/datasets/xd12h-dfz24/files/Datova%20matice%20SPSS.sav</iri>
-            <title xml:lang="cs">Datová matice SPSS (SAV)</title>
+            <title>Datová matice SPSS (SAV)</title>
             <access_url>
                 <!-- Entry point / landing page listing the dataset’s files; it should include
                 information on how to access/download files -->
