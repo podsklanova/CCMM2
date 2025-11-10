@@ -493,9 +493,10 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
     <funding_program>Operační program Jan Amos Komenský</funding_program>
     <funder>
       <organization>
-        <identifier>
-          <iri>https://ror.org/037n8p820</iri>
-          <value>037n8p820</value>
+        <name>Ministerstvo školství, mládeže a tělovýchovy</name>
+          <identifier>
+              <iri>https://ror.org/037n8p820</iri>
+              <value>037n8p820</value>
           <scheme>
             <iri>https://ror.org/</iri>
             <label xml:lang="">ROR</label>
@@ -509,7 +510,6 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
             <label xml:lang="">DOI</label>
           </scheme>
         </identifier>
-        <name>Ministerstvo školství, mládeže a tělovýchovy</name>
         <alternate_name xml:lang="en">Ministry of Education, Youth and Sports of the Czech Republic</alternate_name>
       </organization>
     </funder>
