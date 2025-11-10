@@ -269,6 +269,20 @@ EN: Conversion JSON → CCMM XML
     <!-- Year derived from Date Available -->
     <publication_year>2025</publication_year>
     <!-- Time references (resource-level) -->
+    <!-- Date Issued is being inferred as in previous JSON to represent same as Date Available
+    unless this is explicitly differentiated in the metadata record -->
+     <time_reference>
+      <temporal_representation>
+          <time_instant>
+              <date>2025-04-03</date>
+          </time_instant>
+      </temporal_representation>
+              <date_type>
+                  <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued</iri>
+                  <label xml:lang="en">Date Issued</label>
+                  <label xml:lang="cs">Datum vydání</label>
+              </date_type>
+     </time_reference>
     <time_reference>
         <temporal_representation>
         <time_interval>

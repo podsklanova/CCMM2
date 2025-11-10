@@ -347,15 +347,13 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
   <time_reference>
       <temporal_representation>
           <time_instant>
-              <!-- Using <date> instead of <date_time> is allowed by the time_instant definition and
-            is recommended when the JSON provides only a date -->
               <date>2025-06-16</date>
           </time_instant>
       </temporal_representation>
               <date_type>
                   <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued</iri>
                   <label xml:lang="en">Date Issued</label>
-                  <label xml:lang="cs">Datum vydání datasetu</label>
+                  <label xml:lang="cs">Datum vydání</label>
               </date_type>
   </time_reference>
   <time_reference>
