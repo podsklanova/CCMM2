@@ -426,45 +426,45 @@ EN: Conversion JSON → CCMM XML
     <!-- Description blocks formatted for CCMM v1.0 validation; xml:lang attributes will be
     re-introduced in v1.1 -->
     <description>
-        <description_text>Data podporující strukturu neutrofilových extracelulárních pastí pocházejících z lidských neutrofilů</description_text>
+        <description_text xml:lang="cs">Data podporující strukturu neutrofilových extracelulárních pastí pocházejících z lidských neutrofilů</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
-            <label>Abstrakt</label>
+            <label xml:lang="cs">Abstrakt</label>
         </description_type>
     </description>
     <description>
-        <description_text>Data supporting the structure of neutrophil extracellular traps generated from human neutrophils</description_text>
+        <description_text xml:lang="en">Data supporting the structure of neutrophil extracellular traps generated from human neutrophils</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
-            <label>Abstract</label>
+            <label xml:lang="en">Abstract</label>
         </description_type>
     </description>
     <description>
-        <description_text>Doplňující mikroskopická data</description_text>
+        <description_text xml:lang="cs">Doplňující mikroskopická data</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo</iri>
-            <label>Technická informace</label>
+            <label xml:lang="cs">Technická informace</label>
         </description_type>
     </description>
     <description>
-        <description_text>Supplementary microscopy data</description_text>
+        <description_text xml:lang="en">Supplementary microscopy data</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo</iri>
-            <label>Technical Info</label>
+            <label xml:lang="en">Technical Info</label>
         </description_type>
     </description>
     <description>
-        <description_text>Izolace neutrofilů ze vzorků lidské krve, stimulace neutrofilů pomocí agens indukujících NETózu, akvizice mikroskopických dat</description_text>
+        <description_text xml:lang="cs">Izolace neutrofilů ze vzorků lidské krve, stimulace neutrofilů pomocí agens indukujících NETózu, akvizice mikroskopických dat</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
-            <label>Metodologie</label>
+            <label xml:lang="cs">Metodologie</label>
         </description_type>
     </description>
     <description>
-        <description_text>Isolation of neutrophils from human blood samples, neutrophil stimulation with NETosis-inducing agents, microscopy data acquisition</description_text>
+        <description_text xml:lang="en">Isolation of neutrophils from human blood samples, neutrophil stimulation with NETosis-inducing agents, microscopy data acquisition</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
-            <label>Methods</label>
+            <label xml:lang="en">Methods</label>
         </description_type>
     </description>
     <!-- Funding reference information not provided -->

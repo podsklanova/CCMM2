@@ -582,7 +582,7 @@ EN: Conversion JSON (sample) → CCMM XML
     </subject>
     <!-- Description for CCMM v.1.0 (v1.1 will include xml:lang="en"/xml:lang="cs" in desription_text and label)  -->
     <description>
-        <description_text>Cílem výzkumu bylo popsat úroveň zdravotní gramotnosti u seniorů Jihočeského kraje ve vztahu k depresi.&#160; Zdravotní gramotnost lze sledovat v oblasti zdravotní péče, prevence nemocí a podpory zdraví.
+        <description_text xml:lang="cs">Cílem výzkumu bylo popsat úroveň zdravotní gramotnosti u seniorů Jihočeského kraje ve vztahu k depresi.&#160; Zdravotní gramotnost lze sledovat v oblasti zdravotní péče, prevence nemocí a podpory zdraví.
 
 Metody: Výzkum byl realizován prostřednictvím kvantitativní výzkumné strategie pomocí řízeného rozhovoru. Výzkum byl koncipován jako sociologický. Struktura rozhovoru byla odvozena od standardizovaného dotazníku HLS-EU-Q16, doplněného o otázek sociodemografického charakteru, a hodnocení subjektivního zdravotního stavu a zdravotního chování. Celkem bylo osloveno 403 jedinců vybraných kvótním výběrem, Z hlediska pohlaví tvoří soubor 43,7% mužů a 56,3% žen, ve věku 65- 74 let bylo 57,9% respondentů, ve věku 75 –84let -32,9%, ve věku 85 a více let- 9% respondentů. &#160;
 
@@ -591,11 +591,11 @@ Výsledky: Úroveň zdravotní gramotnosti u seniorů Jihočeského kraje ve vě
 Závěr: V budoucnosti by se měla výzkumná šetření zaměřit na roli nízké zdravotní gramotnosti u osob trpící depresí.</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
-            <label>Abstrakt</label>
+            <label xml:lang="cs">Abstrakt</label>
         </description_type>
     </description>
     <description>
-        <description_text>Objective: The research aimed to describe the level of health literacy among seniors in the South Bohemian Region aged 65+ about depression.
+        <description_text xml:lang="en">Objective: The research aimed to describe the level of health literacy among seniors in the South Bohemian Region aged 65+ about depression.
 Design: descriptive and cross-sectional
 Participants: 403 individuals selected by quota sampling were included in the study. The sample is representative in terms of gender, age, and region.
 
@@ -606,15 +606,15 @@ Results: The level of health literacy among seniors was considered sufficient fo
 Conclusion: Research should focus on the role of low health literacy in people suffering from depression.</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
-            <label>Abstract</label>
+            <label xml:lang="en">Abstract</label>
         </description_type>
     </description>
     <description>
         <!-- The JSON "technicalInfo" has only one description_text in Czech -->
-        <description_text>datová matice zpracovaná v programu IBM SPSS Statistics 30.0</description_text>
+        <description_text xml:lang="cs">datová matice zpracovaná v programu IBM SPSS Statistics 30.0</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo</iri>
-            <label>Technická informace</label>
+            <label xml:lang="cs">Technická informace</label>
         </description_type>
     </description>
     <!-- Location — not mandatory -->

@@ -376,18 +376,18 @@ EN: Conversion JSON (h2kj8-7df02) → CCMM XML
     </subject>
     <!-- Description -->
     <description>
-        <description_text>This dataset presents absorption and emission spectra and fluorescence lifetimes of lissamine rhodamine B in Caelyx-like liposomes used in the study as drug carries for nanomedicine.</description_text>
+        <description_text xml:lang="en">This dataset presents absorption and emission spectra and fluorescence lifetimes of lissamine rhodamine B in Caelyx-like liposomes used in the study as drug carries for nanomedicine.</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
-            <label>Abstract</label>
+            <label xml:lang="en">Abstract</label>
         </description_type>
     </description>
     <!-- The JSON "methods" section lacks clarity due to numerous HTML formatting tags. This should be fixed in the repository record, as it prevents it from being efficiently mapped as an additional <description> element with the specific DescriptionType "methods" -->
     <description>
-        <description_text>Liposomes were prepared as above described, with minor adjustments. Briefly explained, dried lipid films with desired molar percentage DOPE-LR were rehydrated in PBS (pH 7.4) and subsequently extruded to form liposomes. The lipid suspension was passed 31 times through a 100 μm polycarbonate filter in an Avanti Mini-Extruder (Avanti Polar Lipids, Inc., Alabaster, USA) at &gt;10 °C above highest Tm. Liposome stock solution (10 mM) was diluted 30 times in PBS to a final lipid concentration of 0.33 mM. 40% FBS solutions were formulated in PBS. Samples were vortexed and measured immediately. The data is presented in the form of an amplitude-weighted averaged lifetime. Every point was measured 3 times for the same sample preparation. The samples were measured in PBS and PBS supplemented with 40% serum. Absorption spectroscopy profiles were recorded with a Shimadzu UV2600 spectrophotometer (Kyoto, Japan) at 25 °C and 65 °C in 0.5 cm Hellma Analytics quartz cuvettes (Hellma GmbH &amp; Co. KG, Müllheim, Germany). Fluorescence steady-state and lifetime measurements were carried out with a Picoquant FluoTime300 spectrofluorometer (Picoquant, Berlin, Germany) at 25 °C in 0.5 cm Hellma Analytics quartz cuvettes.</description_text>
+        <description_text xml:lang="en">Liposomes were prepared as above described, with minor adjustments. Briefly explained, dried lipid films with desired molar percentage DOPE-LR were rehydrated in PBS (pH 7.4) and subsequently extruded to form liposomes. The lipid suspension was passed 31 times through a 100 μm polycarbonate filter in an Avanti Mini-Extruder (Avanti Polar Lipids, Inc., Alabaster, USA) at &gt;10 °C above highest Tm. Liposome stock solution (10 mM) was diluted 30 times in PBS to a final lipid concentration of 0.33 mM. 40% FBS solutions were formulated in PBS. Samples were vortexed and measured immediately. The data is presented in the form of an amplitude-weighted averaged lifetime. Every point was measured 3 times for the same sample preparation. The samples were measured in PBS and PBS supplemented with 40% serum. Absorption spectroscopy profiles were recorded with a Shimadzu UV2600 spectrophotometer (Kyoto, Japan) at 25 °C and 65 °C in 0.5 cm Hellma Analytics quartz cuvettes (Hellma GmbH &amp; Co. KG, Müllheim, Germany). Fluorescence steady-state and lifetime measurements were carried out with a Picoquant FluoTime300 spectrofluorometer (Picoquant, Berlin, Germany) at 25 °C in 0.5 cm Hellma Analytics quartz cuvettes.</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
-            <label>Methods</label>
+            <label xml:lang="en">Methods</label>
         </description_type>
     </description>
     <!-- Funding reference -->

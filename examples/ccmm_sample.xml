@@ -258,11 +258,11 @@
         </subject_scheme>
     </subject>
     <description>
-        <description_text>Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
+        <description_text xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
             roce 2024.</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract</iri>
-            <label>Abstract</label>
+            <label xml:lang="cs">Abstrakt</label>
         </description_type>
     </description>
     <location>
