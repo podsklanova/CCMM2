@@ -1,6 +1,6 @@
 # CCMM Examples (v1.1.0)
 
-**IMPORTANT NOTE** (7th November 2025): These examples were originally prepared against CCMM 1.0.0 and have now been ported to be updated for CCMM 1.1.0. Element ordering, property names, and/or cardinalities may differ; each example has to be revalidated.
+**IMPORTANT NOTE**: These examples were originally prepared for CCMM 1.0.0 and have now been updated for CCMM 1.1.0. Element ordering, property names, and/or cardinalities may differ; each example has been revalidated against the current 1.1.0 version (from 11 November, 2025).
 
 This branch contains **illustrative examples of CCMM XML**, created by converting source records 
 from the Czech national “catch-all” repository of datasets:  
