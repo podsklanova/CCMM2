@@ -12,8 +12,8 @@ EN: Conversion JSON (sample) → CCMM XML
 -->
 <!-- The schema.xsd location in xsi:schemaLocation was updated (the second URL after the namespace) -->
 <dataset
-    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.0 https://model.ccmm.cz/research-data/schema/dataset/schema.xsd"
-    xmlns="https://schema.ccmm.cz/research-data/1.0" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/schema/dataset/schema.xsd"
+    xmlns="https://schema.ccmm.cz/research-data/1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- IRI for Dataset should ideally be a DOI (if available) -->
     <iri>https://doi.org/10.48700/datst.xd12h-dfz24</iri>
@@ -54,8 +54,8 @@ EN: Conversion JSON (sample) → CCMM XML
         <!-- "Conforms to Standard" that captures the CCMM model
         referenced, i.e., to distinguish CCMM versions -->
         <conforms_to_standard>
-            <iri>https://schema.ccmm.cz/research-data/1.0.1</iri>
-            <label xml:lang="">CCMM RD 1.0.1</label>
+            <iri>https://schema.ccmm.cz/research-data/1.1.0</iri>
+            <label xml:lang="">CCMM RD 1.1.0</label>
         </conforms_to_standard>
         <!-- Standards to which the source record specifically conforms — is verifiable and taken
         directly from the JSON "metadata" → "schema" section -->

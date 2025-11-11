@@ -11,8 +11,8 @@
     Creation date: 2025-10-17 -->
 
 <dataset
-  xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.0 https://model.ccmm.cz/research-data/schema/dataset/schema.xsd"
-  xmlns="https://schema.ccmm.cz/research-data/1.0"
+  xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/schema/dataset/schema.xsd"
+  xmlns="https://schema.ccmm.cz/research-data/1.1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <!-- Metadata_identification: Data Manager -->
@@ -34,7 +34,7 @@
     <!-- Placeholder: Conforms to standard – Note: To be set as mandatory with cardinality (1..*) in 1.1 version, 
          this is the minimal variant with an IRI -->
     <conforms_to_standard>
-        <iri>https://schema.ccmm.cz/research-data/1.0.1</iri>
+        <iri>https://schema.ccmm.cz/research-data/1.1.0</iri>
     </conforms_to_standard>
        <original_repository>
             <iri>https://data.narodni-repozitar.cz</iri>
