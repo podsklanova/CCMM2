@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/11" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:include schemaLocation="../identifier/schema.xsd"/>
-  <xs:include schemaLocation="../contact-details/schema.xsd"/>
+  <xs:import namespace="https://schema.ccmm.cz/research-data/11" schemaLocation="../contact-details/schema.xsd"/>
   <xs:include schemaLocation="../organization/schema.xsd"/>
   <xs:complexType name="person" sawsdl:modelReference="http://www.w3.org/ns/prov#Person">
     <xs:annotation>
