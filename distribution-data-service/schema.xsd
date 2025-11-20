@@ -52,7 +52,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="description" sawsdl:modelReference="http://purl.org/dc/terms/description">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="distribution_description" sawsdl:modelReference="http://purl.org/dc/terms/description">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             description - A free-text account of the Distribution.
