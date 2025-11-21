@@ -37,7 +37,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_address" type="ccmm:address" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#hasAddress">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="address" type="ccmm:address" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#hasAddress">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has address - To specify the components of the delivery address for the object
