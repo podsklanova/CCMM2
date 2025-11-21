@@ -52,7 +52,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="description">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="description" sawsdl:modelReference="http://purl.org/dc/terms/description">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             description - A free-text account of the Distribution.
@@ -66,7 +66,7 @@
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="distribution-data-service" type="ccmm:distribution_data_service"/>

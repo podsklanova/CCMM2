@@ -1451,6 +1451,7 @@
     skos:prefLabel "description"@en;
     skos:definition "A free-text account of the Distribution."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the description. "@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.description>;
     dsv:cardinality cardinality:0n;
     dsv:domain :Distribution-DataService;
     a dsv:DatatypePropertyProfile;

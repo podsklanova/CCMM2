@@ -1,5 +1,9 @@
 CHANGELOG
 ---------------------------------------
+### 2025-11-21 - Minor changes
+* identified problems in XSD generation in Dataspecer, solved manually
+* sample XML files edited to be valid according to the 1.1.0 XSDs
+
 ### 2025-10-21 - Minor changes
 * solved issues from milestone 1.1.0
 
@@ -10,7 +14,7 @@ CHANGELOG
 * published sample XML metadata file
 * minor changes in structure (added label etc.)
 * updated representation of abstract geometry in location
-* XSDs under namespace https://schema.ccmm.cz/research-data/1.0
+* XSDs under namespace https://schema.ccmm.cz/research-data/1.1
 
 
 ### 2025-07-25 - Minor changes, bug fixes
