@@ -1,5 +1,8 @@
 CHANGELOG
 ---------------------------------------
+### 2025-12-12 - Minor changes
+* added optional attribute to identifier
+
 ### 2025-11-21 - Minor changes
 * identified problems in XSD generation in Dataspecer, solved manually
 * sample XML files edited to be valid according to the 1.1.0 XSDs

@@ -1246,10 +1246,9 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation>
+  dsv:reusedFromResource <7cl7lurvb8jmhhjx1ct>
 ];
     dsv:cardinality cardinality:11;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation>;
     dsv:domain :TimeReference;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :TimeRepresentation.
@@ -1993,3 +1992,18 @@
     dsv:domain :ChecksumAlgorithm;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
+
+<https://model.ccmm.cz/research-data/Identifier.authorized> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:prefLabel "authorized"@en;
+    skos:scopeNote "This attribute shall be filled mainly for ORCiD identifiers of Persons. It serves to determine whether the person in the repository is really the person it is meant to be."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#authorized>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#authorized>;
+    dsv:domain :Identifier;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
