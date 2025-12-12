@@ -23,7 +23,14 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+      <xs:element minOccurs="0" name="authorized" type="xs:boolean" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#authorized">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            authorized - Specifies whether the identifier is authorized by the subject it represents.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="identifier" type="ccmm:identifier"/>
