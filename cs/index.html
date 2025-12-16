@@ -1510,7 +1510,6 @@
           
               <p>Zpětné asociace</p>
               <ul>
-                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.hasAlternateTitle"></a></li>
                   <li>z domény <a href="#Resource"></a> → <a href="#Resource.hasAlternateTitle"></a></li>
               </ul>
           
@@ -2816,7 +2815,7 @@
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="#Resource">Resource (@en)</a>
+                      <a href="#RelatedResource">Related resource (@en)</a>
               
                           [1..*]
               
@@ -3094,6 +3093,25 @@
                   </ul>
           
                           </li>
+                        <li>
+                                  specializuje
+                
+                profil
+                <a href="#Resource">Resource (@en)</a> (<a href="https://model.ccmm.cz/research-data/Resource">https://model.ccmm.cz/research-data/Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definice: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
                     </ul>
                   </td>
                 </tr>
@@ -3105,64 +3123,7 @@
                   <li>z domény <a href="#MetadataRecord"></a> → <a href="#MetadataRecord.describes"></a></li>
               </ul>
           
-              <section id="Dataset.hasAlternateTitle">
-                <h4>has alternate title (@en)</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.hasAlternateTitle">https://model.ccmm.cz/research-data/Dataset.hasAlternateTitle</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>has alternate title (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#Dataset">Datová sada</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#AlternateTitle">Alternate title (@en)</a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    vlastnost
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#hasAlternateTitle">has alternate title (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>    <section id="Dataset.hasDescription">
+              <section id="Dataset.hasDescription">
                 <h4>has description (@en)</h4>
               
                 <table class="def">
@@ -3814,7 +3775,7 @@
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="#Resource">Resource (@en)</a>
+                      <a href="#RelatedResource">Related resource (@en)</a>
               
                           [0..*]
               
@@ -3840,91 +3801,6 @@
                       </td>
                     </tr>
               
-                </table>
-              </section>    <section id="Dataset.resourceType">
-                <h4>has resource type (@en)</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="http://purl.org/dc/terms/type">dcterms:type</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.resourceType">https://model.ccmm.cz/research-data/Dataset.resourceType</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>has resource type (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>A resource type of the Dataset. (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#Dataset">Datová sada</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#ResourceType">Resource type (@en)</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    
-                    profil
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type">type (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.type">dcat-ap:Dataset.type</a>)
-                      <br />Definice: <i>A type of the Dataset.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    
-                    profil
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type">type/genre (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.type-genre">dcat-dap:CataloguedResource.type-genre</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    vlastnost
-                    
-                    <a href="http://purl.org/dc/terms/type">Type (@en)</a> (<a href="http://purl.org/dc/terms/type">dcterms:type</a>)
-                      <br />Definice: <i>The nature or genre of the resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Popis použití v profilu</td>
-                    <td>Use IRI identifier of a value from the register https://vocabularies.coar-repositories.org/resource_types/. (@en)</td>
-                  </tr>
                 </table>
               </section>    <section id="Dataset.hasSubject">
                 <h4>has subject (@en)</h4>
@@ -4301,71 +4177,6 @@
                   <tr>
                     <td>Popis použití v profilu</td>
                     <td>If TimeReference with dateType &quot;Issued&quot; is present, year in that date and publicationYear must be the same“ (@en)</td>
-                  </tr>
-                </table>
-              </section>    <section id="Dataset.qualifiedRelation">
-                <h4>qualified relation (@en)</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.qualifiedRelation">https://model.ccmm.cz/research-data/Dataset.qualifiedRelation</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>qualified relation (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>Link to a description of a relationship between dataset and an agent with the specification of the role of agent in this relationship. (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#Dataset">Datová sada</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#ResourceToAgentRelationship">Resource to agent relationship (@en)</a>
-              
-                          [1..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    vlastnost
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#qualifiedRelation">qualified relation (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Popis použití v profilu</td>
-                    <td>Description of relationship between dataset and agent (e.g. creator, publisher, etc.). Role in a relationship is given by the Resource agent role type. Use a value from vocabulary https://vocabs.ccmm.cz/registry/codelist/AgentRole/. Each dataset shall have at least two qualified relations: one with role &quot;Creator&quot; and second with role &quot;Publisher&quot;. If metadata manager is the same for dataset and metadata, it shall also have at least one qualified relation with role &quot;data manager&quot;. (@en)</td>
                   </tr>
                 </table>
               </section>    <section id="Dataset.title">
@@ -7082,8 +6893,8 @@
               <p>Zpětné asociace</p>
               <ul>
                   <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.hasIdentifier"></a></li>
-                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.hasIdentifier"></a></li>
                   <li>z domény <a href="#Agent"></a> → <a href="#Agent.hasIdentifier"></a></li>
+                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.hasIdentifier"></a></li>
               </ul>
           
               <section id="Identifier.authorized">
@@ -8789,7 +8600,7 @@
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="#Resource">Resource (@en)</a>
+                      <a href="#RelatedResource">Related resource (@en)</a>
               
                           [0..*]
               
@@ -9745,6 +9556,215 @@
               
                 </table>
               </section>
+          </section>          <section id="RelatedResource">
+            <h4>Related resource (@en)</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/RelatedResource">https://model.ccmm.cz/research-data/RelatedResource</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Related resource (@en)</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Resource represents any resource, physical or digital, that is related to the described dataset.  (@en)</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definice: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                        <li>
+                                  specializuje
+                
+                profil
+                <a href="#Resource">Resource (@en)</a> (<a href="https://model.ccmm.cz/research-data/Resource">https://model.ccmm.cz/research-data/Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definice: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Popis použití v profilu</td>
+                <td>Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. 
+          Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc... (@en)</td>
+              </tr>
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#Location"></a> → <a href="#Location.hasRelatedObject"></a></li>
+                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.hasRelatedResource"></a></li>
+                  <li>z domény <a href="#DataService"></a> → <a href="#DataService.endpointUrl"></a></li>
+              </ul>
+          
+              <section id="Resource.hasResourceRelationType">
+                <h4>has resource relation type (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Resource.hasResourceRelationType">https://model.ccmm.cz/research-data/Resource.hasResourceRelationType</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>has resource relation type (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Relation to the relation type between dataset and resource. (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#RelatedResource">Related resource (@en)</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#ResourceRelationType">Resource relation type (@en)</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#hasType">has type (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>)
+                      <br />Definice: <i>Reference to the codelist value giving the specific type to the attribute.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>Use value from https://vocabs.ccmm.cz/registry/codelist/RelationType/. (@en)</td>
+                  </tr>
+                </table>
+              </section>    <section id="Resource.resourceURL">
+                <h4>resource URL (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Resource.resourceURL">https://model.ccmm.cz/research-data/Resource.resourceURL</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>resource URL (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Human readable resolvable URL representing the resource. (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#RelatedResource">Related resource (@en)</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#resourceUrl">Resource URL (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>)
+                      <br />Definice: <i>Resolvable URL representing the resource, preferably human readable.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>Resource URL represents human readable resolvable representation of the resource. Same url must be aslo in c:iri. (@en)</td>
+                  </tr>
+                </table>
+              </section>
           </section>          <section id="Resource">
             <h4>Resource (@en)</h4>
           
@@ -9766,7 +9786,7 @@
               </tr>
               <tr>
                 <td>Definice</td>
-                <td>Resource represents any resource, physical or digital, that is related to the described dataset.  (@en)</td>
+                <td>The class resource, everything. (@en)</td>
               </tr>
           
                 <tr>
@@ -9789,17 +9809,10 @@
           
               <tr>
                 <td>Popis použití v profilu</td>
-                <td>Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. 
-          Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc... (@en)</td>
+                <td>In the core model, resource is anything that is described within the metadata record, including dataset itself and all related resources. This class is also reused in domain extension for representing any physical or digital resources specific for the described scientific domain.   (@en)</td>
               </tr>
             </table>
           
-              <p>Zpětné asociace</p>
-              <ul>
-                  <li>z domény <a href="#Location"></a> → <a href="#Location.hasRelatedObject"></a></li>
-                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.hasRelatedResource"></a></li>
-                  <li>z domény <a href="#DataService"></a> → <a href="#DataService.endpointUrl"></a></li>
-              </ul>
           
               <section id="Resource.hasAlternateTitle">
                 <h4>has alternate title (@en)</h4>
@@ -9879,7 +9892,7 @@
                   </tr>
                   <tr>
                     <td>Definice</td>
-                    <td>Relation to resource identifier. (@en)</td>
+                    <td>has identifier (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
@@ -9920,73 +9933,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Resource.hasResourceRelationType">
-                <h4>has resource relation type (@en)</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Resource.hasResourceRelationType">https://model.ccmm.cz/research-data/Resource.hasResourceRelationType</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>has resource relation type (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>Relation to the relation type between dataset and resource. (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#Resource">Resource (@en)</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#ResourceRelationType">Resource relation type (@en)</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    vlastnost
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#hasType">has type (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>)
-                      <br />Definice: <i>Reference to the codelist value giving the specific type to the attribute.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Popis použití v profilu</td>
-                    <td>Use value from https://vocabs.ccmm.cz/registry/codelist/RelationType/. (@en)</td>
-                  </tr>
-                </table>
-              </section>    <section id="Resource.type">
+              </section>    <section id="Resource.hasResourceType">
                 <h4>has resource type (@en)</h4>
               
                 <table class="def">
@@ -9999,7 +9946,7 @@
                   </tr>
                   <tr>
                     <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Resource.type">https://model.ccmm.cz/research-data/Resource.type</a></td>
+                    <td><a href="https://model.ccmm.cz/research-data/Resource.hasResourceType">https://model.ccmm.cz/research-data/Resource.hasResourceType</a></td>
                   </tr>
                   <tr>
                     <td>Název</td>
@@ -10007,7 +9954,7 @@
                   </tr>
                   <tr>
                     <td>Definice</td>
-                    <td>A resource type of the related resource. (@en)</td>
+                    <td>The resource type of the resource. (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
@@ -10133,10 +10080,6 @@
                     <td>qualified relation (@en)</td>
                   </tr>
                   <tr>
-                    <td>Definice</td>
-                    <td>Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship. (@en)</td>
-                  </tr>
-                  <tr>
                     <td>Definiční obor</td>
                     <td>
                       <a href="#Resource">Resource (@en)</a>
@@ -10175,74 +10118,7 @@
               
                   <tr>
                     <td>Popis použití v profilu</td>
-                    <td> (@en)</td>
-                  </tr>
-                </table>
-              </section>    <section id="Resource.resourceURL">
-                <h4>resource URL (@en)</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Resource.resourceURL">https://model.ccmm.cz/research-data/Resource.resourceURL</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>resource URL (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>Human readable resolvable URL representing the resource. (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#Resource">Resource (@en)</a>
-              
-                          [0..*]
-              
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    vlastnost
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#resourceUrl">Resource URL (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>)
-                      <br />Definice: <i>Resolvable URL representing the resource, preferably human readable.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Popis použití v profilu</td>
-                    <td>Resource URL represents human readable resolvable representation of the resource. Same url must be aslo in c:iri. (@en)</td>
+                    <td>Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship. (@en)</td>
                   </tr>
                 </table>
               </section>    <section id="Resource.title">
@@ -10266,15 +10142,14 @@
                   </tr>
                   <tr>
                     <td>Definice</td>
-                    <td>Title of the resource. (@en)</td>
+                    <td>A name given to the resource. (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
                     <td>
                       <a href="#Resource">Resource (@en)</a>
               
-                          [0..*]
-              
+                      
                     </td>
                   </tr>
                   <tr>
@@ -10480,7 +10355,7 @@
           
               <p>Zpětné asociace</p>
               <ul>
-                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.hasResourceRelationType"></a></li>
+                  <li>z domény <a href="#RelatedResource"></a> → <a href="#Resource.hasResourceRelationType"></a></li>
               </ul>
           
               <section id="ResourceRelationType.label">
@@ -10611,7 +10486,6 @@
               <p>Zpětné asociace</p>
               <ul>
                   <li>z domény <a href="#MetadataRecord"></a> → <a href="#MetadataRecord.qualifiedRelation"></a></li>
-                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.qualifiedRelation"></a></li>
                   <li>z domény <a href="#Resource"></a> → <a href="#Resource.qualifiedRelation"></a></li>
               </ul>
           
@@ -10831,8 +10705,7 @@
           
               <p>Zpětné asociace</p>
               <ul>
-                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.resourceType"></a></li>
-                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.type"></a></li>
+                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.hasResourceType"></a></li>
               </ul>
           
               <section id="ResourceType.label">
@@ -12145,8 +12018,8 @@
           
               <p>Zpětné asociace</p>
               <ul>
-                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.hasTimeReference"></a></li>
                   <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.hasTimeReference"></a></li>
+                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.hasTimeReference"></a></li>
               </ul>
           
               <section id="TimeReference.dateInformation">
@@ -13234,558 +13107,6 @@
       <section>
       <h2>
         Specifikace struktury pro
-        Resource
-      </h2>
-      <p>Datová struktura pro Resource. Resource represents any resource, physical or digital, that is related to the described dataset. </p>
-
-      
-
-
-
-
-
-
-<section>
-<h3>Přehled XML struktury</h3>
-<p>
-  Tato sekce popisuje XSD zachycující strukturu pro <i>Resource</i>, jež je definováno v souboru <a href="../resource/schema.xsd"><code>../resource/schema.xsd</code></a>.
-</p>
-
-  <dl>
-    <dt>Definováno v namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
-  </dl>
-
-<section>
-<h4>Importy</h4>
-<p>
-  Seznam schémat, jež jsou tímto schématem importovány a použity.
-</p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Lokace schématu</th>
-        <th>Dokumentace</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-relation-type/schema.xsd">../resource-relation-type/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h4>Kořenové entity XSD schématu</h4>
-  <ul>
-      <li>element <a href="#element-ccmm:resource"><code>resource</code></a></li>
-
-      <li> komplexní typ <a href="#type-ccmm:resource"><code>resource</code></a></li>
-  </ul>
-</section>
-
-
-<section id="element-ccmm:resource">
-  <h4>Kořenový element <code>&lt;resource&gt;</code></h4>
-  <dl>
-    
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-      </dl>
-</section>
-
-
-<section id="type-ccmm:resource">
-  <h4>Kořenový komplexní typ <code>resource</code></h4>
-  <dl>
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Resource">Resource</a>
-        (Resource represents any resource, physical or digital, that is related to the described dataset. )
-      </dd>
-
-
-        <dt>Obsah 
- - elementy v tomto pořadí
-</dt>
-      <ul style="margin-top: 0;">
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:title"><code>&lt;title&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:resource_url"><code>&lt;resource_url&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:time_reference"><code>&lt;time_reference&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:resource_type"><code>&lt;resource_type&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:resource_relation_type"><code>&lt;resource_relation_type&gt;</code></a> [0..1]
-      </li>
-  </ul>
-
-
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:iri">
-  <h4>Element <code>&lt;iri&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:identifier">
-  <h4>Element <code>&lt;identifier&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.hasIdentifier"><strong>has identifier</strong></a>
-          (Relation to resource identifier.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#Identifier">Identifier</a>
-        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:title">
-  <h4>Element <code>&lt;title&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.title"><strong>title</strong></a>
-          (Title of the resource.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:alternate_title">
-  <h4>Element <code>&lt;alternate_title&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.hasAlternateTitle"><strong>has alternate title</strong></a>
-          
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:alternate_title"><code>ccmm:alternate_title</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#AlternateTitle">Alternate title</a>
-        (Alternate title of the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:resource_url">
-  <h4>Element <code>&lt;resource_url&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.resourceURL"><strong>resource URL</strong></a>
-          (Human readable resolvable URL representing the resource.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:qualified_relation">
-  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
-          (Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-        (An association class for attaching additional information to a relationship between Resource and Agent.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:time_reference">
-  <h4>Element <code>&lt;time_reference&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.hasTimeReference"><strong>has time reference</strong></a>
-          (Reference to events related to the resource.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#TimeReference">Time reference</a>
-        (An object representing time reference relevant to some event related to the resource has happened.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:resource_type">
-  <h4>Element <code>&lt;resource_type&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.type"><strong>has resource type</strong></a>
-          (A resource type of the related resource.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_type"><code>ccmm:resource_type</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#AlternateTitleType">Resource type</a>
-        (Type of the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:resource_relation_type">
-  <h4>Element <code>&lt;resource_relation_type&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#Resource.hasResourceRelationType"><strong>has resource relation type</strong></a>
-          (Relation to the relation type between dataset and resource.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_relation_type"><code>ccmm:resource_relation_type</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#AlternateTitleType">Resource relation type</a>
-        (Type of the relation between the dataset and given resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-
-</section>
-      </section>
-      <section>
-      <h2>
-        Specifikace struktury pro
         Location
       </h2>
       <p>Datová struktura pro Location. Spatial region, named place or geometry representation of a place related to the dataset. </p>
@@ -13832,7 +13153,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td>
+          <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -14103,13 +13424,13 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#Resource">Resource</a>
+        <a href="#Resource">Related resource</a>
         (Resource represents any resource, physical or digital, that is related to the described dataset. )
       </dd>
 
@@ -14155,7 +13476,7 @@
 
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Location relation type</a>
+        <a href="#ResourceType">Location relation type</a>
         (Relation of the dataset to the resource.)
       </dd>
 
@@ -15069,7 +14390,7 @@
 
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource agent role type</a>
+        <a href="#ResourceType">Resource agent role type</a>
         (Role of the agent in the relationship to the resource. )
       </dd>
 
@@ -15173,7 +14494,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource agent role type</a>
+        <a href="#ResourceType">Resource agent role type</a>
         (Role of the agent in the relationship to the resource. )
       </dd>
 
@@ -18064,7 +17385,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td>
+          <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -18156,7 +17477,7 @@
           element <a href="#element-ccmm:dataset-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [2..*]
+          element <a href="#element-ccmm:dataset-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:publication_year"><code>&lt;publication_year&gt;</code></a> [1..1]
@@ -18418,12 +17739,23 @@
     <dd>
         <i>
           
-          vlastnost
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
           
           
         </i>
 
-          <a href="#Dataset.hasAlternateTitle"><strong>has alternate title</strong></a>
+          <a href="#Resource.hasAlternateTitle"><strong>has alternate title</strong></a>
           
 
     </dd>
@@ -18464,18 +17796,29 @@
     <dd>
         <i>
           
-          vlastnost
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
           
           
         </i>
 
-          <a href="#Dataset.qualifiedRelation"><strong>qualified relation</strong></a>
-          (Link to a description of a relationship between dataset and an agent with the specification of the role of agent in this relationship.)
+          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
+          
 
     </dd>
 
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>2..*</dd>
+      <dd>0..*</dd>
       <dt>Nadřazený element</dt>
       <dd><a href="#type-ccmm:dataset"></a></dd>
 
@@ -18597,13 +17940,24 @@
     <dd>
         <i>
           
-          vlastnost
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
           
           
         </i>
 
-          <a href="#Dataset.resourceType"><strong>has resource type</strong></a>
-          (A resource type of the Dataset.)
+          <a href="#Resource.hasResourceType"><strong>has resource type</strong></a>
+          (The resource type of the resource.)
 
     </dd>
 
@@ -18623,7 +17977,7 @@
 
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource type</a>
+        <a href="#ResourceType">Resource type</a>
         (Type of the resource.)
       </dd>
 
@@ -18985,13 +18339,13 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#Resource">Resource</a>
+        <a href="#Resource">Related resource</a>
         (Resource represents any resource, physical or digital, that is related to the described dataset. )
       </dd>
 
@@ -19645,7 +18999,7 @@
 
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Alternate title type</a>
+        <a href="#ResourceType">Alternate title type</a>
         (Type of alternate title.)
       </dd>
 
@@ -20165,7 +19519,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td>
+          <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -20334,13 +19688,13 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#Resource">Resource</a>
+        <a href="#Resource">Related resource</a>
         (Resource represents any resource, physical or digital, that is related to the described dataset. )
       </dd>
 
@@ -21232,7 +20586,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Date type</a>
+        <a href="#ResourceType">Date type</a>
         (Type of a date in relation to the resource.)
       </dd>
 
@@ -21416,7 +20770,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource relation type</a>
+        <a href="#ResourceType">Resource relation type</a>
         (Type of the relation between the dataset and given resource.)
       </dd>
 
@@ -21600,7 +20954,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource type</a>
+        <a href="#ResourceType">Resource type</a>
         (Type of the resource.)
       </dd>
 
@@ -21784,7 +21138,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Location relation type</a>
+        <a href="#ResourceType">Location relation type</a>
         (Relation of the dataset to the resource.)
       </dd>
 
@@ -22152,7 +21506,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Alternate title type</a>
+        <a href="#ResourceType">Alternate title type</a>
         (Type of alternate title.)
       </dd>
 
@@ -25691,7 +25045,7 @@
 
         <dt>Význam</dt>
       <dd>
-        <a href="#AlternateTitleType">Date type</a>
+        <a href="#ResourceType">Date type</a>
         (Type of a date in relation to the resource.)
       </dd>
 
@@ -25747,6 +25101,624 @@
 
 </section>
       </section>
+      <section>
+      <h2>
+        Specifikace struktury pro
+        Related resource
+      </h2>
+      <p>Datová struktura pro Related resource. Resource represents any resource, physical or digital, that is related to the described dataset. </p>
+
+      
+
+
+
+
+
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Tato sekce popisuje XSD zachycující strukturu pro <i>Related resource</i>, jež je definováno v souboru <a href="../related-resource/schema.xsd"><code>../related-resource/schema.xsd</code></a>.
+</p>
+
+  <dl>
+    <dt>Definováno v namespace</dt>
+    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+  </dl>
+
+<section>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Lokace schématu</th>
+        <th>Dokumentace</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../resource-relation-type/schema.xsd">../resource-relation-type/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:related_resource"><code>related_resource</code></a></li>
+
+      <li> komplexní typ <a href="#type-ccmm:related_resource"><code>related_resource</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:related_resource">
+  <h4>Kořenový element <code>&lt;related_resource&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:related_resource">
+  <h4>Kořenový komplexní typ <code>related_resource</code></h4>
+  <dl>
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Resource">Related resource</a>
+        (Resource represents any resource, physical or digital, that is related to the described dataset. )
+      </dd>
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:title"><code>&lt;title&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:resource_url"><code>&lt;resource_url&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:time_reference"><code>&lt;time_reference&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:resource_type"><code>&lt;resource_type&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:resource_relation_type"><code>&lt;resource_relation_type&gt;</code></a> [0..1]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:identifier">
+  <h4>Element <code>&lt;identifier&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.hasIdentifier"><strong>has identifier</strong></a>
+          (has identifier)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Identifier">Identifier</a>
+        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:title">
+  <h4>Element <code>&lt;title&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.title"><strong>title</strong></a>
+          (A name given to the resource.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:alternate_title">
+  <h4>Element <code>&lt;alternate_title&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.hasAlternateTitle"><strong>has alternate title</strong></a>
+          
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:alternate_title"><code>ccmm:alternate_title</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#AlternateTitle">Alternate title</a>
+        (Alternate title of the resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:resource_url">
+  <h4>Element <code>&lt;resource_url&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.resourceURL"><strong>resource URL</strong></a>
+          (Human readable resolvable URL representing the resource.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:qualified_relation">
+  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
+          
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
+        (An association class for attaching additional information to a relationship between Resource and Agent.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:time_reference">
+  <h4>Element <code>&lt;time_reference&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.hasTimeReference"><strong>has time reference</strong></a>
+          (Reference to events related to the resource.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#TimeReference">Time reference</a>
+        (An object representing time reference relevant to some event related to the resource has happened.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:resource_type">
+  <h4>Element <code>&lt;resource_type&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.hasResourceType"><strong>has resource type</strong></a>
+          (The resource type of the resource.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:resource_type"><code>ccmm:resource_type</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ResourceType">Resource type</a>
+        (Type of the resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:resource_relation_type">
+  <h4>Element <code>&lt;resource_relation_type&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#Resource.hasResourceRelationType"><strong>has resource relation type</strong></a>
+          (Relation to the relation type between dataset and resource.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:resource_relation_type"><code>ccmm:resource_relation_type</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ResourceType">Resource relation type</a>
+        (Type of the relation between the dataset and given resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
 
     <section>
       <h2>Použité prefixy</h2>
@@ -25789,7 +25761,6 @@
             <tr><td>XML schéma</td><td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../distribution/schema.xsd">../distribution/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../contact-details/schema.xsd">../contact-details/schema.xsd</a></td></tr>
-            <tr><td>XML schéma</td><td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../location/schema.xsd">../location/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../terms-of-use/schema.xsd">../terms-of-use/schema.xsd</a></td></tr>
@@ -25833,6 +25804,7 @@
             <tr><td>XML schéma</td><td><a href="../distribution-downloadable-file/schema.xsd">../distribution-downloadable-file/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../time-representation/schema.xsd">../time-representation/schema.xsd</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td></tr>
             <tr><td>Dokumentace</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
