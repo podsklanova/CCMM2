@@ -1511,7 +1511,6 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hasAlternateTitle"></a></li>
                   <li>from domain <a href="#Resource"></a> → <a href="#Resource.hasAlternateTitle"></a></li>
               </ul>
           
@@ -2754,7 +2753,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#RelatedResource">Related resource</a>
               
                           [1..*]
               
@@ -2979,6 +2978,25 @@
                   </ul>
           
                           </li>
+                        <li>
+                                  specializes
+                
+                class profile
+                <a href="#Resource">Resource</a> (<a href="https://model.ccmm.cz/research-data/Resource">https://model.ccmm.cz/research-data/Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definition: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
                     </ul>
                   </td>
                 </tr>
@@ -2990,64 +3008,7 @@
                   <li>from domain <a href="#MetadataRecord"></a> → <a href="#MetadataRecord.describes"></a></li>
               </ul>
           
-              <section id="Dataset.hasAlternateTitle">
-                <h4>has alternate title</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.hasAlternateTitle">https://model.ccmm.cz/research-data/Dataset.hasAlternateTitle</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has alternate title</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Dataset">Dataset</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#AlternateTitle">Alternate title</a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#hasAlternateTitle">has alternate title</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>    <section id="Dataset.hasDescription">
+              <section id="Dataset.hasDescription">
                 <h4>has description</h4>
               
                 <table class="def">
@@ -3699,7 +3660,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#RelatedResource">Related resource</a>
               
                           [0..*]
               
@@ -3725,91 +3686,6 @@
                       </td>
                     </tr>
               
-                </table>
-              </section>    <section id="Dataset.resourceType">
-                <h4>has resource type</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://purl.org/dc/terms/type">dcterms:type</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.resourceType">https://model.ccmm.cz/research-data/Dataset.resourceType</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has resource type</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>A resource type of the Dataset.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Dataset">Dataset</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#ResourceType">Resource type</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    
-                    property profile
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type">type</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.type">dcat-ap:Dataset.type</a>)
-                      <br />Definition: <i>A type of the Dataset.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    
-                    property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type">type/genre</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.type-genre">dcat-dap:CataloguedResource.type-genre</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    property
-                    
-                    <a href="http://purl.org/dc/terms/type">Type</a> (<a href="http://purl.org/dc/terms/type">dcterms:type</a>)
-                      <br />Definition: <i>The nature or genre of the resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>Use IRI identifier of a value from the register https://vocabularies.coar-repositories.org/resource_types/.</td>
-                  </tr>
                 </table>
               </section>    <section id="Dataset.hasSubject">
                 <h4>has subject</h4>
@@ -4186,71 +4062,6 @@
                   <tr>
                     <td>Usage note</td>
                     <td>If TimeReference with dateType &quot;Issued&quot; is present, year in that date and publicationYear must be the same“</td>
-                  </tr>
-                </table>
-              </section>    <section id="Dataset.qualifiedRelation">
-                <h4>qualified relation</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.qualifiedRelation">https://model.ccmm.cz/research-data/Dataset.qualifiedRelation</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>qualified relation</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Link to a description of a relationship between dataset and an agent with the specification of the role of agent in this relationship.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Dataset">Dataset</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-              
-                          [1..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#qualifiedRelation">qualified relation</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>Description of relationship between dataset and agent (e.g. creator, publisher, etc.). Role in a relationship is given by the Resource agent role type. Use a value from vocabulary https://vocabs.ccmm.cz/registry/codelist/AgentRole/. Each dataset shall have at least two qualified relations: one with role &quot;Creator&quot; and second with role &quot;Publisher&quot;. If metadata manager is the same for dataset and metadata, it shall also have at least one qualified relation with role &quot;data manager&quot;.</td>
                   </tr>
                 </table>
               </section>    <section id="Dataset.title">
@@ -7083,8 +6894,8 @@
               <p>Backwards associations</p>
               <ul>
                   <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hasIdentifier"></a></li>
-                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.hasIdentifier"></a></li>
                   <li>from domain <a href="#Agent"></a> → <a href="#Agent.hasIdentifier"></a></li>
+                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.hasIdentifier"></a></li>
               </ul>
           
               <section id="Identifier.authorized">
@@ -8022,7 +7833,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#RelatedResource">Related resource</a>
               
                           [0..*]
               
@@ -9545,6 +9356,215 @@
               
                 </table>
               </section>
+          </section>          <section id="RelatedResource">
+            <h4>Related resource</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/RelatedResource">https://model.ccmm.cz/research-data/RelatedResource</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Related resource</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>Resource represents any resource, physical or digital, that is related to the described dataset. </td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definition: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                        <li>
+                                  specializes
+                
+                class profile
+                <a href="#Resource">Resource</a> (<a href="https://model.ccmm.cz/research-data/Resource">https://model.ccmm.cz/research-data/Resource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definition: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Usage note</td>
+                <td>Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. 
+          Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc...</td>
+              </tr>
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointUrl"></a></li>
+                  <li>from domain <a href="#Location"></a> → <a href="#Location.hasRelatedObject"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hasRelatedResource"></a></li>
+              </ul>
+          
+              <section id="Resource.hasResourceRelationType">
+                <h4>has resource relation type</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Resource.hasResourceRelationType">https://model.ccmm.cz/research-data/Resource.hasResourceRelationType</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>has resource relation type</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Relation to the relation type between dataset and resource.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#RelatedResource">Related resource</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#ResourceRelationType">Resource relation type</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#hasType">has type</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>)
+                      <br />Definition: <i>Reference to the codelist value giving the specific type to the attribute.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>Use value from https://vocabs.ccmm.cz/registry/codelist/RelationType/.</td>
+                  </tr>
+                </table>
+              </section>    <section id="Resource.resourceURL">
+                <h4>resource URL</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Resource.resourceURL">https://model.ccmm.cz/research-data/Resource.resourceURL</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>resource URL</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Human readable resolvable URL representing the resource.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#RelatedResource">Related resource</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#resourceUrl">Resource URL</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>)
+                      <br />Definition: <i>Resolvable URL representing the resource, preferably human readable.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>Resource URL represents human readable resolvable representation of the resource. Same url must be aslo in c:iri.</td>
+                  </tr>
+                </table>
+              </section>
           </section>          <section id="Repository">
             <h4>Repository</h4>
           
@@ -9767,7 +9787,7 @@
               </tr>
               <tr>
                 <td>Definition</td>
-                <td>Resource represents any resource, physical or digital, that is related to the described dataset. </td>
+                <td>The class resource, everything.</td>
               </tr>
           
                 <tr>
@@ -9790,17 +9810,10 @@
           
               <tr>
                 <td>Usage note</td>
-                <td>Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. 
-          Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc...</td>
+                <td>In the core model, resource is anything that is described within the metadata record, including dataset itself and all related resources. This class is also reused in domain extension for representing any physical or digital resources specific for the described scientific domain.  </td>
               </tr>
             </table>
           
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointUrl"></a></li>
-                  <li>from domain <a href="#Location"></a> → <a href="#Location.hasRelatedObject"></a></li>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hasRelatedResource"></a></li>
-              </ul>
           
               <section id="Resource.hasAlternateTitle">
                 <h4>has alternate title</h4>
@@ -9880,7 +9893,7 @@
                   </tr>
                   <tr>
                     <td>Definition</td>
-                    <td>Relation to resource identifier.</td>
+                    <td>has identifier</td>
                   </tr>
                   <tr>
                     <td>Domain</td>
@@ -9921,73 +9934,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Resource.hasResourceRelationType">
-                <h4>has resource relation type</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Resource.hasResourceRelationType">https://model.ccmm.cz/research-data/Resource.hasResourceRelationType</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has resource relation type</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Relation to the relation type between dataset and resource.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Resource">Resource</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#ResourceRelationType">Resource relation type</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#hasType">has type</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>)
-                      <br />Definition: <i>Reference to the codelist value giving the specific type to the attribute.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>Use value from https://vocabs.ccmm.cz/registry/codelist/RelationType/.</td>
-                  </tr>
-                </table>
-              </section>    <section id="Resource.type">
+              </section>    <section id="Resource.hasResourceType">
                 <h4>has resource type</h4>
               
                 <table class="def">
@@ -10000,7 +9947,7 @@
                   </tr>
                   <tr>
                     <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Resource.type">https://model.ccmm.cz/research-data/Resource.type</a></td>
+                    <td><a href="https://model.ccmm.cz/research-data/Resource.hasResourceType">https://model.ccmm.cz/research-data/Resource.hasResourceType</a></td>
                   </tr>
                   <tr>
                     <td>Label</td>
@@ -10008,7 +9955,7 @@
                   </tr>
                   <tr>
                     <td>Definition</td>
-                    <td>A resource type of the related resource.</td>
+                    <td>The resource type of the resource.</td>
                   </tr>
                   <tr>
                     <td>Domain</td>
@@ -10134,10 +10081,6 @@
                     <td>qualified relation</td>
                   </tr>
                   <tr>
-                    <td>Definition</td>
-                    <td>Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship.</td>
-                  </tr>
-                  <tr>
                     <td>Domain</td>
                     <td>
                       <a href="#Resource">Resource</a>
@@ -10176,74 +10119,7 @@
               
                   <tr>
                     <td>Usage note</td>
-                    <td></td>
-                  </tr>
-                </table>
-              </section>    <section id="Resource.resourceURL">
-                <h4>resource URL</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Resource.resourceURL">https://model.ccmm.cz/research-data/Resource.resourceURL</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>resource URL</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Human readable resolvable URL representing the resource.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Resource">Resource</a>
-              
-                          [0..*]
-              
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#resourceUrl">Resource URL</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#resourceUrl">https://model.ccmm.cz/vocabulary/ccmm#resourceUrl</a>)
-                      <br />Definition: <i>Resolvable URL representing the resource, preferably human readable.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>Resource URL represents human readable resolvable representation of the resource. Same url must be aslo in c:iri.</td>
+                    <td>Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship.</td>
                   </tr>
                 </table>
               </section>    <section id="Resource.title">
@@ -10267,15 +10143,14 @@
                   </tr>
                   <tr>
                     <td>Definition</td>
-                    <td>Title of the resource.</td>
+                    <td>A name given to the resource.</td>
                   </tr>
                   <tr>
                     <td>Domain</td>
                     <td>
                       <a href="#Resource">Resource</a>
               
-                          [0..*]
-              
+                      
                     </td>
                   </tr>
                   <tr>
@@ -10481,7 +10356,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.hasResourceRelationType"></a></li>
+                  <li>from domain <a href="#RelatedResource"></a> → <a href="#Resource.hasResourceRelationType"></a></li>
               </ul>
           
               <section id="ResourceRelationType.label">
@@ -10611,9 +10486,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.qualifiedRelation"></a></li>
-                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.qualifiedRelation"></a></li>
                   <li>from domain <a href="#MetadataRecord"></a> → <a href="#MetadataRecord.qualifiedRelation"></a></li>
+                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.qualifiedRelation"></a></li>
               </ul>
           
               <section id="ResourceToAgentRelationship.hadRole">
@@ -10832,8 +10706,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.resourceType"></a></li>
-                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.type"></a></li>
+                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.hasResourceType"></a></li>
               </ul>
           
               <section id="ResourceType.label">
@@ -12146,8 +12019,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.hasTimeReference"></a></li>
                   <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hasTimeReference"></a></li>
+                  <li>from domain <a href="#Resource"></a> → <a href="#Resource.hasTimeReference"></a></li>
               </ul>
           
               <section id="TimeReference.dateInformation">
@@ -13235,558 +13108,6 @@
       <section>
       <h2>
         Data structure specification for
-        Resource
-      </h2>
-      <p>Data structure for Resource. Resource represents any resource, physical or digital, that is related to the described dataset. </p>
-
-      
-
-
-
-
-
-
-<section>
-<h3>Overview of XML Structure</h3>
-<p>
-  This section describes the XSD capturing the structure for <i>Resource</i>, which is defined in the file <a href="../resource/schema.xsd"><code>../resource/schema.xsd</code></a>.
-</p>
-
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
-
-<section>
-<h4>Imports</h4>
-<p>
-  List of schemas that are imported and used by this schema.
-</p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Schema Location</th>
-        <th>Documentation</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-relation-type/schema.xsd">../resource-relation-type/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h4>Root Entities of the XSD Schema</h4>
-  <ul>
-      <li>element <a href="#element-ccmm:resource"><code>resource</code></a></li>
-
-      <li> complex type <a href="#type-ccmm:resource"><code>resource</code></a></li>
-  </ul>
-</section>
-
-
-<section id="element-ccmm:resource">
-  <h4>Root element <code>&lt;resource&gt;</code></h4>
-  <dl>
-    
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-      </dl>
-</section>
-
-
-<section id="type-ccmm:resource">
-  <h4>Root complex type <code>resource</code></h4>
-  <dl>
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#Resource">Resource</a>
-        (Resource represents any resource, physical or digital, that is related to the described dataset. )
-      </dd>
-
-
-        <dt>Content 
- - elements in this order
-</dt>
-      <ul style="margin-top: 0;">
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:title"><code>&lt;title&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:resource_url"><code>&lt;resource_url&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:time_reference"><code>&lt;time_reference&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:resource_type"><code>&lt;resource_type&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource-ccmm:resource_relation_type"><code>&lt;resource_relation_type&gt;</code></a> [0..1]
-      </li>
-  </ul>
-
-
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:iri">
-  <h4>Element <code>&lt;iri&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:identifier">
-  <h4>Element <code>&lt;identifier&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.hasIdentifier"><strong>has identifier</strong></a>
-          (Relation to resource identifier.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#Identifier">Identifier</a>
-        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:title">
-  <h4>Element <code>&lt;title&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.title"><strong>title</strong></a>
-          (Title of the resource.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:alternate_title">
-  <h4>Element <code>&lt;alternate_title&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.hasAlternateTitle"><strong>has alternate title</strong></a>
-          
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:alternate_title"><code>ccmm:alternate_title</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#AlternateTitle">Alternate title</a>
-        (Alternate title of the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:resource_url">
-  <h4>Element <code>&lt;resource_url&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.resourceURL"><strong>resource URL</strong></a>
-          (Human readable resolvable URL representing the resource.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:qualified_relation">
-  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
-          (Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-        (An association class for attaching additional information to a relationship between Resource and Agent.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:time_reference">
-  <h4>Element <code>&lt;time_reference&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.hasTimeReference"><strong>has time reference</strong></a>
-          (Reference to events related to the resource.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#TimeReference">Time reference</a>
-        (An object representing time reference relevant to some event related to the resource has happened.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:resource_type">
-  <h4>Element <code>&lt;resource_type&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.type"><strong>has resource type</strong></a>
-          (A resource type of the related resource.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:resource_type"><code>ccmm:resource_type</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#AlternateTitleType">Resource type</a>
-        (Type of the resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource-ccmm:resource_relation_type">
-  <h4>Element <code>&lt;resource_relation_type&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Resource.hasResourceRelationType"><strong>has resource relation type</strong></a>
-          (Relation to the relation type between dataset and resource.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:resource"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:resource_relation_type"><code>ccmm:resource_relation_type</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#AlternateTitleType">Resource relation type</a>
-        (Type of the relation between the dataset and given resource.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-
-</section>
-      </section>
-      <section>
-      <h2>
-        Data structure specification for
         Location
       </h2>
       <p>Data structure for Location. Spatial region, named place or geometry representation of a place related to the dataset. </p>
@@ -13833,7 +13154,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td>
+          <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -14104,13 +13425,13 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
+          The content of the element is of type <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
       </dd>
 
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#Resource">Resource</a>
+        <a href="#Resource">Related resource</a>
         (Resource represents any resource, physical or digital, that is related to the described dataset. )
       </dd>
 
@@ -14156,7 +13477,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Location relation type</a>
+        <a href="#ResourceType">Location relation type</a>
         (Relation of the dataset to the resource.)
       </dd>
 
@@ -15070,7 +14391,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource agent role type</a>
+        <a href="#ResourceType">Resource agent role type</a>
         (Role of the agent in the relationship to the resource. )
       </dd>
 
@@ -15174,7 +14495,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource agent role type</a>
+        <a href="#ResourceType">Resource agent role type</a>
         (Role of the agent in the relationship to the resource. )
       </dd>
 
@@ -18065,7 +17386,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td>
+          <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -18157,7 +17478,7 @@
           element <a href="#element-ccmm:dataset-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [2..*]
+          element <a href="#element-ccmm:dataset-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:publication_year"><code>&lt;publication_year&gt;</code></a> [1..1]
@@ -18419,12 +17740,23 @@
     <dd>
         <i>
           
-          property
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
           
           
         </i>
 
-          <a href="#Dataset.hasAlternateTitle"><strong>has alternate title</strong></a>
+          <a href="#Resource.hasAlternateTitle"><strong>has alternate title</strong></a>
           
 
     </dd>
@@ -18465,18 +17797,29 @@
     <dd>
         <i>
           
-          property
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
           
           
         </i>
 
-          <a href="#Dataset.qualifiedRelation"><strong>qualified relation</strong></a>
-          (Link to a description of a relationship between dataset and an agent with the specification of the role of agent in this relationship.)
+          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
+          
 
     </dd>
 
       <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>2..*</dd>
+      <dd>0..*</dd>
       <dt>Parent element</dt>
       <dd><a href="#type-ccmm:dataset"></a></dd>
 
@@ -18598,13 +17941,24 @@
     <dd>
         <i>
           
-          property
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
           
           
         </i>
 
-          <a href="#Dataset.resourceType"><strong>has resource type</strong></a>
-          (A resource type of the Dataset.)
+          <a href="#Resource.hasResourceType"><strong>has resource type</strong></a>
+          (The resource type of the resource.)
 
     </dd>
 
@@ -18624,7 +17978,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource type</a>
+        <a href="#ResourceType">Resource type</a>
         (Type of the resource.)
       </dd>
 
@@ -18986,13 +18340,13 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
+          The content of the element is of type <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
       </dd>
 
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#Resource">Resource</a>
+        <a href="#Resource">Related resource</a>
         (Resource represents any resource, physical or digital, that is related to the described dataset. )
       </dd>
 
@@ -19646,7 +19000,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Alternate title type</a>
+        <a href="#ResourceType">Alternate title type</a>
         (Type of alternate title.)
       </dd>
 
@@ -20166,7 +19520,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td>
+          <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -20335,13 +19689,13 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:resource"><code>ccmm:resource</code></a>.
+          The content of the element is of type <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
       </dd>
 
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#Resource">Resource</a>
+        <a href="#Resource">Related resource</a>
         (Resource represents any resource, physical or digital, that is related to the described dataset. )
       </dd>
 
@@ -21233,7 +20587,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Date type</a>
+        <a href="#ResourceType">Date type</a>
         (Type of a date in relation to the resource.)
       </dd>
 
@@ -21417,7 +20771,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource relation type</a>
+        <a href="#ResourceType">Resource relation type</a>
         (Type of the relation between the dataset and given resource.)
       </dd>
 
@@ -21601,7 +20955,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Resource type</a>
+        <a href="#ResourceType">Resource type</a>
         (Type of the resource.)
       </dd>
 
@@ -21785,7 +21139,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Location relation type</a>
+        <a href="#ResourceType">Location relation type</a>
         (Relation of the dataset to the resource.)
       </dd>
 
@@ -22153,7 +21507,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Alternate title type</a>
+        <a href="#ResourceType">Alternate title type</a>
         (Type of alternate title.)
       </dd>
 
@@ -25692,7 +25046,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#AlternateTitleType">Date type</a>
+        <a href="#ResourceType">Date type</a>
         (Type of a date in relation to the resource.)
       </dd>
 
@@ -25748,6 +25102,624 @@
 
 </section>
       </section>
+      <section>
+      <h2>
+        Data structure specification for
+        Related resource
+      </h2>
+      <p>Data structure for Related resource. Resource represents any resource, physical or digital, that is related to the described dataset. </p>
+
+      
+
+
+
+
+
+
+<section>
+<h3>Overview of XML Structure</h3>
+<p>
+  This section describes the XSD capturing the structure for <i>Related resource</i>, which is defined in the file <a href="../related-resource/schema.xsd"><code>../related-resource/schema.xsd</code></a>.
+</p>
+
+  <dl>
+    <dt>Defined in namespace</dt>
+    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+  </dl>
+
+<section>
+<h4>Imports</h4>
+<p>
+  List of schemas that are imported and used by this schema.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Schema Location</th>
+        <th>Documentation</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+          <td><a href="../resource-relation-type/schema.xsd">../resource-relation-type/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h4>Root Entities of the XSD Schema</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:related_resource"><code>related_resource</code></a></li>
+
+      <li> complex type <a href="#type-ccmm:related_resource"><code>related_resource</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:related_resource">
+  <h4>Root element <code>&lt;related_resource&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:related_resource"><code>ccmm:related_resource</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:related_resource">
+  <h4>Root complex type <code>related_resource</code></h4>
+  <dl>
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#Resource">Related resource</a>
+        (Resource represents any resource, physical or digital, that is related to the described dataset. )
+      </dd>
+
+
+        <dt>Content 
+ - elements in this order
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:title"><code>&lt;title&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:resource_url"><code>&lt;resource_url&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:time_reference"><code>&lt;time_reference&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:resource_type"><code>&lt;resource_type&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:related_resource-ccmm:resource_relation_type"><code>&lt;resource_relation_type&gt;</code></a> [0..1]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:identifier">
+  <h4>Element <code>&lt;identifier&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
+          
+          
+        </i>
+
+          <a href="#Resource.hasIdentifier"><strong>has identifier</strong></a>
+          (has identifier)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..*</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#Identifier">Identifier</a>
+        (Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:title">
+  <h4>Element <code>&lt;title&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
+          
+          
+        </i>
+
+          <a href="#Resource.title"><strong>title</strong></a>
+          (A name given to the resource.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:alternate_title">
+  <h4>Element <code>&lt;alternate_title&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
+          
+          
+        </i>
+
+          <a href="#Resource.hasAlternateTitle"><strong>has alternate title</strong></a>
+          
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..*</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:alternate_title"><code>ccmm:alternate_title</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#AlternateTitle">Alternate title</a>
+        (Alternate title of the resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:resource_url">
+  <h4>Element <code>&lt;resource_url&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          property
+          
+          
+        </i>
+
+          <a href="#Resource.resourceURL"><strong>resource URL</strong></a>
+          (Human readable resolvable URL representing the resource.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:qualified_relation">
+  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
+          
+          
+        </i>
+
+          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
+          
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..*</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
+        (An association class for attaching additional information to a relationship between Resource and Agent.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:time_reference">
+  <h4>Element <code>&lt;time_reference&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
+          
+          
+        </i>
+
+          <a href="#Resource.hasTimeReference"><strong>has time reference</strong></a>
+          (Reference to events related to the resource.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..*</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:time_reference"><code>ccmm:time_reference</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#TimeReference">Time reference</a>
+        (An object representing time reference relevant to some event related to the resource has happened.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:resource_type">
+  <h4>Element <code>&lt;resource_type&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
+          
+          
+        </i>
+
+          <a href="#Resource.hasResourceType"><strong>has resource type</strong></a>
+          (The resource type of the resource.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:resource_type"><code>ccmm:resource_type</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#ResourceType">Resource type</a>
+        (Type of the resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:related_resource-ccmm:resource_relation_type">
+  <h4>Element <code>&lt;resource_relation_type&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          property
+          
+          
+        </i>
+
+          <a href="#Resource.hasResourceRelationType"><strong>has resource relation type</strong></a>
+          (Relation to the relation type between dataset and resource.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>0..1</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:related_resource"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:resource_relation_type"><code>ccmm:resource_relation_type</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#ResourceType">Resource relation type</a>
+        (Type of the relation between the dataset and given resource.)
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
 
     <section>
       <h2>Used prefixes</h2>
@@ -25791,7 +25763,6 @@
             <tr><td>XML schema</td><td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../distribution/schema.xsd">../distribution/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../contact-details/schema.xsd">../contact-details/schema.xsd</a></td></tr>
-            <tr><td>XML schema</td><td><a href="../resource/schema.xsd">../resource/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../location/schema.xsd">../location/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../terms-of-use/schema.xsd">../terms-of-use/schema.xsd</a></td></tr>
@@ -25835,6 +25806,7 @@
             <tr><td>XML schema</td><td><a href="../distribution-downloadable-file/schema.xsd">../distribution-downloadable-file/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../time-representation/schema.xsd">../time-representation/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td></tr>
+            <tr><td>XML schema</td><td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>

@@ -15,7 +15,7 @@
   <xs:include schemaLocation="../description/schema.xsd"/>
   <xs:include schemaLocation="../location/schema.xsd"/>
   <xs:include schemaLocation="../funding-reference/schema.xsd"/>
-  <xs:include schemaLocation="../resource/schema.xsd"/>
+  <xs:include schemaLocation="../related-resource/schema.xsd"/>
   <xs:include schemaLocation="../distribution/schema.xsd"/>
   <xs:include schemaLocation="../validation-result/schema.xsd"/>
   <xs:include schemaLocation="../provenance-statement/schema.xsd"/>
@@ -98,12 +98,12 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="2" maxOccurs="unbounded" name="qualified_relation"
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="qualified_relation"
         type="ccmm:resource_to_agent_relationship"
         sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            qualified relation - Link to a description of a relationship between dataset and an agent with the specification of the role of agent in this relationship.
+            qualified relation
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -127,7 +127,7 @@
         sawsdl:modelReference="http://purl.org/dc/terms/type">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            has resource type - A resource type of the Dataset.
+            has resource type - The resource type of the resource.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -188,7 +188,8 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="related_resource" type="ccmm:resource"
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="related_resource"
+        type="ccmm:related_resource"
         sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">
         <xs:annotation>
           <xs:documentation xml:lang="en">
@@ -245,7 +246,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##other"/>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="dataset" type="ccmm:dataset"/>

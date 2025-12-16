@@ -17,6 +17,7 @@
     a dsv:TermProfile;
     skos:prefLabel "Conjunto de datos"@es, "Dataset"@en, "Dataset"@it, "Datová sada"@cs, "Jeu de données"@fr, "Σύνολο Δεδομένων"@el, "قائمة بيانات"@ar, "データセット"@ja, "Datasæt"@da;
     skos:definition "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja, "A conceptual entity that represents the information published. "@en, "Konceptuální entita představující publikovaná data."@cs, "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it, "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es, "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr, "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el, "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da;
+    dsv:specializes :Resource;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset>;
     a dsv:ClassProfile.
 :Agent dct:isPartOf <https://model.ccmm.cz/research-data/>;
@@ -114,11 +115,12 @@
 ];
     a dsv:ClassProfile;
     dsv:class <https://model.ccmm.cz/vocabulary/datacite#Subject>.
-:Resource dct:isPartOf <https://model.ccmm.cz/research-data/>;
+:RelatedResource dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:prefLabel "Resource"@en;
+    skos:prefLabel "Related resource"@en;
     skos:definition "Resource represents any resource, physical or digital, that is related to the described dataset. "@en;
     skos:scopeNote "Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. \nExamples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc..."@en;
+    dsv:specializes :Resource;
     a dsv:ClassProfile;
     dsv:class rdfs:Resource.
 :ResourceToAgentRelationship dct:isPartOf <https://model.ccmm.cz/research-data/>;
@@ -484,6 +486,20 @@
 ];
     a dsv:ClassProfile;
     dsv:class <https://model.ccmm.cz/vocabulary/ccmm#TimeReference>.
+:Resource dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:scopeNote "In the core model, resource is anything that is described within the metadata record, including dataset itself and all related resources. This class is also reused in domain extension for representing any physical or digital resources specific for the described scientific domain.  "@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource rdfs:Resource
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource rdfs:Resource
+];
+    a dsv:ClassProfile;
+    dsv:class rdfs:Resource.
 
 <https://model.ccmm.cz/research-data/Dataset.hasRelatedResource> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -492,7 +508,7 @@
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource>;
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :Resource.
+    dsv:objectPropertyRange :RelatedResource.
 
 <https://model.ccmm.cz/research-data/Dataset.hasTermsOfUse> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -555,15 +571,6 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Subject.
 
-<https://model.ccmm.cz/research-data/Resource.hasTimeReference> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "has time reference"@en;
-    skos:definition "Reference to events related to the resource."@en;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference>;
-    dsv:domain :Resource;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :TimeReference.
-
 <https://model.ccmm.cz/research-data/Dataset.hasTimeReference> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has time reference"@en;
@@ -574,17 +581,6 @@
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :TimeReference.
-
-<https://model.ccmm.cz/research-data/Dataset.qualifiedRelation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "qualified relation"@en;
-    skos:definition "Link to a description of a relationship between dataset and an agent with the specification of the role of agent in this relationship."@en;
-    skos:scopeNote "Description of relationship between dataset and agent (e.g. creator, publisher, etc.). Role in a relationship is given by the Resource agent role type. Use a value from vocabulary https://vocabs.ccmm.cz/registry/codelist/AgentRole/. Each dataset shall have at least two qualified relations: one with role \"Creator\" and second with role \"Publisher\". If metadata manager is the same for dataset and metadata, it shall also have at least one qualified relation with role \"data manager\"."@en;
-    dsv:cardinality cardinality:1n;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>;
-    dsv:domain :Dataset;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ResourceToAgentRelationship.
 
 <https://model.ccmm.cz/research-data/ResourceToAgentRelationship.hasRelatedAgent> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -613,16 +609,6 @@
     dsv:domain :ResourceToAgentRelationship;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ResourceAgentRoleType.
-
-<https://model.ccmm.cz/research-data/Resource.qualifiedRelation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "qualified relation"@en;
-    skos:definition "Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship."@en;
-    skos:scopeNote ""@en;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>;
-    dsv:domain :Resource;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ResourceToAgentRelationship.
 
 <https://model.ccmm.cz/research-data/FundingReference.hasFunder> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -872,7 +858,7 @@
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource>;
     dsv:domain :Location;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :Resource.
+    dsv:objectPropertyRange :RelatedResource.
 
 <https://model.ccmm.cz/research-data/Location.hasGeometry> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -909,14 +895,6 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :MetadataRecord.
 
-<https://model.ccmm.cz/research-data/Dataset.hasAlternateTitle> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "has alternate title"@en;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>;
-    dsv:domain :Dataset;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :AlternateTitle.
-
 <https://model.ccmm.cz/research-data/DataService.endpointUrl> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>;
@@ -936,17 +914,7 @@
     dsv:cardinality cardinality:1n;
     dsv:domain :DataService;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :Resource.
-
-<https://model.ccmm.cz/research-data/Resource.hasIdentifier> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "has identifier"@en;
-    skos:definition "Relation to resource identifier."@en;
-    dsv:cardinality cardinality:0n;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>;
-    dsv:domain :Resource;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :Identifier.
+    dsv:objectPropertyRange :RelatedResource.
 
 <https://model.ccmm.cz/research-data/Agent.hasIdentifier> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1083,28 +1051,6 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :AccessRights.
 
-<https://model.ccmm.cz/research-data/Dataset.resourceType> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "has resource type"@en;
-    skos:definition "A resource type of the Dataset."@en;
-    skos:scopeNote "Use IRI identifier of a value from the register https://vocabularies.coar-repositories.org/resource_types/."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.type>;
-    dsv:cardinality cardinality:01;
-    dsv:domain :Dataset;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ResourceType.
-
-<https://model.ccmm.cz/research-data/Resource.type> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "has resource type"@en;
-    skos:definition "A resource type of the related resource."@en;
-    skos:scopeNote "Use IRI identifier of a value from the register https://vocabularies.coar-repositories.org/resource_types/."@en;
-    dsv:cardinality cardinality:01;
-    dsv:property dct:type;
-    dsv:domain :Resource;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ResourceType.
-
 <https://model.ccmm.cz/research-data/TimeInterval.hasBeginning> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:definition "Time instant representing the beginning of a temporal interval."@en, "Comienzo de una entidad temporal."@es;
@@ -1151,7 +1097,7 @@
     skos:scopeNote "Use value from https://vocabs.ccmm.cz/registry/codelist/RelationType/."@en;
     dsv:cardinality cardinality:01;
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasType>;
-    dsv:domain :Resource;
+    dsv:domain :RelatedResource;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ResourceRelationType.
 
@@ -1227,19 +1173,6 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :DescriptionType.
 
-<https://model.ccmm.cz/research-data/Resource.hasAlternateTitle> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>
-];
-    dsv:cardinality cardinality:0n;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>;
-    dsv:domain :Resource;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :AlternateTitle.
-
 <https://model.ccmm.cz/research-data/TimeReference.hasTemporalRepresentation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has temporal representation"@en;
@@ -1252,6 +1185,83 @@
     dsv:domain :TimeReference;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :TimeRepresentation.
+
+<https://model.ccmm.cz/research-data/Resource.hasAlternateTitle> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>;
+    dsv:domain :Resource;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :AlternateTitle.
+
+<https://model.ccmm.cz/research-data/Resource.qualifiedRelation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:scopeNote "Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>;
+    dsv:domain :Resource;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceToAgentRelationship.
+
+<https://model.ccmm.cz/research-data/Resource.hasIdentifier> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>;
+    dsv:domain :Resource;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Identifier.
+
+<https://model.ccmm.cz/research-data/Resource.hasTimeReference> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:definition "Reference to events related to the resource."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference>;
+    dsv:domain :Resource;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :TimeReference.
+
+<https://model.ccmm.cz/research-data/Resource.hasResourceType> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has resource type"@en;
+    skos:definition "The resource type of the resource."@en;
+    skos:scopeNote "Use IRI identifier of a value from the register https://vocabularies.coar-repositories.org/resource_types/."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property dct:type;
+    dsv:domain :Resource;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceType.
 
 <https://model.ccmm.cz/research-data/Dataset.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1291,16 +1301,6 @@
     dsv:domain :Dataset;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#gYear>.
-
-<https://model.ccmm.cz/research-data/Resource.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "title"@en;
-    skos:definition "Title of the resource."@en;
-    dsv:cardinality cardinality:01;
-    dsv:property dct:title;
-    dsv:domain :Resource;
-    a dsv:DatatypePropertyProfile;
-    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
 
 <https://model.ccmm.cz/research-data/FundingReference.localIdentifier> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1688,7 +1688,7 @@
     skos:scopeNote "Resource URL represents human readable resolvable representation of the resource. Same url must be aslo in c:iri."@en;
     dsv:cardinality cardinality:01;
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#resourceUrl>;
-    dsv:domain :Resource;
+    dsv:domain :RelatedResource;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#anyURI>.
 
@@ -2007,3 +2007,17 @@
     dsv:domain :Identifier;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#boolean>.
+
+<https://model.ccmm.cz/research-data/Resource.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:prefLabel "title"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource dct:title
+];
+    dsv:cardinality cardinality:01;
+    dsv:property dct:title;
+    dsv:domain :Resource;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
