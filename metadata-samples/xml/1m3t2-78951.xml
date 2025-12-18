@@ -15,7 +15,7 @@ EN: Conversion JSON → CCMM XML
     xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/1.1.0/dataset/schema.xsd"
     xmlns="https://schema.ccmm.cz/research-data/1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <!-- Landing IRI for this dataset (use repository landing page)? -->
+    <!-- Landing IRI for this dataset -->
     <iri>https://doi.org/10.48700/datst.1m3t2-78951</iri>
     <metadata_identification>
         <!-- references the original metadata IRI -->
@@ -331,7 +331,7 @@ EN: Conversion JSON → CCMM XML
     </time_reference>
     <!-- Resource type "Dataset" (COAR) -->
     <resource_type>
-        <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
+        <iri>http://purl.org/coar/resource_type/c_ddb1</iri>
         <label xml:lang="cs">datová sada</label>
         <label xml:lang="en">dataset</label>
     </resource_type>
@@ -353,27 +353,7 @@ EN: Conversion JSON → CCMM XML
             <label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</label>
         </license>
     </terms_of_use>
-    <!-- Subjects (FOR/Frascati-like as per JSON) -->
-    <subject>
-        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000</iri>
-        <title xml:lang="cs">Přírodní vědy</title>
-        <title xml:lang="en">Natural sciences</title>
-        <classification_code>10000</classification_code>
-        <subject_scheme>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <label xml:lang="en">Frascati Fields of Science</label>
-        </subject_scheme>
-    </subject>
-    <subject>
-        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600</iri>
-        <title xml:lang="cs">Biologie</title>
-        <title xml:lang="en">Biological sciences</title>
-        <classification_code>10600</classification_code>
-        <subject_scheme>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <label xml:lang="en">Frascati Fields of Science</label>
-        </subject_scheme>
-    </subject>
+    <!-- Subjects: Frascati SubjectCategory -->
     <subject>
         <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601</iri>
         <title xml:lang="cs">Buněčná biologie</title>
@@ -381,7 +361,8 @@ EN: Conversion JSON → CCMM XML
         <classification_code>10601</classification_code>
         <subject_scheme>
             <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <label xml:lang="en">Frascati Fields of Science</label>
+            <label xml:lang="en">OECD FORD Subject Category (Frascati)</label>
+            <label xml:lang="cs">Oborové třídění OECD FORD (Frascati)</label>
         </subject_scheme>
     </subject>
     <subject>
@@ -391,27 +372,8 @@ EN: Conversion JSON → CCMM XML
         <classification_code>10606</classification_code>
         <subject_scheme>
             <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <label xml:lang="en">Frascati Fields of Science</label>
-        </subject_scheme>
-    </subject>
-    <subject>
-        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000</iri>
-        <title xml:lang="cs">Lékařské vědy</title>
-        <title xml:lang="en">Medical and health sciences</title>
-        <classification_code>30000</classification_code>
-        <subject_scheme>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <label xml:lang="en">Frascati Fields of Science</label>
-        </subject_scheme>
-    </subject>
-    <subject>
-        <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100</iri>
-        <title xml:lang="cs">Základní medicína</title>
-        <title xml:lang="en">Basic medicine</title>
-        <classification_code>30100</classification_code>
-        <subject_scheme>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <label xml:lang="en">Frascati Fields of Science</label>
+            <label xml:lang="en">OECD FORD Subject Category (Frascati)</label>
+            <label xml:lang="cs">Oborové třídění OECD FORD (Frascati)</label>
         </subject_scheme>
     </subject>
     <subject>
@@ -421,7 +383,8 @@ EN: Conversion JSON → CCMM XML
         <classification_code>30102</classification_code>
         <subject_scheme>
             <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <label xml:lang="en">Frascati Fields of Science</label>
+            <label xml:lang="en">OECD FORD Subject Category (Frascati)</label>
+            <label xml:lang="cs">Oborové třídění OECD FORD (Frascati)</label>
         </subject_scheme>
     </subject>
     <!-- Subject keywords -->
@@ -441,19 +404,20 @@ EN: Conversion JSON → CCMM XML
         <title xml:lang="cs">mikroskopie</title>
         <title xml:lang="en">microscopy</title>
     </subject>
-    <!-- Description blocks formatted for CCMM v1.0 validation; xml:lang attributes will be
-    re-introduced in v1.1 -->
+    <!-- Description blocks -->
     <description>
         <description_text xml:lang="cs">Data podporující strukturu neutrofilových extracelulárních pastí pocházejících z lidských neutrofilů</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
             <label xml:lang="cs">Abstrakt</label>
+            <label xml:lang="en">Abstract</label>
         </description_type>
     </description>
     <description>
         <description_text xml:lang="en">Data supporting the structure of neutrophil extracellular traps generated from human neutrophils</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
+            <label xml:lang="cs">Abstrakt</label>
             <label xml:lang="en">Abstract</label>
         </description_type>
     </description>
@@ -462,12 +426,14 @@ EN: Conversion JSON → CCMM XML
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo</iri>
             <label xml:lang="cs">Technická informace</label>
+            <label xml:lang="en">Technical Info</label>
         </description_type>
     </description>
     <description>
         <description_text xml:lang="en">Supplementary microscopy data</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo</iri>
+            <label xml:lang="cs">Technická informace</label>
             <label xml:lang="en">Technical Info</label>
         </description_type>
     </description>
@@ -476,18 +442,19 @@ EN: Conversion JSON → CCMM XML
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
             <label xml:lang="cs">Metodologie</label>
+            <label xml:lang="en">Methods</label>
         </description_type>
     </description>
     <description>
         <description_text xml:lang="en">Isolation of neutrophils from human blood samples, neutrophil stimulation with NETosis-inducing agents, microscopy data acquisition</description_text>
         <description_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
+            <label xml:lang="cs">Metodologie</label>
             <label xml:lang="en">Methods</label>
         </description_type>
     </description>
     <!-- Funding reference information not provided -->
-    <!-- Distribution (each downloadable file from _files) Q: Opakuje se blok <distribution> nebo
-    <distribution_downloadable_file> pro každý soubor? -->
+    <!-- Distribution (each downloadable file from _files) -->
     <distribution>
         <distribution_downloadable_file>
             <iri>
@@ -495,7 +462,6 @@ EN: Conversion JSON → CCMM XML
             <title>CebecauerTkadlec_GACR2026_MindMap.pdf</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -519,7 +485,6 @@ EN: Conversion JSON → CCMM XML
             <title>ReadMe.txt</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -544,7 +509,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2A_NE_DNAchannel.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -569,7 +533,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2A_NE_Merge_5um.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -594,7 +557,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2A_NE_processedSMLM.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -619,7 +581,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2B_citH3_DNAchannel.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -644,7 +605,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2B_citH3_Merge_5um.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -669,7 +629,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2B_citH3_processedSMLM.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -694,7 +653,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2C_MPO_DNAchannel.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -719,7 +677,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2C_MPO_Merge_5um.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -744,7 +701,6 @@ EN: Conversion JSON → CCMM XML
             <title>Supp_Fig2C_MPO_processedSMLM.tif</title>
             <access_url>
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <download_url>
                 <iri>
@@ -772,7 +728,6 @@ EN: Conversion JSON → CCMM XML
             <access_url>
                 <!-- Entry point / landing page listing the dataset’s files; it should include information on how to access/download files -->
                 <iri>https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/</iri>
-                <label xml:lang="en">Dataset files (NR)</label>
             </access_url>
             <!-- Direct download link to the specific file -->
             <download_url>
