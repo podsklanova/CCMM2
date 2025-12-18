@@ -220,7 +220,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
               <label xml:lang="cs">IČO</label>
             </scheme>
           </identifier>
-          <name>University of Chemistry and Technology, Prague</name>
+          <name>Vysoká škola chemicko-technologická v Praze</name>
         </affiliation>
       </person>
     </relation>
@@ -388,7 +388,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
   </time_reference>
   <!-- Resource type -->
   <resource_type>
-    <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
+    <iri>http://purl.org/coar/resource_type/c_ddb1</iri>
     <label xml:lang="cs">datová sada</label>
     <label xml:lang="en">dataset</label>
   </resource_type>
@@ -410,28 +410,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
         <label xml:lang="cs">Creative Commons Uveďte původ 4.0 Mezinárodní licence</label>
     </license>
   </terms_of_use>
-  <!-- Subjects: Frascati SubjectCategory; "Materials engineering" subject is labeled/titled in FoS
-  for both levels of codes, "20500" and "20501" -->
-  <subject>
-    <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000</iri>
-    <title xml:lang="cs">Technické vědy, inženýrství</title>
-    <title xml:lang="en">Engineering and technology</title>
-    <classification_code>20000</classification_code>
-    <subject_scheme>
-      <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-      <label xml:lang="en">Frascati Fields of Science</label>
-    </subject_scheme>
-  </subject>
-  <subject>
-    <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500</iri>
-    <title xml:lang="cs">Materiálové inženýrství</title>
-    <title xml:lang="en">Materials engineering</title>
-    <classification_code>20500</classification_code>
-    <subject_scheme>
-      <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-      <label xml:lang="en">Frascati Fields of Science</label>
-    </subject_scheme>
-  </subject>
+  <!-- Subjects: Frascati SubjectCategory -->
   <subject>
     <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20501</iri>
     <title xml:lang="cs">Materiálové inženýrství</title>
@@ -439,7 +418,8 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
     <classification_code>20501</classification_code>
     <subject_scheme>
       <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-      <label xml:lang="en">Frascati Fields of Science</label>
+      <label xml:lang="en">OECD FORD Subject Category (Frascati)</label>
+      <label xml:lang="cs">Oborové třídění OECD FORD (Frascati)</label>
     </subject_scheme>
   </subject>
 
@@ -468,6 +448,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
     <description_type>
       <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
       <label xml:lang="en">Abstract</label>
+      <label xml:lang="cs">Abstrakt</label>
     </description_type>
   </description>
   <description>
@@ -475,6 +456,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
     <description_type>
       <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods</iri>
       <label xml:lang="en">Methods</label>
+      <label xml:lang="cs">Metodologie</label>
     </description_type>
   </description>
   <description>
@@ -482,6 +464,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
     <description_type>
       <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo</iri>
       <label xml:lang="en">Technical Info</label>
+      <label xml:lang="cs">Technická informace</label>
     </description_type>
   </description>
   <!-- Funding reference -->
@@ -514,6 +497,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
   </funding_reference>
   <!-- Related resource (journal article is referencing this dataset) verify "cs" in COAR !! -->
   <related_resource>
+    <iri>https://doi.org/10.1007/s12540-025-01953-4</iri>
     <identifier>
       <iri>https://doi.org/10.1007/s12540-025-01953-4</iri>
       <value>10.1007/s12540-025-01953-4</value>
@@ -523,6 +507,79 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
       </scheme>
     </identifier>
     <title>Influence of Deposition Parameters on the Building rate, In-Situ Formation of Austenite and Tensile Properties of SAF 2507 SDSS Fabricated by Directed Energy Deposition</title>
+    <resource_url>https://doi.org/10.1007/s12540-025-01953-4</resource_url>
+    <qualified_relation>
+      <relation>
+        <person>
+          <name>Salvetr, Pavel</name>
+        </person>
+      </relation>
+      <role>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+        <label xml:lang="en">Creator</label>
+        <label xml:lang="cs">Autor</label>
+      </role>
+    </qualified_relation>
+    <qualified_relation>
+      <relation>
+        <person>
+          <name>Hodek, Josef</name>
+        </person>
+      </relation>
+      <role>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+        <label xml:lang="en">Creator</label>
+        <label xml:lang="cs">Autor</label>
+      </role>
+    </qualified_relation>
+    <qualified_relation>
+      <relation>
+        <person>
+          <name>Uhlík, Matouš</name>
+        </person>
+      </relation>
+      <role>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+        <label xml:lang="en">Creator</label>
+        <label xml:lang="cs">Autor</label>
+      </role>
+    </qualified_relation>
+    <qualified_relation>
+      <relation>
+        <person>
+          <name>Novák, Pavel</name>
+        </person>
+      </relation>
+      <role>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+        <label xml:lang="en">Creator</label>
+        <label xml:lang="cs">Autor</label>
+      </role>
+    </qualified_relation>
+    <qualified_relation>
+      <relation>
+        <person>
+          <name>Dlouhý, Jaromír</name>
+        </person>
+      </relation>
+      <role>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+        <label xml:lang="en">Creator</label>
+        <label xml:lang="cs">Autor</label>
+      </role>
+    </qualified_relation>
+    <qualified_relation>
+      <relation>
+        <person>
+          <name>Brázda, Michal</name>
+        </person>
+      </relation>
+      <role>
+        <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
+        <label xml:lang="en">Creator</label>
+        <label xml:lang="cs">Autor</label>
+      </role>
+    </qualified_relation>
     <resource_type>
       <iri>http://purl.org/coar/resource_type/c_6501</iri>
       <label xml:lang="en">journal article</label>
@@ -541,8 +598,6 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
       <title>REPO.tar</title>
       <access_url>
         <iri>https://data.narodni-repozitar.cz/general/datasets/dmq82-ed856/files/</iri>
-        <label xml:lang="cs">Soubory datové sady v NR</label>
-        <label xml:lang="en">Dataset files (NR)</label>
       </access_url>
       <download_url>
         <!-- Direct download link to the specific file -->
@@ -552,8 +607,7 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
       </download_url>
       <format>
         <iri>http://publications.europa.eu/resource/authority/file-type/TAR</iri>
-        <label xml:lang="en">tar archive</label>
-        <label xml:lang="cs">tar archive</label>
+        <label xml:lang="en">TAR</label>
       </format>
       <media_type>
         <!-- There is no official registered media type for TAR in IANA (see https://www.iana.org/assignments/media-types/media-types.xhtml);

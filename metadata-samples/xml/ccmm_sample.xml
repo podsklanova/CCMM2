@@ -45,12 +45,17 @@
                 </person>
             </relation>
             <role>
-                <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager</iri>
-                <label xml:lang="en">data manager</label>
+                <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager</iri>
+                <label xml:lang="en">Data Manager</label>
+                <label xml:lang="cs">Manažer dat</label>
             </role>
         </qualified_relation>
         <date_updated>2025-07-25</date_updated>
         <date_created>2025-04-28</date_created>
+        <conforms_to_standard>
+            <iri>https://schema.ccmm.cz/research-data/1.1.0</iri>
+            <label xml:lang="">CCMM RD 1.1.0</label>
+        </conforms_to_standard>
         <conforms_to_standard>
             <iri>https://www.iso.org/standard/80275.html</iri>
             <label xml:lang="">ISO 19115-1:2014/Amd 2:2020</label>
@@ -61,8 +66,8 @@
     </metadata_identification>
     <identifier>
         <!-- identifier of dataset -->
-        <iri>https://doi.org/25.45321</iri>
-        <value>25.45321</value>
+        <iri>https://doi.org/10.45321/as36sl</iri>
+        <value>10.45321/as36sl</value>
         <scheme>
             <iri>https://doi.org/</iri>
             <label xml:lang="">DOI</label>
@@ -82,9 +87,9 @@
     <alternate_title>
         <title xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.</title>
         <alternate_title_type>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle</iri>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle</iri>
             <label xml:lang="cs">Přeložený název</label>
-            <label xml:lang="en">Translated title</label>
+            <label xml:lang="en">Translated Title</label>
         </alternate_title_type>
     </alternate_title>
     <qualified_relation>
@@ -123,7 +128,8 @@
         </relation>
         <role>
             <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
-            <label xml:lang="en">creator</label>
+            <label xml:lang="en">Creator</label>
+            <label xml:lang="cs">Autor</label>
         </role>
     </qualified_relation>
     <qualified_relation>
@@ -162,7 +168,8 @@
         </relation>
         <role>
             <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher</iri>
-            <label xml:lang="en">publisher</label>
+            <label xml:lang="en">Publisher</label>
+            <label xml:lang="cs">Vydavatel</label>
         </role>
     </qualified_relation>
     <publication_year>2025</publication_year>
@@ -175,7 +182,7 @@
         <date_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
             <label xml:lang="en">Date Collected</label>
-            <label xml:lang="cs">Datum sběru dat</label>
+            <label xml:lang="cs">Datum sběru</label>
         </date_type>
     </time_reference>
     <time_reference>
@@ -192,11 +199,11 @@
         <date_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected</iri>
             <label xml:lang="en">Date Collected</label>
-            <label xml:lang="cs">Datum sběru dat</label>
+            <label xml:lang="cs">Datum sběru</label>
         </date_type>
     </time_reference>
     <resource_type>
-        <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
+        <iri>http://purl.org/coar/resource_type/c_ddb1</iri>
         <label xml:lang="cs">datová sada</label>
         <label xml:lang="en">dataset</label>
     </resource_type>
@@ -208,9 +215,9 @@
     </other_language>
     <terms_of_use>
         <access_rights>
-            <iri>https://vocabularies.coar-repositories.org/access_rights/c_abf2/</iri>
+            <iri>http://purl.org/coar/access_right/c_abf2</iri>
             <label xml:lang="en">open access</label>
-            <!-- coar access rights does not have czech translation -->
+            <label xml:lang="cs">otevřený přístup</label>
         </access_rights>
         <license>            
             <iri>https://creativecommons.org/licenses/by/4.0/</iri>
@@ -232,12 +239,13 @@
     <subject>
         <!-- Frascati Ford keyword is mandatory -->
         <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509</iri>
-        <title xml:lang="cs">Environmentální vědy</title>
-        <classification_code>10511</classification_code>
+        <title xml:lang="cs">Meteorologie, vědy o atmosféře</title>
+        <title xml:lang="en">Meteorology and atmospheric sciences</title>
+        <classification_code>10509</classification_code>
         <subject_scheme>
             <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
-            <!-- not sure if link here or to identifier of some authority behind frascati ford -->
-            <label xml:lang="en">Frascati Ford</label>
+            <label xml:lang="en">OECD FORD Subject Category (Frascati)</label>
+            <label xml:lang="cs">Oborové třídění OECD FORD (Frascati)</label>
         </subject_scheme>
     </subject>
     <subject>
@@ -260,8 +268,9 @@
         <description_text xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v
             roce 2024.</description_text>
         <description_type>
-            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract</iri>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract</iri>
             <label xml:lang="en">Abstract</label>
+            <label xml:lang="cs">Abstrakt</label>
         </description_type>
     </description>
     <location>
@@ -372,7 +381,11 @@
             <iri>http://purl.org/coar/resource_type/8KJG-QS0Y</iri>
             <label xml:lang="en">research instrument</label>
         </resource_type>
-        <!-- has no representative in given codelist -->
+        <resource_relation_type> 
+            <iri>https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy</iri> 
+            <label xml:lang="cs">je sbírán (čím)</label> 
+            <label xml:lang="en">is collected by</label> 
+        </resource_relation_type> 
     </related_resource>
     <!-- dataset -->
     <related_resource>
@@ -392,10 +405,10 @@
     <!-- metadata -->
     <related_resource>
         <iri>https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</iri>
-        <title>Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích
+        <title>Metadata datové sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích
             stanicích</title>
         <resource_url>https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</resource_url>
-        <!-- coar does not contain resourc etype metadata -->
+        <!-- coar does not contain resource type metadata -->
         <resource_relation_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata</iri>
             <label xml:lang="cs">má metadata</label>
