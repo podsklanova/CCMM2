@@ -9,13 +9,6 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="dataBox" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#dataBox">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">
-            Data box - Code of the data box.
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="data_box" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#dataBox">
         <xs:annotation>
           <xs:documentation xml:lang="en">
