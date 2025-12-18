@@ -109,8 +109,8 @@
 
   <!-- (1-*) Specify at least one subject with iri and title -->
   <subject>
-      <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000</iri>
-      <title xml:lang="cs">Lékařské vědy</title>
+    <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304</iri>
+    <title xml:lang="cs">Veřejné a environmentální zdraví</title>
     <subject_scheme>
       <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/</iri>
     </subject_scheme>
