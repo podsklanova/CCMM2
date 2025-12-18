@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:include schemaLocation="../identifier/schema.xsd"/>
-  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:include schemaLocation="../contact-details/schema.xsd"/>
-  <xs:complexType name="organization" sawsdl:modelReference="http://www.w3.org/ns/prov#Organization http://xmlns.com/foaf/0.1/Agent">
+  <xs:include schemaLocation="../organization/schema.xsd"/>
+  <xs:complexType name="person" sawsdl:modelReference="http://www.w3.org/ns/prov#Person">
     <xs:annotation>
       <xs:documentation xml:lang="en">
-        Organization - Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. 
+        Person - Physical person. 
       </xs:documentation>
     </xs:annotation>
     <xs:sequence>
@@ -25,19 +25,19 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="alternate_name" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#organization-name">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="given_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#given-name">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            alternate name - To specify the organizational name associated with the object
+            given name - The given name associated with the person.
           </xs:documentation>
         </xs:annotation>
-        <xs:complexType>
-          <xs:simpleContent>
-            <xs:extension base="xs:string">
-              <xs:attribute ref="xml:lang" use="required"/>
-            </xs:extension>
-          </xs:simpleContent>
-        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="family_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#family-name">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            family name - The family name associated with the person.
+          </xs:documentation>
+        </xs:annotation>
       </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="contact_point" type="ccmm:contact_details" sawsdl:modelReference="http://www.w3.org/ns/dcat#contactPoint">
         <xs:annotation>
@@ -70,8 +70,15 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="affiliation" type="ccmm:organization" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has affiliation - Affiliation of the person to an organization.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
       <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="organization" type="ccmm:organization"/>
+  <xs:element name="person" type="ccmm:person"/>
 </xs:schema>

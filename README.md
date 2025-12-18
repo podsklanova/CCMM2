@@ -40,26 +40,6 @@ The file [`dataset-mini.xml`](https://github.com/techlib/CCMM/blob/examples/exam
 ## Dataspcer XSD inconsistency
 
 Dataspecer still does not support some features and has some known bugs In the meantime, after generating XSD files from datasoecer, the following changes must be done manually:
-1. in license-document, add element iri
-    ```
-     <xs:sequence>
-      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="label" sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#label">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">
-            label - Label of the license document.
-          </xs:documentation>
-        </xs:annotation>
-        <xs:complexType>
-          <xs:simpleContent>
-            <xs:extension base="xs:string">
-              <xs:attribute ref="xml:lang" use="required"/>
-            </xs:extension>
-          </xs:simpleContent>
-        </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-    ```
 
 1. in geometry, add gml namespace, import gml, change gml element to ref=gml:AbstractFeature and add srsName to wkt
     ```
@@ -72,7 +52,7 @@ Dataspecer still does not support some features and has some known bugs In the m
    ```
 
    ```
-   <xs:element minOccurs="0" maxOccurs="unbounded" ref="gml:AbstractGeometry"
+   <xs:element minOccurs="0" ref="gml:AbstractGeometry"
        sawsdl:modelReference="http://www.opengis.net/ont/geosparql#asGML">
        <xs:annotation>
          <xs:documentation xml:lang="en">GML - Representation of
@@ -82,7 +62,7 @@ Dataspecer still does not support some features and has some known bugs In the m
    ```
 
    ```   
-   <xs:element minOccurs="0" maxOccurs="unbounded" name="wkt"
+   <xs:element minOccurs="0" name="wkt"
    sawsdl:modelReference="http://www.opengis.net/ont/geosparql#asWKT">
        <xs:annotation>
          <xs:documentation xml:lang="en"> WKT - Representation of geometry

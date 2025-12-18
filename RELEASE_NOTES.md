@@ -1,5 +1,23 @@
 CHANGELOG
 ---------------------------------------
+### 2025-12-18 - Official release 1.1.0
+* minor changes in definitions, cardinalities and profiled classes of multiple CCMM classes,
+* added more samples,
+* enhanced extensibility,
+* changes in hierarchy of abstract classes in XSD,
+* removing anonynous types from XSD,
+* handling multilinguality.
+
+### 2025-12-12 - Minor changes
+* added optional attribute to identifier
+
+### 2025-11-21 - Minor changes
+* identified problems in XSD generation in Dataspecer, solved manually
+* sample XML files edited to be valid according to the 1.1.0 XSDs
+
+### 2025-10-21 - Minor changes
+* solved issues from milestone 1.1.0
+
 ### 2025-09-02 - Minor changes
 * changing order of elements in XML and XSD
 
@@ -7,7 +25,7 @@ CHANGELOG
 * published sample XML metadata file
 * minor changes in structure (added label etc.)
 * updated representation of abstract geometry in location
-* XSDs under namespace https://schema.ccmm.cz/research-data/1.0
+* XSDs under namespace https://schema.ccmm.cz/research-data/1.1
 
 
 ### 2025-07-25 - Minor changes, bug fixes
