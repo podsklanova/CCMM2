@@ -1,5 +1,13 @@
 CHANGELOG
 ---------------------------------------
+### 2025-12-18 - Official release 1.1.0
+* minor changes in definitions, cardinalities and profiled classes of multiple CCMM classes,
+* added more samples,
+* enhanced extensibility,
+* changes in hierarchy of abstract classes in XSD,
+* removing anonynous types from XSD,
+* handling multilinguality.
+
 ### 2025-12-12 - Minor changes
 * added optional attribute to identifier
 
