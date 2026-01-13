@@ -11,7 +11,7 @@
     Creation date: 2025-10-17 -->
 
 <dataset
-  xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/1.1.0/dataset/schema.xsd"
+  xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/dataset/schema.xsd"
   xmlns="https://schema.ccmm.cz/research-data/1.1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
@@ -31,8 +31,7 @@
       </role>
     </qualified_relation>
 
-    <!-- Placeholder: Conforms to standard – Note: To be set as mandatory with cardinality (1..*) in 1.1 version, 
-         this is the minimal variant with an IRI -->
+    <!-- (1..n) Conforms to standard: this is the minimal variant with an IRI -->
     <conforms_to_standard>
         <iri>https://schema.ccmm.cz/research-data/1.1.0</iri>
     </conforms_to_standard>

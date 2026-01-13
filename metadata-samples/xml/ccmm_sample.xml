@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataset xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/1.1.0/dataset/schema.xsd"
+<dataset xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/dataset/schema.xsd"
     xmlns="https://schema.ccmm.cz/research-data/1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <iri>https://organization.cz/dataset_server/dataset_id</iri>
@@ -362,7 +362,7 @@
         <iri>http://data.europa.eu/eli/dir/2008/50/oj</iri>
         <title>Směrnice Evropského parlamentu a Rady 2008/50/ES ze dne 21. května 2008 o kvalitě
             vnějšího ovzduší a čistším ovzduší pro Evropu</title>
-        <resource_url>https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050&qid=1754039487879</resource_url>
+        <resource_url>https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050&amp;qid=1754039487879</resource_url>
         <resource_type>
             <iri>http://purl.org/coar/resource_type/c_18cf/</iri>
             <label xml:lang="en">text</label>
