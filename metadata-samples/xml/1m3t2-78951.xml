@@ -12,7 +12,7 @@ EN: Conversion JSON → CCMM XML
 -->
 <!-- The schema.xsd location in xsi:schemaLocation was updated (the second URL after the namespace) -->
 <dataset
-    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/1.1.0/dataset/schema.xsd"
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/dataset/schema.xsd"
     xmlns="https://schema.ccmm.cz/research-data/1.1" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- Landing IRI for this dataset -->
