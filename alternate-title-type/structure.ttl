@@ -1,0 +1,33 @@
+@prefix : <https://model.ccmm.cz/research-data/alternate-title-type/>.
+@prefix dsvs: <https://dataspecer.com/work-in-progress/>.
+@prefix kv: <https://dataspecer.com/work-in-progress/key-value/>.
+
+<https://model.ccmm.cz/research-data/alternate-title-type/> a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "{\"en\":\"Data structure for Alternate title type. Type of alternate title.\",\"cs\":\"Datová struktura pro Alternate title type. Type of alternate title.\"}";
+    kv:dataPsmHumanLabel "{\"en\":\"Alternate title type\",\"cs\":\"Alternate title type\"}";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/alternate-title-type/class-1747685369782-00bf-3a68-ae58\",\"https://model.ccmm.cz/research-data/alternate-title-type/attribute-1747685374451-9e56-3fb3-8eb5\"]";
+    kv:dataPsmRoots "[\"https://model.ccmm.cz/research-data/alternate-title-type/class-1747685369782-00bf-3a68-ae58\"]";
+    kv:dataPsmTechnicalLabel "null";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"namespace\":\"https://schema.ccmm.cz/research-data/1.1\",\"namespacePrefix\":\"ccmm\"}}";
+    kv:iri "\"https://model.ccmm.cz/research-data/alternate-title-type/\"";
+    kv:jsonEnforceContext "\"no\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Schema\"]".
+:class-1747685369782-00bf-3a68-ae58 a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/AlternateTitleType\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/alternate-title-type/attribute-1747685374451-9e56-3fb3-8eb5\"]";
+    kv:dataPsmTechnicalLabel "\"alternate_title_type\"";
+    kv:instancesHaveIdentity "\"ALWAYS\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/alternate-title-type/class-1747685369782-00bf-3a68-ae58\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:attribute-1747685374451-9e56-3fb3-8eb5 a dsvs:structure-entity;
+    kv:dataPsmDatatype "\"http://www.w3.org/1999/02/22-rdf-syntax-ns#langString\"";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/AlternateTitleType.label\"";
+    kv:dataPsmTechnicalLabel "\"label\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/alternate-title-type/attribute-1747685374451-9e56-3fb3-8eb5\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Attribute\"]".
