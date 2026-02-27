@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:xml="http://www.w3.org/XML/1998/namespace">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:complexType name="format" sawsdl:modelReference="http://purl.org/dc/terms/MediaTypeOrExtent">
     <xs:annotation>
       <xs:documentation xml:lang="en">
         Format - Format of downloadable file.
+        Use IRI identifier from the register http://publications.europa.eu/resource/dataset/file-type. Human readable codelist representation is here: https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type.
       </xs:documentation>
     </xs:annotation>
     <xs:sequence>
@@ -13,6 +14,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             label - Label of format value.
+            Use a label of a codelist value from http://publications.europa.eu/resource/dataset/file-type.
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>
@@ -23,7 +25,7 @@
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##other"/>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="format" type="ccmm:format"/>

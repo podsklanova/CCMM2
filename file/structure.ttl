@@ -1,0 +1,33 @@
+@prefix : <https://model.ccmm.cz/research-data/file/>.
+@prefix dsvs: <https://dataspecer.com/work-in-progress/>.
+@prefix kv: <https://dataspecer.com/work-in-progress/key-value/>.
+
+<https://model.ccmm.cz/research-data/file/> a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "{\"cs\":\"Datová struktura pro File. Downloadable file in given format.\",\"en\":\"Data structure for File. Downloadable file in given format.\"}";
+    kv:dataPsmHumanLabel "{\"cs\":\"File\",\"en\":\"File\"}";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/file/class-1742235831207-776a-49bb-9ac1\",\"https://model.ccmm.cz/research-data/file/attribute-1742341222538-69a0-8ce3-ac2a\"]";
+    kv:dataPsmRoots "[\"https://model.ccmm.cz/research-data/file/class-1742235831207-776a-49bb-9ac1\"]";
+    kv:dataPsmTechnicalLabel "null";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"namespace\":\"https://schema.ccmm.cz/research-data/1.1\",\"namespacePrefix\":\"ccmm\"}}";
+    kv:iri "\"https://model.ccmm.cz/research-data/file/\"";
+    kv:jsonEnforceContext "\"no\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Schema\"]".
+:class-1742235831207-776a-49bb-9ac1 a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/File\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/file/attribute-1742341222538-69a0-8ce3-ac2a\"]";
+    kv:dataPsmTechnicalLabel "\"file\"";
+    kv:instancesHaveIdentity "\"ALWAYS\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/file/class-1742235831207-776a-49bb-9ac1\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:attribute-1742341222538-69a0-8ce3-ac2a a dsvs:structure-entity;
+    kv:dataPsmDatatype "\"http://www.w3.org/1999/02/22-rdf-syntax-ns#langString\"";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/File.label\"";
+    kv:dataPsmTechnicalLabel "\"label\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/file/attribute-1742341222538-69a0-8ce3-ac2a\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Attribute\"]".

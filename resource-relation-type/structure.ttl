@@ -1,0 +1,33 @@
+@prefix : <https://model.ccmm.cz/research-data/resource-relation-type/>.
+@prefix dsvs: <https://dataspecer.com/work-in-progress/>.
+@prefix kv: <https://dataspecer.com/work-in-progress/key-value/>.
+
+<https://model.ccmm.cz/research-data/resource-relation-type/> a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "{\"en\":\"Data structure for Resource relation type. Type of the relation between the dataset and given resource.\",\"cs\":\"Datová struktura pro Resource relation type. Type of the relation between the dataset and given resource.\"}";
+    kv:dataPsmHumanLabel "{\"en\":\"Resource relation type\",\"cs\":\"Resource relation type\"}";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/resource-relation-type/class-1747685037448-1c9b-f7fc-b4be\",\"https://model.ccmm.cz/research-data/resource-relation-type/attribute-1747685041681-73cf-986b-90eb\"]";
+    kv:dataPsmRoots "[\"https://model.ccmm.cz/research-data/resource-relation-type/class-1747685037448-1c9b-f7fc-b4be\"]";
+    kv:dataPsmTechnicalLabel "null";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"namespace\":\"https://schema.ccmm.cz/research-data/1.1\",\"namespacePrefix\":\"ccmm\"}}";
+    kv:iri "\"https://model.ccmm.cz/research-data/resource-relation-type/\"";
+    kv:jsonEnforceContext "\"no\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Schema\"]".
+:class-1747685037448-1c9b-f7fc-b4be a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/ResourceRelationType\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/resource-relation-type/attribute-1747685041681-73cf-986b-90eb\"]";
+    kv:dataPsmTechnicalLabel "\"resource_relation_type\"";
+    kv:instancesHaveIdentity "\"ALWAYS\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/resource-relation-type/class-1747685037448-1c9b-f7fc-b4be\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:attribute-1747685041681-73cf-986b-90eb a dsvs:structure-entity;
+    kv:dataPsmDatatype "\"http://www.w3.org/1999/02/22-rdf-syntax-ns#langString\"";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/ResourceRelationType.label\"";
+    kv:dataPsmTechnicalLabel "\"label\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/resource-relation-type/attribute-1747685041681-73cf-986b-90eb\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Attribute\"]".

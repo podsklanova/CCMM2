@@ -1,0 +1,19 @@
+@prefix : <https://model.ccmm.cz/research-data/generator-configuration#>.
+@prefix dsvgc: <https://dataspecer.com/work-in-progress/generator-configuration/>.
+@prefix ce: <https://dataspecer.com/work-in-progress/generator-configuration/configuration-entry/>.
+@prefix kv: <https://dataspecer.com/work-in-progress/generator-configuration/key-value/>.
+
+<https://model.ccmm.cz/research-data/generator-configuration#> a dsvgc:configuration;
+    dsvgc:has-configurations :xml, :data-specification, :json.
+:xml a <https://dataspecer.com/work-in-progress/generator-configuration/configuration-entry/>;
+    dsvgc:has-configuration-type ce:xml.
+:data-specification a <https://dataspecer.com/work-in-progress/generator-configuration/configuration-entry/>;
+    dsvgc:has-configuration-type ce:data-specification;
+    kv:instancesHaveIdentity "\"OPTIONAL\"";
+    kv:instancesSpecifyTypes "\"OPTIONAL\"";
+    kv:publicBaseUrl "\"https://model.ccmm.cz/research-data/\"";
+    kv:useGenerators "{\"csv\":false,\"sparql\":false,\"shacl\":false,\"shex\":false,\"openapi\":false,\"plantUML\":false,\"jsonExample\":false,\"json\":false}".
+:json a <https://dataspecer.com/work-in-progress/generator-configuration/configuration-entry/>;
+    dsvgc:has-configuration-type ce:json;
+    kv:includeContextInExample "false";
+    kv:jsonLabelLanguage "\"en\"".

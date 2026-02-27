@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:xml="http://www.w3.org/XML/1998/namespace">
   <xs:include schemaLocation="../data-service/schema.xsd"/>
   <xs:include schemaLocation="../application-profile/schema.xsd"/>
   <xs:include schemaLocation="../documentation/schema.xsd"/>
@@ -29,6 +29,7 @@
           </xs:documentation>
           <xs:documentation xml:lang="en">
             has access service - A site or end-point that gives access to the distribution of the dataset.
+            Access service SHOULD be used to link to a description of Data service that can provide access to this distribution.
           </xs:documentation>
           <xs:documentation xml:lang="es">
             servicio de acceso de datos - Un sitio o end-point que da acceso a la distribución de un conjunto de datos.
@@ -42,6 +43,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             conforms to specification - An established standard to which the distribution conforms.
+            This property SHOULD be used to indicate the profile or specification that this data service conforms to. This is (generally) a complementary concern to the service standard.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -56,6 +58,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             description - A free-text account of the Distribution.
+            This property can be repeated for parallel language versions of the description. 
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>
@@ -66,7 +69,7 @@
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##other"/>
     </xs:sequence>
   </xs:complexType>
   <xs:element name="distribution-data-service" type="ccmm:distribution_data_service"/>
