@@ -29,9 +29,9 @@ Each subdirectory contains structured models formalized in XSD (schema.xsd). The
 
 ## Sample XML
 
-[Metadata samples in XML](https://github.com/techlib/CCMM/tree/main/metadata-samples/xml) are provided. For example, there is a sample on air quality data with links and a relation to existing resources, introducing most of the use cases users may encounter.
+[Metadata samples in XML](https://github.com/techlib/CCMM/tree/main/_metadata-samples/xml) are provided. For example, there is a sample on air quality data with links and a relation to existing resources, introducing most of the use cases users may encounter.
 
-The file [`dataset-mini.xml`](https://github.com/techlib/CCMM/blob/main/metadata-samples/xml/dataset-mini.xml) provides a minimal valid CCMM dataset example showing only mandatory and conditionally mandatory elements.
+The file [`dataset-mini.xml`](https://github.com/techlib/CCMM/blob/main/_metadata-samples/xml/dataset-mini.xml) provides a minimal valid CCMM dataset example showing only mandatory and conditionally mandatory elements.
 
 ## Dataspecer project
 
