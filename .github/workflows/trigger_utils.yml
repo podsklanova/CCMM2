@@ -1,0 +1,21 @@
+name: Trigger CCMM Utils Update
+
+on:
+  push:
+    branches:
+      - main
+    # run only if schemas are changed
+    paths:
+      - '**.xsd'
+
+jobs:
+  ping-utils:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit Repository Dispatch
+        run: |
+          curl -X POST \
+          -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/techlib/CCMM-utils/dispatches \
+          -d '{"event_type": "ccmm_xsd_updated"}'
