@@ -53,7 +53,7 @@
             <ns0:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-16</ns0:created>
             <ns0:conformsTo>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://schema.ccmm.cz/research-data/1.1.0">
+                                rdf:about="https://model.ccmm.cz/research-data/1.1.0">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="">CCMM RD 1.1.0</ns0:label>

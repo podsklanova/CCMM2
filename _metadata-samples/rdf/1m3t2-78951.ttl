@@ -1,0 +1,628 @@
+@prefix c:    <https://schemas.dataspecer.com/xsd/core/> .
+@prefix ccmm: <https://schema.ccmm.cz/research-data/1.1> .
+@prefix ns0:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2:  <http://spdx.org/rdf/terms#> .
+@prefix ns3:  <https://model.ccmm.cz/vocabulary/ccmm#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsi:  <http://www.w3.org/2001/XMLSchema-instance> .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/ReadMe.txt>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "ReadMe.txt"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TXT> ;
+        <http://purl.org/dc/terms/title>
+                "ReadMe.txt" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                3889 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/ReadMe.txt> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/text/plain> .
+
+<https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json>
+        rdf:type   <http://purl.org/dc/terms/Standard> ;
+        ns0:label  "NR Datasets JSON Schema v1.0.0"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz>
+        rdf:type  <http://www.w3.org/ns/dcat#Catalog> .
+
+<https://doi.org/>  rdf:type  ns3:IdentifierScheme ;
+        ns0:label  "DOI"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2C_MPO_DNAchannel.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2C_MPO_DNAchannel.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                1049033 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://model.ccmm.cz/research-data/1.1.0>
+        rdf:type   <http://purl.org/dc/terms/Standard> ;
+        ns0:label  "CCMM RD 1.1.0"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2A_NE_Merge_5um.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2A_NE_Merge_5um.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                786842 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2A_NE_DNAchannel.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2A_NE_DNAchannel.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                1049028 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://orcid.org/0000-0003-1662-9092>
+        rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+        ns1:notation  "0000-0003-1662-9092" ;
+        ns3:inScheme  <https://orcid.org/> .
+
+<https://orcid.org/0009-0008-0140-2075>
+        rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+        ns1:notation  "0009-0008-0140-2075" ;
+        ns3:inScheme  <https://orcid.org/> .
+
+<https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract>
+        rdf:type   <https://model.ccmm.cz/vocabulary/datacite#DescriptionType> ;
+        ns0:label  "Abstrakt"^^rdf:langString , "Abstract"^^rdf:langString .
+
+<http://publications.europa.eu/resource/authority/file-type/PDF>
+        rdf:type   <http://purl.org/dc/terms/MediaTypeOrExtent> ;
+        ns0:label  "PDF"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2B_citH3_DNAchannel.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2B_citH3_DNAchannel.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                1049028 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://creativecommons.org/licenses/by/4.0/>
+        rdf:type   <http://purl.org/dc/terms/LicenseDocument> ;
+        ns0:label  "Creative Commons Attribution 4.0 International License"^^rdf:langString , "Creative Commons Uveďte původ 4.0 Mezinárodní licence"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supplementary_Figures.pdf"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/PDF> ;
+        <http://purl.org/dc/terms/title>
+                "Supplementary_Figures.pdf" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                895767 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/application/pdf> .
+
+<https://ror.org/>  rdf:type  ns3:IdentifierScheme ;
+        ns0:label  "ROR"^^rdf:langString .
+
+<http://publications.europa.eu/resource/authority/language/ENG>
+        rdf:type   <http://purl.org/dc/terms/LinguisticSystem> ;
+        ns0:label  "English"^^rdf:langString .
+
+<http://purl.org/coar/access_right/c_abf2>
+        rdf:type   <http://purl.org/dc/terms/RightsStatement> ;
+        ns0:label  "open access"^^rdf:langString , "otevřený přístup"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "CebecauerTkadlec_GACR2026_MindMap.pdf"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/PDF> ;
+        <http://purl.org/dc/terms/title>
+                "CebecauerTkadlec_GACR2026_MindMap.pdf" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                67587 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/application/pdf> .
+
+<https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Date Available"^^rdf:langString , "Datum zveřejnění"^^rdf:langString .
+
+<http://publications.europa.eu/resource/authority/language/CES>
+        rdf:type   <http://purl.org/dc/terms/LinguisticSystem> ;
+        ns0:label  "čeština"^^rdf:langString .
+
+<http://www.iana.org/assignments/media-types/image/tiff>
+        rdf:type   <http://purl.org/dc/terms/MediaType> ;
+        ns0:label  "image/tiff"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Date Issued"^^rdf:langString , "Datum vydání"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102>
+        rdf:type             <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+        <http://purl.org/dc/terms/title>
+                "Imunologie"^^rdf:langString , "Immunology"^^rdf:langString ;
+        ns3:inSubjectScheme  <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> ;
+        <https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode>
+                "30102" .
+
+<https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo>
+        rdf:type   <https://model.ccmm.cz/vocabulary/datacite#DescriptionType> ;
+        ns0:label  "Technická informace"^^rdf:langString , "Technical Info"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2A_NE_processedSMLM.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2A_NE_processedSMLM.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                26112432 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://www.wikidata.org/entity/Q42302581>
+        rdf:type   ns3:IdentifierScheme ;
+        ns0:label  "IČO"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951>
+        rdf:type                <http://www.w3.org/ns/dcat#CatalogRecord> ;
+        <http://purl.org/dc/terms/conformsTo>
+                <https://model.ccmm.cz/research-data/1.1.0> , <https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json> ;
+        <http://purl.org/dc/terms/created>
+                "2025-04-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://purl.org/dc/terms/language>
+                <http://publications.europa.eu/resource/authority/language/CES> , <http://publications.europa.eu/resource/authority/language/ENG> ;
+        <http://purl.org/dc/terms/modified>
+                "2025-09-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.w3.org/ns/dcat#qualifiedRelation>
+                [ rdf:type  ns3:ResourceToAgentRelationship ;
+                  <http://purl.org/dc/terms/relation>
+                          [ rdf:type  <http://www.w3.org/ns/prov#Person> ;
+                            <http://www.w3.org/2006/vcard/ns#family-name>
+                                    ":unkn" ;
+                            <http://www.w3.org/2006/vcard/ns#given-name>
+                                    ":unkn" ;
+                            <http://xmlns.com/foaf/0.1/name>
+                                    ":unkn"
+                          ] ;
+                  <http://www.w3.org/ns/dcat#hadRole>
+                          <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager>
+                ] ;
+        ns3:originalRepository  <https://data.narodni-repozitar.cz> .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2B_citH3_Merge_5um.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2B_citH3_Merge_5um.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                786842 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Date Collected"^^rdf:langString , "Datum sběru"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2B_citH3_processedSMLM.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2B_citH3_processedSMLM.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                26163532 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Creator"^^rdf:langString , "Autor"^^rdf:langString .
+
+<https://orcid.org/>  rdf:type  ns3:IdentifierScheme ;
+        ns0:label  "ORCID"^^rdf:langString .
+
+<http://www.iana.org/assignments/media-types/text/plain>
+        rdf:type   <http://purl.org/dc/terms/MediaType> ;
+        ns0:label  "text/plain"^^rdf:langString .
+
+<https://orcid.org/0000-0002-4606-1218>
+        rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+        ns1:notation  "0000-0002-4606-1218" ;
+        ns3:inScheme  <https://orcid.org/> .
+
+<https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Date Created"^^rdf:langString , "Datum vytvoření"^^rdf:langString .
+
+<http://purl.org/coar/resource_type/c_ddb1>
+        rdf:type   ns1:Concept ;
+        ns0:label  "datová sada"^^rdf:langString , "dataset"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2C_MPO_Merge_5um.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2C_MPO_Merge_5um.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                786842 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<http://publications.europa.eu/resource/authority/file-type/TXT>
+        rdf:type   <http://purl.org/dc/terms/MediaTypeOrExtent> ;
+        ns0:label  "Plain text"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Data manager"^^rdf:langString , "Manažer dat"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601>
+        rdf:type             <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+        <http://purl.org/dc/terms/title>
+                "Buněčná biologie"^^rdf:langString , "Cell biology"^^rdf:langString ;
+        ns3:inSubjectScheme  <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> ;
+        <https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode>
+                "10601" .
+
+<https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods>
+        rdf:type   <https://model.ccmm.cz/vocabulary/datacite#DescriptionType> ;
+        ns0:label  "Metodologie"^^rdf:langString , "Methods"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/>
+        rdf:type   ns3:SubjectScheme ;
+        ns0:label  "OECD FORD Subject Category (Frascati)"^^rdf:langString , "Oborové třídění OECD FORD (Frascati)"^^rdf:langString .
+
+<https://doi.org/10.48700/datst.1m3t2-78951>
+        rdf:type                 <http://www.w3.org/ns/dcat#Dataset> , <http://www.w3.org/ns/adms#Identifier> ;
+        <http://purl.org/dc/terms/language>
+                <http://publications.europa.eu/resource/authority/language/ENG> ;
+        <http://purl.org/dc/terms/provenance>
+                [ rdf:type  <http://purl.org/dc/terms/ProvenanceStatement> ] ;
+        <http://purl.org/dc/terms/title>
+                "Data set žádosti o grant Grantové agentury České republiky" ;
+        <http://purl.org/dc/terms/type>
+                <http://purl.org/coar/resource_type/c_ddb1> ;
+        ns1:notation             "10.48700/datst.1m3t2-78951" ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/ReadMe.txt> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif> , <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif> ;
+        ns3:hasAlternateTitle    [ rdf:type     ns3:AlternateTitle ;
+                                   <http://purl.org/dc/terms/title>
+                                           "The Czech Science Foundation Grant Application Data Set"^^rdf:langString ;
+                                   ns3:hasType  <https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle>
+                                 ] ;
+        ns3:hasIdentifier        <https://doi.org/10.48700/datst.1m3t2-78951> ;
+        ns3:hasTimeReference     [ rdf:type     ns3:TimeReference ;
+                                   <http://www.w3.org/2006/time#hasTime>
+                                           [ rdf:type  <http://www.w3.org/2006/time#Interval> ;
+                                             <http://www.w3.org/2006/time#hasBeginning>
+                                                     [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                                       <http://www.w3.org/2006/time#inXSDDate>
+                                                               "2025-01-01"^^<http://www.w3.org/2001/XMLSchema#date>
+                                                     ] ;
+                                             <http://www.w3.org/2006/time#hasEnd>
+                                                     [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                                       <http://www.w3.org/2006/time#inXSDDate>
+                                                               "2025-04-03"^^<http://www.w3.org/2001/XMLSchema#date>
+                                                     ]
+                                           ] ;
+                                   ns3:hasType  <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected>
+                                 ] ;
+        ns3:hasTimeReference     [ rdf:type     ns3:TimeReference ;
+                                   <http://www.w3.org/2006/time#hasTime>
+                                           [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                             <http://www.w3.org/2006/time#inXSDDate>
+                                                     "2025-04-03"^^<http://www.w3.org/2001/XMLSchema#date>
+                                           ] ;
+                                   ns3:hasType  <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available>
+                                 ] ;
+        ns3:hasTimeReference     [ rdf:type     ns3:TimeReference ;
+                                   <http://www.w3.org/2006/time#hasTime>
+                                           [ rdf:type  <http://www.w3.org/2006/time#Interval> ;
+                                             <http://www.w3.org/2006/time#hasBeginning>
+                                                     [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                                       <http://www.w3.org/2006/time#inXSDDate>
+                                                               "2025-04-02"^^<http://www.w3.org/2001/XMLSchema#date>
+                                                     ] ;
+                                             <http://www.w3.org/2006/time#hasEnd>
+                                                     [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                                       <http://www.w3.org/2006/time#inXSDDate>
+                                                               "2025-04-03"^^<http://www.w3.org/2001/XMLSchema#date>
+                                                     ]
+                                           ] ;
+                                   ns3:hasType  <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created>
+                                 ] ;
+        ns3:hasTimeReference     [ rdf:type     ns3:TimeReference ;
+                                   <http://www.w3.org/2006/time#hasTime>
+                                           [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                             <http://www.w3.org/2006/time#inXSDDate>
+                                                     "2025-04-03"^^<http://www.w3.org/2001/XMLSchema#date>
+                                           ] ;
+                                   ns3:hasType  <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued>
+                                 ] ;
+        ns3:hasValidationResult  [ rdf:type  ns3:ValidationResult ] ;
+        ns3:inScheme             <https://doi.org/> ;
+        ns3:isDescribedBy        <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951> ;
+        ns3:qualifiedRelation    [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                   <http://purl.org/dc/terms/relation>
+                                           [ rdf:type            <http://www.w3.org/ns/prov#Person> ;
+                                             <http://xmlns.com/foaf/0.1/name>
+                                                     "Paldusová, Kateřina" ;
+                                             ns3:hasAffiliation  [ rdf:type           <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                   <http://xmlns.com/foaf/0.1/name>
+                                                                           "Ústav fyzikální chemie J. Heyrovského AV ČR" ;
+                                                                   ns3:hasIdentifier  <https://ror.org/02sat5y74> ;
+                                                                   ns3:hasIdentifier  [ rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+                                                                                        ns1:notation  "61388955" ;
+                                                                                        ns3:inScheme  <https://www.wikidata.org/entity/Q42302581>
+                                                                                      ]
+                                                                 ] ;
+                                             ns3:hasIdentifier   <https://orcid.org/0009-0003-1158-1138>
+                                           ] ;
+                                   <http://www.w3.org/ns/dcat#hadRole>
+                                           <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+                                 ] ;
+        ns3:qualifiedRelation    [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                   <http://purl.org/dc/terms/relation>
+                                           [ rdf:type            <http://www.w3.org/ns/prov#Person> ;
+                                             <http://xmlns.com/foaf/0.1/name>
+                                                     "Echezarreta Mendicute, Irene" ;
+                                             ns3:hasAffiliation  [ rdf:type           <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                   <http://xmlns.com/foaf/0.1/name>
+                                                                           "Ústav fyzikální chemie J. Heyrovského AV ČR" ;
+                                                                   ns3:hasIdentifier  <https://ror.org/02sat5y74> ;
+                                                                   ns3:hasIdentifier  [ rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+                                                                                        ns1:notation  "61388955" ;
+                                                                                        ns3:inScheme  <https://www.wikidata.org/entity/Q42302581>
+                                                                                      ]
+                                                                 ] ;
+                                             ns3:hasIdentifier   <https://orcid.org/0009-0008-0140-2075>
+                                           ] ;
+                                   <http://www.w3.org/ns/dcat#hadRole>
+                                           <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+                                 ] ;
+        ns3:qualifiedRelation    [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                   <http://purl.org/dc/terms/relation>
+                                           [ rdf:type           <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                             <http://xmlns.com/foaf/0.1/name>
+                                                     "Ústav fyzikální chemie J. Heyrovského AV ČR" ;
+                                             ns3:hasIdentifier  <https://ror.org/02sat5y74> ;
+                                             ns3:hasIdentifier  [ rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+                                                                  ns1:notation  "61388955" ;
+                                                                  ns3:inScheme  <https://www.wikidata.org/entity/Q42302581>
+                                                                ]
+                                           ] ;
+                                   <http://www.w3.org/ns/dcat#hadRole>
+                                           <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher>
+                                 ] ;
+        ns3:qualifiedRelation    [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                   <http://purl.org/dc/terms/relation>
+                                           [ rdf:type            <http://www.w3.org/ns/prov#Person> ;
+                                             <http://xmlns.com/foaf/0.1/name>
+                                                     "González Navarro, José Alfredo" ;
+                                             ns3:hasAffiliation  [ rdf:type           <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                   <http://xmlns.com/foaf/0.1/name>
+                                                                           "Ústav fyzikální chemie J. Heyrovského AV ČR" ;
+                                                                   ns3:hasIdentifier  <https://ror.org/02sat5y74> ;
+                                                                   ns3:hasIdentifier  [ rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+                                                                                        ns1:notation  "61388955" ;
+                                                                                        ns3:inScheme  <https://www.wikidata.org/entity/Q42302581>
+                                                                                      ]
+                                                                 ] ;
+                                             ns3:hasIdentifier   <https://orcid.org/0000-0003-1662-9092>
+                                           ] ;
+                                   <http://www.w3.org/ns/dcat#hadRole>
+                                           <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+                                 ] ;
+        ns3:qualifiedRelation    [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                   <http://purl.org/dc/terms/relation>
+                                           [ rdf:type            <http://www.w3.org/ns/prov#Person> ;
+                                             <http://xmlns.com/foaf/0.1/name>
+                                                     "Cebecauer, Marek" ;
+                                             ns3:hasAffiliation  [ rdf:type           <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                                                   <http://xmlns.com/foaf/0.1/name>
+                                                                           "Ústav fyzikální chemie J. Heyrovského AV ČR" ;
+                                                                   ns3:hasIdentifier  <https://ror.org/02sat5y74> ;
+                                                                   ns3:hasIdentifier  [ rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+                                                                                        ns1:notation  "61388955" ;
+                                                                                        ns3:inScheme  <https://www.wikidata.org/entity/Q42302581>
+                                                                                      ]
+                                                                 ] ;
+                                             ns3:hasIdentifier   <https://orcid.org/0000-0002-4606-1218>
+                                           ] ;
+                                   <http://www.w3.org/ns/dcat#hadRole>
+                                           <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+                                 ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Description> ;
+                  <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
+                          "Data supporting the structure of neutrophil extracellular traps generated from human neutrophils"^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
+                          <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Description> ;
+                  <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
+                          "Isolation of neutrophils from human blood samples, neutrophil stimulation with NETosis-inducing agents, microscopy data acquisition"^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
+                          <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Description> ;
+                  <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
+                          "Supplementary microscopy data"^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
+                          <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Description> ;
+                  <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
+                          "Data podporující strukturu neutrofilových extracelulárních pastí pocházejících z lidských neutrofilů"^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
+                          <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Description> ;
+                  <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
+                          "Doplňující mikroskopická data"^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
+                          <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Description> ;
+                  <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
+                          "Izolace neutrofilů ze vzorků lidské krve, stimulace neutrofilů pomocí agens indukujících NETózu, akvizice mikroskopických dat"^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
+                          <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasRights>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Rights> ;
+                  <http://purl.org/dc/terms/accessRights>
+                          <http://purl.org/coar/access_right/c_abf2> ;
+                  <http://purl.org/dc/terms/license>
+                          <https://creativecommons.org/licenses/by/4.0/>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
+                <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102> , <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601> , <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606> ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+                  <http://purl.org/dc/terms/title>
+                          "NETy"^^rdf:langString , "NETs"^^rdf:langString
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+                  <http://purl.org/dc/terms/title>
+                          "mikroskopie"^^rdf:langString , "microscopy"^^rdf:langString
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+                  <http://purl.org/dc/terms/title>
+                          "lidské neutrofily"^^rdf:langString , "human neutrophils"^^rdf:langString
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+                  <http://purl.org/dc/terms/title>
+                          "NETóza"^^rdf:langString , "NETosis"^^rdf:langString
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>
+                "2025"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<http://www.iana.org/assignments/media-types/application/pdf>
+        rdf:type   <http://purl.org/dc/terms/MediaType> ;
+        ns0:label  "application/pdf"^^rdf:langString .
+
+<http://publications.europa.eu/resource/authority/file-type/TIFF>
+        rdf:type   <http://purl.org/dc/terms/MediaTypeOrExtent> ;
+        ns0:label  "TIFF"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/>
+        rdf:type  ns0:Resource .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606>
+        rdf:type             <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+        <http://purl.org/dc/terms/title>
+                "Mikrobiologie"^^rdf:langString , "Microbiology"^^rdf:langString ;
+        ns3:inSubjectScheme  <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> ;
+        <https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode>
+                "10606" .
+
+<https://orcid.org/0009-0003-1158-1138>
+        rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+        ns1:notation  "0009-0003-1158-1138" ;
+        ns3:inScheme  <https://orcid.org/> .
+
+<https://ror.org/02sat5y74>
+        rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+        ns1:notation  "02sat5y74" ;
+        ns3:inScheme  <https://ror.org/> .
+
+<https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Přeložený název"^^rdf:langString , "Translated Title"^^rdf:langString .
+
+<https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif>
+        rdf:type   ns3:Distribution-DownloadableFile , ns0:Resource ;
+        ns0:label  "Supp_Fig2C_MPO_processedSMLM.tif"^^rdf:langString ;
+        <http://purl.org/dc/terms/format>
+                <http://publications.europa.eu/resource/authority/file-type/TIFF> ;
+        <http://purl.org/dc/terms/title>
+                "Supp_Fig2C_MPO_processedSMLM.tif" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/> ;
+        <http://www.w3.org/ns/dcat#byteSize>
+                26112431 ;
+        <http://www.w3.org/ns/dcat#downloadURL>
+                <https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif> ;
+        <http://www.w3.org/ns/dcat#mediaType>
+                <http://www.iana.org/assignments/media-types/image/tiff> .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher>
+        rdf:type   ns1:Concept ;
+        ns0:label  "Publisher"^^rdf:langString , "Vydavatel"^^rdf:langString .

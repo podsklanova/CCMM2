@@ -39,7 +39,7 @@
             </ns1:qualifiedRelation>
             <ns0:conformsTo>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://schema.ccmm.cz/research-data/1.1.0">
+                                rdf:about="https://model.ccmm.cz/research-data/1.1.0">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
                </rdf:Description>
             </ns0:conformsTo>

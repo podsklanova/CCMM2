@@ -1,0 +1,491 @@
+@prefix c:    <https://schemas.dataspecer.com/xsd/core/> .
+@prefix ccmm: <https://schema.ccmm.cz/research-data/1.1> .
+@prefix ns0:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:  <http://purl.org/dc/terms/> .
+@prefix ns2:  <http://spdx.org/rdf/terms#> .
+@prefix ns3:  <http://www.w3.org/ns/dcat#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsi:  <http://www.w3.org/2001/XMLSchema-instance> .
+
+<https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd>
+        rdf:type   ns1:Standard ;
+        ns0:label  "Environmental monitoring facilities"^^rdf:langString .
+
+<https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip>
+        rdf:type   ns0:Resource ;
+        ns0:label  "Datová sada ve formátu Geopackage"^^rdf:langString , "Dataset in Geopackage format"^^rdf:langString .
+
+<https://organization.cz/dataset_server/dataset_id>
+        rdf:type          ns3:Dataset ;
+        ns1:language      <http://publications.europa.eu/resource/authority/language/ENG> , <http://publications.europa.eu/resource/authority/language/CES> ;
+        ns1:provenance    [ rdf:type  ns1:ProvenanceStatement ] ;
+        ns1:spatial       [ rdf:type   <https://model.ccmm.cz/vocabulary/datacite#Geolocation> , ns1:Location ;
+                            ns1:title  "Středočeský kraj" ;
+                            ns3:bbox   "\n            13.394972457505816 49.50127042751268\n            15.585575400519133 50.61421606255462\n        "^^ns0:Literal ;
+                            <http://www.w3.org/ns/locn#geometry>
+                                    [ rdf:type  <http://www.w3.org/ns/locn#Geometry> ;
+                                      <http://www.opengis.net/ont/geosparql#asWKT>
+                                              "POLYGON ((14.508682697577541\n                50.51144569678917, 14.477983995157558 50.518028235000116, 14.478035479185621\n                50.45555539736816, 14.43880488232486 50.421645176771875, 14.36581743554305\n                50.446719892855725, 14.35739194570175 50.36258757705775, 14.250657864603255\n                50.33210789446332, 14.020371354587127 50.357187064119046, 13.880065240527614\n                50.25844541078942, 13.778984389572202 50.265648633804574, 13.495504438237504\n                50.17943830724704, 13.411503893003527 50.10568117653557, 13.417170120315802\n                50.03544699629592, 13.832381491846519 49.950644934840085, 13.795973119752944\n                49.80605469619334, 13.85777765771411 49.70834633763184, 13.731479412226832\n                49.6646629397591, 13.756733581251808 49.524668139017024, 13.967097422200993\n                49.51543217474966, 14.046896101223354 49.56571182490248, 14.088997534155055\n                49.520140414785175, 14.263020664899983 49.55285796043711, 14.389212294975863\n                49.53296587296373, 14.564954244472574 49.54952076690324, 14.646281469761647\n                49.50408988161226, 14.735996252098658 49.5403919181108, 14.747207923257832\n                49.62756002769342, 14.932262624987828 49.542327845490064, 15.005169791530534\n                49.6041078098593, 15.232274449831607 49.60593619825548, 15.243541844074144\n                49.65489001943007, 15.16792950938833 49.69645491207288, 15.212758939211\n                49.758168304172386, 15.510333591208592 49.853893057205454, 15.5246155982382\n                49.97119836125438, 15.361856320336926 50.046941393360356, 15.41520889434986\n                50.12977066138589, 15.32818568688134 50.15316027875852, 15.401167427630014\n                50.22145049356703, 15.356241063917224 50.293232962277955, 15.207509418150238\n                50.28784932198144, 15.089561576559703 50.37564180390385, 15.15967793985348\n                50.46503338472152, 15.100730871208327 50.548897837519775, 14.915528393428872\n                50.61835182571946, 14.85663081512601 50.57566962715006, 14.820147490564125\n                50.543574383167936, 14.769635500894594 50.56495862568477, 14.741574967586558\n                50.53286099312848, 14.688263940665593 50.48824277888082, 14.604089936049633\n                50.479312687191054, 14.508682697577541 50.51144569678917))"^^<http://www.opengis.net/ont/geosparql#wktLiteral>
+                                    ] ;
+                            <https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource>
+                                    <https://vdp.cuzk.gov.cz/vdp/ruian/vusc/27> ;
+                            <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                                    <https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected>
+                          ] ;
+        ns1:title         "Kvalita ovzduší ve středních čechách 2024" ;
+        ns1:type          <http://purl.org/coar/resource_type/c_ddb1> ;
+        ns3:distribution  <http://portal.chmi.cz/AQ_DATA> , <https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> ;
+        ns3:version       "1.0.23" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>
+                [ rdf:type   <https://model.ccmm.cz/vocabulary/ccmm#AlternateTitle> ;
+                  ns1:title  "Air quality measurements in Central Bohemian Region in 2024."^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                          <https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                <https://organization.cz/datasets/air-q-cb-25-23> , <https://doi.org/10.45321/as36sl> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource>
+                <https://opendata.chmi.cz/air_quality/now/data/> , <http://data.europa.eu/eli/dir/2008/50/oj> , <https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource>
+                [ rdf:type   ns0:Resource ;
+                  ns1:title  "ENVI LVS1 Sampler pro odběr prašného aerosolu" ;
+                  ns1:type   <http://purl.org/coar/resource_type/8KJG-QS0Y> ;
+                  <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                          <https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy> ;
+                  <https://model.ccmm.cz/vocabulary/ccmm#resourceUrl>
+                          "https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu"^^<http://www.w3.org/2001/XMLSchema#anyURI>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#TimeReference> ;
+                  <http://www.w3.org/2006/time#hasTime>
+                          [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                            <http://www.w3.org/2006/time#inXSDDateTime>
+                                    "2025-04-27T12:00:01+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>
+                          ] ;
+                  <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                          <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#TimeReference> ;
+                  <http://www.w3.org/2006/time#hasTime>
+                          [ rdf:type  <http://www.w3.org/2006/time#Interval> ;
+                            <http://www.w3.org/2006/time#hasBeginning>
+                                    [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                      <http://www.w3.org/2006/time#inXSDDate>
+                                              "2024-01-01"^^<http://www.w3.org/2001/XMLSchema#date>
+                                    ] ;
+                            <http://www.w3.org/2006/time#hasEnd>
+                                    [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                      <http://www.w3.org/2006/time#inXSDDate>
+                                              "2024-12-31"^^<http://www.w3.org/2001/XMLSchema#date>
+                                    ]
+                          ] ;
+                  <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                          <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasValidationResult>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#ValidationResult> ] ;
+        <https://model.ccmm.cz/vocabulary/ccmm#isDescribedBy>
+                <https://original-catalogue/dataset_metadata_id> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>
+                [ rdf:type      <https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship> ;
+                  ns1:relation  [ rdf:type          <http://www.w3.org/ns/prov#Person> ;
+                                  <http://www.w3.org/2006/vcard/ns#family-name>
+                                          "Janouch" ;
+                                  <http://www.w3.org/2006/vcard/ns#given-name>
+                                          "Ivan" ;
+                                  ns3:contactPoint  [ rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#ContactDetails> ;
+                                                      <http://www.w3.org/2006/vcard/ns#hasAddress>
+                                                              [ rdf:type  <http://www.w3.org/ns/locn#Address> ;
+                                                                <http://www.w3.org/ns/locn#fullAddress>
+                                                                        "Pražská 3, 60200, Brno"
+                                                              ] ;
+                                                      <https://model.ccmm.cz/vocabulary/ccmm#email>
+                                                              "256384@muni.cz" ;
+                                                      <https://model.ccmm.cz/vocabulary/ccmm#phone>
+                                                              "+420876543219"
+                                                    ] ;
+                                  <http://xmlns.com/foaf/0.1/name>
+                                          "Ivan Janouch" ;
+                                  <https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation>
+                                          [ rdf:type  <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                            <http://xmlns.com/foaf/0.1/name>
+                                                    "Masarykova Univerzita" ;
+                                            <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                                                    <https://ror.org/02j46qs45>
+                                          ] ;
+                                  <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                                          <https://orcid.org/0023-0802-44X6-26X0>
+                                ] ;
+                  ns3:hadRole   <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>
+                [ rdf:type      <https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship> ;
+                  ns1:relation  [ rdf:type          <http://www.w3.org/ns/prov#Person> ;
+                                  <http://www.w3.org/2006/vcard/ns#family-name>
+                                          "Novák" ;
+                                  <http://www.w3.org/2006/vcard/ns#given-name>
+                                          "Jan" ;
+                                  ns3:contactPoint  [ rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#ContactDetails> ;
+                                                      <http://www.w3.org/2006/vcard/ns#hasAddress>
+                                                              [ rdf:type  <http://www.w3.org/ns/locn#Address> ;
+                                                                <http://www.w3.org/ns/locn#fullAddress>
+                                                                        "Dlouhá 15, 11000, Praha 1"
+                                                              ] ;
+                                                      <https://model.ccmm.cz/vocabulary/ccmm#email>
+                                                              "jan.novak@email.com" ;
+                                                      <https://model.ccmm.cz/vocabulary/ccmm#phone>
+                                                              "+0112345678"
+                                                    ] ;
+                                  <http://xmlns.com/foaf/0.1/name>
+                                          "Novák" ;
+                                  <https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation>
+                                          [ rdf:type  <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                            <http://xmlns.com/foaf/0.1/name>
+                                                    "Univerzita Karlova" ;
+                                            <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                                                    <https://ror.org/024d6js02>
+                                          ] ;
+                                  <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                                          <https://orcid.org/0030-04X2-2030-4X26>
+                                ] ;
+                  ns3:hadRole   <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
+                [ rdf:type  <https://model.ccmm.cz/vocabulary/datacite#Description> ;
+                  <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
+                          "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n            roce 2024."^^rdf:langString ;
+                  <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
+                          <https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract>
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasFundingReference>
+                <https://funder-org.org/grants/123456789> ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasRights>
+                [ rdf:type          <https://model.ccmm.cz/vocabulary/datacite#Rights> ;
+                  ns1:accessRights  <http://purl.org/coar/access_right/c_abf2> ;
+                  ns1:description   "Textový popis toho, jak je možné s datovou sadou\n            nakládat."@cs ;
+                  ns1:license       <https://creativecommons.org/licenses/by/4.0/> ;
+                  ns3:contactPoint  [ rdf:type          <http://www.w3.org/ns/prov#Person> ;
+                                      ns3:contactPoint  [ rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#ContactDetails> ;
+                                                          <https://model.ccmm.cz/vocabulary/ccmm#email>
+                                                                  "pavlina.dolezalova@organizace.cz" ;
+                                                          <https://model.ccmm.cz/vocabulary/ccmm#phone>
+                                                                  "+420784512963"
+                                                        ] ;
+                                      <http://xmlns.com/foaf/0.1/name>
+                                              "Pavlína Doležalová"
+                                    ]
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
+                <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509> , <http://inspire.ec.europa.eu/theme/ef> ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
+                [ rdf:type   <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+                  ns1:title  "kvalita ovzduší"^^rdf:langString
+                ] ;
+        <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>
+                "2025"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+
+<https://vdp.cuzk.gov.cz/vdp/ruian/vusc/27>
+        rdf:type   ns0:Resource ;
+        ns1:title  "Středočeský kraj" .
+
+<file:///app/>  rdf:type  ns1:Standard ;
+        ns0:label  "NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým\n                    se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové\n                    služby"^^rdf:langString .
+
+<https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi>
+        rdf:type           ns3:DataService , <https://model.ccmm.cz/vocabulary/ccmm#Distribution-DataService> , ns0:Resource ;
+        ns1:conformsTo     <file:///app/> ;
+        ns1:description    "Prohlížecí služba (WMS)  byla vytvořena na základě dat ČHMÚ a\n                obsahuje vrstvy: 1) Zóny a aglomerace hodnocení a řízení kvality ovzduší; 2) Státní\n                síť imisního monitoringu; 3) Pole koncentrací látek znečišťující ovzduší v gridu 1x1\n                km (Imisní limity pro ochranu lidského zdraví; Imisní limity pro ochranu ekosystémů\n                a vegetace); 4) Přehledy (data) naměřené na stanicích Státní imisní sítě\n                (Koncentrace látek znečišťujících ovzduší, pro které jsou stanoveny imisní limity\n                pro ochranu lidského zdraví; Koncentrace polutantů, pro které jsou stanoveny imisní\n                limity pro ochranu ekosystémů a vegetace) pro rok 2023."@cs ;
+        ns1:title          "Endpoint of WMS service Air quality" , "Služba WMS pro prohlížení dat o kvalitě ovzduší" ;
+        ns3:accessService  <https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> ;
+        ns3:endpointURL    <https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi> ;
+        <http://xmlns.com/foaf/0.1/page>
+                <https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/> .
+
+<https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP>
+        rdf:type   ns1:MediaType ;
+        ns0:label  "ZIP"^^rdf:langString .
+
+<https://doi.org/>  rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme> ;
+        ns0:label  "DOI"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "má metadata"^^rdf:langString , "has metadata"^^rdf:langString .
+
+<https://model.ccmm.cz/research-data/1.1.0>
+        rdf:type   ns1:Standard ;
+        ns0:label  "CCMM RD 1.1.0"^^rdf:langString .
+
+<https://organization.cz/datasets/air-q-cb-25-23>
+        rdf:type  <http://www.w3.org/ns/adms#Identifier> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "air-q-cb-25-23" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
+                <https://organization.cz/datasets/> .
+
+<https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7>
+        rdf:type   ns0:Resource ;
+        ns1:title  "Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích\n            stanicích" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                <https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#resourceUrl>
+                "https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://organization.cz/datasets/>
+        rdf:type   <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme> ;
+        ns0:label  "Organizační identifikační schéma"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract>
+        rdf:type   <https://model.ccmm.cz/vocabulary/datacite#DescriptionType> ;
+        ns0:label  "Abstract"^^rdf:langString , "Abstrakt"^^rdf:langString .
+
+<https://creativecommons.org/licenses/by/4.0/>
+        rdf:type   ns1:LicenseDocument ;
+        ns0:label  "Attribution 4.0 International"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "Získáno v lokaci"^^rdf:langString , "Collected in"^^rdf:langString .
+
+<https://ror.org/>  rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme> ;
+        ns0:label  "ROR"^^rdf:langString .
+
+<http://publications.europa.eu/resource/authority/language/ENG>
+        rdf:type  ns1:LinguisticSystem .
+
+<http://purl.org/coar/access_right/c_abf2>
+        rdf:type   ns1:RightsStatement ;
+        ns0:label  "open access"^^rdf:langString , "otevřený přístup"^^rdf:langString .
+
+<https://ror.org/01pv73b02>
+        rdf:type  <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+        <http://xmlns.com/foaf/0.1/name>
+                "Grantová agentura České republiky" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                [ rdf:type  <http://www.w3.org/ns/adms#Identifier> ;
+                  <http://www.w3.org/2004/02/skos/core#notation>
+                          "01pv73b02" ;
+                  <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
+                          <https://ror.org/>
+                ] .
+
+<http://publications.europa.eu/resource/authority/language/CES>
+        rdf:type   ns1:LinguisticSystem ;
+        ns0:label  "čeština"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "is derived from"^^rdf:langString , "je odvozen od (čeho)"^^rdf:langString .
+
+<http://purl.org/coar/resource_type/8KJG-QS0Y>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "research instrument"^^rdf:langString .
+
+<http://purl.org/coar/resource_type/c_18cf/>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "text"^^rdf:langString .
+
+<https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy>
+        rdf:type   ns0:Resource ;
+        ns0:label  "Oddělení informačního systému kvality ovzduší - odkazy"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "je sbírán (čím)"^^rdf:langString , "is collected by"^^rdf:langString .
+
+<https://orcid.org/0030-04X2-2030-4X26>
+        rdf:type  <http://www.w3.org/ns/adms#Identifier> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "0030-04X2-2030-4X26" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
+                <https://orcid.org/> .
+
+<http://portal.chmi.cz/AQ_DATA>
+        rdf:type         <https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile> ;
+        ns1:conformsTo   <https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd> ;
+        ns1:format       <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG> ;
+        ns1:title        "Kvalita ovzduší" ;
+        ns2:checksum     [ rdf:type           ns2:Checksum ;
+                           ns2:algorithm      <https://www.iana.org/go/rfc6920> ;
+                           ns2:checksumValue  "9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938"^^<http://www.w3.org/2001/XMLSchema#hexBinary>
+                         ] ;
+        ns3:accessURL    <https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy> ;
+        ns3:byteSize     256 ;
+        ns3:downloadURL  <https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip> ;
+        ns3:mediaType    <https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP> .
+
+<https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "Date Collected"^^rdf:langString , "Datum sběru"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "Creator"^^rdf:langString , "Autor"^^rdf:langString .
+
+<https://doi.org/10.45321/as36sl>
+        rdf:type  <http://www.w3.org/ns/adms#Identifier> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "10.45321/as36sl" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
+                <https://doi.org/> .
+
+<https://orcid.org/>  rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme> ;
+        ns0:label  "ORCID"^^rdf:langString .
+
+<https://inspire.ec.europa.eu/theme/>
+        rdf:type   <https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme> ;
+        ns0:label  "INSPIRE theme register"^^rdf:langString .
+
+<https://funder-org.org/grants/123456789>
+        rdf:type  <https://model.ccmm.cz/vocabulary/datacite#FundingReference> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#fundingProgram>
+                "https://funder-org.org/program/abcdefgh"^^<http://www.w3.org/2001/XMLSchema#anyURI> ;
+        <https://model.ccmm.cz/vocabulary/datacite#awardNumber>
+                "https://doi.org/award-identifier" ;
+        <https://model.ccmm.cz/vocabulary/datacite#awardTitle>
+                "Program for air pollution research" ;
+        <https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier>
+                <https://ror.org/01pv73b02> .
+
+<https://www.iana.org/go/rfc6920>
+        rdf:type  ns2:ChecksumAlgorithm .
+
+<http://data.europa.eu/eli/dir/2008/50/oj>
+        rdf:type   ns0:Resource ;
+        ns1:title  "Směrnice Evropského parlamentu a Rady 2008/50/ES ze dne 21. května 2008 o kvalitě\n            vnějšího ovzduší a čistším ovzduší pro Evropu" ;
+        ns1:type   <http://purl.org/coar/resource_type/c_18cf/> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                <https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#resourceUrl>
+                "https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050&qid=1754039487879"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://purl.org/coar/resource_type/c_ddb1>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "datová sada"^^rdf:langString , "dataset"^^rdf:langString .
+
+<https://original-catalogue/dataset_metadata_id>
+        rdf:type               ns3:CatalogRecord ;
+        ns1:conformsTo         <https://model.ccmm.cz/research-data/1.1.0> , <https://www.iso.org/standard/80275.html> ;
+        ns1:created            "2025-04-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        ns1:language           <http://publications.europa.eu/resource/authority/language/CES> ;
+        ns1:modified           "2025-07-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        ns3:qualifiedRelation  [ rdf:type      <https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship> ;
+                                 ns1:relation  [ rdf:type          <http://www.w3.org/ns/prov#Person> ;
+                                                 <http://www.w3.org/2006/vcard/ns#family-name>
+                                                         "Novák" ;
+                                                 <http://www.w3.org/2006/vcard/ns#given-name>
+                                                         "Jan" ;
+                                                 ns3:contactPoint  [ rdf:type  <https://model.ccmm.cz/vocabulary/ccmm#ContactDetails> ;
+                                                                     <http://www.w3.org/2006/vcard/ns#hasAddress>
+                                                                             [ rdf:type  <http://www.w3.org/ns/locn#Address> ;
+                                                                               <http://www.w3.org/ns/locn#fullAddress>
+                                                                                       "Dlouhá 15, 11000, Praha 1"
+                                                                             ] ;
+                                                                     <https://model.ccmm.cz/vocabulary/ccmm#email>
+                                                                             "jan.novak@email.com" ;
+                                                                     <https://model.ccmm.cz/vocabulary/ccmm#phone>
+                                                                             "+0112345678"
+                                                                   ] ;
+                                                 <http://xmlns.com/foaf/0.1/name>
+                                                         "Novák" ;
+                                                 <https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation>
+                                                         [ rdf:type  <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                                           <http://xmlns.com/foaf/0.1/name>
+                                                                   "Univerzita Karlova" ;
+                                                           <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                                                                   <https://ror.org/024d6js02>
+                                                         ] ;
+                                                 <https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier>
+                                                         <https://orcid.org/0030-04X2-2030-4X26>
+                                               ] ;
+                                 ns3:hadRole   <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager>
+                               ] ;
+        <https://model.ccmm.cz/vocabulary/ccmm#originalRepository>
+                <https://original-repository.cz> .
+
+<https://ror.org/02j46qs45>
+        rdf:type  <http://www.w3.org/ns/adms#Identifier> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "02j46qs45" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
+                <https://ror.org/> .
+
+<https://ror.org/024d6js02>
+        rdf:type  <http://www.w3.org/ns/adms#Identifier> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "024d6js02" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
+                <https://ror.org/> .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "Data Manager"^^rdf:langString , "Manažer dat"^^rdf:langString .
+
+<https://www.iso.org/standard/80275.html>
+        rdf:type   ns1:Standard ;
+        ns0:label  "ISO 19115-1:2014/Amd 2:2020"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/>
+        rdf:type   <https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme> ;
+        ns0:label  "OECD FORD Subject Category (Frascati)"^^rdf:langString , "Oborové třídění OECD FORD (Frascati)"^^rdf:langString .
+
+<https://opendata.chmi.cz/air_quality/now/data/>
+        rdf:type   ns0:Resource ;
+        ns1:title  "Kvalita ovzduší – aktuální hodinové údaje" ;
+        ns1:type   <http://purl.org/coar/resource_type/FF4C-28RK> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#hasType>
+                <https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom> ;
+        <https://model.ccmm.cz/vocabulary/ccmm#resourceUrl>
+                "https://opendata.chmi.cz/air_quality/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "je na něj odkazováno z (čeho)"^^rdf:langString .
+
+<https://orcid.org/0023-0802-44X6-26X0>
+        rdf:type  <http://www.w3.org/ns/adms#Identifier> ;
+        <http://www.w3.org/2004/02/skos/core#notation>
+                "0023-0802-44X6-26X0" ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
+                <https://orcid.org/> .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509>
+        rdf:type   <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+        ns1:title  "Meteorologie, vědy o atmosféře"^^rdf:langString , "Meteorology and atmospheric sciences"^^rdf:langString ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inSubjectScheme>
+                <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> ;
+        <https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode>
+                "10509" .
+
+<https://original-repository.cz>
+        rdf:type  ns3:Catalog .
+
+<https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG>
+        rdf:type   ns1:MediaTypeOrExtent ;
+        ns0:label  "GeoPackage"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "Přeložený název"^^rdf:langString , "Translated Title"^^rdf:langString .
+
+<https://geoportal.gov.cz/web/guest/catalogue-client;jsessionid=F54A364E040A9D2184E42D94D288851C/>
+        rdf:type  <http://xmlns.com/foaf/0.1/Document> .
+
+<http://purl.org/coar/resource_type/FF4C-28RK>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "observational data"^^rdf:langString .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher>
+        rdf:type   <http://www.w3.org/2004/02/skos/core#Concept> ;
+        ns0:label  "Publisher"^^rdf:langString , "Vydavatel"^^rdf:langString .
+
+<http://inspire.ec.europa.eu/theme/ef>
+        rdf:type   <https://model.ccmm.cz/vocabulary/datacite#Subject> ;
+        ns1:title  "Environmental monitoring facilities"^^rdf:langString ;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Location and operation of environmental monitoring facilities\n            includes observation and measurement of emissions, of the state of environmental media\n            and of other ecosystem parameters (biodiversity, ecological conditions of vegetation,\n            etc.) by or on behalf of public authorities."@en ;
+        <https://model.ccmm.cz/vocabulary/ccmm#inSubjectScheme>
+                <https://inspire.ec.europa.eu/theme/> ;
+        <https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode>
+                "EF" .

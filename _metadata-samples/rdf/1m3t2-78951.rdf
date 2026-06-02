@@ -61,7 +61,7 @@
             <ns0:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-03</ns0:created>
             <ns0:conformsTo>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="https://schema.ccmm.cz/research-data/1.1.0">
+                                rdf:about="https://model.ccmm.cz/research-data/1.1.0">
                   <rdf:type rdf:resource="http://purl.org/dc/terms/Standard"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="">CCMM RD 1.1.0</ns0:label>
@@ -888,7 +888,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CebecauerTkadlec_GACR2026_MindMap.pdf</ns0:title>
             <ns1:accessURL>
@@ -899,7 +899,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/CebecauerTkadlec_GACR2026_MindMap.pdf">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">CebecauerTkadlec_GACR2026_MindMap.pdf</ns0:label>
@@ -938,7 +938,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/ReadMe.txt">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/ReadMe.txt">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">ReadMe.txt</ns0:label>
@@ -966,7 +966,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2A_NE_DNAchannel.tif</ns0:title>
             <ns1:accessURL>
@@ -977,7 +977,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_DNAchannel.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2A_NE_DNAchannel.tif</ns0:label>
@@ -1005,7 +1005,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2A_NE_Merge_5um.tif</ns0:title>
             <ns1:accessURL>
@@ -1016,7 +1016,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_Merge_5um.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2A_NE_Merge_5um.tif</ns0:label>
@@ -1044,7 +1044,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2A_NE_processedSMLM.tif</ns0:title>
             <ns1:accessURL>
@@ -1055,7 +1055,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2A_NE_processedSMLM.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2A_NE_processedSMLM.tif</ns0:label>
@@ -1083,7 +1083,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2B_citH3_DNAchannel.tif</ns0:title>
             <ns1:accessURL>
@@ -1094,7 +1094,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_DNAchannel.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2B_citH3_DNAchannel.tif</ns0:label>
@@ -1122,7 +1122,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2B_citH3_Merge_5um.tif</ns0:title>
             <ns1:accessURL>
@@ -1133,7 +1133,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_Merge_5um.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2B_citH3_Merge_5um.tif</ns0:label>
@@ -1161,7 +1161,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2B_citH3_processedSMLM.tif</ns0:title>
             <ns1:accessURL>
@@ -1172,7 +1172,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2B_citH3_processedSMLM.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2B_citH3_processedSMLM.tif</ns0:label>
@@ -1200,7 +1200,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2C_MPO_DNAchannel.tif</ns0:title>
             <ns1:accessURL>
@@ -1211,7 +1211,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_DNAchannel.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2C_MPO_DNAchannel.tif</ns0:label>
@@ -1239,7 +1239,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2C_MPO_Merge_5um.tif</ns0:title>
             <ns1:accessURL>
@@ -1250,7 +1250,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_Merge_5um.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2C_MPO_Merge_5um.tif</ns0:label>
@@ -1278,7 +1278,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supp_Fig2C_MPO_processedSMLM.tif</ns0:title>
             <ns1:accessURL>
@@ -1289,7 +1289,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supp_Fig2C_MPO_processedSMLM.tif">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supp_Fig2C_MPO_processedSMLM.tif</ns0:label>
@@ -1317,7 +1317,7 @@
       <ns1:distribution>
          <rdf:Description xmlns:ns0="http://purl.org/dc/terms/"
                           xmlns:ns2="http://spdx.org/rdf/terms#"
-                          rdf:about="&#xA;                https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf">
+                          rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf">
             <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DownloadableFile"/>
             <ns0:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supplementary_Figures.pdf</ns0:title>
             <ns1:accessURL>
@@ -1328,7 +1328,7 @@
             </ns1:accessURL>
             <ns1:downloadURL>
                <rdf:Description xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#"
-                                rdf:about="&#xA;                    https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf">
+                                rdf:about="https://data.narodni-repozitar.cz/heyrovsky/datasets/1m3t2-78951/files/Supplementary_Figures.pdf">
                   <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
                   <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
                              xml:lang="en">Supplementary_Figures.pdf</ns0:label>

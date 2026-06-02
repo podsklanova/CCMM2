@@ -1,0 +1,111 @@
+@prefix c:    <https://schemas.dataspecer.com/xsd/core/> .
+@prefix ccmm: <https://schema.ccmm.cz/research-data/1.1> .
+@prefix ns0:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns1:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2:  <https://model.ccmm.cz/vocabulary/datacite#> .
+@prefix ns3:  <https://model.ccmm.cz/vocabulary/ccmm#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsi:  <http://www.w3.org/2001/XMLSchema-instance> .
+
+<https://data.narodni-repozitar.cz>
+        rdf:type  <http://www.w3.org/ns/dcat#Catalog> .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/>
+        rdf:type  ns3:SubjectScheme .
+
+<https://doi.org/>  rdf:type  ns3:IdentifierScheme .
+
+[ rdf:type                        <http://www.w3.org/ns/dcat#Dataset> ;
+  <http://purl.org/dc/terms/title>
+          "Datová sada pro Údaje o zdravotní gramotnosti a depresi seniorů ve věku 65 a více let" ;
+  ns3:hasIdentifier               <https://doi.org/10.48700/datst.xd12h-dfz24> ;
+  ns3:hasTimeReference            [ rdf:type     ns3:TimeReference ;
+                                    <http://www.w3.org/2006/time#hasTime>
+                                            [ rdf:type  <http://www.w3.org/2006/time#Instant> ;
+                                              <http://www.w3.org/2006/time#inXSDDate>
+                                                      "2024-05-01"^^<http://www.w3.org/2001/XMLSchema#date>
+                                            ] ;
+                                    ns3:hasType  <https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created>
+                                  ] ;
+  ns3:isDescribedBy               [ rdf:type                <http://www.w3.org/ns/dcat#CatalogRecord> ;
+                                    <http://purl.org/dc/terms/conformsTo>
+                                            <https://model.ccmm.cz/research-data/1.1.0> ;
+                                    <http://www.w3.org/ns/dcat#qualifiedRelation>
+                                            [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                              <http://purl.org/dc/terms/relation>
+                                                      [ rdf:type  <http://www.w3.org/ns/prov#Person> ;
+                                                        <http://www.w3.org/2006/vcard/ns#family-name>
+                                                                ":unkn" ;
+                                                        <http://www.w3.org/2006/vcard/ns#given-name>
+                                                                ":unkn" ;
+                                                        <http://xmlns.com/foaf/0.1/name>
+                                                                ":unkn"
+                                                      ] ;
+                                              <http://www.w3.org/ns/dcat#hadRole>
+                                                      <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager>
+                                            ] ;
+                                    ns3:originalRepository  <https://data.narodni-repozitar.cz>
+                                  ] ;
+  ns3:qualifiedRelation           [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                    <http://purl.org/dc/terms/relation>
+                                            [ rdf:type  <http://www.w3.org/ns/prov#Person> ;
+                                              <http://www.w3.org/2006/vcard/ns#family-name>
+                                                      "Bártlová" ;
+                                              <http://www.w3.org/2006/vcard/ns#given-name>
+                                                      "Sylva" ;
+                                              <http://xmlns.com/foaf/0.1/name>
+                                                      "Bártlová, Sylva"
+                                            ] ;
+                                    <http://www.w3.org/ns/dcat#hadRole>
+                                            <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+                                  ] ;
+  ns3:qualifiedRelation           [ rdf:type  ns3:ResourceToAgentRelationship ;
+                                    <http://purl.org/dc/terms/relation>
+                                            [ rdf:type  <http://www.w3.org/ns/prov#Organization> , <http://xmlns.com/foaf/0.1/Agent> ;
+                                              <http://xmlns.com/foaf/0.1/name>
+                                                      ":unkn"
+                                            ] ;
+                                    <http://www.w3.org/ns/dcat#hadRole>
+                                            <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher>
+                                  ] ;
+  ns2:hasRights                   [ rdf:type  ns2:Rights ;
+                                    <http://purl.org/dc/terms/accessRights>
+                                            <http://purl.org/coar/access_right/c_f1cf> ;
+                                    <http://purl.org/dc/terms/license>
+                                            <https://creativecommons.org/licenses/by/4.0/>
+                                  ] ;
+  ns2:hasSubject                  <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304> ;
+  ns2:relatedItemPublicationYear  "2026"^^<http://www.w3.org/2001/XMLSchema#gYear>
+] .
+
+<http://purl.org/coar/access_right/c_f1cf>
+        rdf:type  <http://purl.org/dc/terms/RightsStatement> .
+
+<https://model.ccmm.cz/research-data/1.1.0>
+        rdf:type  <http://purl.org/dc/terms/Standard> .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator>
+        rdf:type  ns1:Concept .
+
+<https://creativecommons.org/licenses/by/4.0/>
+        rdf:type  <http://purl.org/dc/terms/LicenseDocument> .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager>
+        rdf:type  ns1:Concept .
+
+<https://doi.org/10.48700/datst.xd12h-dfz24>
+        rdf:type      <http://www.w3.org/ns/adms#Identifier> ;
+        ns1:notation  "10.48700/datst.xd12h-dfz24" ;
+        ns3:inScheme  <https://doi.org/> .
+
+<https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created>
+        rdf:type  ns1:Concept .
+
+<https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher>
+        rdf:type  ns1:Concept .
+
+<https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304>
+        rdf:type             ns2:Subject ;
+        <http://purl.org/dc/terms/title>
+                "Veřejné a environmentální zdraví"^^rdf:langString ;
+        ns3:inSubjectScheme  <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> .
