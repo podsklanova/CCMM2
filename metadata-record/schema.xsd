@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:include schemaLocation="../language-system/schema.xsd"/>
   <xs:include schemaLocation="../resource-to-agent-relationship/schema.xsd"/>
   <xs:include schemaLocation="../application-profile/schema.xsd"/>
@@ -37,6 +38,20 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="title" sawsdl:modelReference="http://purl.org/dc/terms/title">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            title - A name given to the metadata record.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="language" type="ccmm:language_system" sawsdl:modelReference="http://purl.org/dc/terms/language">
         <xs:annotation>
           <xs:documentation xml:lang="en">
@@ -45,7 +60,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element maxOccurs="unbounded" name="qualified_relation" type="ccmm:resource_to_agent_relationship" sawsdl:modelReference="http://www.w3.org/ns/dcat#qualifiedRelation">
+      <xs:element maxOccurs="unbounded" name="qualified_relation" type="ccmm:resource_to_agent_relationship">
         <xs:annotation>
           <xs:documentation xml:lang="cs">
             kvalifikovaný vztah - Odkaz na popis vztahu s jiným zdrojem.
@@ -65,10 +80,10 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="date_updated" type="xs:date" sawsdl:modelReference="http://purl.org/dc/terms/modified">
+      <xs:element name="date_updated" type="xs:date" sawsdl:modelReference="http://purl.org/dc/terms/modified">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            date updated - Date on which the resource was changed.
+            date updated - The most recent date on which the resource was changed.
             The date on which the metadata record was changed or modified.
           </xs:documentation>
         </xs:annotation>
@@ -83,8 +98,8 @@
       <xs:element maxOccurs="unbounded" name="conforms_to_standard" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            conforms to standard - An established standard to which the metadata record conforms.
-            This property SHOULD be used to indicate the standard or profile that was used to describe cataloged resource content.
+            conforms to - An established standard to which the metadata record conforms.
+            This property should be used to indicate the metadata model, schema, ontology or profile that the metadata record conforms to.
           </xs:documentation>
         </xs:annotation>
       </xs:element>

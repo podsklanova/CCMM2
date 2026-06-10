@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:include schemaLocation="../metadata-record/schema.xsd"/>
   <xs:include schemaLocation="../identifier/schema.xsd"/>
   <xs:include schemaLocation="../alternate-title/schema.xsd"/>
@@ -7,8 +7,9 @@
   <xs:include schemaLocation="../time-reference/schema.xsd"/>
   <xs:include schemaLocation="../resource-type/schema.xsd"/>
   <xs:include schemaLocation="../language-system/schema.xsd"/>
-  <xs:include schemaLocation="../terms-of-use/schema.xsd"/>
+  <xs:include schemaLocation="../access-rights/schema.xsd"/>
   <xs:include schemaLocation="../subject/schema.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:include schemaLocation="../description/schema.xsd"/>
   <xs:include schemaLocation="../location/schema.xsd"/>
   <xs:include schemaLocation="../funding-reference/schema.xsd"/>
@@ -55,30 +56,24 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+      <xs:element maxOccurs="unbounded" name="has_identifier" type="identifier" sawsdl:modelReference="http://www.w3.org/ns/adms#identifier">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            has identifier - has identifier
+            has identifier - The identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue. 
           </xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element minOccurs="0" name="version" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/dcat#version">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            version - The version indicator (name or identifier) of a resource.
-          </xs:documentation>
-          <xs:documentation xml:lang="es">
-            El indicador de versión (nombre o identificador) del recurso.
-          </xs:documentation>
-          <xs:documentation xml:lang="it">
-            L'indicatore di versione (un nome o un identificatore) di una risorsa.
+            version
           </xs:documentation>
         </xs:annotation>
       </xs:element>
       <xs:element name="title" type="xs:string" sawsdl:modelReference="http://purl.org/dc/terms/title">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            title - A name given to the dataset.
+            title - A name given to the resource.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -137,10 +132,10 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="terms_of_use" type="ccmm:terms_of_use" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasRights">
+      <xs:element name="access_rights" type="ccmm:access_rights" sawsdl:modelReference="http://purl.org/dc/terms/accessRights">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            has terms of use
+            has access rights - Information that declares the access status of a Dataset.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -152,7 +147,46 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="description" type="ccmm:description" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasDescription">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="keyword" sawsdl:modelReference="http://www.w3.org/ns/dcat#keyword">
+        <xs:annotation>
+          <xs:documentation xml:lang="ar">
+            كلمة  مفتاحية 
+          </xs:documentation>
+          <xs:documentation xml:lang="cs">
+            klíčové slovo
+          </xs:documentation>
+          <xs:documentation xml:lang="da">
+            nøgleord
+          </xs:documentation>
+          <xs:documentation xml:lang="el">
+            λέξη-κλειδί
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            keyword - Keyword or tag describing the dataset.
+            Preferably use subjects as concepts from controlled vocabularies.
+          </xs:documentation>
+          <xs:documentation xml:lang="es">
+            palabra clave
+          </xs:documentation>
+          <xs:documentation xml:lang="fr">
+            mot-clés 
+          </xs:documentation>
+          <xs:documentation xml:lang="it">
+            parola chiave
+          </xs:documentation>
+          <xs:documentation xml:lang="ja">
+            キーワード/タグ
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="description" type="ccmm:description" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasDescription">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has description - Relation to the description of a dataset.
@@ -175,7 +209,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="related_resource" type="ccmm:related_resource" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="related_resource" type="ccmm:related_resource" sawsdl:modelReference="http://purl.org/dc/terms/relation">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has related resource - Reference to the resource in any way related to the described dataset.

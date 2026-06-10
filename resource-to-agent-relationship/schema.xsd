@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:include schemaLocation="../agent/schema.xsd"/>
   <xs:include schemaLocation="../resource-agent-role-type/schema.xsd"/>
   <xs:complexType name="resource_to_agent_relationship" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship">
@@ -21,20 +21,17 @@
       <xs:element name="role" type="ccmm:resource_agent_role_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#hadRole">
         <xs:annotation>
           <xs:documentation xml:lang="cs">
-            sehraná role - Funkce entity či agenta ve vztahu k jiné entitě či zdroji.
+            sehraná role
           </xs:documentation>
           <xs:documentation xml:lang="da">
-            havde rolle - Den funktion en entitet eller aktør har i forhold til en anden ressource.
+            havde rolle
           </xs:documentation>
           <xs:documentation xml:lang="en">
-            had role - The function of an entity or agent with respect to another entity or resource.
+            had role
             May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles.
           </xs:documentation>
-          <xs:documentation xml:lang="es">
-            La función de una entidad o agente con respecto a otra entidad o recurso.
-          </xs:documentation>
           <xs:documentation xml:lang="it">
-            tiene rol - La funzione di un'entità o un agente rispetto ad un'altra entità o risorsa.
+            tiene rol
           </xs:documentation>
         </xs:annotation>
       </xs:element>

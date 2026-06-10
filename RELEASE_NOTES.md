@@ -1,5 +1,13 @@
 CHANGELOG
 ---------------------------------------
+### 2026-06-10 - Profiling CCMM to DCAT-AP
+* profiling properties through DCAT-AP (instead of final resources)
+* respecting cardinalities of DCAT-AP
+* dividing subjects to subjects (from controlled vocabulary) and keyword (plain string)
+* reprofiling of distributions according to the DCAT-AP
+* attachinf licenses and access rights directly to specific classes (and removing terms of use class)
+
+
 ### 2026-02-27 - minor changes
 * added SHACL file
 * added configuration for generating structure in extensions
