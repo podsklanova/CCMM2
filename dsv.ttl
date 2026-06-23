@@ -47,7 +47,7 @@
     dsv:specializes :Agent;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/prov#Person>
 ];
@@ -60,7 +60,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Agent>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/prov#Organization>
 ];
@@ -70,12 +70,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#FundingReference>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#FundingReference>
 ];
@@ -105,7 +105,7 @@
     skos:scopeNote "Subjects are always concepts identified by IRI belonging to the vocabulary (subject scheme). For free text keywords use keyword. "@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#Subject>
 ];
@@ -426,12 +426,12 @@
     skos:scopeNote "Use identifier scheme in the form of IRI identifier. Methodology shall list known sources."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme>
 ];
@@ -442,12 +442,12 @@
     skos:scopeNote "Description of the resource may have also a description type."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#Description>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#Description>
 ];
@@ -458,12 +458,12 @@
     skos:scopeNote "Use value from codelist https://vocabs.ccmm.cz/registry/codelist/DescriptionType/."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#DescriptionType>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#DescriptionType>
 ];
@@ -474,7 +474,7 @@
     skos:definition "An object representing time reference relevant to some event related to the resource has happened."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#TimeReference>
 ];
@@ -509,7 +509,7 @@
     skos:definition "Has reference for funding of a dataset acquisition."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasFundingReference>
 ];
@@ -549,7 +549,7 @@
     skos:scopeNote "At least one subject must be a value from FRASCATI FORD vocabulary. For that subject use reference codelist https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/ as the Subject scheme and select at least one value from this codelist as a subject."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
 ];
@@ -946,8 +946,9 @@
     a dsv:TermProfile;
     skos:prefLabel "has primary language"@en;
     skos:definition "A primary language of the Dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>;
+    skos:scopeNote "This property can be repeated if there are multiple languages in the Dataset."@en;
     dsv:cardinality cardinality:01;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasPrimaryLanguage>;
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :LanguageSystem.
@@ -956,14 +957,9 @@
     a dsv:TermProfile;
     skos:prefLabel "has other language"@en;
     skos:definition "Any other languages of the Dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:scopeNote;
-  dsv:reusedAsProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>
-];
+    skos:scopeNote "This property can be repeated if there are multiple languages in the Dataset."@en;
     dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage>;
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :LanguageSystem.
@@ -1062,12 +1058,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#inScheme>
 ];
@@ -1083,7 +1079,7 @@
     skos:scopeNote "Description may have various type from the codelist https://vocabs.ccmm.cz/registry/codelist/DescriptionType/. "@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
 ];
@@ -1098,12 +1094,12 @@
     skos:scopeNote "Type of the description from the codelist https://vocabs.ccmm.cz/registry/codelist/DescriptionType/."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
 ];
@@ -1126,7 +1122,7 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle>
 ], [
@@ -1146,7 +1142,7 @@
     skos:scopeNote "Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>
 ], [
@@ -1166,7 +1162,7 @@
     skos:definition "Reference to events related to the resource."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference>
 ];
@@ -1378,7 +1374,7 @@
     skos:scopeNote "If TimeReference with dateType \"Issued\" is present, year in that date and publicationYear must be the same“"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>
 ];
@@ -1526,16 +1522,6 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.description>;
     dsv:cardinality cardinality:0n;
     dsv:domain :Distribution;
-    a dsv:DatatypePropertyProfile;
-    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
-
-<https://model.ccmm.cz/research-data/TermsOfUse.Description> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "description"@en;
-    skos:definition "Descriptive text on details of rights and licensing."@en;
-    dsv:cardinality cardinality:0n;
-    dsv:property dct:description;
-    dsv:domain <qoxvp22u9edm7vwe1wv>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
 
@@ -1987,12 +1973,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
 ];
@@ -2015,12 +2001,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource rdfs:label
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource rdfs:label
 ];
@@ -2035,7 +2021,7 @@
     skos:scopeNote "This attribute shall be filled mainly for ORCiD identifiers of Persons. It serves to determine whether the person in the repository is really the person it is meant to be."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#authorized>
 ];
@@ -2050,7 +2036,7 @@
     skos:prefLabel "title"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:title
 ];
@@ -2117,7 +2103,7 @@
     skos:definition "A human-readable name for the location object."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource rdfs:label
 ];
@@ -2152,7 +2138,7 @@
     skos:prefLabel "title"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:alternative
 ];

@@ -2225,17 +2225,24 @@
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-53f20bf0>.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-3b652041> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-f1ea2cb> a sh:PropertyShape;
     sh:name "has primary language"@en;
+    sh:description "This property can be repeated if there are multiple languages in the Dataset."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
-    sh:path <http://purl.org/dc/terms/language>;
+    sh:path <https://model.ccmm.cz/vocabulary/ccmm#hasPrimaryLanguage>;
     sh:maxCount 1;
     sh:class <http://purl.org/dc/terms/LinguisticSystem>.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-3b652041>.
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-f1ea2cb>.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-3b652041> sh:name "has other language"@en;
-    sh:description "This property can be repeated if there are multiple languages in the Dataset."@en.
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/38eba703> a sh:PropertyShape;
+    sh:name "has other language"@en;
+    sh:description "This property can be repeated if there are multiple languages in the Dataset."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage>;
+    sh:class <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/38eba703>.
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-3c3835e9> a sh:PropertyShape;
     sh:name "has description"@en;

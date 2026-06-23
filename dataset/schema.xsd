@@ -84,7 +84,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="qualified_relation" type="ccmm:resource_to_agent_relationship" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">
+      <xs:element minOccurs="2" maxOccurs="unbounded" name="qualified_relation" type="ccmm:resource_to_agent_relationship" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             qualified relation
@@ -116,15 +116,15 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="primary_language" type="ccmm:language_system" sawsdl:modelReference="http://purl.org/dc/terms/language">
+      <xs:element minOccurs="0" name="primary_language" type="ccmm:language_system" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasPrimaryLanguage">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            has other language - Any other languages of the Dataset.
+            has primary language - A primary language of the Dataset.
             This property can be repeated if there are multiple languages in the Dataset.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="other_language" type="ccmm:language_system" sawsdl:modelReference="http://purl.org/dc/terms/language">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="other_language" type="ccmm:language_system" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has other language - Any other languages of the Dataset.
