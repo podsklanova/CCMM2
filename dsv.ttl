@@ -946,7 +946,7 @@
     a dsv:TermProfile;
     skos:prefLabel "has primary language"@en;
     skos:definition "A primary language of the Dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>;
+    skos:scopeNote "This property can be repeated if there are multiple languages in the Dataset."@en;
     dsv:cardinality cardinality:01;
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasPrimaryLanguage>;
     dsv:domain :Dataset;
@@ -957,13 +957,7 @@
     a dsv:TermProfile;
     skos:prefLabel "has other language"@en;
     skos:definition "Any other languages of the Dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:scopeNote;
-  dsv:reusedAsProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.language>
-];
+    skos:scopeNote "This property can be repeated if there are multiple languages in the Dataset."@en;
     dsv:cardinality cardinality:0n;
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage>;
     dsv:domain :Dataset;
