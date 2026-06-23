@@ -162,11 +162,17 @@
         <ns3:language>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747685830295-de50-b2ac-bb47"/>
         </ns3:language>
+        <ns0:hasOtherLanguage>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747685830295-de50-b2ac-bb47"/>
+        </ns0:hasOtherLanguage>
       </xsl:for-each>
       <xsl:for-each select="ccmm:other_language">
         <ns3:language>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747685830295-de50-b2ac-bb47"/>
         </ns3:language>
+        <ns0:hasOtherLanguage>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747685830295-de50-b2ac-bb47"/>
+        </ns0:hasOtherLanguage>
       </xsl:for-each>
       <xsl:for-each select="ccmm:access_rights">
         <ns3:accessRights>

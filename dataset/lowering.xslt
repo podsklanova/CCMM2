@@ -197,7 +197,7 @@
         </ccmm:resource_type>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://purl.org/dc/terms/language&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and (sp:binding[@name=$pred]/sp:uri/text()=&#34;http://purl.org/dc/terms/language&#34; or sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage&#34;)]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:primary_language>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747685830295-de50-b2ac-bb47">
@@ -208,7 +208,7 @@
         </ccmm:primary_language>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://purl.org/dc/terms/language&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and (sp:binding[@name=$pred]/sp:uri/text()=&#34;http://purl.org/dc/terms/language&#34; or sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/ccmm#hasOtherLanguage&#34;)]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:other_language>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747685830295-de50-b2ac-bb47">
