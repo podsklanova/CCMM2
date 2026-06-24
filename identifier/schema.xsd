@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:sawsdl="http://www.w3.org/ns/sawsdl" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1">
-  <xs:import namespace="https://schema.ccmm.cz/research-data/1.1" schemaLocation="../identifier-scheme/schema.xsd"/>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.2" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../identifier-scheme/schema.xsd"/>
   <xs:complexType name="identifier" sawsdl:modelReference="http://www.w3.org/ns/adms#Identifier">
     <xs:annotation>
       <xs:documentation xml:lang="en">
@@ -38,5 +38,5 @@
       <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##other"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="identifier" type="identifier"/>
+  <xs:element name="identifier" type="ccmm:identifier"/>
 </xs:schema>

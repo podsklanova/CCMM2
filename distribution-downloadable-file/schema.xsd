@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.2" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:include schemaLocation="../file/schema.xsd"/>
   <xs:include schemaLocation="../application-profile/schema.xsd"/>
   <xs:include schemaLocation="../format/schema.xsd"/>
@@ -103,7 +103,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="media_type" type="media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#mediaType">
+      <xs:element minOccurs="0" name="media_type" type="ccmm:media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#mediaType">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has media type - The media type of the Distribution as defined in the official register of media types managed by IANA.
@@ -111,7 +111,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="packaging_format" type="media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#packageFormat">
+      <xs:element minOccurs="0" name="packaging_format" type="ccmm:media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#packageFormat">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has packaging format - The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.
@@ -119,7 +119,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="compression_format" type="media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#compressFormat">
+      <xs:element minOccurs="0" name="compression_format" type="ccmm:media_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#compressFormat">
         <xs:annotation>
           <xs:documentation xml:lang="cs">
             Formát komprese souboru, ve kterém jsou data poskytována v komprimované podobě, např. ke snížení velikosti souboru ke stažení.

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://purl.org/dc/terms/" xmlns:ns1="http://www.w3.org/ns/dcat#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://www.w3.org/ns/prov#" xmlns:ns1="http://www.w3.org/ns/dcat#">
   <xsl:import href="../organization/lifting.xslt"/>
   <xsl:import href="../person/lifting.xslt"/>
-  <xsl:import href="../resource-agent-role-type/lifting.xslt"/>
+  <xsl:import href="../attributed-agent-role-type/lifting.xslt"/>
   <xsl:import href="../identifier/lifting.xslt"/>
   <xsl:import href="../contact-details/lifting.xslt"/>
   <xsl:import href="../address/lifting.xslt"/>
   <xsl:import href="../identifier-scheme/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
-  <xsl:template match="/ccmm:resource_to_agent_relationship">
+  <xsl:template match="/ccmm:resource_attribution">
     <rdf:RDF>
       <xsl:variable name="result" as="element()*">
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235557653-64a2-513a-97fe"/>
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782311692513-fbfd-95df-9c5a"/>
       </xsl:variable>
       <xsl:for-each select="$result">
         <xsl:copy>
@@ -38,7 +38,7 @@
       </xsl:copy>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235557653-64a2-513a-97fe">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782311692513-fbfd-95df-9c5a">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -60,10 +60,10 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
       <xsl:copy-of select="$arc"/>
-      <xsl:for-each select="ccmm:relation">
-        <ns0:relation>
+      <xsl:for-each select="ccmm:attributed_agent">
+        <ns0:agent>
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
           <xsl:variable name="types" as="element()*">
             <ccmm:organization/>
@@ -87,11 +87,11 @@
               </xsl:for-each>
             </xsl:when>
           </xsl:choose>
-        </ns0:relation>
+        </ns0:agent>
       </xsl:for-each>
       <xsl:for-each select="ccmm:role">
         <ns1:hadRole>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235606195-b8fa-9b2f-a5cf"/>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782312422764-790c-7c4c-9803"/>
         </ns1:hadRole>
       </xsl:for-each>
     </rdf:Description>

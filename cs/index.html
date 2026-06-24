@@ -156,26 +156,6 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "../resource-to-agent-relationship/structure.ttl",
-              "hasRole": "role:schema",
-              "format": "filetype:RDF_TURTLE",
-              "conformsTo": "dsv:Structure"
-            },
-            {
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
-              "hasArtifact": "../resource-agent-role-type/structure.ttl",
-              "hasRole": "role:schema",
-              "format": "filetype:RDF_TURTLE",
-              "conformsTo": "dsv:Structure"
-            },
-            {
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
               "hasArtifact": "../application-profile/structure.ttl",
               "hasRole": "role:schema",
               "format": "filetype:RDF_TURTLE",
@@ -557,6 +537,26 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "../media-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../resource-attribution/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../attributed-agent-role-type/structure.ttl",
               "hasRole": "role:schema",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": "dsv:Structure"
@@ -2569,8 +2569,8 @@
           
               <p>Zpětné asociace</p>
               <ul>
+                  <li>z domény <a href="#ResourceAttribution"></a> → <a href="#ResourceAttribution.hasAttributedAgent"></a></li>
                   <li>z domény <a href="#FundingReference"></a> → <a href="#FundingReference.hasFunder"></a></li>
-                  <li>z domény <a href="#ResourceToAgentRelationship"></a> → <a href="#ResourceToAgentRelationship.hasRelatedAgent"></a></li>
               </ul>
           
               <section id="Agent.hasIdentifier">
@@ -3236,6 +3236,155 @@
               
                 </table>
               </section>
+          </section>          <section id="AttributedAgentRoleType">
+            <h4>Attributed agent role type (@en)</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/AttributedAgentRoleType">https://model.ccmm.cz/research-data/AttributedAgentRoleType</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Attributed agent role type (@en)</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Role of the agent in the attribution to the resource.  (@en)</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Role">Role (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Role">dcat-ap:Role</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                
+                profil
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Role"><i>beze jména</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Role">dcat-dap:Role</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
+                třídu
+                
+                <a href="http://www.w3.org/ns/dcat#Role">Role</a> (<a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>)
+                  <br />Definice: <i>Role je funkce zdroje či agenta ve vztahu k jinému zdroji, v kontextu přiřazení zdrojů či vztahů mezi zdroji.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept (@en)</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+                  <br />Definice: <i>An idea or notion; a unit of thought.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Popis použití v profilu</td>
+                <td>Use value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/. (@en)</td>
+              </tr>
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#ResourceAttribution"></a> → <a href="#ResourceAttribution.hadRole"></a></li>
+              </ul>
+          
+              <section id="ResourceAgentRoleType.label">
+                <h4>label (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/ResourceAgentRoleType.label">https://model.ccmm.cz/research-data/ResourceAgentRoleType.label</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>label (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Resource agent role type label. (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#AttributedAgentRoleType">Attributed agent role type (@en)</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/2000/01/rdf-schema#label">label (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>)
+                      <br />Definice: <i>A human-readable name for the subject.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>Use label of the corresponding value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/. (@en)</td>
+                  </tr>
+                </table>
+              </section>
           </section>          <section id="Checksum">
             <h4>Checksum (@en)</h4>
           
@@ -3541,6 +3690,10 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Popis použití v profilu</td>
+                <td>Refere to the IRI,. e.g. instances of https://spdx.org/rdf/terms/#d4e2129 in SPDX Ontology. (@en)</td>
+              </tr>
             </table>
           
               <p>Zpětné asociace</p>
@@ -9597,60 +9750,6 @@
               If metadata record is harvested form other repository, make sure to include the first repository from which it was harvested. (@en)</td>
                   </tr>
                 </table>
-              </section>    <section id="MetadataRecord.qualifiedRelation">
-                <h4>kvalifikovaný vztah</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/MetadataRecord.qualifiedRelation">https://model.ccmm.cz/research-data/MetadataRecord.qualifiedRelation</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>kvalifikovaný vztah</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>Odkaz na popis vztahu s jiným zdrojem.</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#MetadataRecord">Katalogizační záznam</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#ResourceToAgentRelationship">Resource to agent relationship (@en)</a>
-              
-                          [1..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Popis použití v profilu</td>
-                    <td>Relationship shall contain at least one agent with role &quot;Data Manager&quot; from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/. (@en)</td>
-                  </tr>
-                </table>
               </section>    <section id="MetadataRecord.hasLanguage">
                 <h4>language (@en)</h4>
               
@@ -9725,6 +9824,102 @@
                   <tr>
                     <td>Popis použití v profilu</td>
                     <td>This property can be repeated if the metadata is provided in multiple languages. (@en)</td>
+                  </tr>
+                </table>
+              </section>    <section id="MetadataRecord.qualifiedAttribution">
+                <h4>qualified attribution (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/MetadataRecord.qualifiedAttribution">https://model.ccmm.cz/research-data/MetadataRecord.qualifiedAttribution</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>qualified attribution (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Odkaz na popis vztahu s jiným zdrojem.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#MetadataRecord">Katalogizační záznam</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#ResourceAttribution">Resource attribution (@en)</a>
+              
+                          [1..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    
+                    profil
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.qualifiedattribution">qualified attribution (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution">dcat-ap:Dataset.qualifiedAttribution</a>)
+                      <br />Definice: <i>An Agent having some form of responsibility for the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    
+                    profil
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_attribution">qualified attribution (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedAttribution">dcat-dap:CatalogedResource.qualifiedAttribution</a>)
+                      <br />Definice: <i>Link to an Agent having some form of responsibility for the resource</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/prov#qualifiedAttribution">qualifiedAttribution (@en)</a> (<a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>)
+                      <br />Definice: <i>If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/prov#qualifiedInfluence">qualifiedInfluence (@en)</a> (<a href="http://www.w3.org/ns/prov#qualifiedInfluence">prov:qualifiedInfluence</a>)
+                      <br />Definice: <i>Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>Relationship shall contain at least one agent with role &quot;Data Manager&quot; from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/. (@en)</td>
                   </tr>
                 </table>
               </section>    <section id="MetadataRecord.title">
@@ -11413,24 +11608,28 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Resource.qualifiedRelation">
-                <h4>qualified relation (@en)</h4>
+              </section>    <section id="Resource.qualifiedAttribution">
+                <h4>qualified attribution (@en)</h4>
               
                 <table class="def">
                   <tr>
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation</a>
+                        <a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>
                     </td>
                   </tr>
                   <tr>
                     <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Resource.qualifiedRelation">https://model.ccmm.cz/research-data/Resource.qualifiedRelation</a></td>
+                    <td><a href="https://model.ccmm.cz/research-data/Resource.qualifiedAttribution">https://model.ccmm.cz/research-data/Resource.qualifiedAttribution</a></td>
                   </tr>
                   <tr>
                     <td>Název</td>
-                    <td>qualified relation (@en)</td>
+                    <td>qualified attribution (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>An Agent having some form of responsibility for the resource.  (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
@@ -11443,7 +11642,7 @@
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="#ResourceToAgentRelationship">Resource to agent relationship (@en)</a>
+                      <a href="#ResourceAttribution">Resource attribution (@en)</a>
               
                           [0..*]
               
@@ -11458,10 +11657,41 @@
                         <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
                                         profiluje
+                    
+                    profil
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.qualifiedattribution">qualified attribution (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution">dcat-ap:Dataset.qualifiedAttribution</a>)
+                      <br />Definice: <i>An Agent having some form of responsibility for the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    
+                    profil
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_attribution">qualified attribution (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedAttribution">dcat-dap:CatalogedResource.qualifiedAttribution</a>)
+                      <br />Definice: <i>Link to an Agent having some form of responsibility for the resource</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
                     vlastnost
                     
-                    <a href="https://techlib.github.io/CCMM-V/en/#qualifiedRelation">qualified relation (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation</a>)
+                    <a href="http://www.w3.org/ns/prov#qualifiedAttribution">qualifiedAttribution (@en)</a> (<a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>)
+                      <br />Definice: <i>If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ].</i>
                       <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/prov#qualifiedInfluence">qualifiedInfluence (@en)</a> (<a href="http://www.w3.org/ns/prov#qualifiedInfluence">prov:qualifiedInfluence</a>)
+                      <br />Definice: <i>Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
                       </ul>
               
                               </li>
@@ -11471,7 +11701,7 @@
               
                   <tr>
                     <td>Popis použití v profilu</td>
-                    <td>Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship. (@en)</td>
+                    <td>Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship. If the resource is Dataset, it has to have at least two qualified attribution relations, the one with the role Creator, the second one with the role Publisher. (@en)</td>
                   </tr>
                 </table>
               </section>    <section id="Resource.title">
@@ -11537,28 +11767,28 @@
               
                 </table>
               </section>
-          </section>          <section id="ResourceAgentRoleType">
-            <h4>Resource agent role type (@en)</h4>
+          </section>          <section id="ResourceAttribution">
+            <h4>Resource attribution (@en)</h4>
           
             <table class="def">
               <tr>
                 <td>IRI profilovaných tříd</td>
                 <td>
                     
-                    <a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>
+                    <a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>
                 </td>
               </tr>
               <tr>
                 <td>IRI</td>
-                <td><a href="https://model.ccmm.cz/research-data/ResourceAgentRoleType">https://model.ccmm.cz/research-data/ResourceAgentRoleType</a></td>
+                <td><a href="https://model.ccmm.cz/research-data/ResourceAttribution">https://model.ccmm.cz/research-data/ResourceAttribution</a></td>
               </tr>
               <tr>
                 <td>Název</td>
-                <td>Resource agent role type (@en)</td>
+                <td>Resource attribution (@en)</td>
               </tr>
               <tr>
                 <td>Definice</td>
-                <td>Role of the agent in the relationship to the resource.  (@en)</td>
+                <td>Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role. (@en)</td>
               </tr>
           
                 <tr>
@@ -11569,28 +11799,39 @@
                                     profiluje
                 
                 profil
-                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Role">Role (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Role">dcat-ap:Role</a>)
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Attribution"><i>beze jména</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Attribution">dcat-ap:Attribution</a>)
+                  <br />Definice: <i>Attribution is the ascribing of an entity to an agent.</i>
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiluje
                 
                 profil
-                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Role"><i>beze jména</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Role">dcat-dap:Role</a>)
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#Attribution"><i>beze jména</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Attribution">dcat-dap:Attribution</a>)
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiluje
                 třídu
                 
-                <a href="http://www.w3.org/ns/dcat#Role">Role</a> (<a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>)
-                  <br />Definice: <i>Role je funkce zdroje či agenta ve vztahu k jinému zdroji, v kontextu přiřazení zdrojů či vztahů mezi zdroji.</i>
+                <a href="http://www.w3.org/ns/prov#Attribution">Attribution (@en)</a> (<a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>)
+                  <br />Definice: <i>An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].</i>
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   specializuje
                 třídu
                 
-                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept (@en)</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
-                  <br />Definice: <i>An idea or notion; a unit of thought.</i>
+                <a href="http://www.w3.org/ns/prov#AgentInfluence">AgentInfluence (@en)</a> (<a href="http://www.w3.org/ns/prov#AgentInfluence">prov:AgentInfluence</a>)
+                  <br />Definice: <i>It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.</i>
                   <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/ns/prov#Influence">Influence (@en)</a> (<a href="http://www.w3.org/ns/prov#Influence">prov:Influence</a>)
+                  <br />Definice: <i>Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
                   </ul>
           
                       </li>
@@ -11609,53 +11850,53 @@
           
               <tr>
                 <td>Popis použití v profilu</td>
-                <td>Use value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/. (@en)</td>
+                <td> (@en)</td>
               </tr>
             </table>
           
               <p>Zpětné asociace</p>
               <ul>
-                  <li>z domény <a href="#ResourceToAgentRelationship"></a> → <a href="#ResourceToAgentRelationship.hadRole"></a></li>
+                  <li>z domény <a href="#MetadataRecord"></a> → <a href="#MetadataRecord.qualifiedAttribution"></a></li>
+                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.qualifiedAttribution"></a></li>
               </ul>
           
-              <section id="ResourceAgentRoleType.label">
-                <h4>label (@en)</h4>
+              <section id="ResourceAttribution.hasAttributedAgent">
+                <h4>has attributed agent (@en)</h4>
               
                 <table class="def">
                   <tr>
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                        <a href="http://www.w3.org/ns/prov#agent">prov:agent</a>
                     </td>
                   </tr>
                   <tr>
                     <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/ResourceAgentRoleType.label">https://model.ccmm.cz/research-data/ResourceAgentRoleType.label</a></td>
+                    <td><a href="https://model.ccmm.cz/research-data/ResourceAttribution.hasAttributedAgent">https://model.ccmm.cz/research-data/ResourceAttribution.hasAttributedAgent</a></td>
                   </tr>
                   <tr>
                     <td>Název</td>
-                    <td>label (@en)</td>
+                    <td>has attributed agent (@en)</td>
                   </tr>
                   <tr>
                     <td>Definice</td>
-                    <td>Resource agent role type label. (@en)</td>
+                    <td>The agent attributed to the resource. (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
                     <td>
-                      <a href="#ResourceAgentRoleType">Resource agent role type (@en)</a>
+                      <a href="#ResourceAttribution">Resource attribution (@en)</a>
               
-                          [0..*]
-              
+                      
                     </td>
                   </tr>
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+                      <a href="#Agent">Agent (@en)</a>
               
-                          [0..*]
+                          [1..1]
               
                   </td>
                   </tr>
@@ -11670,9 +11911,94 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="http://www.w3.org/2000/01/rdf-schema#label">label (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>)
-                      <br />Definice: <i>A human-readable name for the subject.</i>
+                    <a href="http://www.w3.org/ns/prov#agent">agent (@en)</a> (<a href="http://www.w3.org/ns/prov#agent">prov:agent</a>)
                       <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/prov#influencer">influencer (@en)</a> (<a href="http://www.w3.org/ns/prov#influencer">prov:influencer</a>)
+                      <br />Definice: <i>Subproperties of prov:influencer are used to cite the object of an unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object is used.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="ResourceAttribution.hadRole">
+                <h4>sehraná role</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/ResourceAttribution.hadRole">https://model.ccmm.cz/research-data/ResourceAttribution.hadRole</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>sehraná role</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#ResourceAttribution">Resource attribution (@en)</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#AttributedAgentRoleType">Attributed agent role type (@en)</a>
+              
+                          [1..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    
+                    profil
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Relationship.hadrole">sehraná role</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole">dcat-ap:Relationship.hadRole</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    
+                    profil
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_hadRole">sehraná role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Relationship.hadRole">dcat-dap:Relationship.hadRole</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/ns/dcat#hadRole">sehraná role</a> (<a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>)
+                      <br />Definice: <i>Funkce entity či agenta ve vztahu k jiné entitě či zdroji.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
                       </ul>
               
                               </li>
@@ -11682,7 +12008,7 @@
               
                   <tr>
                     <td>Popis použití v profilu</td>
-                    <td>Use label of the corresponding value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/. (@en)</td>
+                    <td>May be used in a qualified-attribution to specify the role of an Agent with respect to an Resource. It is recommended that the value be taken from a controlled vocabulary of agent roles. (@en)</td>
                   </tr>
                 </table>
               </section>
@@ -11803,232 +12129,6 @@
                   <tr>
                     <td>Popis použití v profilu</td>
                     <td>Use label of corresponding value from code list https://vocabs.ccmm.cz/registry/codelist/RelationType/. (@en)</td>
-                  </tr>
-                </table>
-              </section>
-          </section>          <section id="ResourceToAgentRelationship">
-            <h4>Resource to agent relationship (@en)</h4>
-          
-            <table class="def">
-              <tr>
-                <td>IRI profilovaných tříd</td>
-                <td>
-                    
-                    <a href="https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship">https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://model.ccmm.cz/research-data/ResourceToAgentRelationship">https://model.ccmm.cz/research-data/ResourceToAgentRelationship</a></td>
-              </tr>
-              <tr>
-                <td>Název</td>
-                <td>Resource to agent relationship (@en)</td>
-              </tr>
-              <tr>
-                <td>Definice</td>
-                <td>An association class for attaching additional information to a relationship between Resource and Agent. (@en)</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchie</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiluje
-                třídu
-                
-                <a href="https://techlib.github.io/CCMM-V/en/#ResourceToAgentRelationship">Resource to agent relationship (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship">https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship</a>)
-                  <br />Definice: <i>An association class for attaching additional information to a relationship between Resource and Agent.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializuje
-                třídu
-                
-                <a href="http://www.w3.org/ns/dcat#Relationship">Vztah</a> (<a href="http://www.w3.org/ns/dcat#Relationship">dcat:Relationship</a>)
-                  <br />Definice: <i>Asociační třída pro připojení dodatečných informací ke vztahu mezi zdroji DCAT.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-              <tr>
-                <td>Popis použití v profilu</td>
-                <td>Use to characterize a relationship between resources and agents, where the nature of the relationship is known but is not adequately characterized by the standard DCTERMS properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or PROV-O properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf). Roles of the agent in the relation are specified using had role relation. (@en)</td>
-              </tr>
-            </table>
-          
-              <p>Zpětné asociace</p>
-              <ul>
-                  <li>z domény <a href="#MetadataRecord"></a> → <a href="#MetadataRecord.qualifiedRelation"></a></li>
-                  <li>z domény <a href="#Resource"></a> → <a href="#Resource.qualifiedRelation"></a></li>
-              </ul>
-          
-              <section id="ResourceToAgentRelationship.hasRelatedAgent">
-                <h4>has related agent (@en)</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="http://purl.org/dc/terms/relation">dcterms:relation</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/ResourceToAgentRelationship.hasRelatedAgent">https://model.ccmm.cz/research-data/ResourceToAgentRelationship.hasRelatedAgent</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>has related agent (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>Specifies the agent an a given role in the relationship with the resource. (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#ResourceToAgentRelationship">Resource to agent relationship (@en)</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#Agent">Agent (@en)</a>
-              
-                          [1..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    
-                    profil
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Relationship.relation">relation (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Relationship.relation">dcat-ap:Relationship.relation</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    
-                    profil
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_relation">relation (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Relationship.relation">dcat-dap:Relationship.relation</a>)
-                      <br />Definice: <i>The resource related to the source resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    vlastnost
-                    
-                    <a href="http://purl.org/dc/terms/relation">Relation (@en)</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
-                      <br />Definice: <i>A related resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>    <section id="ResourceToAgentRelationship.hadRole">
-                <h4>sehraná role</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/ResourceToAgentRelationship.hadRole">https://model.ccmm.cz/research-data/ResourceToAgentRelationship.hadRole</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>sehraná role</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#ResourceToAgentRelationship">Resource to agent relationship (@en)</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#ResourceAgentRoleType">Resource agent role type (@en)</a>
-              
-                          [1..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    
-                    profil
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Relationship.hadrole">sehraná role</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole">dcat-ap:Relationship.hadRole</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    
-                    profil
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_hadRole">sehraná role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Relationship.hadRole">dcat-dap:Relationship.hadRole</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    vlastnost
-                    
-                    <a href="http://www.w3.org/ns/dcat#hadRole">sehraná role</a> (<a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>)
-                      <br />Definice: <i>Funkce entity či agenta ve vztahu k jiné entitě či zdroji.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Popis použití v profilu</td>
-                    <td>May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles. (@en)</td>
                   </tr>
                 </table>
               </section>
@@ -13457,7 +13557,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -13477,13 +13577,13 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../organization/schema.xsd">../organization/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../person/schema.xsd">../person/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -13642,7 +13742,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -13662,13 +13762,13 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../distribution-data-service/schema.xsd">../distribution-data-service/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../distribution-downloadable-file/schema.xsd">../distribution-downloadable-file/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -13827,7 +13927,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -13847,7 +13947,7 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../address/schema.xsd">../address/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -14148,7 +14248,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -14180,19 +14280,19 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../geometry/schema.xsd">../geometry/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../location-relation-type/schema.xsd">../location-relation-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -14647,7 +14747,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -14667,7 +14767,7 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -14944,429 +15044,6 @@
       <section>
       <h2>
         Specifikace struktury pro
-        Resource to Agent Relationship
-      </h2>
-      <p>Datová struktura pro Resource to Agent Relationship. An association class for attaching additional information to a relationship between Dataset and Agent.</p>
-
-      
-
-
-
-
-
-
-<section>
-<h3>Přehled XML struktury</h3>
-<p>
-  Tato sekce popisuje XSD zachycující strukturu pro <i>Resource to Agent Relationship</i>, jež je definováno v souboru <a href="../resource-to-agent-relationship/schema.xsd"><code>../resource-to-agent-relationship/schema.xsd</code></a>.
-</p>
-
-    <dl>
-      <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
-    </dl>
-
-<section>
-<h4>Importy</h4>
-<p>
-  Seznam schémat, jež jsou tímto schématem importovány a použity.
-</p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Lokace schématu</th>
-        <th>Dokumentace</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-agent-role-type/schema.xsd">../resource-agent-role-type/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h4>Kořenové entity XSD schématu</h4>
-  <ul>
-      <li>element <a href="#element-ccmm:resource_to_agent_relationship"><code>resource_to_agent_relationship</code></a></li>
-
-      <li> komplexní typ <a href="#type-ccmm:resource_to_agent_relationship"><code>resource_to_agent_relationship</code></a></li>
-  </ul>
-</section>
-
-
-<section id="element-ccmm:resource_to_agent_relationship">
-  <h4>Kořenový element <code>&lt;resource_to_agent_relationship&gt;</code></h4>
-  <dl>
-    
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-      </dl>
-</section>
-
-
-<section id="type-ccmm:resource_to_agent_relationship">
-  <h4>Kořenový komplexní typ <code>resource_to_agent_relationship</code></h4>
-  <dl>
-        <dt>Význam</dt>
-      <dd>
-        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-        (An association class for attaching additional information to a relationship between Resource and Agent.)
-      </dd>
-
-
-        <dt>Obsah 
- - elementy v tomto pořadí
-</dt>
-      <ul style="margin-top: 0;">
-      <li>
-          element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:relation"><code>&lt;relation&gt;</code></a> [1..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource_to_agent_relationship-ccmm:role"><code>&lt;role&gt;</code></a> [1..1]
-      </li>
-  </ul>
-
-
-  </dl>
-</section>
-<section id="element-ccmm:resource_to_agent_relationship-ccmm:iri">
-  <h4>Element <code>&lt;iri&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource_to_agent_relationship"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource_to_agent_relationship-ccmm:relation">
-  <h4>Element <code>&lt;relation&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#ResourceToAgentRelationship.hasRelatedAgent"><strong>has related agent</strong></a>
-          (Specifies the agent an a given role in the relationship with the resource.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource_to_agent_relationship"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:agent"><code>ccmm:agent</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource_to_agent_relationship-ccmm:role">
-  <h4>Element <code>&lt;role&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#ResourceToAgentRelationship.hadRole"><strong>sehraná role</strong></a>
-          
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource_to_agent_relationship"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_agent_role_type"><code>ccmm:resource_agent_role_type</code></a>.
-      </dd>
-
-
-        <dt>Význam</dt>
-      <dd>
-        <a href="#ResourceAgentRoleType">Resource agent role type</a>
-        (Role of the agent in the relationship to the resource. )
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-
-</section>
-      </section>
-      <section>
-      <h2>
-        Specifikace struktury pro
-        Resource agent role type
-      </h2>
-      <p>Datová struktura pro Resource agent role type. An idea or notion; a unit of thought.</p>
-
-      
-
-
-
-
-
-
-<section>
-<h3>Přehled XML struktury</h3>
-<p>
-  Tato sekce popisuje XSD zachycující strukturu pro <i>Resource agent role type</i>, jež je definováno v souboru <a href="../resource-agent-role-type/schema.xsd"><code>../resource-agent-role-type/schema.xsd</code></a>.
-</p>
-
-    <dl>
-      <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
-    </dl>
-
-<section>
-<h4>Importy</h4>
-<p>
-  Seznam schémat, jež jsou tímto schématem importovány a použity.
-</p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Lokace schématu</th>
-        <th>Dokumentace</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>xml</code></td>
-            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
-          <td></td>
-        </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h4>Kořenové entity XSD schématu</h4>
-  <ul>
-      <li>element <a href="#element-ccmm:resource_agent_role_type"><code>resource_agent_role_type</code></a></li>
-
-      <li> komplexní typ <a href="#type-ccmm:resource_agent_role_type"><code>resource_agent_role_type</code></a></li>
-  </ul>
-</section>
-
-
-<section id="element-ccmm:resource_agent_role_type">
-  <h4>Kořenový element <code>&lt;resource_agent_role_type&gt;</code></h4>
-  <dl>
-    
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_agent_role_type"><code>ccmm:resource_agent_role_type</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-      </dl>
-</section>
-
-
-<section id="type-ccmm:resource_agent_role_type">
-  <h4>Kořenový komplexní typ <code>resource_agent_role_type</code></h4>
-  <dl>
-        <dt>Význam</dt>
-      <dd>
-        <a href="#ResourceAgentRoleType">Resource agent role type</a>
-        (Role of the agent in the relationship to the resource. )
-      </dd>
-
-
-        <dt>Obsah 
- - elementy v tomto pořadí
-</dt>
-      <ul style="margin-top: 0;">
-      <li>
-          element <a href="#element-ccmm:resource_agent_role_type-ccmm:iri"><code>&lt;iri&gt;</code></a> [1..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:resource_agent_role_type-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
-      </li>
-  </ul>
-
-
-  </dl>
-</section>
-<section id="element-ccmm:resource_agent_role_type-ccmm:iri">
-  <h4>Element <code>&lt;iri&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource_agent_role_type"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:resource_agent_role_type-ccmm:label">
-  <h4>Element <code>&lt;label&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#ResourceAgentRoleType.label"><strong>label</strong></a>
-          (Resource agent role type label.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:resource_agent_role_type"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href=""><code></code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-
-</section>
-      </section>
-      <section>
-      <h2>
-        Specifikace struktury pro
         Application profile
       </h2>
       <p>Datová struktura pro Application profile. A standard or other specification to which a metadata record conforms.</p>
@@ -15386,7 +15063,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -15570,7 +15247,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -15754,7 +15431,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -15938,7 +15615,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -16122,7 +15799,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -16746,7 +16423,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -16930,7 +16607,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -16956,7 +16633,7 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../subject-scheme/schema.xsd">../subject-scheme/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -17257,7 +16934,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -17283,25 +16960,25 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../language-system/schema.xsd">../language-system/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
+          <td><a href="../resource-attribution/schema.xsd">../resource-attribution/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../application-profile/schema.xsd">../application-profile/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../repository/schema.xsd">../repository/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -17367,7 +17044,7 @@
           element <a href="#element-ccmm:metadata_record-ccmm:language"><code>&lt;language&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:metadata_record-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [1..*]
+          element <a href="#element-ccmm:metadata_record-ccmm:qualified_attribution"><code>&lt;qualified_attribution&gt;</code></a> [1..*]
       </li>
       <li>
           element <a href="#element-ccmm:metadata_record-ccmm:date_updated"><code>&lt;date_updated&gt;</code></a> [1..1]
@@ -17504,8 +17181,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:metadata_record-ccmm:qualified_relation">
-  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
+<section id="element-ccmm:metadata_record-ccmm:qualified_attribution">
+  <h4>Element <code>&lt;qualified_attribution&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -17517,7 +17194,7 @@
           
         </i>
 
-          <a href="#MetadataRecord.qualifiedRelation"><strong>kvalifikovaný vztah</strong></a>
+          <a href="#MetadataRecord.qualifiedAttribution"><strong>qualified attribution</strong></a>
           (Odkaz na popis vztahu s jiným zdrojem.)
 
     </dd>
@@ -17532,14 +17209,14 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:resource_attribution"><code>ccmm:resource_attribution</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-        (An association class for attaching additional information to a relationship between Resource and Agent.)
+        <a href="#ResourceAttribution">Resource attribution</a>
+        (Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role.)
       </dd>
 
 
@@ -17749,7 +17426,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -17933,7 +17610,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -17953,54 +17630,55 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../metadata-record/schema.xsd">../metadata-record/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
-            <td colspan="2" style="text-align: center;"><i>Stejný namespace jako hlavní dokument</i></td>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
+          <td><a href="../resource-attribution/schema.xsd">../resource-attribution/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../language-system/schema.xsd">../language-system/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../access-rights/schema.xsd">../access-rights/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../subject/schema.xsd">../subject/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -18012,43 +17690,43 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../description/schema.xsd">../description/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../location/schema.xsd">../location/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../distribution/schema.xsd">../distribution/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../validation-result/schema.xsd">../validation-result/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../provenance-statement/schema.xsd">../provenance-statement/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -18123,7 +17801,7 @@
           element <a href="#element-ccmm:dataset-ccmm:alternate_title"><code>&lt;alternate_title&gt;</code></a> [0..*]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [2..*]
+          element <a href="#element-ccmm:dataset-ccmm:qualified_attribution"><code>&lt;qualified_attribution&gt;</code></a> [2..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:publication_year"><code>&lt;publication_year&gt;</code></a> [1..1]
@@ -18280,7 +17958,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>identifier</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
       </dd>
 
 
@@ -18437,8 +18115,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:dataset-ccmm:qualified_relation">
-  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
+<section id="element-ccmm:dataset-ccmm:qualified_attribution">
+  <h4>Element <code>&lt;qualified_attribution&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -18461,8 +18139,8 @@
           
         </i>
 
-          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
-          
+          <a href="#Resource.qualifiedAttribution"><strong>qualified attribution</strong></a>
+          (An Agent having some form of responsibility for the resource. )
 
     </dd>
 
@@ -18476,14 +18154,14 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:resource_attribution"><code>ccmm:resource_attribution</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-        (An association class for attaching additional information to a relationship between Resource and Agent.)
+        <a href="#ResourceAttribution">Resource attribution</a>
+        (Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role.)
       </dd>
 
 
@@ -19205,7 +18883,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -19231,7 +18909,7 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../alternate-title-type/schema.xsd">../alternate-title-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -19442,7 +19120,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -19716,7 +19394,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -19900,7 +19578,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -19926,13 +19604,13 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../related-resource/schema.xsd">../related-resource/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -20194,7 +19872,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -20214,7 +19892,7 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../checksum-algorithm/schema.xsd">../checksum-algorithm/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -20427,7 +20105,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -20446,7 +20124,8 @@
     </thead>
     <tbody>
         <tr>
-            <td colspan="2" style="text-align: center;"><i>Stejný namespace jako hlavní dokument</i></td>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -20458,7 +20137,7 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../contact-details/schema.xsd">../contact-details/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -20604,7 +20283,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>identifier</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
       </dd>
 
 
@@ -20797,7 +20476,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -20981,7 +20660,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -21165,7 +20844,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -21349,7 +21028,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -21533,7 +21212,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -21717,7 +21396,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -21901,7 +21580,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -22085,7 +21764,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -22269,7 +21948,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -22453,7 +22132,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -22637,7 +22316,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -22836,7 +22515,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -22856,7 +22535,7 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../time-instant/schema.xsd">../time-instant/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -23074,7 +22753,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -23258,7 +22937,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -23442,7 +23121,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -23468,7 +23147,7 @@
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../description-type/schema.xsd">../description-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -23681,7 +23360,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -23701,31 +23380,31 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../data-service/schema.xsd">../data-service/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../application-profile/schema.xsd">../application-profile/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../documentation/schema.xsd">../documentation/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../access-rights/schema.xsd">../access-rights/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -24305,7 +23984,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -24324,19 +24003,20 @@
     </thead>
     <tbody>
         <tr>
-            <td colspan="2" style="text-align: center;"><i>Stejný namespace jako hlavní dokument</i></td>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../contact-details/schema.xsd">../contact-details/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../organization/schema.xsd">../organization/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -24488,7 +24168,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>identifier</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
       </dd>
 
 
@@ -24768,7 +24448,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -24788,42 +24468,43 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../file/schema.xsd">../file/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../application-profile/schema.xsd">../application-profile/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../format/schema.xsd">../format/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
-            <td colspan="2" style="text-align: center;"><i>Stejný namespace jako hlavní dokument</i></td>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../media-type/schema.xsd">../media-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../checksum/schema.xsd">../checksum/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../access-rights/schema.xsd">../access-rights/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -25244,7 +24925,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:media_type"><code>media_type</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:media_type"><code>ccmm:media_type</code></a>.
       </dd>
 
 
@@ -25291,7 +24972,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:media_type"><code>media_type</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:media_type"><code>ccmm:media_type</code></a>.
       </dd>
 
 
@@ -25338,7 +25019,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:media_type"><code>media_type</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:media_type"><code>ccmm:media_type</code></a>.
       </dd>
 
 
@@ -25635,7 +25316,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -25655,13 +25336,13 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../time-interval/schema.xsd">../time-interval/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../time-instant/schema.xsd">../time-instant/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -25820,7 +25501,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -25840,13 +25521,13 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../time-representation/schema.xsd">../time-representation/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../date-type/schema.xsd">../date-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -26109,7 +25790,7 @@
 
     <dl>
       <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
     </dl>
 
 <section>
@@ -26128,37 +25809,38 @@
     </thead>
     <tbody>
         <tr>
-            <td colspan="2" style="text-align: center;"><i>Stejný namespace jako hlavní dokument</i></td>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../identifier/schema.xsd">../identifier/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../alternate-title/schema.xsd">../alternate-title/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
+          <td><a href="../resource-attribution/schema.xsd">../resource-attribution/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../time-reference/schema.xsd">../time-reference/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../resource-type/schema.xsd">../resource-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../resource-relation-type/schema.xsd">../resource-relation-type/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -26230,7 +25912,7 @@
           element <a href="#element-ccmm:related_resource-ccmm:resource_url"><code>&lt;resource_url&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:related_resource-ccmm:qualified_relation"><code>&lt;qualified_relation&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:related_resource-ccmm:qualified_attribution"><code>&lt;qualified_attribution&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:related_resource-ccmm:time_reference"><code>&lt;time_reference&gt;</code></a> [0..*]
@@ -26316,7 +25998,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>identifier</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
       </dd>
 
 
@@ -26484,8 +26166,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:related_resource-ccmm:qualified_relation">
-  <h4>Element <code>&lt;qualified_relation&gt;</code></h4>
+<section id="element-ccmm:related_resource-ccmm:qualified_attribution">
+  <h4>Element <code>&lt;qualified_attribution&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -26508,8 +26190,8 @@
           
         </i>
 
-          <a href="#Resource.qualifiedRelation"><strong>qualified relation</strong></a>
-          
+          <a href="#Resource.qualifiedAttribution"><strong>qualified attribution</strong></a>
+          (An Agent having some form of responsibility for the resource. )
 
     </dd>
 
@@ -26523,14 +26205,14 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:resource_to_agent_relationship"><code>ccmm:resource_to_agent_relationship</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:resource_attribution"><code>ccmm:resource_attribution</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#ResourceToAgentRelationship">Resource to agent relationship</a>
-        (An association class for attaching additional information to a relationship between Resource and Agent.)
+        <a href="#ResourceAttribution">Resource attribution</a>
+        (Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role.)
       </dd>
 
 
@@ -26724,6 +26406,10 @@
   Tato sekce popisuje XSD zachycující strukturu pro <i>Identifier</i>, jež je definováno v souboru <a href="../identifier/schema.xsd"><code>../identifier/schema.xsd</code></a>.
 </p>
 
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Importy</h4>
@@ -26742,7 +26428,7 @@
     <tbody>
         <tr>
             <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../identifier-scheme/schema.xsd">../identifier-scheme/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -26753,14 +26439,14 @@
 <section>
   <h4>Kořenové entity XSD schématu</h4>
   <ul>
-      <li>element <a href="#element-identifier"><code>identifier</code></a></li>
+      <li>element <a href="#element-ccmm:identifier"><code>identifier</code></a></li>
 
-      <li> komplexní typ <a href="#type-identifier"><code>identifier</code></a></li>
+      <li> komplexní typ <a href="#type-ccmm:identifier"><code>identifier</code></a></li>
   </ul>
 </section>
 
 
-<section id="element-identifier">
+<section id="element-ccmm:identifier">
   <h4>Kořenový element <code>&lt;identifier&gt;</code></h4>
   <dl>
     
@@ -26770,7 +26456,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-identifier"><code>identifier</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:identifier"><code>ccmm:identifier</code></a>.
       </dd>
 
 
@@ -26784,7 +26470,7 @@
 </section>
 
 
-<section id="type-identifier">
+<section id="type-ccmm:identifier">
   <h4>Kořenový komplexní typ <code>identifier</code></h4>
   <dl>
         <dt>Význam</dt>
@@ -26799,23 +26485,23 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-identifier-iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:identifier-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-identifier-value"><code>&lt;value&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:identifier-ccmm:value"><code>&lt;value&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-identifier-scheme"><code>&lt;scheme&gt;</code></a> [1..1]
+          element <a href="#element-ccmm:identifier-ccmm:scheme"><code>&lt;scheme&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-identifier-authorized"><code>&lt;authorized&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:identifier-ccmm:authorized"><code>&lt;authorized&gt;</code></a> [0..1]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-identifier-iri">
+<section id="element-ccmm:identifier-ccmm:iri">
   <h4>Element <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -26826,7 +26512,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-identifier"></a></dd>
+      <dd><a href="#type-ccmm:identifier"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -26846,7 +26532,7 @@
     
   </dl>
 </section>
-<section id="element-identifier-value">
+<section id="element-ccmm:identifier-ccmm:value">
   <h4>Element <code>&lt;value&gt;</code></h4>
 
   <dl>
@@ -26867,7 +26553,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-identifier"></a></dd>
+      <dd><a href="#type-ccmm:identifier"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -26887,7 +26573,7 @@
     
   </dl>
 </section>
-<section id="element-identifier-scheme">
+<section id="element-ccmm:identifier-ccmm:scheme">
   <h4>Element <code>&lt;scheme&gt;</code></h4>
 
   <dl>
@@ -26908,7 +26594,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>1..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-identifier"></a></dd>
+      <dd><a href="#type-ccmm:identifier"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -26933,7 +26619,7 @@
     
   </dl>
 </section>
-<section id="element-identifier-authorized">
+<section id="element-ccmm:identifier-ccmm:authorized">
   <h4>Element <code>&lt;authorized&gt;</code></h4>
 
   <dl>
@@ -26954,7 +26640,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-identifier"></a></dd>
+      <dd><a href="#type-ccmm:identifier"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -26998,6 +26684,10 @@
   Tato sekce popisuje XSD zachycující strukturu pro <i>Media type</i>, jež je definováno v souboru <a href="../media-type/schema.xsd"><code>../media-type/schema.xsd</code></a>.
 </p>
 
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Importy</h4>
@@ -27027,14 +26717,14 @@
 <section>
   <h4>Kořenové entity XSD schématu</h4>
   <ul>
-      <li>element <a href="#element-media_type"><code>media_type</code></a></li>
+      <li>element <a href="#element-ccmm:media_type"><code>media_type</code></a></li>
 
-      <li> komplexní typ <a href="#type-media_type"><code>media_type</code></a></li>
+      <li> komplexní typ <a href="#type-ccmm:media_type"><code>media_type</code></a></li>
   </ul>
 </section>
 
 
-<section id="element-media_type">
+<section id="element-ccmm:media_type">
   <h4>Kořenový element <code>&lt;media_type&gt;</code></h4>
   <dl>
     
@@ -27044,7 +26734,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-media_type"><code>media_type</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:media_type"><code>ccmm:media_type</code></a>.
       </dd>
 
 
@@ -27058,7 +26748,7 @@
 </section>
 
 
-<section id="type-media_type">
+<section id="type-ccmm:media_type">
   <h4>Kořenový komplexní typ <code>media_type</code></h4>
   <dl>
         <dt>Význam</dt>
@@ -27074,17 +26764,17 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-media_type-iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:media_type-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-media_type-label"><code>&lt;label&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:media_type-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-media_type-iri">
+<section id="element-ccmm:media_type-ccmm:iri">
   <h4>Element <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -27095,7 +26785,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-media_type"></a></dd>
+      <dd><a href="#type-ccmm:media_type"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -27115,7 +26805,7 @@
     
   </dl>
 </section>
-<section id="element-media_type-label">
+<section id="element-ccmm:media_type-ccmm:label">
   <h4>Element <code>&lt;label&gt;</code></h4>
 
   <dl>
@@ -27136,7 +26826,521 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..*</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-media_type"></a></dd>
+      <dd><a href="#type-ccmm:media_type"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href=""><code></code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
+      <section>
+      <h2>
+        Specifikace struktury pro
+        Resource attribution
+      </h2>
+      <p>Datová struktura pro Resource attribution. Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role.</p>
+
+      
+
+
+
+
+
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Tato sekce popisuje XSD zachycující strukturu pro <i>Resource attribution</i>, jež je definováno v souboru <a href="../resource-attribution/schema.xsd"><code>../resource-attribution/schema.xsd</code></a>.
+</p>
+
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
+
+<section>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Lokace schématu</th>
+        <th>Dokumentace</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
+          <td><a href="../organization/schema.xsd">../organization/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
+          <td><a href="../person/schema.xsd">../person/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
+          <td><a href="../attributed-agent-role-type/schema.xsd">../attributed-agent-role-type/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:resource_attribution"><code>resource_attribution</code></a></li>
+
+      <li> komplexní typ <a href="#type-ccmm:resource_attribution"><code>resource_attribution</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:resource_attribution">
+  <h4>Kořenový element <code>&lt;resource_attribution&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:resource_attribution"><code>ccmm:resource_attribution</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:resource_attribution">
+  <h4>Kořenový komplexní typ <code>resource_attribution</code></h4>
+  <dl>
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ResourceAttribution">Resource attribution</a>
+        (Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role.)
+      </dd>
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:resource_attribution-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:resource_attribution-ccmm:attributed_agent"><code>&lt;attributed_agent&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:resource_attribution-ccmm:role"><code>&lt;role&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:resource_attribution-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:resource_attribution"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:resource_attribution-ccmm:attributed_agent">
+  <h4>Element <code>&lt;attributed_agent&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#ResourceAttribution.hasAttributedAgent"><strong>has attributed agent</strong></a>
+          (The agent attributed to the resource.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:resource_attribution"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#ResourceAttribution.hasAttributedAgent">has attributed agent</a>
+        (The agent attributed to the resource.)
+      </dd>
+
+
+
+        <dt>Obsah  - výběr jednoho elementu z množiny
+
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:resource_attribution-ccmm:attributed_agent-ccmm:organization"><code>&lt;organization&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:resource_attribution-ccmm:attributed_agent-ccmm:person"><code>&lt;person&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:resource_attribution-ccmm:attributed_agent-ccmm:organization">
+  <h4>Element <code>&lt;attributed_agent&gt;</code> / <code>&lt;organization&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:resource_attribution-ccmm:attributed_agent"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:organization"><code>ccmm:organization</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Agent">Organization</a>
+        (Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:resource_attribution-ccmm:attributed_agent-ccmm:person">
+  <h4>Element <code>&lt;attributed_agent&gt;</code> / <code>&lt;person&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-ccmm:resource_attribution-ccmm:attributed_agent"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:person"><code>ccmm:person</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Person">Person</a>
+        (Physical person. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:resource_attribution-ccmm:role">
+  <h4>Element <code>&lt;role&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#ResourceAttribution.hadRole"><strong>sehraná role</strong></a>
+          
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:resource_attribution"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:attributed_agent_role_type"><code>ccmm:attributed_agent_role_type</code></a>.
+      </dd>
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#AttributedAgentRoleType">Attributed agent role type</a>
+        (Role of the agent in the attribution to the resource. )
+      </dd>
+
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
+      <section>
+      <h2>
+        Specifikace struktury pro
+        Attributed agent role type
+      </h2>
+      <p>Datová struktura pro Attributed agent role type. Role of the agent in the attribution to the resource. </p>
+
+      
+
+
+
+
+
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Tato sekce popisuje XSD zachycující strukturu pro <i>Attributed agent role type</i>, jež je definováno v souboru <a href="../attributed-agent-role-type/schema.xsd"><code>../attributed-agent-role-type/schema.xsd</code></a>.
+</p>
+
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
+
+<section>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Lokace schématu</th>
+        <th>Dokumentace</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
+          <td></td>
+        </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:attributed_agent_role_type"><code>attributed_agent_role_type</code></a></li>
+
+      <li> komplexní typ <a href="#type-ccmm:attributed_agent_role_type"><code>attributed_agent_role_type</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:attributed_agent_role_type">
+  <h4>Kořenový element <code>&lt;attributed_agent_role_type&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:attributed_agent_role_type"><code>ccmm:attributed_agent_role_type</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:attributed_agent_role_type">
+  <h4>Kořenový komplexní typ <code>attributed_agent_role_type</code></h4>
+  <dl>
+        <dt>Význam</dt>
+      <dd>
+        <a href="#AttributedAgentRoleType">Attributed agent role type</a>
+        (Role of the agent in the attribution to the resource. )
+      </dd>
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:attributed_agent_role_type-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:attributed_agent_role_type-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:attributed_agent_role_type-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:attributed_agent_role_type"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:attributed_agent_role_type-ccmm:label">
+  <h4>Element <code>&lt;label&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#ResourceAgentRoleType.label"><strong>label</strong></a>
+          (Resource agent role type label.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:attributed_agent_role_type"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -27221,14 +27425,6 @@
             <tr>
               <td>Popis strukturálního modelu</td>
               <td><a href="../funding-reference/structure.ttl">../funding-reference/structure.ttl</a></td>
-            </tr>
-            <tr>
-              <td>Popis strukturálního modelu</td>
-              <td><a href="../resource-to-agent-relationship/structure.ttl">../resource-to-agent-relationship/structure.ttl</a></td>
-            </tr>
-            <tr>
-              <td>Popis strukturálního modelu</td>
-              <td><a href="../resource-agent-role-type/structure.ttl">../resource-agent-role-type/structure.ttl</a></td>
             </tr>
             <tr>
               <td>Popis strukturálního modelu</td>
@@ -27386,6 +27582,14 @@
               <td>Popis strukturálního modelu</td>
               <td><a href="../media-type/structure.ttl">../media-type/structure.ttl</a></td>
             </tr>
+            <tr>
+              <td>Popis strukturálního modelu</td>
+              <td><a href="../resource-attribution/structure.ttl">../resource-attribution/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Popis strukturálního modelu</td>
+              <td><a href="../attributed-agent-role-type/structure.ttl">../attributed-agent-role-type/structure.ttl</a></td>
+            </tr>
             <tr><td>XML schéma</td><td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../agent/lifting.xslt">../agent/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../agent/lowering.xslt">../agent/lowering.xslt</a></td></tr>
@@ -27401,12 +27605,6 @@
             <tr><td>XML schéma</td><td><a href="../funding-reference/schema.xsd">../funding-reference/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../funding-reference/lifting.xslt">../funding-reference/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../funding-reference/lowering.xslt">../funding-reference/lowering.xslt</a></td></tr>
-            <tr><td>XML schéma</td><td><a href="../resource-to-agent-relationship/schema.xsd">../resource-to-agent-relationship/schema.xsd</a></td></tr>
-            <tr><td>XSLT lifting</td><td><a href="../resource-to-agent-relationship/lifting.xslt">../resource-to-agent-relationship/lifting.xslt</a></td></tr>
-            <tr><td>XSLT lowering</td><td><a href="../resource-to-agent-relationship/lowering.xslt">../resource-to-agent-relationship/lowering.xslt</a></td></tr>
-            <tr><td>XML schéma</td><td><a href="../resource-agent-role-type/schema.xsd">../resource-agent-role-type/schema.xsd</a></td></tr>
-            <tr><td>XSLT lifting</td><td><a href="../resource-agent-role-type/lifting.xslt">../resource-agent-role-type/lifting.xslt</a></td></tr>
-            <tr><td>XSLT lowering</td><td><a href="../resource-agent-role-type/lowering.xslt">../resource-agent-role-type/lowering.xslt</a></td></tr>
             <tr><td>XML schéma</td><td><a href="../application-profile/schema.xsd">../application-profile/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../application-profile/lifting.xslt">../application-profile/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../application-profile/lowering.xslt">../application-profile/lowering.xslt</a></td></tr>
@@ -27524,6 +27722,12 @@
             <tr><td>XML schéma</td><td><a href="../media-type/schema.xsd">../media-type/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../media-type/lifting.xslt">../media-type/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../media-type/lowering.xslt">../media-type/lowering.xslt</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../resource-attribution/schema.xsd">../resource-attribution/schema.xsd</a></td></tr>
+            <tr><td>XSLT lifting</td><td><a href="../resource-attribution/lifting.xslt">../resource-attribution/lifting.xslt</a></td></tr>
+            <tr><td>XSLT lowering</td><td><a href="../resource-attribution/lowering.xslt">../resource-attribution/lowering.xslt</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../attributed-agent-role-type/schema.xsd">../attributed-agent-role-type/schema.xsd</a></td></tr>
+            <tr><td>XSLT lifting</td><td><a href="../attributed-agent-role-type/lifting.xslt">../attributed-agent-role-type/lifting.xslt</a></td></tr>
+            <tr><td>XSLT lowering</td><td><a href="../attributed-agent-role-type/lowering.xslt">../attributed-agent-role-type/lowering.xslt</a></td></tr>
             <tr><td>Dokumentace</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
