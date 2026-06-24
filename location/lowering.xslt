@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
   <xsl:import href="../geometry/lowering.xslt"/>
   <xsl:import href="../related-resource/lowering.xslt"/>
   <xsl:import href="../location-relation-type/lowering.xslt"/>
   <xsl:import href="../identifier/lowering.xslt"/>
   <xsl:import href="../alternate-title/lowering.xslt"/>
-  <xsl:import href="../resource-to-agent-relationship/lowering.xslt"/>
+  <xsl:import href="../resource-attribution/lowering.xslt"/>
   <xsl:import href="../time-reference/lowering.xslt"/>
   <xsl:import href="../resource-type/lowering.xslt"/>
   <xsl:import href="../resource-relation-type/lowering.xslt"/>
@@ -14,7 +14,7 @@
   <xsl:import href="../date-type/lowering.xslt"/>
   <xsl:import href="../organization/lowering.xslt"/>
   <xsl:import href="../person/lowering.xslt"/>
-  <xsl:import href="../resource-agent-role-type/lowering.xslt"/>
+  <xsl:import href="../attributed-agent-role-type/lowering.xslt"/>
   <xsl:import href="../contact-details/lowering.xslt"/>
   <xsl:import href="../address/lowering.xslt"/>
   <xsl:import href="../identifier-scheme/lowering.xslt"/>

@@ -3,7 +3,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://model.ccmm.cz/research-data/> rdfs:member <https://model.ccmm.cz/research-data/dcat%3ACatalogShape>, <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape>, <https://model.ccmm.cz/research-data/dcat%3ADataServiceShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetSeriesShape>, <https://model.ccmm.cz/research-data/dcat%3ADistributionShape>, <https://model.ccmm.cz/research-data/dcat%3ARelationshipShape>, <https://model.ccmm.cz/research-data/dcat%3AResourceShape>, <https://model.ccmm.cz/research-data/dcat%3ARoleShape>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape>, <https://model.ccmm.cz/research-data/skos%3AConceptShape>, <https://model.ccmm.cz/research-data/eli%3ALegalResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3ALocationShape>, <https://model.ccmm.cz/research-data/foaf%3ADocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ALinguisticSystemShape>, <https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ARightsStatementShape>, <https://model.ccmm.cz/research-data/dcterms%3AStandardShape>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3AProvenanceStatementShape>, <https://model.ccmm.cz/research-data/http://www.w3.org/ns/odrl/2/PolicyShape>, <https://model.ccmm.cz/research-data/dcterms%3APeriodOfTimeShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeOrExtentShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeShape>, <https://model.ccmm.cz/research-data/adms%3AIdentifierShape>, <https://model.ccmm.cz/research-data/locn%3AGeometryShape>, <https://model.ccmm.cz/research-data/dcterms%3AFrequencyShape>, <https://model.ccmm.cz/research-data/skos%3AConceptSchemeShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumAlgorithmShape>, <https://model.ccmm.cz/research-data/prov%3AAttributionShape>, <https://model.ccmm.cz/research-data/prov%3AActivityShape>, <https://model.ccmm.cz/research-data/vcard%3AKindShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumShape>, <https://model.ccmm.cz/research-data/time%3AInstantShape>, <https://model.ccmm.cz/research-data/rdfs%3AClassShape>, <https://model.ccmm.cz/research-data/prov%3AEntityShape>, <https://model.ccmm.cz/research-data/foaf%3APersonShape>, <https://model.ccmm.cz/research-data/foaf%3AOrganizationShape>, <https://model.ccmm.cz/research-data/prov%3APersonShape>, <https://model.ccmm.cz/research-data/prov%3AOrganizationShape>, <https://model.ccmm.cz/research-data/datacite%3AFundingReferenceShape>, <https://model.ccmm.cz/research-data/ccmm%3AValidationResultShape>, <https://model.ccmm.cz/research-data/datacite%3ASubjectShape>, <https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape>, <https://model.ccmm.cz/research-data/ccmm%3AContactDetailsShape>, <https://model.ccmm.cz/research-data/locn%3AAddressShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DownloadableFileShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DataServiceShape>, <https://model.ccmm.cz/research-data/ccmm%3ASubjectSchemeShape>, <https://model.ccmm.cz/research-data/ccmm%3AAlternateTitleShape>, <https://model.ccmm.cz/research-data/time%3ATemporalEntityShape>, <https://model.ccmm.cz/research-data/time%3AIntervalShape>, <https://model.ccmm.cz/research-data/ccmm%3AIdentifierSchemeShape>, <https://model.ccmm.cz/research-data/datacite%3ADescriptionShape>, <https://model.ccmm.cz/research-data/datacite%3ADescriptionTypeShape>, <https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape>.
+<https://model.ccmm.cz/research-data/> rdfs:member <https://model.ccmm.cz/research-data/dcat%3ACatalogShape>, <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape>, <https://model.ccmm.cz/research-data/dcat%3ADataServiceShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetSeriesShape>, <https://model.ccmm.cz/research-data/dcat%3ADistributionShape>, <https://model.ccmm.cz/research-data/dcat%3ARelationshipShape>, <https://model.ccmm.cz/research-data/dcat%3AResourceShape>, <https://model.ccmm.cz/research-data/dcat%3ARoleShape>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape>, <https://model.ccmm.cz/research-data/skos%3AConceptShape>, <https://model.ccmm.cz/research-data/eli%3ALegalResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3ALocationShape>, <https://model.ccmm.cz/research-data/foaf%3ADocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ALinguisticSystemShape>, <https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ARightsStatementShape>, <https://model.ccmm.cz/research-data/dcterms%3AStandardShape>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3AProvenanceStatementShape>, <https://model.ccmm.cz/research-data/http://www.w3.org/ns/odrl/2/PolicyShape>, <https://model.ccmm.cz/research-data/dcterms%3APeriodOfTimeShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeOrExtentShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeShape>, <https://model.ccmm.cz/research-data/adms%3AIdentifierShape>, <https://model.ccmm.cz/research-data/locn%3AGeometryShape>, <https://model.ccmm.cz/research-data/dcterms%3AFrequencyShape>, <https://model.ccmm.cz/research-data/skos%3AConceptSchemeShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumAlgorithmShape>, <https://model.ccmm.cz/research-data/prov%3AAttributionShape>, <https://model.ccmm.cz/research-data/prov%3AActivityShape>, <https://model.ccmm.cz/research-data/vcard%3AKindShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumShape>, <https://model.ccmm.cz/research-data/time%3AInstantShape>, <https://model.ccmm.cz/research-data/rdfs%3AClassShape>, <https://model.ccmm.cz/research-data/prov%3AEntityShape>, <https://model.ccmm.cz/research-data/foaf%3APersonShape>, <https://model.ccmm.cz/research-data/foaf%3AOrganizationShape>, <https://model.ccmm.cz/research-data/prov%3APersonShape>, <https://model.ccmm.cz/research-data/prov%3AOrganizationShape>, <https://model.ccmm.cz/research-data/datacite%3AFundingReferenceShape>, <https://model.ccmm.cz/research-data/ccmm%3AValidationResultShape>, <https://model.ccmm.cz/research-data/datacite%3ASubjectShape>, <https://model.ccmm.cz/research-data/ccmm%3AContactDetailsShape>, <https://model.ccmm.cz/research-data/locn%3AAddressShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DownloadableFileShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DataServiceShape>, <https://model.ccmm.cz/research-data/ccmm%3ASubjectSchemeShape>, <https://model.ccmm.cz/research-data/ccmm%3AAlternateTitleShape>, <https://model.ccmm.cz/research-data/time%3ATemporalEntityShape>, <https://model.ccmm.cz/research-data/time%3AIntervalShape>, <https://model.ccmm.cz/research-data/ccmm%3AIdentifierSchemeShape>, <https://model.ccmm.cz/research-data/datacite%3ADescriptionShape>, <https://model.ccmm.cz/research-data/datacite%3ADescriptionTypeShape>, <https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape>.
 
 <https://model.ccmm.cz/research-data/dcat%3ACatalogShape> a sh:NodeShape;
     rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>;
@@ -2289,14 +2289,14 @@
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/678dc9cb>.
 
-<https://model.ccmm.cz/research-data/rdfs%3AResourceShape/235b5687> a sh:PropertyShape;
-    sh:name "qualified relation"@en;
-    sh:description "Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship."@en;
+<https://model.ccmm.cz/research-data/rdfs%3AResourceShape/-689b939d> a sh:PropertyShape;
+    sh:name "qualified attribution"@en;
+    sh:description "Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship. If the resource is Dataset, it has to have at least two qualified attribution relations, the one with the role Creator, the second one with the role Publisher."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
-    sh:path <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>;
-    sh:class <https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship>.
+    sh:path <http://www.w3.org/ns/prov#qualifiedAttribution>;
+    sh:class <http://www.w3.org/ns/prov#Attribution>.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/235b5687>.
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/-689b939d>.
 
 <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/77c5dd23> a sh:PropertyShape;
     sh:name "has time reference"@en;
@@ -2594,41 +2594,39 @@
     sh:maxCount 1;
     sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
 
-<https://model.ccmm.cz/research-data/rdfs%3AResourceShape> sh:property <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/2d020c93>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/10bdc621>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/678dc9cb>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/235b5687>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/77c5dd23>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/584ddfb8>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/3f7f5edf>.
+<https://model.ccmm.cz/research-data/rdfs%3AResourceShape> sh:property <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/2d020c93>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/10bdc621>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/678dc9cb>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/-689b939d>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/77c5dd23>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/584ddfb8>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/3f7f5edf>.
 
-<https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape> a sh:NodeShape;
-    rdfs:seeAlso <https://model.ccmm.cz/research-data/ResourceToAgentRelationship>;
-    sh:closed false;
-    sh:targetClass <https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship>.
+<https://model.ccmm.cz/research-data/prov%3AAttributionShape> rdfs:seeAlso <https://model.ccmm.cz/research-data/ResourceAttribution>.
 
-<https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape/-1197208b> a sh:PropertyShape;
-    sh:name "has related agent"@en;
+<https://model.ccmm.cz/research-data/prov%3AAttributionShape/19c32b47> a sh:PropertyShape;
+    sh:name "has attributed agent"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
-    sh:path <http://purl.org/dc/terms/relation>;
+    sh:path <http://www.w3.org/ns/prov#agent>;
     sh:maxCount 1;
+    sh:minCount 1;
     sh:class <http://xmlns.com/foaf/0.1/Agent>.
 
-<https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape> sh:property <https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape/-1197208b>.
+<https://model.ccmm.cz/research-data/prov%3AAttributionShape> sh:property <https://model.ccmm.cz/research-data/prov%3AAttributionShape/19c32b47>.
 
-<https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape/6143671c> a sh:PropertyShape;
-    sh:description "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles."@en;
+<https://model.ccmm.cz/research-data/prov%3AAttributionShape/79ec2ddf> a sh:PropertyShape;
+    sh:description "May be used in a qualified-attribution to specify the role of an Agent with respect to an Resource. It is recommended that the value be taken from a controlled vocabulary of agent roles."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#hadRole>;
     sh:maxCount 1;
     sh:class <http://www.w3.org/ns/dcat#Role>.
 
-<https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape> sh:property <https://model.ccmm.cz/research-data/ccmm%3AResourceToAgentRelationshipShape/6143671c>.
+<https://model.ccmm.cz/research-data/prov%3AAttributionShape> sh:property <https://model.ccmm.cz/research-data/prov%3AAttributionShape/79ec2ddf>.
 
-<https://model.ccmm.cz/research-data/dcat%3ARoleShape> rdfs:seeAlso <https://model.ccmm.cz/research-data/ResourceAgentRoleType>.
+<https://model.ccmm.cz/research-data/dcat%3ARoleShape> rdfs:seeAlso <https://model.ccmm.cz/research-data/AttributedAgentRoleType>.
 
-<https://model.ccmm.cz/research-data/dcat%3ARoleShape/-578da85b> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/dcat%3ARoleShape/-2bcc38e1> a sh:PropertyShape;
     sh:name "label"@en;
     sh:description "Use label of the corresponding value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/."@en;
     sh:nodeKind sh:Literal;
     sh:path rdfs:label;
     sh:datatype rdf:langString.
 
-<https://model.ccmm.cz/research-data/dcat%3ARoleShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ARoleShape/-578da85b>.
+<https://model.ccmm.cz/research-data/dcat%3ARoleShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ARoleShape/-2bcc38e1>.
 
 <https://model.ccmm.cz/research-data/ccmm%3AContactDetailsShape> a sh:NodeShape;
     rdfs:seeAlso <https://model.ccmm.cz/research-data/ContactDetails>;
@@ -2829,6 +2827,15 @@
     sh:class <http://www.w3.org/ns/dcat#Dataset>.
 
 <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape/1f0e2044>.
+
+<https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape/50a8ec11> a sh:PropertyShape;
+    sh:name "qualified attribution"@en;
+    sh:description "Relationship shall contain at least one agent with role \"Data Manager\" from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/prov#qualifiedAttribution>;
+    sh:class <http://www.w3.org/ns/prov#Attribution>.
+
+<https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape/50a8ec11>.
 
 <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape/3383c829> a sh:PropertyShape;
     sh:name "language"@en;

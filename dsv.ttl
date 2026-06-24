@@ -119,17 +119,17 @@
     dsv:specializes :Resource;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>;
     a dsv:ClassProfile.
-:ResourceToAgentRelationship dct:isPartOf <https://model.ccmm.cz/research-data/>;
+:ResourceAttribution dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:prefLabel "Resource to agent relationship"@en;
-    skos:definition "An association class for attaching additional information to a relationship between Resource and Agent."@en;
-    skos:scopeNote "Use to characterize a relationship between resources and agents, where the nature of the relationship is known but is not adequately characterized by the standard DCTERMS properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or PROV-O properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf). Roles of the agent in the relation are specified using had role relation."@en;
-    a dsv:ClassProfile;
-    dsv:class <https://model.ccmm.cz/vocabulary/ccmm#ResourceToAgentRelationship>.
-:ResourceAgentRoleType dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    skos:prefLabel "Resource attribution"@en;
+    skos:definition "Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role."@en;
+    skos:scopeNote ""@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Attribution>;
+    a dsv:ClassProfile.
+:AttributedAgentRoleType dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:prefLabel "Resource agent role type"@en;
-    skos:definition "Role of the agent in the relationship to the resource. "@en;
+    skos:prefLabel "Attributed agent role type"@en;
+    skos:definition "Role of the agent in the attribution to the resource. "@en;
     skos:scopeNote "Use value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Role>;
     a dsv:ClassProfile.
@@ -314,13 +314,8 @@
     a dsv:TermProfile;
     skos:prefLabel "Checksum algorithm"@en;
     skos:definition "Algorithm used for Checksums."@en;
+    skos:scopeNote "Refere to the IRI,. e.g. instances of https://spdx.org/rdf/terms/#d4e2129 in SPDX Ontology."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:scopeNote;
-  dsv:reusedAsProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>
-];
     a dsv:ClassProfile.
 :LicenseDocument dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -570,19 +565,19 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :TimeReference.
 
-<https://model.ccmm.cz/research-data/ResourceToAgentRelationship.hasRelatedAgent> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+<https://model.ccmm.cz/research-data/ResourceAttribution.hasAttributedAgent> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:prefLabel "has related agent"@en;
-    skos:definition "Specifies the agent an a given role in the relationship with the resource."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Relationship.relation>;
+    skos:prefLabel "has attributed agent"@en;
+    skos:definition "The agent attributed to the resource."@en;
     dsv:cardinality cardinality:11;
-    dsv:domain :ResourceToAgentRelationship;
+    dsv:property <http://www.w3.org/ns/prov#agent>;
+    dsv:domain :ResourceAttribution;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Agent.
 
-<https://model.ccmm.cz/research-data/ResourceToAgentRelationship.hadRole> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+<https://model.ccmm.cz/research-data/ResourceAttribution.hadRole> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles."@en;
+    skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Resource. It is recommended that the value be taken from a controlled vocabulary of agent roles."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -596,9 +591,9 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Relationship.hadRole>
 ];
     dsv:cardinality cardinality:11;
-    dsv:domain :ResourceToAgentRelationship;
+    dsv:domain :ResourceAttribution;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ResourceAgentRoleType.
+    dsv:objectPropertyRange :AttributedAgentRoleType.
 
 <https://model.ccmm.cz/research-data/FundingReference.hasFunder> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -871,20 +866,16 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Identifier.
 
-<https://model.ccmm.cz/research-data/MetadataRecord.qualifiedRelation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+<https://model.ccmm.cz/research-data/MetadataRecord.qualifiedAttribution> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "qualified attribution"@en;
     skos:definition "Enlace a una descripción de la relación con otro recurso."@es, "Link a una descrizione di una relazione con un'altra risorsa."@it, "Link to a description of a relationship between metadata record and agent with the specification of the role of agent in this relationship."@en, "Odkaz na popis vztahu s jiným zdrojem."@cs, "Reference til en beskrivelse af en relation til en anden ressource."@da;
     skos:scopeNote "Relationship shall contain at least one agent with role \"Data Manager\" from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/."@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedRelation>
-];
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>;
     dsv:cardinality cardinality:1n;
     dsv:domain :MetadataRecord;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ResourceToAgentRelationship.
+    dsv:objectPropertyRange :ResourceAttribution.
 
 <https://model.ccmm.cz/research-data/Checksum.usesAlgorithm> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1137,25 +1128,16 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :AlternateTitle.
 
-<https://model.ccmm.cz/research-data/Resource.qualifiedRelation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+<https://model.ccmm.cz/research-data/Resource.qualifiedAttribution> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:scopeNote "Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship."@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>
-];
+    skos:prefLabel "qualified attribution"@en;
+    skos:definition "An Agent having some form of responsibility for the resource. "@en;
+    skos:scopeNote "Link to a description of a relationship between resource and an agent with the specification of the role of agent in this relationship. If the resource is Dataset, it has to have at least two qualified attribution relations, the one with the role Creator, the second one with the role Publisher."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>;
     dsv:cardinality cardinality:0n;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation>;
     dsv:domain :Resource;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ResourceToAgentRelationship.
+    dsv:objectPropertyRange :ResourceAttribution.
 
 <https://model.ccmm.cz/research-data/Resource.hasTimeReference> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1695,7 +1677,7 @@
     skos:scopeNote "Use label of the corresponding value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/."@en;
     dsv:cardinality cardinality:0n;
     dsv:property rdfs:label;
-    dsv:domain :ResourceAgentRoleType;
+    dsv:domain :AttributedAgentRoleType;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 

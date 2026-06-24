@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.2" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
   <xs:include schemaLocation="../language-system/schema.xsd"/>
-  <xs:include schemaLocation="../resource-to-agent-relationship/schema.xsd"/>
+  <xs:include schemaLocation="../resource-attribution/schema.xsd"/>
   <xs:include schemaLocation="../application-profile/schema.xsd"/>
   <xs:include schemaLocation="../repository/schema.xsd"/>
   <xs:complexType name="metadata_record" sawsdl:modelReference="http://www.w3.org/ns/dcat#CatalogRecord">
@@ -60,23 +60,23 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element maxOccurs="unbounded" name="qualified_relation" type="ccmm:resource_to_agent_relationship">
+      <xs:element maxOccurs="unbounded" name="qualified_attribution" type="ccmm:resource_attribution" sawsdl:modelReference="http://www.w3.org/ns/prov#qualifiedAttribution">
         <xs:annotation>
           <xs:documentation xml:lang="cs">
-            kvalifikovaný vztah - Odkaz na popis vztahu s jiným zdrojem.
+            Odkaz na popis vztahu s jiným zdrojem.
           </xs:documentation>
           <xs:documentation xml:lang="da">
-            Kvalificeret relation - Reference til en beskrivelse af en relation til en anden ressource.
+            Reference til en beskrivelse af en relation til en anden ressource.
           </xs:documentation>
           <xs:documentation xml:lang="en">
-            qualified relation - Link to a description of a relationship between metadata record and agent with the specification of the role of agent in this relationship.
+            qualified attribution - Link to a description of a relationship between metadata record and agent with the specification of the role of agent in this relationship.
             Relationship shall contain at least one agent with role &#34;Data Manager&#34; from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/.
           </xs:documentation>
           <xs:documentation xml:lang="es">
-            relación calificada - Enlace a una descripción de la relación con otro recurso.
+            Enlace a una descripción de la relación con otro recurso.
           </xs:documentation>
           <xs:documentation xml:lang="it">
-            relazione qualificata - Link a una descrizione di una relazione con un'altra risorsa.
+            Link a una descrizione di una relazione con un'altra risorsa.
           </xs:documentation>
         </xs:annotation>
       </xs:element>

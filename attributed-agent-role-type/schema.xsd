@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.2" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
-  <xs:complexType name="resource_agent_role_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#Role">
+  <xs:complexType name="attributed_agent_role_type" sawsdl:modelReference="http://www.w3.org/ns/dcat#Role">
     <xs:annotation>
       <xs:documentation xml:lang="en">
-        Resource agent role type - Role of the agent in the relationship to the resource. 
+        Attributed agent role type - Role of the agent in the attribution to the resource. 
         Use value from code list https://vocabs.ccmm.cz/registry/codelist/AgentRole/.
       </xs:documentation>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="label" sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#label">
         <xs:annotation>
           <xs:documentation xml:lang="en">
@@ -28,5 +28,5 @@
       <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##other"/>
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="resource_agent_role_type" type="ccmm:resource_agent_role_type"/>
+  <xs:element name="attributed_agent_role_type" type="ccmm:attributed_agent_role_type"/>
 </xs:schema>

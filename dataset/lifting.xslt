@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#" xmlns:ns1="http://www.w3.org/ns/adms#" xmlns:ns2="http://www.w3.org/ns/dcat#" xmlns:ns3="http://purl.org/dc/terms/" xmlns:ns4="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns5="http://www.opengis.net/ont/geosparql#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#" xmlns:ns1="http://www.w3.org/ns/adms#" xmlns:ns2="http://www.w3.org/ns/dcat#" xmlns:ns3="http://purl.org/dc/terms/" xmlns:ns4="http://www.w3.org/ns/prov#" xmlns:ns5="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns6="http://www.opengis.net/ont/geosparql#">
   <xsl:import href="../metadata-record/lifting.xslt"/>
   <xsl:import href="../identifier/lifting.xslt"/>
   <xsl:import href="../alternate-title/lifting.xslt"/>
-  <xsl:import href="../resource-to-agent-relationship/lifting.xslt"/>
+  <xsl:import href="../resource-attribution/lifting.xslt"/>
   <xsl:import href="../time-reference/lifting.xslt"/>
   <xsl:import href="../resource-type/lifting.xslt"/>
   <xsl:import href="../language-system/lifting.xslt"/>
@@ -32,7 +32,7 @@
   <xsl:import href="../date-type/lifting.xslt"/>
   <xsl:import href="../organization/lifting.xslt"/>
   <xsl:import href="../person/lifting.xslt"/>
-  <xsl:import href="../resource-agent-role-type/lifting.xslt"/>
+  <xsl:import href="../attributed-agent-role-type/lifting.xslt"/>
   <xsl:import href="../contact-details/lifting.xslt"/>
   <xsl:import href="../address/lifting.xslt"/>
   <xsl:import href="../identifier-scheme/lifting.xslt"/>
@@ -137,16 +137,16 @@
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742340187136-c36a-9f4c-b745"/>
         </ns0:hasAlternateTitle>
       </xsl:for-each>
-      <xsl:for-each select="ccmm:qualified_relation">
-        <ns0:qualifiedRelation>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235557653-64a2-513a-97fe"/>
-        </ns0:qualifiedRelation>
+      <xsl:for-each select="ccmm:qualified_attribution">
+        <ns4:qualifiedAttribution>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782311692513-fbfd-95df-9c5a"/>
+        </ns4:qualifiedAttribution>
       </xsl:for-each>
       <xsl:for-each select="ccmm:publication_year">
-        <ns4:relatedItemPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">
+        <ns5:relatedItemPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
-        </ns4:relatedItemPublicationYear>
+        </ns5:relatedItemPublicationYear>
       </xsl:for-each>
       <xsl:for-each select="ccmm:time_reference">
         <ns0:hasTimeReference>
@@ -174,9 +174,9 @@
         </ns3:accessRights>
       </xsl:for-each>
       <xsl:for-each select="ccmm:subject">
-        <ns4:hasSubject>
+        <ns5:hasSubject>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742338662847-61c1-8d4b-b552"/>
-        </ns4:hasSubject>
+        </ns5:hasSubject>
       </xsl:for-each>
       <xsl:for-each select="ccmm:keyword">
         <ns2:keyword rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
@@ -185,9 +185,9 @@
         </ns2:keyword>
       </xsl:for-each>
       <xsl:for-each select="ccmm:description">
-        <ns4:hasDescription>
+        <ns5:hasDescription>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1751275345825-1b14-9c39-8e40"/>
-        </ns4:hasDescription>
+        </ns5:hasDescription>
       </xsl:for-each>
       <xsl:for-each select="ccmm:location">
         <ns3:spatial>
@@ -195,9 +195,9 @@
         </ns3:spatial>
       </xsl:for-each>
       <xsl:for-each select="ccmm:funding_reference">
-        <ns4:hasFundingReference>
+        <ns5:hasFundingReference>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235374506-6369-b2fd-b1bf"/>
-        </ns4:hasFundingReference>
+        </ns5:hasFundingReference>
       </xsl:for-each>
       <xsl:for-each select="ccmm:related_resource">
         <ns3:relation>
@@ -268,14 +268,14 @@
       <rdf:type rdf:resource="http://www.opengis.net/ont/sf#Envelope"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:gml">
-        <ns5:asGML rdf:datatype="http://www.opengis.net/gml/3.2#BoundingShapeType">
+        <ns6:asGML rdf:datatype="http://www.opengis.net/gml/3.2#BoundingShapeType">
           <xsl:call-template name="gml-transform-lifting"/>
-        </ns5:asGML>
+        </ns6:asGML>
       </xsl:for-each>
       <xsl:for-each select="ccmm:wkt">
-        <ns5:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">
+        <ns6:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">
           <xsl:call-template name="wkt-transform"/>
-        </ns5:asWKT>
+        </ns6:asWKT>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>

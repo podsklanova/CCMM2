@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://purl.org/dc/terms/" xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://purl.org/dc/terms/" xmlns:ns1="http://www.w3.org/ns/prov#" xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#">
   <xsl:import href="../language-system/lifting.xslt"/>
-  <xsl:import href="../resource-to-agent-relationship/lifting.xslt"/>
+  <xsl:import href="../resource-attribution/lifting.xslt"/>
   <xsl:import href="../application-profile/lifting.xslt"/>
   <xsl:import href="../repository/lifting.xslt"/>
   <xsl:import href="../organization/lifting.xslt"/>
   <xsl:import href="../person/lifting.xslt"/>
-  <xsl:import href="../resource-agent-role-type/lifting.xslt"/>
+  <xsl:import href="../attributed-agent-role-type/lifting.xslt"/>
   <xsl:import href="../identifier/lifting.xslt"/>
   <xsl:import href="../contact-details/lifting.xslt"/>
   <xsl:import href="../address/lifting.xslt"/>
@@ -77,8 +77,10 @@
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747685830295-de50-b2ac-bb47"/>
         </ns0:language>
       </xsl:for-each>
-      <xsl:for-each select="ccmm:qualified_relation">
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235557653-64a2-513a-97fe"/>
+      <xsl:for-each select="ccmm:qualified_attribution">
+        <ns1:qualifiedAttribution>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782311692513-fbfd-95df-9c5a"/>
+        </ns1:qualifiedAttribution>
       </xsl:for-each>
       <xsl:for-each select="ccmm:date_updated">
         <ns0:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">
@@ -98,9 +100,9 @@
         </ns0:conformsTo>
       </xsl:for-each>
       <xsl:for-each select="ccmm:original_repository">
-        <ns1:originalRepository>
+        <ns2:originalRepository>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742339809761-c64b-cd69-80de"/>
-        </ns1:originalRepository>
+        </ns2:originalRepository>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>

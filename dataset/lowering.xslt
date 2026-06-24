@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
   <xsl:import href="../metadata-record/lowering.xslt"/>
   <xsl:import href="../identifier/lowering.xslt"/>
   <xsl:import href="../alternate-title/lowering.xslt"/>
-  <xsl:import href="../resource-to-agent-relationship/lowering.xslt"/>
+  <xsl:import href="../resource-attribution/lowering.xslt"/>
   <xsl:import href="../time-reference/lowering.xslt"/>
   <xsl:import href="../resource-type/lowering.xslt"/>
   <xsl:import href="../language-system/lowering.xslt"/>
@@ -32,7 +32,7 @@
   <xsl:import href="../date-type/lowering.xslt"/>
   <xsl:import href="../organization/lowering.xslt"/>
   <xsl:import href="../person/lowering.xslt"/>
-  <xsl:import href="../resource-agent-role-type/lowering.xslt"/>
+  <xsl:import href="../attributed-agent-role-type/lowering.xslt"/>
   <xsl:import href="../contact-details/lowering.xslt"/>
   <xsl:import href="../address/lowering.xslt"/>
   <xsl:import href="../identifier-scheme/lowering.xslt"/>
@@ -157,15 +157,15 @@
         </ccmm:alternate_title>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/prov#qualifiedAttribution&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
-        <ccmm:qualified_relation>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235557653-64a2-513a-97fe">
+        <ccmm:qualified_attribution>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782311692513-fbfd-95df-9c5a">
             <xsl:with-param name="id">
               <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
             </xsl:with-param>
           </xsl:call-template>
-        </ccmm:qualified_relation>
+        </ccmm:qualified_attribution>
       </xsl:for-each>
     </xsl:for-each-group>
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">

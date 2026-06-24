@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://www.w3.org/ns/adms#" xmlns:ns1="http://purl.org/dc/terms/" xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://www.w3.org/ns/adms#" xmlns:ns1="http://purl.org/dc/terms/" xmlns:ns2="https://model.ccmm.cz/vocabulary/ccmm#" xmlns:ns3="http://www.w3.org/ns/prov#">
   <xsl:import href="../identifier/lifting.xslt"/>
   <xsl:import href="../alternate-title/lifting.xslt"/>
-  <xsl:import href="../resource-to-agent-relationship/lifting.xslt"/>
+  <xsl:import href="../resource-attribution/lifting.xslt"/>
   <xsl:import href="../time-reference/lifting.xslt"/>
   <xsl:import href="../resource-type/lifting.xslt"/>
   <xsl:import href="../resource-relation-type/lifting.xslt"/>
@@ -11,7 +11,7 @@
   <xsl:import href="../date-type/lifting.xslt"/>
   <xsl:import href="../organization/lifting.xslt"/>
   <xsl:import href="../person/lifting.xslt"/>
-  <xsl:import href="../resource-agent-role-type/lifting.xslt"/>
+  <xsl:import href="../attributed-agent-role-type/lifting.xslt"/>
   <xsl:import href="../contact-details/lifting.xslt"/>
   <xsl:import href="../address/lifting.xslt"/>
   <xsl:import href="../identifier-scheme/lifting.xslt"/>
@@ -93,10 +93,10 @@
           <xsl:value-of select="."/>
         </ns2:resourceUrl>
       </xsl:for-each>
-      <xsl:for-each select="ccmm:qualified_relation">
-        <ns2:qualifiedRelation>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235557653-64a2-513a-97fe"/>
-        </ns2:qualifiedRelation>
+      <xsl:for-each select="ccmm:qualified_attribution">
+        <ns3:qualifiedAttribution>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782311692513-fbfd-95df-9c5a"/>
+        </ns3:qualifiedAttribution>
       </xsl:for-each>
       <xsl:for-each select="ccmm:time_reference">
         <ns2:hasTimeReference>
