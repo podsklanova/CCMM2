@@ -9,6 +9,7 @@ CHANGELOG
 * changed relationship to attribution
 * new language properties for primary/other language
 * namespaces changed to version 1.2
+* repository has mandatory attribution with publisher role
 
 
 ### 2026-02-27 - minor changes

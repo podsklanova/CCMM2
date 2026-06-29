@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://purl.org/dc/terms/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://purl.org/dc/terms/" xmlns:ns1="http://www.w3.org/ns/prov#">
+  <xsl:import href="../resource-attribution/lifting.xslt"/>
+  <xsl:import href="../organization/lifting.xslt"/>
+  <xsl:import href="../person/lifting.xslt"/>
+  <xsl:import href="../attributed-agent-role-type/lifting.xslt"/>
+  <xsl:import href="../identifier/lifting.xslt"/>
+  <xsl:import href="../contact-details/lifting.xslt"/>
+  <xsl:import href="../address/lifting.xslt"/>
+  <xsl:import href="../identifier-scheme/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/ccmm:repository">
     <rdf:RDF>
@@ -60,6 +68,11 @@
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns0:title>
+      </xsl:for-each>
+      <xsl:for-each select="ccmm:qualified_attribution">
+        <ns1:qualifiedAttribution>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1782311692513-fbfd-95df-9c5a"/>
+        </ns1:qualifiedAttribution>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>
