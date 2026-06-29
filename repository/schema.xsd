@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.2" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
   <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:include schemaLocation="../resource-attribution/schema.xsd"/>
   <xs:complexType name="repository" sawsdl:modelReference="http://www.w3.org/ns/dcat#Catalog">
     <xs:annotation>
       <xs:documentation xml:lang="ar">
@@ -48,6 +49,14 @@
             </xs:extension>
           </xs:simpleContent>
         </xs:complexType>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="qualified_attribution" type="ccmm:resource_attribution" sawsdl:modelReference="http://www.w3.org/ns/prov#qualifiedAttribution">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            qualified attribution - Link to a description of a relationship between repository and agent with the specification of the role of agent in this relationship.
+            Relationship shall contain at least one agent with role &#34;Publisher&#34; from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/.
+          </xs:documentation>
+        </xs:annotation>
       </xs:element>
       <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##other"/>
     </xs:sequence>

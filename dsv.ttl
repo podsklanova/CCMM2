@@ -1325,6 +1325,22 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :AccessRights.
 
+<https://model.ccmm.cz/research-data/Repository.qualifiedAttribution> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:definition "Link to a description of a relationship between repository and agent with the specification of the role of agent in this relationship."@en;
+    skos:scopeNote "Relationship shall contain at least one agent with role \"Publisher\" from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution>
+];
+    dsv:cardinality cardinality:1n;
+    dsv:domain :Repository;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceAttribution.
+
 <https://model.ccmm.cz/research-data/Dataset.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;

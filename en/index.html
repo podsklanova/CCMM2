@@ -11276,6 +11276,102 @@
                     </tr>
               
                 </table>
+              </section>    <section id="Repository.qualifiedAttribution">
+                <h4>qualified attribution</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Repository.qualifiedAttribution">https://model.ccmm.cz/research-data/Repository.qualifiedAttribution</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>qualified attribution</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Link to a description of a relationship between repository and agent with the specification of the role of agent in this relationship.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Repository">Repository</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#ResourceAttribution">Resource attribution</a>
+              
+                          [1..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    
+                    property profile
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.qualifiedattribution">qualified attribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.qualifiedAttribution">dcat-ap:Dataset.qualifiedAttribution</a>)
+                      <br />Definition: <i>An Agent having some form of responsibility for the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    
+                    property profile
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_attribution">qualified attribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedAttribution">dcat-dap:CatalogedResource.qualifiedAttribution</a>)
+                      <br />Definition: <i>Link to an Agent having some form of responsibility for the resource</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    property
+                    
+                    <a href="http://www.w3.org/ns/prov#qualifiedAttribution">qualifiedAttribution</a> (<a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>)
+                      <br />Definition: <i>If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/prov#qualifiedInfluence">qualifiedInfluence</a> (<a href="http://www.w3.org/ns/prov#qualifiedInfluence">prov:qualifiedInfluence</a>)
+                      <br />Definition: <i>Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>Relationship shall contain at least one agent with role &quot;Publisher&quot; from codelist https://vocabs.ccmm.cz/registry/codelist/AgentRole/.</td>
+                  </tr>
+                </table>
               </section>
           </section>          <section id="Resource">
             <h4>Resource</h4>
@@ -11859,6 +11955,7 @@
               <ul>
                   <li>from domain <a href="#MetadataRecord"></a> → <a href="#MetadataRecord.qualifiedAttribution"></a></li>
                   <li>from domain <a href="#Resource"></a> → <a href="#Resource.qualifiedAttribution"></a></li>
+                  <li>from domain <a href="#Repository"></a> → <a href="#Repository.qualifiedAttribution"></a></li>
               </ul>
           
               <section id="ResourceAttribution.hadRole">
@@ -17451,6 +17548,12 @@
           <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
           <td></td>
         </tr>
+        <tr>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
+          <td><a href="../resource-attribution/schema.xsd">../resource-attribution/schema.xsd</a></td>
+          <td><a href=""></a></td>
+        </tr>
     </tbody>
   </table>
 </section>
@@ -17508,6 +17611,9 @@
       </li>
       <li>
           element <a href="#element-ccmm:repository-ccmm:label"><code>&lt;label&gt;</code></a> [1..*]
+      </li>
+      <li>
+          element <a href="#element-ccmm:repository-ccmm:qualified_attribution"><code>&lt;qualified_attribution&gt;</code></a> [1..*]
       </li>
   </ul>
 
@@ -17578,6 +17684,52 @@
 
 
     
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:repository-ccmm:qualified_attribution">
+  <h4>Element <code>&lt;qualified_attribution&gt;</code></h4>
+
+  <dl>
+    <dt>Meaning</dt>
+    <dd>
+        <i>
+          
+          property
+          
+          
+        </i>
+
+          <a href="#Repository.qualifiedAttribution"><strong>qualified attribution</strong></a>
+          (Link to a description of a relationship between repository and agent with the specification of the role of agent in this relationship.)
+
+    </dd>
+
+      <dt>Effective cardinality of the element relative to its parent element</dt>
+      <dd>1..*</dd>
+      <dt>Parent element</dt>
+      <dd><a href="#type-ccmm:repository"></a></dd>
+
+    
+      <dt>Element type</dt>
+        <div style="margin-left: 40px;">
+      <dt>Content</dt>
+      <dd>
+          The content of the element is of type <a href="#type-ccmm:resource_attribution"><code>ccmm:resource_attribution</code></a>.
+      </dd>
+
+
+        <dt>Meaning</dt>
+      <dd>
+        <a href="#ResourceAttribution">Resource attribution</a>
+        (Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role.)
+      </dd>
+
 
 
     
