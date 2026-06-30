@@ -20,6 +20,7 @@
     kv:dataPsmIsClosed "null";
     kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/description-type/attribute-1751275316313-5acf-8cb8-866a\"]";
     kv:dataPsmTechnicalLabel "\"description_type\"";
+    kv:instancesHaveIdentity "\"ALWAYS\"";
     kv:iri "\"https://model.ccmm.cz/research-data/description-type/class-1751275312174-1970-347c-b68a\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
 :attribute-1751275316313-5acf-8cb8-866a a dsvs:structure-entity;
