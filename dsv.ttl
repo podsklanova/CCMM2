@@ -136,10 +136,10 @@
 :ContactDetails dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Contact details"@en;
-    skos:definition "Details to contact the agent in a relationship to the resource."@en;
+    skos:definition "Contact details such as telephone, e-mail address etc."@en;
     skos:scopeNote "Describes contact details, such as telephone, e--mail address etc."@en;
-    a dsv:ClassProfile;
-    dsv:class <https://model.ccmm.cz/vocabulary/ccmm#ContactDetails>.
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Kind>;
+    a dsv:ClassProfile.
 :Address dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:definition "A spatial object that in a human-readable way identifies a fixed location. "@en;
