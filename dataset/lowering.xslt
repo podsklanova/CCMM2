@@ -124,13 +124,13 @@
     </xsl:for-each-group>
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/adms#identifier&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
-        <ccmm:has_identifier>
+        <ccmm:identifier>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1779978617597-db2c-0cbc-9b17">
             <xsl:with-param name="id">
               <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
             </xsl:with-param>
           </xsl:call-template>
-        </ccmm:has_identifier>
+        </ccmm:identifier>
       </xsl:for-each>
     </xsl:for-each-group>
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/dcat#version&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">

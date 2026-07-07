@@ -2272,6 +2272,13 @@
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/21b612ea>.
 
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-2327f107> a sh:PropertyShape;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/prov#wasGeneratedBy>;
+    sh:class <http://www.w3.org/ns/prov#Activity>.
+
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-2327f107>.
+
 <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/10bdc621> a sh:PropertyShape;
     sh:name "title"@en;
     sh:nodeKind sh:Literal;
@@ -3428,4 +3435,14 @@
     sh:class <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme>.
 
 <https://model.ccmm.cz/research-data/adms%3AIdentifierShape> sh:property <https://model.ccmm.cz/research-data/adms%3AIdentifierShape/1d6c5d1e>.
+
+<https://model.ccmm.cz/research-data/prov%3AActivityShape> rdfs:seeAlso <https://model.ccmm.cz/research-data/ProvenanceActivity>.
+
+<https://model.ccmm.cz/research-data/prov%3AActivityShape/4e0744fa> a sh:PropertyShape;
+    sh:name "label"@en;
+    sh:nodeKind sh:Literal;
+    sh:path rdfs:label;
+    sh:datatype rdf:langString.
+
+<https://model.ccmm.cz/research-data/prov%3AActivityShape> sh:property <https://model.ccmm.cz/research-data/prov%3AActivityShape/4e0744fa>.
 

@@ -116,7 +116,7 @@
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742339770114-2bc2-3bdc-a309"/>
         </ns0:isDescribedBy>
       </xsl:for-each>
-      <xsl:for-each select="ccmm:has_identifier">
+      <xsl:for-each select="ccmm:identifier">
         <ns1:identifier>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1779978617597-db2c-0cbc-9b17"/>
         </ns1:identifier>

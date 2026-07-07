@@ -18131,7 +18131,8 @@
           <td><a href=""></a></td>
         </tr>
         <tr>
-            <td colspan="2" style="text-align: center;"><i>Stejný namespace jako hlavní dokument</i></td>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../provenance-activity/schema.xsd">../provenance-activity/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -18194,7 +18195,7 @@
           element <a href="#element-ccmm:dataset-ccmm:metadata_identification"><code>&lt;metadata_identification&gt;</code></a> [1..*]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:has_identifier"><code>&lt;has_identifier&gt;</code></a> [1..*]
+          element <a href="#element-ccmm:dataset-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [1..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:version"><code>&lt;version&gt;</code></a> [0..1]
@@ -18338,8 +18339,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:dataset-ccmm:has_identifier">
-  <h4>Element <code>&lt;has_identifier&gt;</code></h4>
+<section id="element-ccmm:dataset-ccmm:identifier">
+  <h4>Element <code>&lt;identifier&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -19294,7 +19295,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:provenance_activity"><code>provenance_activity</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:provenance_activity"><code>ccmm:provenance_activity</code></a>.
       </dd>
 
 
@@ -27837,6 +27838,10 @@
   Tato sekce popisuje XSD zachycující strukturu pro <i>Provenance activity</i>, jež je definováno v souboru <a href="../provenance-activity/schema.xsd"><code>../provenance-activity/schema.xsd</code></a>.
 </p>
 
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Importy</h4>
@@ -27866,14 +27871,14 @@
 <section>
   <h4>Kořenové entity XSD schématu</h4>
   <ul>
-      <li>element <a href="#element-provenance_activity"><code>provenance_activity</code></a></li>
+      <li>element <a href="#element-ccmm:provenance_activity"><code>provenance_activity</code></a></li>
 
-      <li> komplexní typ <a href="#type-provenance_activity"><code>provenance_activity</code></a></li>
+      <li> komplexní typ <a href="#type-ccmm:provenance_activity"><code>provenance_activity</code></a></li>
   </ul>
 </section>
 
 
-<section id="element-provenance_activity">
+<section id="element-ccmm:provenance_activity">
   <h4>Kořenový element <code>&lt;provenance_activity&gt;</code></h4>
   <dl>
     
@@ -27883,7 +27888,7 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-provenance_activity"><code>provenance_activity</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:provenance_activity"><code>ccmm:provenance_activity</code></a>.
       </dd>
 
 
@@ -27897,7 +27902,7 @@
 </section>
 
 
-<section id="type-provenance_activity">
+<section id="type-ccmm:provenance_activity">
   <h4>Kořenový komplexní typ <code>provenance_activity</code></h4>
   <dl>
         <dt>Význam</dt>
@@ -27912,17 +27917,17 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-provenance_activity-iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:provenance_activity-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-provenance_activity-label"><code>&lt;label&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:provenance_activity-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-provenance_activity-iri">
+<section id="element-ccmm:provenance_activity-ccmm:iri">
   <h4>Element <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -27933,7 +27938,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..1</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-provenance_activity"></a></dd>
+      <dd><a href="#type-ccmm:provenance_activity"></a></dd>
 
     
       <dt>Typ elementu</dt>
@@ -27953,7 +27958,7 @@
     
   </dl>
 </section>
-<section id="element-provenance_activity-label">
+<section id="element-ccmm:provenance_activity-ccmm:label">
   <h4>Element <code>&lt;label&gt;</code></h4>
 
   <dl>
@@ -27974,7 +27979,7 @@
       <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
       <dd>0..*</dd>
       <dt>Nadřazený element</dt>
-      <dd><a href="#type-provenance_activity"></a></dd>
+      <dd><a href="#type-ccmm:provenance_activity"></a></dd>
 
     
       <dt>Typ elementu</dt>

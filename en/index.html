@@ -18132,7 +18132,8 @@
           <td><a href=""></a></td>
         </tr>
         <tr>
-            <td colspan="2" style="text-align: center;"><i>Same namespace as the main document</i></td>
+            <td><code>ccmm</code></td>
+            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../provenance-activity/schema.xsd">../provenance-activity/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -18195,7 +18196,7 @@
           element <a href="#element-ccmm:dataset-ccmm:metadata_identification"><code>&lt;metadata_identification&gt;</code></a> [1..*]
       </li>
       <li>
-          element <a href="#element-ccmm:dataset-ccmm:has_identifier"><code>&lt;has_identifier&gt;</code></a> [1..*]
+          element <a href="#element-ccmm:dataset-ccmm:identifier"><code>&lt;identifier&gt;</code></a> [1..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:version"><code>&lt;version&gt;</code></a> [0..1]
@@ -18339,8 +18340,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:dataset-ccmm:has_identifier">
-  <h4>Element <code>&lt;has_identifier&gt;</code></h4>
+<section id="element-ccmm:dataset-ccmm:identifier">
+  <h4>Element <code>&lt;identifier&gt;</code></h4>
 
   <dl>
     <dt>Meaning</dt>
@@ -19295,7 +19296,7 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-ccmm:provenance_activity"><code>provenance_activity</code></a>.
+          The content of the element is of type <a href="#type-ccmm:provenance_activity"><code>ccmm:provenance_activity</code></a>.
       </dd>
 
 
@@ -27838,6 +27839,10 @@
   This section describes the XSD capturing the structure for <i>Provenance activity</i>, which is defined in the file <a href="../provenance-activity/schema.xsd"><code>../provenance-activity/schema.xsd</code></a>.
 </p>
 
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -27867,14 +27872,14 @@
 <section>
   <h4>Root Entities of the XSD Schema</h4>
   <ul>
-      <li>element <a href="#element-provenance_activity"><code>provenance_activity</code></a></li>
+      <li>element <a href="#element-ccmm:provenance_activity"><code>provenance_activity</code></a></li>
 
-      <li> complex type <a href="#type-provenance_activity"><code>provenance_activity</code></a></li>
+      <li> complex type <a href="#type-ccmm:provenance_activity"><code>provenance_activity</code></a></li>
   </ul>
 </section>
 
 
-<section id="element-provenance_activity">
+<section id="element-ccmm:provenance_activity">
   <h4>Root element <code>&lt;provenance_activity&gt;</code></h4>
   <dl>
     
@@ -27884,7 +27889,7 @@
         <div style="margin-left: 40px;">
       <dt>Content</dt>
       <dd>
-          The content of the element is of type <a href="#type-provenance_activity"><code>provenance_activity</code></a>.
+          The content of the element is of type <a href="#type-ccmm:provenance_activity"><code>ccmm:provenance_activity</code></a>.
       </dd>
 
 
@@ -27898,7 +27903,7 @@
 </section>
 
 
-<section id="type-provenance_activity">
+<section id="type-ccmm:provenance_activity">
   <h4>Root complex type <code>provenance_activity</code></h4>
   <dl>
         <dt>Meaning</dt>
@@ -27913,17 +27918,17 @@
 </dt>
       <ul style="margin-top: 0;">
       <li>
-          element <a href="#element-provenance_activity-iri"><code>&lt;iri&gt;</code></a> [0..1]
+          element <a href="#element-ccmm:provenance_activity-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-provenance_activity-label"><code>&lt;label&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:provenance_activity-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
       </li>
   </ul>
 
 
   </dl>
 </section>
-<section id="element-provenance_activity-iri">
+<section id="element-ccmm:provenance_activity-ccmm:iri">
   <h4>Element <code>&lt;iri&gt;</code></h4>
 
   <dl>
@@ -27934,7 +27939,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>0..1</dd>
       <dt>Parent element</dt>
-      <dd><a href="#type-provenance_activity"></a></dd>
+      <dd><a href="#type-ccmm:provenance_activity"></a></dd>
 
     
       <dt>Element type</dt>
@@ -27954,7 +27959,7 @@
     
   </dl>
 </section>
-<section id="element-provenance_activity-label">
+<section id="element-ccmm:provenance_activity-ccmm:label">
   <h4>Element <code>&lt;label&gt;</code></h4>
 
   <dl>
@@ -27975,7 +27980,7 @@
       <dt>Effective cardinality of the element relative to its parent element</dt>
       <dd>0..*</dd>
       <dt>Parent element</dt>
-      <dd><a href="#type-provenance_activity"></a></dd>
+      <dd><a href="#type-ccmm:provenance_activity"></a></dd>
 
     
       <dt>Element type</dt>

@@ -244,7 +244,7 @@
     kv:dataPsmIsDematerialize "null";
     kv:dataPsmIsReverse "false";
     kv:dataPsmPart "\"https://model.ccmm.cz/research-data/dataset/classReference-1779979094458-f5df-209e-bdd1\"";
-    kv:dataPsmTechnicalLabel "\"has_identifier\"";
+    kv:dataPsmTechnicalLabel "\"identifier\"";
     kv:iri "\"https://model.ccmm.cz/research-data/dataset/associationEnd-1779978524269-631d-bd5a-acf9\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
 :classReference-1779979094458-f5df-209e-bdd1 a dsvs:structure-entity;
