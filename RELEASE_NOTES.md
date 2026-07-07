@@ -10,6 +10,7 @@ CHANGELOG
 * new language properties for primary/other language
 * namespaces changed to version 1.2
 * repository has mandatory attribution with publisher role
+* added provenance activity to descrtibe origin of dataset
 
 
 ### 2026-02-27 - minor changes

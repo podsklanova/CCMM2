@@ -489,6 +489,18 @@
     skos:scopeNote "An identifier in a particular context, consisting of the content string that is the identifier and the context in a form of base IRI.\n- an optional identifier for the identifier scheme;\n- an optional identifier for the version of the identifier scheme;\n- an optional identifier for the agency that manages the identifier scheme."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Identifier>;
     a dsv:ClassProfile.
+:ProvenanceActivity dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Provenance activity"@en;
+    skos:definition "An activity is something that occurs over a period of time and acts upon or with the origin or life cycle of dataset; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Activity>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Activity>
+];
+    a dsv:ClassProfile.
 
 <https://model.ccmm.cz/research-data/Dataset.hasRelatedResource> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1341,6 +1353,26 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ResourceAttribution.
 
+<https://model.ccmm.cz/research-data/Dataset.wasGeneratedBy> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:definition " An activity that generated, or provides the business context for, the creation of the dataset. "@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.wasGeneratedBy>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.wasGeneratedBy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.wasGeneratedBy>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Dataset;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ProvenanceActivity.
+
 <https://model.ccmm.cz/research-data/Dataset.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;
@@ -2143,5 +2175,20 @@
     dsv:cardinality cardinality:1n;
     dsv:property dct:alternative;
     dsv:domain :AlternateTitle;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://model.ccmm.cz/research-data/ProvenanceActivity.label> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:definition "A human-readable name for the activity."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource rdfs:label
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    dsv:domain :ProvenanceActivity;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.

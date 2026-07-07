@@ -17,6 +17,7 @@
   <xsl:import href="../distribution-downloadable-file/lowering.xslt"/>
   <xsl:import href="../validation-result/lowering.xslt"/>
   <xsl:import href="../provenance-statement/lowering.xslt"/>
+  <xsl:import href="../provenance-activity/lowering.xslt"/>
   <xsl:import href="../file/lowering.xslt"/>
   <xsl:import href="../application-profile/lowering.xslt"/>
   <xsl:import href="../format/lowering.xslt"/>
@@ -338,6 +339,17 @@
             </xsl:with-param>
           </xsl:call-template>
         </ccmm:provenance>
+      </xsl:for-each>
+    </xsl:for-each-group>
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/prov#wasGeneratedBy&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+      <xsl:for-each select="current-group()[1]">
+        <ccmm:generated_by>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1783430654863-c2ef-c58b-8bb9">
+            <xsl:with-param name="id">
+              <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
+            </xsl:with-param>
+          </xsl:call-template>
+        </ccmm:generated_by>
       </xsl:for-each>
     </xsl:for-each-group>
   </xsl:template>

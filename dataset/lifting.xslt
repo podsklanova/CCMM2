@@ -17,6 +17,7 @@
   <xsl:import href="../distribution-downloadable-file/lifting.xslt"/>
   <xsl:import href="../validation-result/lifting.xslt"/>
   <xsl:import href="../provenance-statement/lifting.xslt"/>
+  <xsl:import href="../provenance-activity/lifting.xslt"/>
   <xsl:import href="../file/lifting.xslt"/>
   <xsl:import href="../application-profile/lifting.xslt"/>
   <xsl:import href="../format/lifting.xslt"/>
@@ -240,6 +241,11 @@
         <ns3:provenance>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742288763165-c843-1e73-9f91"/>
         </ns3:provenance>
+      </xsl:for-each>
+      <xsl:for-each select="ccmm:generated_by">
+        <ns4:wasGeneratedBy>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1783430654863-c2ef-c58b-8bb9"/>
+        </ns4:wasGeneratedBy>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>
