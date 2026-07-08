@@ -270,8 +270,12 @@
     <location>
         <!-- this sample shows all ways of representing location -->
         <bounding_box>
-            <gml:lowerCorner>13.394972457505816 49.50127042751268</gml:lowerCorner>
-            <gml:upperCorner>15.585575400519133 50.61421606255462</gml:upperCorner>
+            <gml>
+                <gml:Envelope>
+                    <gml:lowerCorner>13.394972457505816 49.50127042751268</gml:lowerCorner>
+                    <gml:upperCorner>15.585575400519133 50.61421606255462</gml:upperCorner>
+                </gml:Envelope>
+            </gml>
         </bounding_box>
         <title xml:lang="cs">Středočeský kraj</title>
         <geometry>
