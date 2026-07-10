@@ -68,19 +68,10 @@
     dsv:class <http://www.w3.org/ns/prov#Organization>.
 :FundingReference dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#FundingReference>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:comment;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#FundingReference>
-];
+    skos:prefLabel "Funding reference"@en;
+    skos:definition "Information about financial support (funding) for the resource being registered."@en;
     a dsv:ClassProfile;
-    dsv:class <https://model.ccmm.cz/vocabulary/datacite#FundingReference>.
+    dsv:class <https://w3id.org/tib/datacite/class/FundingReference>.
 :Distribution dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Distribution"@en;
@@ -101,16 +92,11 @@
     dsv:class <https://model.ccmm.cz/vocabulary/ccmm#ValidationResult>.
 :Subject dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "Subject"@en;
     skos:definition "Subject, classification code, or key phrase describing the resource."@en;
     skos:scopeNote "Subjects are always concepts identified by IRI belonging to the vocabulary (subject scheme). For free text keywords use keyword. "@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#Subject>
-];
     a dsv:ClassProfile;
-    dsv:class <https://model.ccmm.cz/vocabulary/datacite#Subject>.
+    dsv:class <https://w3id.org/tib/datacite/class/Subject>.
 :RelatedResource dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Related resource"@en;
@@ -434,36 +420,18 @@
     dsv:class <https://model.ccmm.cz/vocabulary/ccmm#IdentifierScheme>.
 :Description dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "Description"@en;
+    skos:definition "All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument."@en;
     skos:scopeNote "Description of the resource may have also a description type."@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#Description>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:comment;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#Description>
-];
     a dsv:ClassProfile;
-    dsv:class <https://model.ccmm.cz/vocabulary/datacite#Description>.
+    dsv:class <https://w3id.org/tib/datacite/class/Description>.
 :DescriptionType dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "Description type"@en;
+    skos:definition "The type of the description."@en;
     skos:scopeNote "Use value from codelist https://vocabs.ccmm.cz/registry/codelist/DescriptionType/."@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#DescriptionType>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:comment;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#DescriptionType>
-];
-    a dsv:ClassProfile;
-    dsv:class <https://model.ccmm.cz/vocabulary/datacite#DescriptionType>.
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Concept>;
+    a dsv:ClassProfile.
 :TimeReference dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:definition "An object representing time reference relevant to some event related to the resource has happened."@en;
@@ -552,16 +520,11 @@
 
 <https://model.ccmm.cz/research-data/Dataset.hasSubject> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "has subject"@en;
     skos:definition "Dataset described using a subject."@en;
     skos:scopeNote "At least one subject must be a value from FRASCATI FORD vocabulary. For that subject use reference codelist https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/ as the Subject scheme and select at least one value from this codelist as a subject."@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasSubject>
-];
     dsv:cardinality cardinality:1n;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#hasSubject>;
+    dsv:property <https://w3id.org/tib/datacite/property/subject>;
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Subject.
@@ -610,9 +573,8 @@
 <https://model.ccmm.cz/research-data/FundingReference.hasFunder> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has funder"@en;
-    skos:definition "Relation to the agent entity of a funder."@en;
     dsv:cardinality cardinality:1n;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier>;
+    dsv:property <https://w3id.org/tib/datacite/property/funderIdentifier>;
     dsv:domain :FundingReference;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Agent.
@@ -796,7 +758,7 @@
 <https://model.ccmm.cz/research-data/Dataset.hasLocation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has location"@en;
-    skos:scopeNote "In the CCMM spatial coverage does not only cover the area of dataset, it may be connected to the dataset in some other way, e.g. the place from where the data were measured, administrative area to which the dataset  conforms or other."@en;
+    skos:scopeNote "In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g. the place from where the data were measured, administrative area to which the resource conforms or other."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -804,7 +766,7 @@
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage>
 ];
-    dsv:domain :Dataset;
+    dsv:domain :Resource;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Location.
 
@@ -1078,36 +1040,22 @@
 
 <https://model.ccmm.cz/research-data/Dataset.hasDescription> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "has description"@en;
     skos:definition "Relation to the description of a dataset."@en;
     skos:scopeNote "Description may have various type from the codelist https://vocabs.ccmm.cz/registry/codelist/DescriptionType/. "@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasDescription>
-];
     dsv:cardinality cardinality:1n;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#hasDescription>;
+    dsv:property <https://w3id.org/tib/datacite/property/description>;
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Description.
 
 <https://model.ccmm.cz/research-data/Description.hasDescriptionType> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "has description type"@en;
+    skos:definition "Relation to the type of the description."@en;
     skos:scopeNote "Type of the description from the codelist https://vocabs.ccmm.cz/registry/codelist/DescriptionType/."@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:comment;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>
-];
     dsv:cardinality cardinality:01;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType>;
+    dsv:property <https://w3id.org/tib/datacite/property/descriptionType>;
     dsv:domain :Description;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :DescriptionType.
@@ -1420,7 +1368,7 @@
     skos:definition "The code assigned by the funder to a sponsored award (grant)."@en;
     skos:scopeNote "In case the award or grant has an ID or DOI, the full URL shall be included."@en;
     dsv:cardinality cardinality:01;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#awardNumber>;
+    dsv:property <https://w3id.org/tib/datacite/property/awardNumber>;
     dsv:domain :FundingReference;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
@@ -1428,9 +1376,9 @@
 <https://model.ccmm.cz/research-data/FundingReference.awardTitle> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "award title"@en;
-    skos:definition " The human readable title or name of the award (grant)."@en;
+    skos:definition "The human readable title or name of the award (grant)."@en;
     dsv:cardinality cardinality:01;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#awardTitle>;
+    dsv:property <https://w3id.org/tib/datacite/property/awardTitle>;
     dsv:domain :FundingReference;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
@@ -1560,7 +1508,7 @@
     skos:prefLabel "classification code"@en;
     skos:definition "The classification code used for notation of the subject term in the subject scheme."@en;
     dsv:cardinality cardinality:11;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode>;
+    dsv:property <https://w3id.org/tib/datacite/property/classificationCode>;
     dsv:domain :Subject;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
@@ -2001,19 +1949,10 @@
 
 <https://model.ccmm.cz/research-data/Description.descriptionText> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:comment;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#descriptionText>
-];
+    skos:prefLabel "description text"@en;
+    skos:definition "Text describing the resource."@en;
     dsv:cardinality cardinality:11;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#descriptionText>;
+    dsv:property <https://w3id.org/tib/datacite/property/description>;
     dsv:domain :Description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.

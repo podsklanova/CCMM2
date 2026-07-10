@@ -92,7 +92,7 @@
           <xsl:call-template name="_http_003a_002f_002fwww.opengis.net_002font_002fsf_0023Envelope"/>
         </ns0:bbox>
       </xsl:for-each>
-      <xsl:for-each select="ccmm:title">
+      <xsl:for-each select="ccmm:label">
         <ns1:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>

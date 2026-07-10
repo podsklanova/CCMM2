@@ -11,11 +11,11 @@
     <xsl:value-of select="concat(namespace-uri($node),'|',local-name($node),'|',string($node))"/>
   </xsl:function>
   <xsl:template match="/sp:sparql">
-    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#Description&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
+    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/class/Description&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
       <xsl:apply-templates select="current-group()[1]"/>
     </xsl:for-each-group>
   </xsl:template>
-  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#Description&#34;]">
+  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/class/Description&#34;]">
     <ccmm:description>
       <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1751275345825-1b14-9c39-8e40">
         <xsl:with-param name="id">
@@ -47,14 +47,14 @@
         </ccmm:iri>
       </xsl:for-each>
     </xsl:if>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#descriptionText&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/description&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:description_text>
           <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
         </ccmm:description_text>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/descriptionType&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:description_type>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1751275312174-1970-347c-b68a">

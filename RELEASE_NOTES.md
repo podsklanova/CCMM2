@@ -12,6 +12,7 @@ CHANGELOG
 * namespaces changed to version 1.2
 * repository has mandatory attribution with publisher role
 * added provenance activity to descrtibe origin of dataset
+* datacite was reprofiled to official datacite linked data representation
 
 
 ### 2026-02-27 - minor changes

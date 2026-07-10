@@ -80,6 +80,6 @@
     kv:dataPsmHumanDescription "null";
     kv:dataPsmHumanLabel "null";
     kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/Location.label\"";
-    kv:dataPsmTechnicalLabel "\"title\"";
+    kv:dataPsmTechnicalLabel "\"label\"";
     kv:iri "\"https://model.ccmm.cz/research-data/location/attribute-1780386361732-1e2f-b9c5-9f74\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Attribute\"]".

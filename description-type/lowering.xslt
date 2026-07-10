@@ -10,11 +10,11 @@
     <xsl:value-of select="concat(namespace-uri($node),'|',local-name($node),'|',string($node))"/>
   </xsl:function>
   <xsl:template match="/sp:sparql">
-    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#DescriptionType&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
+    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/2004/02/skos/core#Concept&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
       <xsl:apply-templates select="current-group()[1]"/>
     </xsl:for-each-group>
   </xsl:template>
-  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#DescriptionType&#34;]">
+  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/2004/02/skos/core#Concept&#34;]">
     <ccmm:description_type>
       <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1751275312174-1970-347c-b68a">
         <xsl:with-param name="id">
