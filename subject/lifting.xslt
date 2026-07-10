@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://purl.org/dc/terms/" xmlns:ns1="http://www.w3.org/2004/02/skos/core#" xmlns:ns2="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns3="https://model.ccmm.cz/vocabulary/ccmm#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://purl.org/dc/terms/" xmlns:ns1="http://www.w3.org/2004/02/skos/core#" xmlns:ns2="https://w3id.org/tib/datacite/property/" xmlns:ns3="https://model.ccmm.cz/vocabulary/ccmm#">
   <xsl:import href="../subject-scheme/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/ccmm:subject">
@@ -54,7 +54,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/datacite#Subject"/>
+      <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Subject"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:title">
         <ns0:title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
@@ -69,10 +69,10 @@
         </ns1:definition>
       </xsl:for-each>
       <xsl:for-each select="ccmm:classification_code">
-        <ns2:subjectClassificationCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        <ns2:classificationCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
-        </ns2:subjectClassificationCode>
+        </ns2:classificationCode>
       </xsl:for-each>
       <xsl:for-each select="ccmm:subject_scheme">
         <ns3:inSubjectScheme>

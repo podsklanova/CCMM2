@@ -75,6 +75,14 @@
               "hasResource": {
                 "hasArtifact": "https://techlib.github.io/CCMM-V/en/"
               }
+            },
+            {
+              "title": {
+                "en": "datacite"
+              },
+              "hasResource": {
+                "hasArtifact": "https://tibhannover.github.io/datacite/dist/datacite-4.7.ttl"
+              }
             }
           ],
           "hasResource": [
@@ -989,7 +997,7 @@
           
               <p>Zpětné asociace</p>
               <ul>
-                  <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.hasLocation"></a></li>
+                  <li>z domény <a href="#Resource"></a> → <a href="#Dataset.hasLocation"></a></li>
               </ul>
           
               <section id="Location.bbox">
@@ -4874,7 +4882,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasDescription">https://model.ccmm.cz/vocabulary/datacite#hasDescription</a>
+                        <a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>
                     </td>
                   </tr>
                   <tr>
@@ -4917,7 +4925,8 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasDescription">has description (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasDescription">https://model.ccmm.cz/vocabulary/datacite#hasDescription</a>)
+                    <a href="https://w3id.org/tib/datacite/property/description">description (@en)</a> (<a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>)
+                      <br />Definice: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -5158,101 +5167,6 @@
                       </td>
                     </tr>
               
-                </table>
-              </section>    <section id="Dataset.hasLocation">
-                <h4>has location (@en)</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>IRI profilovaných vztahů</td>
-                    <td>
-                        
-                        <a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.hasLocation">https://model.ccmm.cz/research-data/Dataset.hasLocation</a></td>
-                  </tr>
-                  <tr>
-                    <td>Název</td>
-                    <td>has location (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>The geographical area covered by the dataset. (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definiční obor</td>
-                    <td>
-                      <a href="#Dataset">Datová sada</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Obor hodnot</td>
-                    <td>
-                      <a href="#Location"><i>beze jména</i></a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchie</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiluje
-                    
-                    profil
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.geographicalcoverage">geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage">dcat-ap:Dataset.geographicalCoverage</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    
-                    profil
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
-                      <br />Definice: <i>The geographical area covered by the dataset.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiluje
-                    vlastnost
-                    
-                    <a href="http://purl.org/dc/terms/spatial">Spatial Coverage (@en)</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
-                      <br />Definice: <i>Spatial characteristics of the resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      specializuje
-                    vlastnost
-                    
-                    <a href="http://purl.org/dc/terms/coverage">Coverage (@en)</a> (<a href="http://purl.org/dc/terms/coverage">dcterms:coverage</a>)
-                      <br />Definice: <i>The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Popis použití v profilu</td>
-                    <td>In the CCMM spatial coverage does not only cover the area of dataset, it may be connected to the dataset in some other way, e.g. the place from where the data were measured, administrative area to which the dataset  conforms or other. (@en)</td>
-                  </tr>
                 </table>
               </section>    <section id="Dataset.hasOtherLanguage">
                 <h4>has other language (@en)</h4>
@@ -5567,7 +5481,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasSubject">https://model.ccmm.cz/vocabulary/datacite#hasSubject</a>
+                        <a href="https://w3id.org/tib/datacite/property/subject">https://w3id.org/tib/datacite/property/subject</a>
                     </td>
                   </tr>
                   <tr>
@@ -5610,7 +5524,8 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasSubject">has subject (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasSubject">https://model.ccmm.cz/vocabulary/datacite#hasSubject</a>)
+                    <a href="https://w3id.org/tib/datacite/property/subject">subject (@en)</a> (<a href="https://w3id.org/tib/datacite/property/subject">https://w3id.org/tib/datacite/property/subject</a>)
+                      <br />Definice: <i>Subject, keyword, classification code, or key phrase describing the resource.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -6228,7 +6143,7 @@
                 <td>IRI profilovaných tříd</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#Description">https://model.ccmm.cz/vocabulary/datacite#Description</a>
+                    <a href="https://w3id.org/tib/datacite/class/Description">https://w3id.org/tib/datacite/class/Description</a>
                 </td>
               </tr>
               <tr>
@@ -6252,8 +6167,8 @@
                                     profiluje
                 třídu
                 
-                <a href="https://michalmed.github.io/DataCite/en/#Description">Description (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#Description">https://model.ccmm.cz/vocabulary/datacite#Description</a>)
-                  <br />Definice: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
+                <a href="https://w3id.org/tib/datacite/class/Description">Description (@en)</a> (<a href="https://w3id.org/tib/datacite/class/Description">https://w3id.org/tib/datacite/class/Description</a>)
+                  <br />Definice: <i> All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
                   <ul style="list-style-type: disclosure-closed;">
                   </ul>
           
@@ -6281,7 +6196,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#descriptionText">https://model.ccmm.cz/vocabulary/datacite#descriptionText</a>
+                        <a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>
                     </td>
                   </tr>
                   <tr>
@@ -6325,8 +6240,8 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#descriptionText">description text (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#descriptionText">https://model.ccmm.cz/vocabulary/datacite#descriptionText</a>)
-                      <br />Definice: <i>Text describing the resource.</i>
+                    <a href="https://w3id.org/tib/datacite/property/description">description (@en)</a> (<a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>)
+                      <br />Definice: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -6344,7 +6259,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType">https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType</a>
+                        <a href="https://w3id.org/tib/datacite/property/descriptionType">https://w3id.org/tib/datacite/property/descriptionType</a>
                     </td>
                   </tr>
                   <tr>
@@ -6387,8 +6302,8 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasDescriptionType">has description type (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType">https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType</a>)
-                      <br />Definice: <i>Relation to the type of the description.</i>
+                    <a href="https://w3id.org/tib/datacite/property/descriptionType">descriptionType (@en)</a> (<a href="https://w3id.org/tib/datacite/property/descriptionType">https://w3id.org/tib/datacite/property/descriptionType</a>)
+                      <br />Definice: <i>The type of the Description.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -6411,7 +6326,7 @@
                 <td>IRI profilovaných tříd</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#DescriptionType">https://model.ccmm.cz/vocabulary/datacite#DescriptionType</a>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
                 </td>
               </tr>
               <tr>
@@ -6433,11 +6348,21 @@
                     <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
                                     profiluje
+                
+                profil
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Concept">Concept (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Concept">dcat-ap:Concept</a>)
+                  <br />Definice: <i>An idea or notion; a unit of thought.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiluje
                 třídu
                 
-                <a href="https://michalmed.github.io/DataCite/en/#DescriptionType">Description type (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#DescriptionType">https://model.ccmm.cz/vocabulary/datacite#DescriptionType</a>)
-                  <br />Definice: <i>The type of the description.</i>
+                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept (@en)</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+                  <br />Definice: <i>An idea or notion; a unit of thought.</i>
                   <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
                   </ul>
           
                           </li>
@@ -8485,7 +8410,7 @@
                 <td>IRI profilovaných tříd</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#FundingReference">https://model.ccmm.cz/vocabulary/datacite#FundingReference</a>
+                    <a href="https://w3id.org/tib/datacite/class/FundingReference">https://w3id.org/tib/datacite/class/FundingReference</a>
                 </td>
               </tr>
               <tr>
@@ -8509,7 +8434,7 @@
                                     profiluje
                 třídu
                 
-                <a href="https://michalmed.github.io/DataCite/en/#FundingReference">Funding reference (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#FundingReference">https://model.ccmm.cz/vocabulary/datacite#FundingReference</a>)
+                <a href="https://w3id.org/tib/datacite/class/FundingReference">FundingReference (@en)</a> (<a href="https://w3id.org/tib/datacite/class/FundingReference">https://w3id.org/tib/datacite/class/FundingReference</a>)
                   <br />Definice: <i>Information about financial support (funding) for the resource being registered.</i>
                   <ul style="list-style-type: disclosure-closed;">
                   </ul>
@@ -8534,7 +8459,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#awardTitle">https://model.ccmm.cz/vocabulary/datacite#awardTitle</a>
+                        <a href="https://w3id.org/tib/datacite/property/awardTitle">https://w3id.org/tib/datacite/property/awardTitle</a>
                     </td>
                   </tr>
                   <tr>
@@ -8547,7 +8472,7 @@
                   </tr>
                   <tr>
                     <td>Definice</td>
-                    <td> The human readable title or name of the award (grant). (@en)</td>
+                    <td>The human readable title or name of the award (grant). (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
@@ -8578,7 +8503,7 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#awardTitle">award title (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#awardTitle">https://model.ccmm.cz/vocabulary/datacite#awardTitle</a>)
+                    <a href="https://w3id.org/tib/datacite/property/awardTitle">awardTitle (@en)</a> (<a href="https://w3id.org/tib/datacite/property/awardTitle">https://w3id.org/tib/datacite/property/awardTitle</a>)
                       <br />Definice: <i>The human readable title or name of the award (grant).</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
@@ -8660,7 +8585,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier">https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier</a>
+                        <a href="https://w3id.org/tib/datacite/property/funderIdentifier">https://w3id.org/tib/datacite/property/funderIdentifier</a>
                     </td>
                   </tr>
                   <tr>
@@ -8670,10 +8595,6 @@
                   <tr>
                     <td>Název</td>
                     <td>has funder (@en)</td>
-                  </tr>
-                  <tr>
-                    <td>Definice</td>
-                    <td>Relation to the agent entity of a funder. (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
@@ -8703,7 +8624,8 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasFunderIdentifier">has funder identifier (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier">https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier</a>)
+                    <a href="https://w3id.org/tib/datacite/property/funderIdentifier">funderIdentifier (@en)</a> (<a href="https://w3id.org/tib/datacite/property/funderIdentifier">https://w3id.org/tib/datacite/property/funderIdentifier</a>)
+                      <br />Definice: <i>Uniquely identifies a funding entity, according to various types.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -8721,7 +8643,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#awardNumber">https://model.ccmm.cz/vocabulary/datacite#awardNumber</a>
+                        <a href="https://w3id.org/tib/datacite/property/awardNumber">https://w3id.org/tib/datacite/property/awardNumber</a>
                     </td>
                   </tr>
                   <tr>
@@ -8765,7 +8687,7 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#awardNumber">award number (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#awardNumber">https://model.ccmm.cz/vocabulary/datacite#awardNumber</a>)
+                    <a href="https://w3id.org/tib/datacite/property/awardNumber">awardNumber (@en)</a> (<a href="https://w3id.org/tib/datacite/property/awardNumber">https://w3id.org/tib/datacite/property/awardNumber</a>)
                       <br />Definice: <i>The code assigned by the funder to a sponsored award (grant).</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
@@ -11825,6 +11747,101 @@
                     <td>Examples are MAST/ADS [[MASTADS]], DOI [[DOI]], EZID [[EZID]] or W3ID [[W3ID]]. (@en)</td>
                   </tr>
                 </table>
+              </section>    <section id="Dataset.hasLocation">
+                <h4>has location (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Dataset.hasLocation">https://model.ccmm.cz/research-data/Dataset.hasLocation</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>has location (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>The geographical area covered by the dataset. (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#Resource">Resource (@en)</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#Location"><i>beze jména</i></a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    
+                    profil
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.geographicalcoverage">geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage">dcat-ap:Dataset.geographicalCoverage</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    
+                    profil
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
+                      <br />Definice: <i>The geographical area covered by the dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    vlastnost
+                    
+                    <a href="http://purl.org/dc/terms/spatial">Spatial Coverage (@en)</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
+                      <br />Definice: <i>Spatial characteristics of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://purl.org/dc/terms/coverage">Coverage (@en)</a> (<a href="http://purl.org/dc/terms/coverage">dcterms:coverage</a>)
+                      <br />Definice: <i>The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g. the place from where the data were measured, administrative area to which the resource conforms or other. (@en)</td>
+                  </tr>
+                </table>
               </section>    <section id="Resource.hasResourceType">
                 <h4>has resource type (@en)</h4>
               
@@ -12601,7 +12618,7 @@
                 <td>IRI profilovaných tříd</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#Subject">https://model.ccmm.cz/vocabulary/datacite#Subject</a>
+                    <a href="https://w3id.org/tib/datacite/class/Subject">https://w3id.org/tib/datacite/class/Subject</a>
                 </td>
               </tr>
               <tr>
@@ -12625,7 +12642,7 @@
                                     profiluje
                 třídu
                 
-                <a href="https://michalmed.github.io/DataCite/en/#Subject">Subject (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#Subject">https://model.ccmm.cz/vocabulary/datacite#Subject</a>)
+                <a href="https://w3id.org/tib/datacite/class/Subject">Subject (@en)</a> (<a href="https://w3id.org/tib/datacite/class/Subject">https://w3id.org/tib/datacite/class/Subject</a>)
                   <br />Definice: <i>Subject, keyword, classification code, or key phrase describing the resource.</i>
                   <ul style="list-style-type: disclosure-closed;">
                   </ul>
@@ -12654,7 +12671,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode">https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode</a>
+                        <a href="https://w3id.org/tib/datacite/property/classificationCode">https://w3id.org/tib/datacite/property/classificationCode</a>
                     </td>
                   </tr>
                   <tr>
@@ -12698,7 +12715,7 @@
                                         profiluje
                     vlastnost
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#subjectClassificationCode">subject classification code (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode">https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode</a>)
+                    <a href="https://w3id.org/tib/datacite/property/classificationCode">classificationCode (@en)</a> (<a href="https://w3id.org/tib/datacite/property/classificationCode">https://w3id.org/tib/datacite/property/classificationCode</a>)
                       <br />Definice: <i>The classification code used for the subject term in the subject scheme.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
@@ -14700,7 +14717,7 @@
           element <a href="#element-ccmm:location-ccmm:bounding_box"><code>&lt;bounding_box&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:location-ccmm:title"><code>&lt;title&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:location-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:location-ccmm:geometry"><code>&lt;geometry&gt;</code></a> [0..1]
@@ -14888,8 +14905,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:location-ccmm:title">
-  <h4>Element <code>&lt;title&gt;</code></h4>
+<section id="element-ccmm:location-ccmm:label">
+  <h4>Element <code>&lt;label&gt;</code></h4>
 
   <dl>
     <dt>Význam</dt>
@@ -15274,7 +15291,7 @@
         </i>
 
           <a href="#FundingReference.awardTitle"><strong>award title</strong></a>
-          ( The human readable title or name of the award (grant).)
+          (The human readable title or name of the award (grant).)
 
     </dd>
 
@@ -15356,7 +15373,7 @@
         </i>
 
           <a href="#FundingReference.hasFunder"><strong>has funder</strong></a>
-          (Relation to the agent entity of a funder.)
+          
 
     </dd>
 
@@ -19004,7 +19021,18 @@
     <dd>
         <i>
           
-          vlastnost
+          
+          z obecnější třídy
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          mající vlastnost
           
           
         </i>
@@ -23459,7 +23487,7 @@
   <dl>
         <dt>Význam</dt>
       <dd>
-        <a href="#DescriptionType">Description type</a>
+        <a href="#ResourceType">Description type</a>
         (The type of the description.)
       </dd>
 
@@ -23778,7 +23806,7 @@
 
         <dt>Význam</dt>
       <dd>
-        <a href="#DescriptionType">Description type</a>
+        <a href="#ResourceType">Description type</a>
         (The type of the description.)
       </dd>
 

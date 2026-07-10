@@ -16,11 +16,11 @@
     <xsl:value-of select="concat(namespace-uri($node),'|',local-name($node),'|',string($node))"/>
   </xsl:function>
   <xsl:template match="/sp:sparql">
-    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#FundingReference&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
+    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/class/FundingReference&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
       <xsl:apply-templates select="current-group()[1]"/>
     </xsl:for-each-group>
   </xsl:template>
-  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#FundingReference&#34;]">
+  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/class/FundingReference&#34;]">
     <ccmm:funding_reference>
       <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235374506-6369-b2fd-b1bf">
         <xsl:with-param name="id">
@@ -52,14 +52,14 @@
         </ccmm:iri>
       </xsl:for-each>
     </xsl:if>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#awardNumber&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/awardNumber&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:local_identifier>
           <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
         </ccmm:local_identifier>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#awardTitle&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/awardTitle&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:award_title>
           <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
@@ -73,7 +73,7 @@
         </ccmm:funding_program>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/funderIdentifier&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:funder>
           <xsl:choose>

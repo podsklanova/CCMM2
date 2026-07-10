@@ -75,6 +75,14 @@
               "hasResource": {
                 "hasArtifact": "https://techlib.github.io/CCMM-V/en/"
               }
+            },
+            {
+              "title": {
+                "en": "datacite"
+              },
+              "hasResource": {
+                "hasArtifact": "https://tibhannover.github.io/datacite/dist/datacite-4.7.ttl"
+              }
             }
           ],
           "hasResource": [
@@ -990,7 +998,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hasLocation"></a></li>
+                  <li>from domain <a href="#Resource"></a> → <a href="#Dataset.hasLocation"></a></li>
               </ul>
           
               <section id="Location.bbox">
@@ -4759,7 +4767,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasDescription">https://model.ccmm.cz/vocabulary/datacite#hasDescription</a>
+                        <a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>
                     </td>
                   </tr>
                   <tr>
@@ -4802,7 +4810,8 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasDescription">has description</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasDescription">https://model.ccmm.cz/vocabulary/datacite#hasDescription</a>)
+                    <a href="https://w3id.org/tib/datacite/property/description">description</a> (<a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>)
+                      <br />Definition: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -5043,101 +5052,6 @@
                       </td>
                     </tr>
               
-                </table>
-              </section>    <section id="Dataset.hasLocation">
-                <h4>has location</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.hasLocation">https://model.ccmm.cz/research-data/Dataset.hasLocation</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has location</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>The geographical area covered by the dataset.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Dataset">Dataset</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#Location"><i>without assigned name</i></a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    
-                    property profile
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.geographicalcoverage">geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage">dcat-ap:Dataset.geographicalCoverage</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    
-                    property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
-                      <br />Definition: <i>The geographical area covered by the dataset.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    property
-                    
-                    <a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
-                      <br />Definition: <i>Spatial characteristics of the resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      specializes
-                    property
-                    
-                    <a href="http://purl.org/dc/terms/coverage">Coverage</a> (<a href="http://purl.org/dc/terms/coverage">dcterms:coverage</a>)
-                      <br />Definition: <i>The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>In the CCMM spatial coverage does not only cover the area of dataset, it may be connected to the dataset in some other way, e.g. the place from where the data were measured, administrative area to which the dataset  conforms or other.</td>
-                  </tr>
                 </table>
               </section>    <section id="Dataset.hasOtherLanguage">
                 <h4>has other language</h4>
@@ -5452,7 +5366,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasSubject">https://model.ccmm.cz/vocabulary/datacite#hasSubject</a>
+                        <a href="https://w3id.org/tib/datacite/property/subject">https://w3id.org/tib/datacite/property/subject</a>
                     </td>
                   </tr>
                   <tr>
@@ -5495,7 +5409,8 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasSubject">has subject</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasSubject">https://model.ccmm.cz/vocabulary/datacite#hasSubject</a>)
+                    <a href="https://w3id.org/tib/datacite/property/subject">subject</a> (<a href="https://w3id.org/tib/datacite/property/subject">https://w3id.org/tib/datacite/property/subject</a>)
+                      <br />Definition: <i>Subject, keyword, classification code, or key phrase describing the resource.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -6229,7 +6144,7 @@
                 <td>Profiled class IRI(s)</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#Description">https://model.ccmm.cz/vocabulary/datacite#Description</a>
+                    <a href="https://w3id.org/tib/datacite/class/Description">https://w3id.org/tib/datacite/class/Description</a>
                 </td>
               </tr>
               <tr>
@@ -6253,8 +6168,8 @@
                                     profiles
                 class
                 
-                <a href="https://michalmed.github.io/DataCite/en/#Description">Description</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#Description">https://model.ccmm.cz/vocabulary/datacite#Description</a>)
-                  <br />Definition: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
+                <a href="https://w3id.org/tib/datacite/class/Description">Description</a> (<a href="https://w3id.org/tib/datacite/class/Description">https://w3id.org/tib/datacite/class/Description</a>)
+                  <br />Definition: <i> All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
                   <ul style="list-style-type: disclosure-closed;">
                   </ul>
           
@@ -6282,7 +6197,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#descriptionText">https://model.ccmm.cz/vocabulary/datacite#descriptionText</a>
+                        <a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>
                     </td>
                   </tr>
                   <tr>
@@ -6326,8 +6241,8 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#descriptionText">description text</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#descriptionText">https://model.ccmm.cz/vocabulary/datacite#descriptionText</a>)
-                      <br />Definition: <i>Text describing the resource.</i>
+                    <a href="https://w3id.org/tib/datacite/property/description">description</a> (<a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>)
+                      <br />Definition: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -6345,7 +6260,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType">https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType</a>
+                        <a href="https://w3id.org/tib/datacite/property/descriptionType">https://w3id.org/tib/datacite/property/descriptionType</a>
                     </td>
                   </tr>
                   <tr>
@@ -6388,8 +6303,8 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasDescriptionType">has description type</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType">https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType</a>)
-                      <br />Definition: <i>Relation to the type of the description.</i>
+                    <a href="https://w3id.org/tib/datacite/property/descriptionType">descriptionType</a> (<a href="https://w3id.org/tib/datacite/property/descriptionType">https://w3id.org/tib/datacite/property/descriptionType</a>)
+                      <br />Definition: <i>The type of the Description.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -6412,7 +6327,7 @@
                 <td>Profiled class IRI(s)</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#DescriptionType">https://model.ccmm.cz/vocabulary/datacite#DescriptionType</a>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
                 </td>
               </tr>
               <tr>
@@ -6434,11 +6349,21 @@
                     <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
                                     profiles
+                
+                class profile
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Concept">Concept</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Concept">dcat-ap:Concept</a>)
+                  <br />Definition: <i>An idea or notion; a unit of thought.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
                 class
                 
-                <a href="https://michalmed.github.io/DataCite/en/#DescriptionType">Description type</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#DescriptionType">https://model.ccmm.cz/vocabulary/datacite#DescriptionType</a>)
-                  <br />Definition: <i>The type of the description.</i>
+                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+                  <br />Definition: <i>An idea or notion; a unit of thought.</i>
                   <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
                   </ul>
           
                           </li>
@@ -8486,7 +8411,7 @@
                 <td>Profiled class IRI(s)</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#FundingReference">https://model.ccmm.cz/vocabulary/datacite#FundingReference</a>
+                    <a href="https://w3id.org/tib/datacite/class/FundingReference">https://w3id.org/tib/datacite/class/FundingReference</a>
                 </td>
               </tr>
               <tr>
@@ -8510,7 +8435,7 @@
                                     profiles
                 class
                 
-                <a href="https://michalmed.github.io/DataCite/en/#FundingReference">Funding reference</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#FundingReference">https://model.ccmm.cz/vocabulary/datacite#FundingReference</a>)
+                <a href="https://w3id.org/tib/datacite/class/FundingReference">FundingReference</a> (<a href="https://w3id.org/tib/datacite/class/FundingReference">https://w3id.org/tib/datacite/class/FundingReference</a>)
                   <br />Definition: <i>Information about financial support (funding) for the resource being registered.</i>
                   <ul style="list-style-type: disclosure-closed;">
                   </ul>
@@ -8535,7 +8460,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#awardTitle">https://model.ccmm.cz/vocabulary/datacite#awardTitle</a>
+                        <a href="https://w3id.org/tib/datacite/property/awardTitle">https://w3id.org/tib/datacite/property/awardTitle</a>
                     </td>
                   </tr>
                   <tr>
@@ -8548,7 +8473,7 @@
                   </tr>
                   <tr>
                     <td>Definition</td>
-                    <td> The human readable title or name of the award (grant).</td>
+                    <td>The human readable title or name of the award (grant).</td>
                   </tr>
                   <tr>
                     <td>Domain</td>
@@ -8579,7 +8504,7 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#awardTitle">award title</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#awardTitle">https://model.ccmm.cz/vocabulary/datacite#awardTitle</a>)
+                    <a href="https://w3id.org/tib/datacite/property/awardTitle">awardTitle</a> (<a href="https://w3id.org/tib/datacite/property/awardTitle">https://w3id.org/tib/datacite/property/awardTitle</a>)
                       <br />Definition: <i>The human readable title or name of the award (grant).</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
@@ -8661,7 +8586,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier">https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier</a>
+                        <a href="https://w3id.org/tib/datacite/property/funderIdentifier">https://w3id.org/tib/datacite/property/funderIdentifier</a>
                     </td>
                   </tr>
                   <tr>
@@ -8671,10 +8596,6 @@
                   <tr>
                     <td>Label</td>
                     <td>has funder</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Relation to the agent entity of a funder.</td>
                   </tr>
                   <tr>
                     <td>Domain</td>
@@ -8704,7 +8625,8 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#hasFunderIdentifier">has funder identifier</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier">https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier</a>)
+                    <a href="https://w3id.org/tib/datacite/property/funderIdentifier">funderIdentifier</a> (<a href="https://w3id.org/tib/datacite/property/funderIdentifier">https://w3id.org/tib/datacite/property/funderIdentifier</a>)
+                      <br />Definition: <i>Uniquely identifies a funding entity, according to various types.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
@@ -8722,7 +8644,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#awardNumber">https://model.ccmm.cz/vocabulary/datacite#awardNumber</a>
+                        <a href="https://w3id.org/tib/datacite/property/awardNumber">https://w3id.org/tib/datacite/property/awardNumber</a>
                     </td>
                   </tr>
                   <tr>
@@ -8766,7 +8688,7 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#awardNumber">award number</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#awardNumber">https://model.ccmm.cz/vocabulary/datacite#awardNumber</a>)
+                    <a href="https://w3id.org/tib/datacite/property/awardNumber">awardNumber</a> (<a href="https://w3id.org/tib/datacite/property/awardNumber">https://w3id.org/tib/datacite/property/awardNumber</a>)
                       <br />Definition: <i>The code assigned by the funder to a sponsored award (grant).</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
@@ -11826,6 +11748,101 @@
                     <td>Examples are MAST/ADS [[MASTADS]], DOI [[DOI]], EZID [[EZID]] or W3ID [[W3ID]].</td>
                   </tr>
                 </table>
+              </section>    <section id="Dataset.hasLocation">
+                <h4>has location</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Dataset.hasLocation">https://model.ccmm.cz/research-data/Dataset.hasLocation</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>has location</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>The geographical area covered by the dataset.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Resource">Resource</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#Location"><i>without assigned name</i></a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    
+                    property profile
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.geographicalcoverage">geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage">dcat-ap:Dataset.geographicalCoverage</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    
+                    property profile
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
+                      <br />Definition: <i>The geographical area covered by the dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
+                      <br />Definition: <i>Spatial characteristics of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/coverage">Coverage</a> (<a href="http://purl.org/dc/terms/coverage">dcterms:coverage</a>)
+                      <br />Definition: <i>The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g. the place from where the data were measured, administrative area to which the resource conforms or other.</td>
+                  </tr>
+                </table>
               </section>    <section id="Resource.hasResourceType">
                 <h4>has resource type</h4>
               
@@ -12602,7 +12619,7 @@
                 <td>Profiled class IRI(s)</td>
                 <td>
                     
-                    <a href="https://model.ccmm.cz/vocabulary/datacite#Subject">https://model.ccmm.cz/vocabulary/datacite#Subject</a>
+                    <a href="https://w3id.org/tib/datacite/class/Subject">https://w3id.org/tib/datacite/class/Subject</a>
                 </td>
               </tr>
               <tr>
@@ -12626,7 +12643,7 @@
                                     profiles
                 class
                 
-                <a href="https://michalmed.github.io/DataCite/en/#Subject">Subject</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#Subject">https://model.ccmm.cz/vocabulary/datacite#Subject</a>)
+                <a href="https://w3id.org/tib/datacite/class/Subject">Subject</a> (<a href="https://w3id.org/tib/datacite/class/Subject">https://w3id.org/tib/datacite/class/Subject</a>)
                   <br />Definition: <i>Subject, keyword, classification code, or key phrase describing the resource.</i>
                   <ul style="list-style-type: disclosure-closed;">
                   </ul>
@@ -12655,7 +12672,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode">https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode</a>
+                        <a href="https://w3id.org/tib/datacite/property/classificationCode">https://w3id.org/tib/datacite/property/classificationCode</a>
                     </td>
                   </tr>
                   <tr>
@@ -12699,7 +12716,7 @@
                                         profiles
                     property
                     
-                    <a href="https://michalmed.github.io/DataCite/en/#subjectClassificationCode">subject classification code</a> (<a href="https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode">https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode</a>)
+                    <a href="https://w3id.org/tib/datacite/property/classificationCode">classificationCode</a> (<a href="https://w3id.org/tib/datacite/property/classificationCode">https://w3id.org/tib/datacite/property/classificationCode</a>)
                       <br />Definition: <i>The classification code used for the subject term in the subject scheme.</i>
                       <ul style="list-style-type: disclosure-closed;">
                       </ul>
@@ -14701,7 +14718,7 @@
           element <a href="#element-ccmm:location-ccmm:bounding_box"><code>&lt;bounding_box&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:location-ccmm:title"><code>&lt;title&gt;</code></a> [0..*]
+          element <a href="#element-ccmm:location-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:location-ccmm:geometry"><code>&lt;geometry&gt;</code></a> [0..1]
@@ -14889,8 +14906,8 @@
     
   </dl>
 </section>
-<section id="element-ccmm:location-ccmm:title">
-  <h4>Element <code>&lt;title&gt;</code></h4>
+<section id="element-ccmm:location-ccmm:label">
+  <h4>Element <code>&lt;label&gt;</code></h4>
 
   <dl>
     <dt>Meaning</dt>
@@ -15275,7 +15292,7 @@
         </i>
 
           <a href="#FundingReference.awardTitle"><strong>award title</strong></a>
-          ( The human readable title or name of the award (grant).)
+          (The human readable title or name of the award (grant).)
 
     </dd>
 
@@ -15357,7 +15374,7 @@
         </i>
 
           <a href="#FundingReference.hasFunder"><strong>has funder</strong></a>
-          (Relation to the agent entity of a funder.)
+          
 
     </dd>
 
@@ -19005,7 +19022,18 @@
     <dd>
         <i>
           
-          property
+          
+          from a more general class
+          
+        </i>
+
+          <a href="#Resource"><strong>Resource</strong></a>
+          (The class resource, everything.)
+
+          <span style="margin: 0 1rem">→</span>
+        <i>
+          
+          having property
           
           
         </i>
@@ -23460,7 +23488,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#DescriptionType">Description type</a>
+        <a href="#ResourceType">Description type</a>
         (The type of the description.)
       </dd>
 
@@ -23779,7 +23807,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#DescriptionType">Description type</a>
+        <a href="#ResourceType">Description type</a>
         (The type of the description.)
       </dd>
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://w3id.org/tib/datacite/property/" xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#">
   <xsl:import href="../organization/lifting.xslt"/>
   <xsl:import href="../person/lifting.xslt"/>
   <xsl:import href="../identifier/lifting.xslt"/>
@@ -59,7 +59,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/datacite#FundingReference"/>
+      <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/FundingReference"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:local_identifier">
         <ns0:awardNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
@@ -80,7 +80,7 @@
         </ns1:fundingProgram>
       </xsl:for-each>
       <xsl:for-each select="ccmm:funder">
-        <ns0:hasFunderIdentifier>
+        <ns0:funderIdentifier>
           <xsl:variable name="type" select="resolve-QName(@xsi:type,.)"/>
           <xsl:variable name="types" as="element()*">
             <ccmm:organization/>
@@ -104,7 +104,7 @@
               </xsl:for-each>
             </xsl:when>
           </xsl:choose>
-        </ns0:hasFunderIdentifier>
+        </ns0:funderIdentifier>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>

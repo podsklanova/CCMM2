@@ -140,7 +140,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element maxOccurs="unbounded" name="subject" type="ccmm:subject" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasSubject">
+      <xs:element maxOccurs="unbounded" name="subject" type="ccmm:subject" sawsdl:modelReference="https://w3id.org/tib/datacite/property/subject">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has subject - Dataset described using a subject.
@@ -187,7 +187,7 @@
           </xs:simpleContent>
         </xs:complexType>
       </xs:element>
-      <xs:element maxOccurs="unbounded" name="description" type="ccmm:description" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasDescription">
+      <xs:element maxOccurs="unbounded" name="description" type="ccmm:description" sawsdl:modelReference="https://w3id.org/tib/datacite/property/description">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has description - Relation to the description of a dataset.
@@ -199,7 +199,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has location - The geographical area covered by the dataset.
-            In the CCMM spatial coverage does not only cover the area of dataset, it may be connected to the dataset in some other way, e.g. the place from where the data were measured, administrative area to which the dataset  conforms or other.
+            In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g. the place from where the data were measured, administrative area to which the resource conforms or other.
           </xs:documentation>
         </xs:annotation>
       </xs:element>

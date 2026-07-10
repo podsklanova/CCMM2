@@ -11,11 +11,11 @@
     <xsl:value-of select="concat(namespace-uri($node),'|',local-name($node),'|',string($node))"/>
   </xsl:function>
   <xsl:template match="/sp:sparql">
-    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#Subject&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
+    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/class/Subject&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
       <xsl:apply-templates select="current-group()[1]"/>
     </xsl:for-each-group>
   </xsl:template>
-  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#Subject&#34;]">
+  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/class/Subject&#34;]">
     <ccmm:subject>
       <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742338662847-61c1-8d4b-b552">
         <xsl:with-param name="id">
@@ -61,7 +61,7 @@
         </ccmm:definition>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/classificationCode&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:classification_code>
           <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>

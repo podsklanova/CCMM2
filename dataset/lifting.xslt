@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#" xmlns:ns1="http://www.w3.org/ns/adms#" xmlns:ns2="http://www.w3.org/ns/dcat#" xmlns:ns3="http://purl.org/dc/terms/" xmlns:ns4="http://www.w3.org/ns/prov#" xmlns:ns5="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns6="http://www.opengis.net/ont/geosparql#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#" xmlns:ns1="http://www.w3.org/ns/adms#" xmlns:ns2="http://www.w3.org/ns/dcat#" xmlns:ns3="http://purl.org/dc/terms/" xmlns:ns4="http://www.w3.org/ns/prov#" xmlns:ns5="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns6="https://w3id.org/tib/datacite/property/" xmlns:ns7="http://www.opengis.net/ont/geosparql#">
   <xsl:import href="../metadata-record/lifting.xslt"/>
   <xsl:import href="../identifier/lifting.xslt"/>
   <xsl:import href="../alternate-title/lifting.xslt"/>
@@ -175,9 +175,9 @@
         </ns3:accessRights>
       </xsl:for-each>
       <xsl:for-each select="ccmm:subject">
-        <ns5:hasSubject>
+        <ns6:subject>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742338662847-61c1-8d4b-b552"/>
-        </ns5:hasSubject>
+        </ns6:subject>
       </xsl:for-each>
       <xsl:for-each select="ccmm:keyword">
         <ns2:keyword rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
@@ -186,9 +186,9 @@
         </ns2:keyword>
       </xsl:for-each>
       <xsl:for-each select="ccmm:description">
-        <ns5:hasDescription>
+        <ns6:description>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1751275345825-1b14-9c39-8e40"/>
-        </ns5:hasDescription>
+        </ns6:description>
       </xsl:for-each>
       <xsl:for-each select="ccmm:location">
         <ns3:spatial>
@@ -274,14 +274,14 @@
       <rdf:type rdf:resource="http://www.opengis.net/ont/sf#Envelope"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:gml">
-        <ns6:asGML rdf:datatype="http://www.opengis.net/gml/3.2#BoundingShapeType">
+        <ns7:asGML rdf:datatype="http://www.opengis.net/gml/3.2#BoundingShapeType">
           <xsl:call-template name="gml-transform-lifting"/>
-        </ns6:asGML>
+        </ns7:asGML>
       </xsl:for-each>
       <xsl:for-each select="ccmm:wkt">
-        <ns6:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">
+        <ns7:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">
           <xsl:call-template name="wkt-transform"/>
-        </ns6:asWKT>
+        </ns7:asWKT>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>

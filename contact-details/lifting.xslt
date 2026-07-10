@@ -54,7 +54,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#ContactDetails"/>
+      <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:data_box">
         <ns0:dataBox rdf:datatype="http://www.w3.org/2001/XMLSchema#string">

@@ -100,9 +100,9 @@
     </xsl:for-each-group>
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/2000/01/rdf-schema#label&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
-        <ccmm:title>
+        <ccmm:label>
           <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
-        </ccmm:title>
+        </ccmm:label>
       </xsl:for-each>
     </xsl:for-each-group>
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/locn#geometry&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
