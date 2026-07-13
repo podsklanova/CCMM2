@@ -16,14 +16,14 @@
     <xsl:value-of select="concat(namespace-uri($node),'|',local-name($node),'|',string($node))"/>
   </xsl:function>
   <xsl:template match="/sp:sparql">
-    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and (sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/ns/prov#Organization&#34; or sp:binding[@name=$obj]/sp:uri/text()=&#34;http://xmlns.com/foaf/0.1/Agent&#34;)]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
+    <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/ns/org#Organization&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
       <xsl:apply-templates select="current-group()[1]"/>
     </xsl:for-each-group>
     <xsl:for-each-group select="sp:results/sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/ns/prov#Person&#34;]" group-by="c:id-key(sp:binding[@name=$subj]/*[1])">
       <xsl:apply-templates select="current-group()[1]"/>
     </xsl:for-each-group>
   </xsl:template>
-  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and (sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/ns/prov#Organization&#34; or sp:binding[@name=$obj]/sp:uri/text()=&#34;http://xmlns.com/foaf/0.1/Agent&#34;)]">
+  <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/ns/org#Organization&#34;]">
     <ccmm:organization>
       <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1744871355397-62d0-acf0-af09">
         <xsl:with-param name="id">

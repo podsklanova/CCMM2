@@ -77,7 +77,7 @@
       <xsl:for-each select="current-group()[1]">
         <ccmm:funder>
           <xsl:choose>
-            <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[c:id-key(.) = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and (sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/ns/prov#Organization&#34; or sp:binding[@name=$obj]/sp:uri/text()=&#34;http://xmlns.com/foaf/0.1/Agent&#34;)]">
+            <xsl:when test="//sp:result[sp:binding[@name=$subj]/*[c:id-key(.) = c:id-key(current()/sp:binding[@name=$obj]/*)] and sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;http://www.w3.org/ns/org#Organization&#34;]">
               <ccmm:organization>
                 <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1744871355397-62d0-acf0-af09">
                   <xsl:with-param name="id">
