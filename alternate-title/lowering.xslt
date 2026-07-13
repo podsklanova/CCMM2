@@ -47,9 +47,13 @@
         </ccmm:iri>
       </xsl:for-each>
     </xsl:if>
-    <ccmm:title>
-      <xsl:apply-templates select="sp:binding[@name=null]/sp:literal"/>
-    </ccmm:title>
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://purl.org/dc/terms/alternative&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+      <xsl:for-each select="current-group()[1]">
+        <ccmm:title>
+          <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
+        </ccmm:title>
+      </xsl:for-each>
+    </xsl:for-each-group>
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/ccmm#hasType&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:alternate_title_type>

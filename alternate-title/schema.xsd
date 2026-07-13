@@ -10,7 +10,12 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="title">
+      <xs:element maxOccurs="unbounded" name="title" sawsdl:modelReference="http://purl.org/dc/terms/alternative">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            title - An alternative name for the resource.
+          </xs:documentation>
+        </xs:annotation>
         <xs:complexType>
           <xs:simpleContent>
             <xs:extension base="xs:string">

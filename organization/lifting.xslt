@@ -57,8 +57,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
-      <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      <rdf:type rdf:resource="http://www.w3.org/ns/org#Organization"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:identifier">
         <ns0:identifier>

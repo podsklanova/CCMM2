@@ -3,7 +3,7 @@
 @prefix sh: <http://www.w3.org/ns/shacl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
-<https://model.ccmm.cz/research-data/> rdfs:member <https://model.ccmm.cz/research-data/dcat%3ACatalogShape>, <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape>, <https://model.ccmm.cz/research-data/dcat%3ADataServiceShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetSeriesShape>, <https://model.ccmm.cz/research-data/dcat%3ADistributionShape>, <https://model.ccmm.cz/research-data/dcat%3ARelationshipShape>, <https://model.ccmm.cz/research-data/dcat%3AResourceShape>, <https://model.ccmm.cz/research-data/dcat%3ARoleShape>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape>, <https://model.ccmm.cz/research-data/skos%3AConceptShape>, <https://model.ccmm.cz/research-data/eli%3ALegalResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3ALocationShape>, <https://model.ccmm.cz/research-data/foaf%3ADocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ALinguisticSystemShape>, <https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ARightsStatementShape>, <https://model.ccmm.cz/research-data/dcterms%3AStandardShape>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3AProvenanceStatementShape>, <https://model.ccmm.cz/research-data/http://www.w3.org/ns/odrl/2/PolicyShape>, <https://model.ccmm.cz/research-data/dcterms%3APeriodOfTimeShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeOrExtentShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeShape>, <https://model.ccmm.cz/research-data/adms%3AIdentifierShape>, <https://model.ccmm.cz/research-data/locn%3AGeometryShape>, <https://model.ccmm.cz/research-data/dcterms%3AFrequencyShape>, <https://model.ccmm.cz/research-data/skos%3AConceptSchemeShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumAlgorithmShape>, <https://model.ccmm.cz/research-data/prov%3AAttributionShape>, <https://model.ccmm.cz/research-data/prov%3AActivityShape>, <https://model.ccmm.cz/research-data/vcard%3AKindShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumShape>, <https://model.ccmm.cz/research-data/time%3AInstantShape>, <https://model.ccmm.cz/research-data/rdfs%3AClassShape>, <https://model.ccmm.cz/research-data/prov%3AEntityShape>, <https://model.ccmm.cz/research-data/foaf%3APersonShape>, <https://model.ccmm.cz/research-data/foaf%3AOrganizationShape>, <https://model.ccmm.cz/research-data/prov%3APersonShape>, <https://model.ccmm.cz/research-data/prov%3AOrganizationShape>, <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/FundingReferenceShape>, <https://model.ccmm.cz/research-data/ccmm%3AValidationResultShape>, <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/SubjectShape>, <https://model.ccmm.cz/research-data/locn%3AAddressShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DownloadableFileShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DataServiceShape>, <https://model.ccmm.cz/research-data/ccmm%3ASubjectSchemeShape>, <https://model.ccmm.cz/research-data/ccmm%3AAlternateTitleShape>, <https://model.ccmm.cz/research-data/time%3ATemporalEntityShape>, <https://model.ccmm.cz/research-data/time%3AIntervalShape>, <https://model.ccmm.cz/research-data/ccmm%3AIdentifierSchemeShape>, <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape>, <https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape>.
+<https://model.ccmm.cz/research-data/> rdfs:member <https://model.ccmm.cz/research-data/dcat%3ACatalogShape>, <https://model.ccmm.cz/research-data/dcat%3ACatalogRecordShape>, <https://model.ccmm.cz/research-data/dcat%3ADataServiceShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetShape>, <https://model.ccmm.cz/research-data/dcat%3ADatasetSeriesShape>, <https://model.ccmm.cz/research-data/dcat%3ADistributionShape>, <https://model.ccmm.cz/research-data/dcat%3ARelationshipShape>, <https://model.ccmm.cz/research-data/dcat%3AResourceShape>, <https://model.ccmm.cz/research-data/dcat%3ARoleShape>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape>, <https://model.ccmm.cz/research-data/skos%3AConceptShape>, <https://model.ccmm.cz/research-data/eli%3ALegalResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3ALocationShape>, <https://model.ccmm.cz/research-data/foaf%3ADocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ALinguisticSystemShape>, <https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape>, <https://model.ccmm.cz/research-data/dcterms%3ARightsStatementShape>, <https://model.ccmm.cz/research-data/dcterms%3AStandardShape>, <https://model.ccmm.cz/research-data/rdfs%3AResourceShape>, <https://model.ccmm.cz/research-data/dcterms%3AProvenanceStatementShape>, <https://model.ccmm.cz/research-data/http://www.w3.org/ns/odrl/2/PolicyShape>, <https://model.ccmm.cz/research-data/dcterms%3APeriodOfTimeShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeOrExtentShape>, <https://model.ccmm.cz/research-data/dcterms%3AMediaTypeShape>, <https://model.ccmm.cz/research-data/adms%3AIdentifierShape>, <https://model.ccmm.cz/research-data/locn%3AGeometryShape>, <https://model.ccmm.cz/research-data/dcterms%3AFrequencyShape>, <https://model.ccmm.cz/research-data/skos%3AConceptSchemeShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumAlgorithmShape>, <https://model.ccmm.cz/research-data/prov%3AAttributionShape>, <https://model.ccmm.cz/research-data/prov%3AActivityShape>, <https://model.ccmm.cz/research-data/vcard%3AKindShape>, <https://model.ccmm.cz/research-data/spdx%3AChecksumShape>, <https://model.ccmm.cz/research-data/time%3AInstantShape>, <https://model.ccmm.cz/research-data/rdfs%3AClassShape>, <https://model.ccmm.cz/research-data/prov%3AEntityShape>, <https://model.ccmm.cz/research-data/foaf%3APersonShape>, <https://model.ccmm.cz/research-data/foaf%3AOrganizationShape>, <https://model.ccmm.cz/research-data/prov%3APersonShape>, <https://model.ccmm.cz/research-data/http://www.w3.org/ns/org#OrganizationShape>, <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/FundingReferenceShape>, <https://model.ccmm.cz/research-data/ccmm%3AValidationResultShape>, <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/SubjectShape>, <https://model.ccmm.cz/research-data/locn%3AAddressShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DownloadableFileShape>, <https://model.ccmm.cz/research-data/ccmm%3ADistribution-DataServiceShape>, <https://model.ccmm.cz/research-data/ccmm%3ASubjectSchemeShape>, <https://model.ccmm.cz/research-data/ccmm%3AAlternateTitleShape>, <https://model.ccmm.cz/research-data/time%3ATemporalEntityShape>, <https://model.ccmm.cz/research-data/time%3AIntervalShape>, <https://model.ccmm.cz/research-data/ccmm%3AIdentifierSchemeShape>, <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape>, <https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape>.
 
 <https://model.ccmm.cz/research-data/dcat%3ACatalogShape> a sh:NodeShape;
     rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>;
@@ -2382,44 +2382,26 @@
 
 <https://model.ccmm.cz/research-data/prov%3APersonShape> sh:property <https://model.ccmm.cz/research-data/prov%3APersonShape/-43e35340>.
 
-<https://model.ccmm.cz/research-data/prov%3APersonShape/6d345aaf> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/prov%3APersonShape/5150a9d0> a sh:PropertyShape;
     sh:name "has affiliation"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation>;
-    sh:class <http://www.w3.org/ns/prov#Organization>.
+    sh:class <http://www.w3.org/ns/org#Organization>.
 
-<https://model.ccmm.cz/research-data/prov%3APersonShape> sh:property <https://model.ccmm.cz/research-data/prov%3APersonShape/6d345aaf>.
+<https://model.ccmm.cz/research-data/prov%3APersonShape> sh:property <https://model.ccmm.cz/research-data/prov%3APersonShape/5150a9d0>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/291051fa>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/-63366625>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/6e02b714>.
 
-<https://model.ccmm.cz/research-data/prov%3APersonShape/192d4302> a sh:PropertyShape;
-    sh:name "has affiliation"@en;
-    sh:nodeKind sh:BlankNodeOrIRI;
-    sh:path <https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation>;
-    sh:class <http://xmlns.com/foaf/0.1/Agent>.
-
-<https://model.ccmm.cz/research-data/prov%3APersonShape> sh:property <https://model.ccmm.cz/research-data/prov%3APersonShape/192d4302>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/291051fa>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/-63366625>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/6e02b714>.
-
-<https://model.ccmm.cz/research-data/prov%3AOrganizationShape> a sh:NodeShape;
+<https://model.ccmm.cz/research-data/http://www.w3.org/ns/org#OrganizationShape> a sh:NodeShape;
     rdfs:seeAlso <https://model.ccmm.cz/research-data/Organization>;
     sh:closed false;
-    sh:targetClass <http://www.w3.org/ns/prov#Organization>.
+    sh:targetClass <http://www.w3.org/ns/org#Organization>.
 
-<https://model.ccmm.cz/research-data/prov%3AOrganizationShape/2fffdd6> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/http://www.w3.org/ns/org#OrganizationShape/2fffdd6> a sh:PropertyShape;
     sh:name "alternate name"@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/2006/vcard/ns#organization-name>;
     sh:datatype rdf:langString.
 
-<https://model.ccmm.cz/research-data/prov%3AOrganizationShape> sh:property <https://model.ccmm.cz/research-data/prov%3AOrganizationShape/2fffdd6>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/291051fa>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/-63366625>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/6e02b714>.
-
-<https://model.ccmm.cz/research-data/foaf%3AAgentShape> rdfs:seeAlso <https://model.ccmm.cz/research-data/Organization>.
-
-<https://model.ccmm.cz/research-data/foaf%3AAgentShape/2fffdd6> a sh:PropertyShape;
-    sh:name "alternate name"@en;
-    sh:nodeKind sh:Literal;
-    sh:path <http://www.w3.org/2006/vcard/ns#organization-name>;
-    sh:datatype rdf:langString.
-
-<https://model.ccmm.cz/research-data/foaf%3AAgentShape> sh:property <https://model.ccmm.cz/research-data/foaf%3AAgentShape/2fffdd6>.
+<https://model.ccmm.cz/research-data/http://www.w3.org/ns/org#OrganizationShape> sh:property <https://model.ccmm.cz/research-data/http://www.w3.org/ns/org#OrganizationShape/2fffdd6>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/291051fa>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/-63366625>, <https://model.ccmm.cz/research-data/foaf%3AAgentShape/6e02b714>.
 
 <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/FundingReferenceShape> a sh:NodeShape;
     rdfs:seeAlso <https://model.ccmm.cz/research-data/FundingReference>;
