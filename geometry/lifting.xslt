@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns1="http://www.opengis.net/ont/geosparql#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" xmlns:gml="http://www.opengis.net/gml/3.2" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns1="http://www.opengis.net/ont/geosparql#">
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/ccmm:geometry">
     <rdf:RDF>
@@ -42,7 +42,20 @@
     </xsl:choose>
   </xsl:template>
   <xsl:template name="gml-transform-lifting">
-    <xsl:value-of select="serialize(node(), map{'method':'xml','omit-xml-declaration':true(),'indent':false()})"/>
+    <xsl:param name="wrapper-name" select="''"/>
+    <xsl:choose>
+      <xsl:when test="normalize-space($wrapper-name) != ''">
+        <xsl:variable name="wrapped-gml">
+          <xsl:element name="{$wrapper-name}">
+            <xsl:copy-of select="@*|node()"/>
+          </xsl:element>
+        </xsl:variable>
+        <xsl:value-of select="serialize($wrapped-gml, map{'method':'xml','omit-xml-declaration':true(),'indent':false()})"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="serialize(node(), map{'method':'xml','omit-xml-declaration':true(),'indent':false()})"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742340936467-5d87-fae6-b5c7">
     <xsl:param name="arc" select="()"/>

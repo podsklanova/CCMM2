@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:sp="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" xmlns:gml="http://www.opengis.net/gml/3.2" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
   <xsl:import href="../metadata-record/lowering.xslt"/>
   <xsl:import href="../identifier/lowering.xslt"/>
   <xsl:import href="../alternate-title/lowering.xslt"/>
@@ -95,8 +95,18 @@
   </xsl:template>
   <xsl:template name="gml-transform-lowering">
     <xsl:param name="value"/>
-    <xsl:variable name="fragment" select="parse-xml-fragment(concat('&#60;wrapper&#62;', string($value), '&#60;/wrapper&#62;'))/*/node()"/>
-    <xsl:copy-of select="$fragment"/>
+    <xsl:param name="wrapper-name" select="''"/>
+    <xsl:choose>
+      <xsl:when test="normalize-space($wrapper-name) != ''">
+        <xsl:variable name="fragment" select="parse-xml-fragment(concat('&#60;wrapper&#62;', string($value), '&#60;/wrapper&#62;'))/*/*[1]"/>
+        <xsl:copy-of select="$fragment/@*"/>
+        <xsl:copy-of select="$fragment/node()"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="fragment" select="parse-xml-fragment(concat('&#60;wrapper&#62;', string($value), '&#60;/wrapper&#62;'))/*/node()"/>
+        <xsl:copy-of select="$fragment"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742339877323-9dcc-6a36-988a">
     <xsl:param name="id"/>

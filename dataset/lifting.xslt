@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#" xmlns:ns1="http://www.w3.org/ns/adms#" xmlns:ns2="http://www.w3.org/ns/dcat#" xmlns:ns3="http://purl.org/dc/terms/" xmlns:ns4="http://www.w3.org/ns/prov#" xmlns:ns5="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns6="https://w3id.org/tib/datacite/property/" xmlns:ns7="http://www.opengis.net/ont/geosparql#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsp="http://www.opengis.net/ont/geosparql#" xmlns:gml="http://www.opengis.net/gml/3.2" version="3.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="https://model.ccmm.cz/vocabulary/ccmm#" xmlns:ns1="http://www.w3.org/ns/adms#" xmlns:ns2="http://www.w3.org/ns/dcat#" xmlns:ns3="http://purl.org/dc/terms/" xmlns:ns4="http://www.w3.org/ns/prov#" xmlns:ns5="https://model.ccmm.cz/vocabulary/datacite#" xmlns:ns6="https://w3id.org/tib/datacite/property/" xmlns:ns7="http://www.opengis.net/ont/geosparql#">
   <xsl:import href="../metadata-record/lifting.xslt"/>
   <xsl:import href="../identifier/lifting.xslt"/>
   <xsl:import href="../alternate-title/lifting.xslt"/>
@@ -85,7 +85,20 @@
     </xsl:choose>
   </xsl:template>
   <xsl:template name="gml-transform-lifting">
-    <xsl:value-of select="serialize(node(), map{'method':'xml','omit-xml-declaration':true(),'indent':false()})"/>
+    <xsl:param name="wrapper-name" select="''"/>
+    <xsl:choose>
+      <xsl:when test="normalize-space($wrapper-name) != ''">
+        <xsl:variable name="wrapped-gml">
+          <xsl:element name="{$wrapper-name}">
+            <xsl:copy-of select="@*|node()"/>
+          </xsl:element>
+        </xsl:variable>
+        <xsl:value-of select="serialize($wrapped-gml, map{'method':'xml','omit-xml-declaration':true(),'indent':false()})"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="serialize(node(), map{'method':'xml','omit-xml-declaration':true(),'indent':false()})"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742339877323-9dcc-6a36-988a">
     <xsl:param name="arc" select="()"/>

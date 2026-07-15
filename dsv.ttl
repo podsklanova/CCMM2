@@ -775,6 +775,17 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :RelatedResource.
 
+<https://model.ccmm.cz/research-data/Location.bbox> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    skos:prefLabel "bounding box"@en;
+    skos:definition "Bounding box of the location geometry."@en;
+    skos:scopeNote "Typically defined by top-left and bottom-right corners."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location.bbox>;
+    dsv:cardinality cardinality:0n;
+    dsv:domain :Location;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <http://www.opengis.net/ont/sf#Envelope>.
+
 <https://model.ccmm.cz/research-data/Location.hasGeometry> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has geometry"@en;
@@ -1133,16 +1144,12 @@
 <https://model.ccmm.cz/research-data/Resource.hasIdentifier> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has identifier"@en;
+    skos:scopeNote ""@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
   dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:scopeNote;
-  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>
 ];
     dsv:domain :Resource;
@@ -1528,17 +1535,6 @@
     dsv:domain :Subject;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
-
-<https://model.ccmm.cz/research-data/Location.bbox> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "bounding box"@en;
-    skos:definition "Bounding box of the location geometry."@en;
-    skos:scopeNote "Typically defined by top-left and bottom-right corners."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location.bbox>;
-    dsv:cardinality cardinality:0n;
-    dsv:domain :Location;
-    a dsv:DatatypePropertyProfile;
-    dsv:datatypePropertyRange <http://www.opengis.net/ont/sf#Envelope>.
 
 <https://model.ccmm.cz/research-data/TimeReference.dateInformation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
