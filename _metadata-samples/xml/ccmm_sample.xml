@@ -459,10 +459,8 @@
         <distribution_downloadable_file>
             <iri>http://portal.chmi.cz/AQ_DATA</iri>
             <title>Kvalita ovzduší</title>
-            <access_url>
-                <!-- shall contain information about how to download data -->
-                https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy
-            </access_url>
+            <!-- shall contain information about how to download data -->
+            <access_url>https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy</access_url>
             <download_url>
                 <!-- link to direct access data -->
                 <iri>https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip</iri>
