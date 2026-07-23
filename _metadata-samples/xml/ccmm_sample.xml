@@ -418,20 +418,18 @@
     </related_resource>
     <distribution>
         <distribution_data_service>
-            <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
-            <!-- persistent idenftifier of a service, usualy same as access point -->
             <title>Služba WMS pro prohlížení dat o kvalitě ovzduší</title>
             <access_url>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</access_url>
             <access_service>
                 <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
                 <label xml:lang="en">Endpoint of WMS service Air quality</label>
                 <endpoint_url>
-                    <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
                     <title>Endpoint of WMS service Air quality</title>
+                    <resource_url>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</resource_url>
                 </endpoint_url>
             </access_service>
             <conforms_to>
-                <iri/>
+                <iri>http://data.europa.eu/eli/reg/2010/1089</iri>
                 <label xml:lang="cs">NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
                     se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové
                     služby</label>
