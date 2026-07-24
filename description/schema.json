@@ -30,7 +30,7 @@
     },
     "description_text": {
       "title": "description text",
-      "description": "Text describing the resource.",
+      "description": "A free-text account of the Data Service.",
       "type": "object",
       "required": [
         "@value",

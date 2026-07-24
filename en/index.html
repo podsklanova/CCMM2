@@ -7290,7 +7290,7 @@
                     <td>Profiled relationship IRI(s)</td>
                     <td>
                         
-                        <a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>
+                        <a href="http://purl.org/dc/terms/description">dcterms:description</a>
                     </td>
                   </tr>
                   <tr>
@@ -7303,7 +7303,7 @@
                   </tr>
                   <tr>
                     <td>Definition</td>
-                    <td>Text describing the resource.</td>
+                    <td>A free-text account of the Data Service.</td>
                   </tr>
                   <tr>
                     <td>Domain</td>
@@ -7332,11 +7332,31 @@
                         <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
                                         profiles
+                    
+                    property profile
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.description">dcat-ap:Dataset.description</a>)
+                      <br />Definition: <i>A free-text account of the Dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    
+                    property profile
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description">dcat-dap:CatalogedResource.description</a>)
+                      <br />Definition: <i>A free-text account of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
                     property
                     
-                    <a href="https://w3id.org/tib/datacite/property/description">description</a> (<a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>)
-                      <br />Definition: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
+                    <a href="http://purl.org/dc/terms/description">Description</a> (<a href="http://purl.org/dc/terms/description">dcterms:description</a>)
+                      <br />Definition: <i>An account of the resource.</i>
                       <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
                       </ul>
               
                               </li>
@@ -7344,6 +7364,10 @@
                       </td>
                     </tr>
               
+                  <tr>
+                    <td>Usage note</td>
+                    <td>description [DCAT-AP 3.0.1 based on DCAT 3 DAP] (https://mff-uk.github.io/specifications/dcat-ap#DataService.description)</td>
+                  </tr>
                 </table>
               </section>    <section id="Description.hasDescriptionType">
                 <h4>has description type</h4>
@@ -13341,10 +13365,6 @@
                   </td>
                 </tr>
           
-              <tr>
-                <td>Usage note</td>
-                <td></td>
-              </tr>
             </table>
           
               <p><strong>Properties</strong></p>
@@ -73892,7 +73912,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>description_text</code>:
-            (<a href="#Description.descriptionText" label="Text describing the resource.">description text</a>)
+            (<a href="#Description.descriptionText" label="A free-text account of the Data Service.">description text</a>)
           required
           item of type
 
@@ -103243,7 +103263,7 @@
         </li>
         <li style="list-style-type: disclosure-closed;">
           <code>description_text</code>:
-            (<a href="#Description.descriptionText" label="Text describing the resource.">description text</a>)
+            (<a href="#Description.descriptionText" label="A free-text account of the Data Service.">description text</a>)
           required
           item of type
 
@@ -103609,7 +103629,7 @@
         </i>
 
           <a href="#Description.descriptionText"><strong>description text</strong></a>
-          (Text describing the resource.)
+          (A free-text account of the Data Service.)
 
     </dd>
 
@@ -109779,9 +109799,6 @@
           element <a href="#element-ccmm:distribution_data_service-ccmm:title"><code>&lt;title&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution_data_service-ccmm:access_url"><code>&lt;access_url&gt;</code></a> [1..*]
-      </li>
-      <li>
           element <a href="#element-ccmm:distribution_data_service-ccmm:access_service"><code>&lt;access_service&gt;</code></a> [0..*]
       </li>
       <li>
@@ -109875,58 +109892,6 @@
       <dt>Content</dt>
       <dd>
           The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution_data_service-ccmm:access_url">
-  <h4>Element <code>&lt;access_url&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          
-          from a more general class
-          
-        </i>
-
-          <a href="#Distribution"><strong>Distribution</strong></a>
-          
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          having property
-          
-          
-        </i>
-
-          <a href="#Distribution.accessUrl"><strong>access URL</strong></a>
-          (A URL that gives access to a Distribution of the Dataset.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>1..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:distribution_data_service"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
       </dd>
 
 

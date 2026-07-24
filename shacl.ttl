@@ -1276,15 +1276,15 @@
     sh:closed false;
     sh:targetClass <https://w3id.org/tib/datacite/class/Description>.
 
-<https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape/-31da5e71> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape/-5a86c140> a sh:PropertyShape;
     sh:name "description text"@en;
+    sh:description "description [DCAT-AP 3.0.1 based on DCAT 3 DAP] (https://mff-uk.github.io/specifications/dcat-ap#DataService.description)"@en;
     sh:nodeKind sh:Literal;
-    sh:path <https://w3id.org/tib/datacite/property/description>;
+    sh:path <http://purl.org/dc/terms/description>;
     sh:maxCount 1;
-    sh:minCount 1;
     sh:datatype rdf:langString.
 
-<https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape> sh:property <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape/-31da5e71>.
+<https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape> sh:property <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape/-5a86c140>.
 
 <https://model.ccmm.cz/research-data/https://w3id.org/tib/datacite/class/DescriptionShape/4fc7062d> a sh:PropertyShape;
     sh:name "has description type"@en;

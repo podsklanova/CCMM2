@@ -104,7 +104,6 @@
     a dsv:TermProfile;
     skos:prefLabel "Resource attribution"@en;
     skos:definition "Attribution is the ascribing of a Resource to an agent. It defines the responsibility of an agent to the resource in a given role."@en;
-    skos:scopeNote ""@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Attribution>;
     a dsv:ClassProfile.
 :AttributedAgentRoleType dct:isPartOf <https://model.ccmm.cz/research-data/>;
@@ -1941,9 +1940,10 @@
 <https://model.ccmm.cz/research-data/Description.descriptionText> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "description text"@en;
-    skos:definition "Text describing the resource."@en;
+    skos:definition "A free-text account of the Data Service."@en;
+    skos:scopeNote "description [DCAT-AP 3.0.1 based on DCAT 3 DAP] (https://mff-uk.github.io/specifications/dcat-ap#DataService.description)"@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.description>;
     dsv:cardinality cardinality:11;
-    dsv:property <https://w3id.org/tib/datacite/property/description>;
     dsv:domain :Description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
