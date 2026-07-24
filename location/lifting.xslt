@@ -106,7 +106,7 @@
         </ns0:bbox>
       </xsl:for-each>
       <xsl:for-each select="ccmm:label">
-        <ns1:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
+        <ns1:label>
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns1:label>

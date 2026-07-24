@@ -74,7 +74,7 @@
       <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:label">
-        <ns0:title rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
+        <ns0:title>
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns0:title>

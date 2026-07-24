@@ -57,7 +57,7 @@
       <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#AlternateTitle"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:title">
-        <ns0:alternative rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
+        <ns0:alternative>
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns0:alternative>
