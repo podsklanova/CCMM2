@@ -11,10 +11,11 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
-      <xs:element name="description_text" sawsdl:modelReference="https://w3id.org/tib/datacite/property/description">
+      <xs:element name="description_text" sawsdl:modelReference="http://purl.org/dc/terms/description">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            description text - Text describing the resource.
+            description text - A free-text account of the Data Service.
+            description [DCAT-AP 3.0.1 based on DCAT 3 DAP] (https://mff-uk.github.io/specifications/dcat-ap#DataService.description)
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>

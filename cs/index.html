@@ -7289,7 +7289,7 @@
                     <td>IRI profilovaných vztahů</td>
                     <td>
                         
-                        <a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>
+                        <a href="http://purl.org/dc/terms/description">dcterms:description</a>
                     </td>
                   </tr>
                   <tr>
@@ -7302,7 +7302,7 @@
                   </tr>
                   <tr>
                     <td>Definice</td>
-                    <td>Text describing the resource. (@en)</td>
+                    <td>A free-text account of the Data Service. (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
@@ -7331,11 +7331,31 @@
                         <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
                                         profiluje
+                    
+                    profil
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.description">description (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.description">dcat-ap:Dataset.description</a>)
+                      <br />Definice: <i>A free-text account of the Dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
+                    
+                    profil
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description">dcat-dap:CatalogedResource.description</a>)
+                      <br />Definice: <i>A free-text account of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiluje
                     vlastnost
                     
-                    <a href="https://w3id.org/tib/datacite/property/description">description (@en)</a> (<a href="https://w3id.org/tib/datacite/property/description">https://w3id.org/tib/datacite/property/description</a>)
-                      <br />Definice: <i>All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.</i>
+                    <a href="http://purl.org/dc/terms/description">Description (@en)</a> (<a href="http://purl.org/dc/terms/description">dcterms:description</a>)
+                      <br />Definice: <i>An account of the resource.</i>
                       <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
                       </ul>
               
                               </li>
@@ -7343,6 +7363,10 @@
                       </td>
                     </tr>
               
+                  <tr>
+                    <td>Popis použití v profilu</td>
+                    <td>description [DCAT-AP 3.0.1 based on DCAT 3 DAP] (https://mff-uk.github.io/specifications/dcat-ap#DataService.description) (@en)</td>
+                  </tr>
                 </table>
               </section>    <section id="Description.hasDescriptionType">
                 <h4>has description type (@en)</h4>
@@ -13340,10 +13364,6 @@
                   </td>
                 </tr>
           
-              <tr>
-                <td>Popis použití v profilu</td>
-                <td> (@en)</td>
-              </tr>
             </table>
           
               <p><strong>Vlastnosti</strong></p>
@@ -73012,7 +73032,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>description_text</code>:
-            (<a href="#Description.descriptionText" label="Text describing the resource.">description text</a>)
+            (<a href="#Description.descriptionText" label="A free-text account of the Data Service.">description text</a>)
           povinná
           položka typu
 
@@ -101991,7 +102011,7 @@
         </li>
         <li style="list-style-type: disclosure-closed;">
           <code>description_text</code>:
-            (<a href="#Description.descriptionText" label="Text describing the resource.">description text</a>)
+            (<a href="#Description.descriptionText" label="A free-text account of the Data Service.">description text</a>)
           povinná
           položka typu
 
@@ -102356,7 +102376,7 @@
         </i>
 
           <a href="#Description.descriptionText"><strong>description text</strong></a>
-          (Text describing the resource.)
+          (A free-text account of the Data Service.)
 
     </dd>
 
@@ -108440,9 +108460,6 @@
           element <a href="#element-ccmm:distribution_data_service-ccmm:title"><code>&lt;title&gt;</code></a> [1..1]
       </li>
       <li>
-          element <a href="#element-ccmm:distribution_data_service-ccmm:access_url"><code>&lt;access_url&gt;</code></a> [1..*]
-      </li>
-      <li>
           element <a href="#element-ccmm:distribution_data_service-ccmm:access_service"><code>&lt;access_service&gt;</code></a> [0..*]
       </li>
       <li>
@@ -108536,58 +108553,6 @@
       <dt>Obsah</dt>
       <dd>
           Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:distribution_data_service-ccmm:access_url">
-  <h4>Element <code>&lt;access_url&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          
-          z obecnější třídy
-          
-        </i>
-
-          <a href="#Distribution"><strong>Distribution</strong></a>
-          
-
-          <span style="margin: 0 1rem">→</span>
-        <i>
-          
-          mající vlastnost
-          
-          
-        </i>
-
-          <a href="#Distribution.accessUrl"><strong>přístupová adresa</strong></a>
-          (URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>1..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:distribution_data_service"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
       </dd>
 
 
