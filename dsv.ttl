@@ -151,17 +151,6 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Standard>
 ];
     a dsv:ClassProfile.
-:ProvenanceStatement dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:definition "Information about entities, activities, and people involved in producing a piece of data or thing."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ProvenanceStatement>;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#ProvenanceStatement>
-];
-    a dsv:ClassProfile.
 :Repository dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Repository"@en, "Catalogo"@it, "Catalogue"@fr, "Catálogo"@es, "Katalog"@cs, "Κατάλογος"@el, "فهرس قوائم البيانات"@ar, "カタログ"@ja, "Katalog"@da;
@@ -242,26 +231,17 @@
     dsv:class <https://model.ccmm.cz/vocabulary/ccmm#SubjectScheme>.
 :Location dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "Location"@en;
     skos:definition "Spatial region or named place where the data was gathered or about which the data is focused."@en;
     skos:scopeNote "Location is represented according to the Open Formal Standard for Spatial Data. Locations are represented as a reference to the named place, geographic region or specific geometry according to the standardized geometry object representation. \nEvery Location instance must have at least one of the following attributes/relations: bbox, location name, geometry and/or related object identifier."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location>;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Location>
-];
     a dsv:ClassProfile.
 :Geometry dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "Geometry"@en;
     skos:definition "The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Geometry>;
     dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Geometry>
-], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedAsProperty skos:scopeNote;
@@ -622,26 +602,6 @@
     dsv:domain :MetadataRecord;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ApplicationProfile.
-
-<https://model.ccmm.cz/research-data/Dataset.hasProvenance> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "has provenance"@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance>;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:scopeNote;
-  dsv:reusedAsProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance>
-];
-    dsv:cardinality cardinality:0n;
-    dsv:domain :Dataset;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :ProvenanceStatement.
 
 <https://model.ccmm.cz/research-data/MetadataRecord.hasOriginalRepository> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1623,16 +1583,6 @@
     dsv:cardinality cardinality:0n;
     dsv:property rdfs:label;
     dsv:domain :ValidationResult;
-    a dsv:DatatypePropertyProfile;
-    dsv:datatypePropertyRange rdf:langString.
-
-<https://model.ccmm.cz/research-data/ProvenanceStatement.label> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    skos:prefLabel "label"@en;
-    skos:definition "Provenance state label."@en;
-    dsv:cardinality cardinality:0n;
-    dsv:property rdfs:label;
-    dsv:domain :ProvenanceStatement;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 

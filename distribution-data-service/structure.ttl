@@ -30,6 +30,7 @@
     kv:dataPsmIsReverse "false";
     kv:dataPsmPart "\"https://model.ccmm.cz/research-data/distribution-data-service/classReference-1762017920504-3859-1f0f-ba2c\"";
     kv:dataPsmTechnicalLabel "\"access_service\"";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"isAttribute\":false}}";
     kv:iri "\"https://model.ccmm.cz/research-data/distribution-data-service/associationEnd-1762017910898-a4dc-028b-820e\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
 :associationEnd-1762017911004-0986-bd99-912d a dsvs:structure-entity;
@@ -101,6 +102,7 @@
     kv:dataPsmIsReverse "false";
     kv:dataPsmPart "\"https://model.ccmm.cz/research-data/distribution-data-service/class-1780469537202-6d75-756f-ac89\"";
     kv:dataPsmTechnicalLabel "\"access_url\"";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"isAttribute\":true}}";
     kv:iri "\"https://model.ccmm.cz/research-data/distribution-data-service/associationEnd-1780469537204-881c-afe7-8bc1\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
 :associationEnd-1780476005683-b4fe-9ca1-a930 a dsvs:structure-entity;

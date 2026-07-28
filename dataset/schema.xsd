@@ -16,7 +16,6 @@
   <xs:include schemaLocation="../related-resource/schema.xsd"/>
   <xs:include schemaLocation="../distribution/schema.xsd"/>
   <xs:include schemaLocation="../validation-result/schema.xsd"/>
-  <xs:include schemaLocation="../provenance-statement/schema.xsd"/>
   <xs:include schemaLocation="../provenance-activity/schema.xsd"/>
   <xs:complexType name="dataset" sawsdl:modelReference="http://www.w3.org/ns/dcat#Dataset">
     <xs:annotation>
@@ -253,13 +252,6 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has validation result - Reference to the report about the dataset validation.
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="provenance" type="ccmm:provenance_statement" sawsdl:modelReference="http://purl.org/dc/terms/provenance">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">
-            has provenance - A statement about the lineage of a Dataset.
           </xs:documentation>
         </xs:annotation>
       </xs:element>

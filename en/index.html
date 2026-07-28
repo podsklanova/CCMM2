@@ -91,6 +91,14 @@
               "hasResource": {
                 "hasArtifact": "https://www.w3.org/ns/org.ttl"
               }
+            },
+            {
+              "title": {
+                "en": "SPDX 2.3.1"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/spdx-ontology.2.3.1.ttl"
+              }
             }
           ],
           "hasResource": [
@@ -213,16 +221,6 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "../address/structure.ttl",
-              "hasRole": "role:schema",
-              "format": "filetype:RDF_TURTLE",
-              "conformsTo": "dsv:Structure"
-            },
-            {
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
-              "hasArtifact": "../provenance-statement/structure.ttl",
               "hasRole": "role:schema",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": "dsv:Structure"
@@ -834,28 +832,6 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "../address/context.jsonld",
-              "hasRole": "role:schema",
-              "format": "filetype:JSON_LD",
-              "conformsTo": "http://www.w3.org/ns/json-ld"
-            },
-            {
-              "@id": "16cf6a9e-b46d-4ece-9c91-91f53a19cec9#jsonschema",
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
-              "hasArtifact": "../provenance-statement/schema.json",
-              "hasRole": "role:schema",
-              "format": "filetype:JSON",
-              "conformsTo": "https://json-schema.org/draft/2020-12/schema"
-            },
-            {
-              "@id": "16cf6a9e-b46d-4ece-9c91-91f53a19cec9#jsonLd",
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
-              "hasArtifact": "../provenance-statement/context.jsonld",
               "hasRole": "role:schema",
               "format": "filetype:JSON_LD",
               "conformsTo": "http://www.w3.org/ns/json-ld"
@@ -1847,827 +1823,7 @@
       <section>
           <h2>Class profiles</h2>
 
-          <section id="ProvenanceStatement">
-            <h4><i>without assigned name</i></h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://purl.org/dc/terms/ProvenanceStatement">dcterms:ProvenanceStatement</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://model.ccmm.cz/research-data/ProvenanceStatement">https://model.ccmm.cz/research-data/ProvenanceStatement</a></td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>Information about entities, activities, and people involved in producing a piece of data or thing.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                
-                class profile
-                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#ProvenanceStatement"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#ProvenanceStatement">dcat-ap:ProvenanceStatement</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  profiles
-                class
-                
-                <a href="http://purl.org/dc/terms/ProvenanceStatement">Provenance Statement</a> (<a href="http://purl.org/dc/terms/ProvenanceStatement">dcterms:ProvenanceStatement</a>)
-                  <br />Definition: <i>Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p><strong>Properties</strong></p>
-              <p>For this class profile the following properties are defined: <a href="#ProvenanceStatement.label">label</a>.</p>
-          
-              <p><strong>Backwards associations</strong></p>
-              <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hasProvenance"></a></li>
-              </ul>
-          
-              <section id="ProvenanceStatement.label">
-                <h4>label</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/ProvenanceStatement.label">https://model.ccmm.cz/research-data/ProvenanceStatement.label</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>label</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Provenance state label.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#ProvenanceStatement"><i>without assigned name</i></a>
-              
-                          [0..*]
-              
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> (<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>)
-                      <br />Definition: <i>A human-readable name for the subject.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>
-          </section>          <section id="Location">
-            <h4><i>without assigned name</i></h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://purl.org/dc/terms/Location">dcterms:Location</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://model.ccmm.cz/research-data/Location">https://model.ccmm.cz/research-data/Location</a></td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>Spatial region or named place where the data was gathered or about which the data is focused.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                
-                class profile
-                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Location">dcat-ap:Location</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  profiles
-                
-                class profile
-                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Location"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location">dcat-dap:Location</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  profiles
-                class
-                
-                <a href="http://purl.org/dc/terms/Location">Location</a> (<a href="http://purl.org/dc/terms/Location">dcterms:Location</a>)
-                  <br />Definition: <i>A spatial region or named place.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializes
-                class
-                
-                <a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">Location, Period, or Jurisdiction</a> (<a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">dcterms:LocationPeriodOrJurisdiction</a>)
-                  <br />Definition: <i>A location, period of time, or jurisdiction.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-              <tr>
-                <td>Usage note</td>
-                <td>Location is represented according to the Open Formal Standard for Spatial Data. Locations are represented as a reference to the named place, geographic region or specific geometry according to the standardized geometry object representation. 
-          Every Location instance must have at least one of the following attributes/relations: bbox, location name, geometry and/or related object identifier.</td>
-              </tr>
-            </table>
-          
-              <p><strong>Properties</strong></p>
-              <p>For this class profile the following properties are defined: <a href="#Location.bbox">bounding box</a>, <a href="#Location.hasGeometry">has geometry</a>, <a href="#Location.hasLocationRelationType">has location relation type</a>, <a href="#Location.hasRelatedObject">has related object</a>, <a href="#Location.label">label</a>.</p>
-          
-              <p><strong>Backwards associations</strong></p>
-              <ul>
-                  <li>from domain <a href="#Resource"></a> → <a href="#Dataset.hasLocation"></a></li>
-              </ul>
-          
-              <section id="Location.bbox">
-                <h4>bounding box</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.w3.org/ns/dcat#bbox">dcat:bbox</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Location.bbox">https://model.ccmm.cz/research-data/Location.bbox</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>bounding box</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Bounding box of the location geometry.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Location"><i>without assigned name</i></a>
-              
-                          [0..*]
-              
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="http://www.opengis.net/ont/sf#Envelope">http://www.opengis.net/ont/sf#Envelope</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    
-                    property profile
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location.bbox">bbox</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Location.bbox">dcat-ap:Location.bbox</a>)
-                      <br />Definition: <i>The geographic bounding box of a resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    
-                    property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_bbox"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location.boundingBox">dcat-dap:Location.boundingBox</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    property
-                    
-                    <a href="http://www.w3.org/ns/dcat#bbox">bounding box</a> (<a href="http://www.w3.org/ns/dcat#bbox">dcat:bbox</a>)
-                      <br />Definition: <i>The geographic bounding box of a spatial thing [SDW-BP].</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>Typically defined by top-left and bottom-right corners.</td>
-                  </tr>
-                </table>
-              </section>    <section id="Location.hasGeometry">
-                <h4>has geometry</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.w3.org/ns/locn#geometry">locn:geometry</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Location.hasGeometry">https://model.ccmm.cz/research-data/Location.hasGeometry</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has geometry</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>The corresponding geometry for a resource.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Location"><i>without assigned name</i></a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#Geometry"><i>without assigned name</i></a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    
-                    property profile
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location.geometry">geometry</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Location.geometry">dcat-ap:Location.geometry</a>)
-                      <br />Definition: <i>The corresponding geometry for a resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    
-                    property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_geometry"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location.geometry">dcat-dap:Location.geometry</a>)
-                      <br />Definition: <i>Associates a spatial thing [SDW-BP] with a corresponding geometry.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    property
-                    
-                    <a href="http://www.w3.org/ns/locn#geometry">geometry</a> (<a href="http://www.w3.org/ns/locn#geometry">locn:geometry</a>)
-                      <br />Definition: <i>Associates any resource with the corresponding geometry.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>The range of this property allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses).</td>
-                  </tr>
-                </table>
-              </section>    <section id="Location.hasLocationRelationType">
-                <h4>has location relation type</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Location.hasLocationRelationType">https://model.ccmm.cz/research-data/Location.hasLocationRelationType</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has location relation type</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Relation of the location to the dataset.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Location"><i>without assigned name</i></a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#LocationRelationType">Location relation type</a>
-              
-                          [1..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#hasType">has type</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>)
-                      <br />Definition: <i>Reference to the codelist value giving the specific type to the attribute.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>Use values from codelist https://vocabs.ccmm.cz/registry/codelist/LocationRelation/.</td>
-                  </tr>
-                </table>
-              </section>    <section id="Location.hasRelatedObject">
-                <h4>has related object</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Location.hasRelatedObject">https://model.ccmm.cz/research-data/Location.hasRelatedObject</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has related object</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Relation to the spatial object.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Location"><i>without assigned name</i></a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#RelatedResource">Related resource</a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="https://techlib.github.io/CCMM-V/en/#hasRelatedResource">has related resource</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>The relation is provided by the identifier of the related object. It shall be identifier of an existing spatial object in a registry, such as Place Named Authority List (http://publications.europa.eu/resource/authority/place), Register of Territorial Identification, Addresses and Real Estates or others.</td>
-                  </tr>
-                </table>
-              </section>    <section id="Location.label">
-                <h4>label</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Location.label">https://model.ccmm.cz/research-data/Location.label</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>label</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>A human-readable name for the location object.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Location"><i>without assigned name</i></a>
-              
-                          [0..*]
-              
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> (<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>)
-                      <br />Definition: <i>A human-readable name for the subject.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>
-          </section>          <section id="Geometry">
-            <h4><i>without assigned name</i></h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://model.ccmm.cz/research-data/Geometry">https://model.ccmm.cz/research-data/Geometry</a></td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                
-                class profile
-                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Geometry"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Geometry">dcat-ap:Geometry</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  profiles
-                
-                class profile
-                <a href="https://mff-uk.github.io/specifications/dcat-dap/#Geometry"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Geometry">dcat-dap:Geometry</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  profiles
-                class
-                
-                <a href="http://www.w3.org/ns/locn#Geometry">Geometry</a> (<a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p><strong>Properties</strong></p>
-              <p>For this class profile the following properties are defined: <a href="#Geometry.geographyMarkupLanguageLiteral">geography markup language literal</a>, <a href="#Geometry.label">label</a>, <a href="#Geometry.wellKnownTextLiteral">well known text literal</a>.</p>
-          
-              <p><strong>Backwards associations</strong></p>
-              <ul>
-                  <li>from domain <a href="#Location"></a> → <a href="#Location.hasGeometry"></a></li>
-              </ul>
-          
-              <section id="Geometry.geographyMarkupLanguageLiteral">
-                <h4>geography markup language literal</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.opengis.net/ont/geosparql#asGML">http://www.opengis.net/ont/geosparql#asGML</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Geometry.geographyMarkupLanguageLiteral">https://model.ccmm.cz/research-data/Geometry.geographyMarkupLanguageLiteral</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>geography markup language literal</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Representation of geometry object as GML Literal.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Geometry"><i>without assigned name</i></a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="http://www.opengis.net/ont/geosparql#gmlLiteral">http://www.opengis.net/ont/geosparql#gmlLiteral</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="http://www.opengis.net/ont/geosparql#asGML">gml</a> (<a href="http://www.opengis.net/ont/geosparql#asGML">http://www.opengis.net/ont/geosparql#asGML</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>    <section id="Geometry.label">
-                <h4>label</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Geometry.label">https://model.ccmm.cz/research-data/Geometry.label</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>label</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Label of geometry object.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Geometry"><i>without assigned name</i></a>
-              
-                          [0..*]
-              
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> (<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>)
-                      <br />Definition: <i>A human-readable name for the subject.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>    <section id="Geometry.wellKnownTextLiteral">
-                <h4>well known text literal</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.opengis.net/ont/geosparql#asWKT">http://www.opengis.net/ont/geosparql#asWKT</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Geometry.wellKnownTextLiteral">https://model.ccmm.cz/research-data/Geometry.wellKnownTextLiteral</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>well known text literal</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>Representation of geometry object as WKT Literal.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Geometry"><i>without assigned name</i></a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="http://www.opengis.net/ont/geosparql#wktLiteral">http://www.opengis.net/ont/geosparql#wktLiteral</a>
-              
-                          [0..1]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="http://www.opengis.net/ont/geosparql#asWKT">wkt</a> (<a href="http://www.opengis.net/ont/geosparql#asWKT">http://www.opengis.net/ont/geosparql#asWKT</a>)
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                </table>
-              </section>
-          </section>          <section id="AccessRights">
+          <section id="AccessRights">
             <h4>Access rights</h4>
           
             <table class="def">
@@ -5748,7 +4904,7 @@
             </table>
           
               <p><strong>Properties</strong></p>
-              <p>For this class profile the following properties are defined: <a href="#Dataset.accessRights">has access rights</a>, <a href="#Dataset.hasDescription">has description</a>, <a href="#Dataset.hasDistribution">has distribution</a>, <a href="#Dataset.hasFundingReference">has funding reference</a>, <a href="#Dataset.hasIdentifier">has identifier</a>, <a href="#Dataset.hasOtherLanguage">has other language</a>, <a href="#Dataset.hasPrimaryLanguage">has primary language</a>, <a href="#Dataset.hasProvenance">has provenance</a>, <a href="#Dataset.hasRelatedResource">has related resource</a>, <a href="#Dataset.hasSubject">has subject</a>, <a href="#Dataset.hasTimeReference">has time reference</a>, <a href="#Dataset.hasValidationResult">has validation result</a>, <a href="#Dataset.isDescribedBy">is described by</a>, <a href="#Dataset.keyword">keyword</a>, <a href="#Dataset.publicationYear">publication year</a>, <a href="#Dataset.title">title</a>, <a href="#Dataset.version">version</a>, <a href="#Dataset.wasGeneratedBy">was generated by</a>.</p>
+              <p>For this class profile the following properties are defined: <a href="#Dataset.accessRights">has access rights</a>, <a href="#Dataset.hasDescription">has description</a>, <a href="#Dataset.hasDistribution">has distribution</a>, <a href="#Dataset.hasFundingReference">has funding reference</a>, <a href="#Dataset.hasIdentifier">has identifier</a>, <a href="#Dataset.hasOtherLanguage">has other language</a>, <a href="#Dataset.hasPrimaryLanguage">has primary language</a>, <a href="#Dataset.hasRelatedResource">has related resource</a>, <a href="#Dataset.hasSubject">has subject</a>, <a href="#Dataset.hasTimeReference">has time reference</a>, <a href="#Dataset.hasValidationResult">has validation result</a>, <a href="#Dataset.isDescribedBy">is described by</a>, <a href="#Dataset.keyword">keyword</a>, <a href="#Dataset.publicationYear">publication year</a>, <a href="#Dataset.title">title</a>, <a href="#Dataset.version">version</a>, <a href="#Dataset.wasGeneratedBy">was generated by</a>.</p>
           
               <p><strong>Backwards associations</strong></p>
               <ul>
@@ -5970,7 +5126,7 @@
                                       profiles
                     
                     property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.distribution">dcat-dap:Dataset.distribution</a>)
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution">distribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.distribution">dcat-dap:Dataset.distribution</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
@@ -6291,78 +5447,6 @@
                     <td>Usage note</td>
                     <td>This property can be repeated if there are multiple languages in the Dataset.</td>
                   </tr>
-                </table>
-              </section>    <section id="Dataset.hasProvenance">
-                <h4>has provenance</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://purl.org/dc/terms/provenance">dcterms:provenance</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/Dataset.hasProvenance">https://model.ccmm.cz/research-data/Dataset.hasProvenance</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>has provenance</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>A statement about the lineage of a Dataset.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Dataset">Dataset</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#ProvenanceStatement"><i>without assigned name</i></a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    
-                    property profile
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.provenance">provenance</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.provenance">dcat-ap:Dataset.provenance</a>)
-                      <br />Definition: <i>A statement about the lineage of a Dataset.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                          <li>
-                                      profiles
-                    property
-                    
-                    <a href="http://purl.org/dc/terms/provenance">Provenance</a> (<a href="http://purl.org/dc/terms/provenance">dcterms:provenance</a>)
-                      <br />Definition: <i>A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                          </li>
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
                 </table>
               </section>    <section id="Dataset.hasRelatedResource">
                 <h4>has related resource</h4>
@@ -6980,13 +6064,13 @@
                                         profiles
                     
                     property profile
-                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.version"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.version">dcat-ap:Dataset.version</a>)
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.version">version</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Dataset.version">dcat-ap:Dataset.version</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
                     
                     property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version">dcat-dap:CatalogedResource.version</a>)
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">version</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version">dcat-dap:CatalogedResource.version</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
@@ -8573,7 +7657,7 @@
                                       profiles
                     
                     property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.byteSize">dcat-dap:Distribution.byteSize</a>)
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size">byte size</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.byteSize">dcat-dap:Distribution.byteSize</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
@@ -8654,7 +7738,7 @@
                                       profiles
                     
                     property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.downloadUrl">dcat-dap:Distribution.downloadUrl</a>)
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url">download URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.downloadUrl">dcat-dap:Distribution.downloadUrl</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
@@ -8824,7 +7908,7 @@
                                       profiles
                     
                     property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_compression_format"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.compressionFormat">dcat-dap:Distribution.compressionFormat</a>)
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_compression_format">compression format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.compressionFormat">dcat-dap:Distribution.compressionFormat</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
@@ -9003,7 +8087,7 @@
                                       profiles
                     
                     property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.mediaType">dcat-dap:Distribution.mediaType</a>)
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type">media type</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.mediaType">dcat-dap:Distribution.mediaType</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
@@ -9097,7 +8181,7 @@
                                       profiles
                     
                     property profile
-                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_packaging_format"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.packagingFormat">dcat-dap:Distribution.packagingFormat</a>)
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_packaging_format">packaging format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.packagingFormat">dcat-dap:Distribution.packagingFormat</a>)
                       <ul style="list-style-type: disclosure-closed;">
                           <li>
                                       profiles
@@ -9845,6 +8929,261 @@
                   </tr>
                 </table>
               </section>
+          </section>          <section id="Geometry">
+            <h4>Geometry</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/Geometry">https://model.ccmm.cz/research-data/Geometry</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Geometry</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                
+                class profile
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Geometry"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Geometry">dcat-ap:Geometry</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                
+                class profile
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#Geometry"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Geometry">dcat-dap:Geometry</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/locn#Geometry">Geometry</a> (<a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#Geometry.geographyMarkupLanguageLiteral">geography markup language literal</a>, <a href="#Geometry.label">label</a>, <a href="#Geometry.wellKnownTextLiteral">well known text literal</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
+              <ul>
+                  <li>from domain <a href="#Location"></a> → <a href="#Location.hasGeometry"></a></li>
+              </ul>
+          
+              <section id="Geometry.geographyMarkupLanguageLiteral">
+                <h4>geography markup language literal</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.opengis.net/ont/geosparql#asGML">http://www.opengis.net/ont/geosparql#asGML</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Geometry.geographyMarkupLanguageLiteral">https://model.ccmm.cz/research-data/Geometry.geographyMarkupLanguageLiteral</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>geography markup language literal</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Representation of geometry object as GML Literal.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Geometry">Geometry</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="http://www.opengis.net/ont/geosparql#gmlLiteral">http://www.opengis.net/ont/geosparql#gmlLiteral</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="http://www.opengis.net/ont/geosparql#asGML">gml</a> (<a href="http://www.opengis.net/ont/geosparql#asGML">http://www.opengis.net/ont/geosparql#asGML</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="Geometry.label">
+                <h4>label</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Geometry.label">https://model.ccmm.cz/research-data/Geometry.label</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>label</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Label of geometry object.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Geometry">Geometry</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> (<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>)
+                      <br />Definition: <i>A human-readable name for the subject.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="Geometry.wellKnownTextLiteral">
+                <h4>well known text literal</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.opengis.net/ont/geosparql#asWKT">http://www.opengis.net/ont/geosparql#asWKT</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Geometry.wellKnownTextLiteral">https://model.ccmm.cz/research-data/Geometry.wellKnownTextLiteral</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>well known text literal</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Representation of geometry object as WKT Literal.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Geometry">Geometry</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="http://www.opengis.net/ont/geosparql#wktLiteral">http://www.opengis.net/ont/geosparql#wktLiteral</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="http://www.opengis.net/ont/geosparql#asWKT">wkt</a> (<a href="http://www.opengis.net/ont/geosparql#asWKT">http://www.opengis.net/ont/geosparql#asWKT</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>
           </section>          <section id="Identifier">
             <h4>Identifier</h4>
           
@@ -10498,6 +9837,458 @@
                       <a href="#LicenseDocument">License document</a>
               
                       
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="http://www.w3.org/2000/01/rdf-schema#label">label</a> (<a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>)
+                      <br />Definition: <i>A human-readable name for the subject.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>
+          </section>          <section id="Location">
+            <h4>Location</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://purl.org/dc/terms/Location">dcterms:Location</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/Location">https://model.ccmm.cz/research-data/Location</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Location</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>Spatial region or named place where the data was gathered or about which the data is focused.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                
+                class profile
+                <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Location">dcat-ap:Location</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                
+                class profile
+                <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Location"><i>without assigned name</i></a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location">dcat-dap:Location</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://purl.org/dc/terms/Location">Location</a> (<a href="http://purl.org/dc/terms/Location">dcterms:Location</a>)
+                  <br />Definition: <i>A spatial region or named place.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">Location, Period, or Jurisdiction</a> (<a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">dcterms:LocationPeriodOrJurisdiction</a>)
+                  <br />Definition: <i>A location, period of time, or jurisdiction.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Usage note</td>
+                <td>Location is represented according to the Open Formal Standard for Spatial Data. Locations are represented as a reference to the named place, geographic region or specific geometry according to the standardized geometry object representation. 
+          Every Location instance must have at least one of the following attributes/relations: bbox, location name, geometry and/or related object identifier.</td>
+              </tr>
+            </table>
+          
+              <p><strong>Properties</strong></p>
+              <p>For this class profile the following properties are defined: <a href="#Location.bbox">bounding box</a>, <a href="#Location.hasGeometry">has geometry</a>, <a href="#Location.hasLocationRelationType">has location relation type</a>, <a href="#Location.hasRelatedObject">has related object</a>, <a href="#Location.label">label</a>.</p>
+          
+              <p><strong>Backwards associations</strong></p>
+              <ul>
+                  <li>from domain <a href="#Resource"></a> → <a href="#Dataset.hasLocation"></a></li>
+              </ul>
+          
+              <section id="Location.bbox">
+                <h4>bounding box</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/dcat#bbox">dcat:bbox</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Location.bbox">https://model.ccmm.cz/research-data/Location.bbox</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>bounding box</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Bounding box of the location geometry.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Location">Location</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="http://www.opengis.net/ont/sf#Envelope">http://www.opengis.net/ont/sf#Envelope</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    
+                    property profile
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location.bbox">bbox</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Location.bbox">dcat-ap:Location.bbox</a>)
+                      <br />Definition: <i>The geographic bounding box of a resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    
+                    property profile
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_bbox">bounding box</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location.boundingBox">dcat-dap:Location.boundingBox</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    property
+                    
+                    <a href="http://www.w3.org/ns/dcat#bbox">bounding box</a> (<a href="http://www.w3.org/ns/dcat#bbox">dcat:bbox</a>)
+                      <br />Definition: <i>The geographic bounding box of a spatial thing [SDW-BP].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>Typically defined by top-left and bottom-right corners.</td>
+                  </tr>
+                </table>
+              </section>    <section id="Location.hasGeometry">
+                <h4>has geometry</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/locn#geometry">locn:geometry</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Location.hasGeometry">https://model.ccmm.cz/research-data/Location.hasGeometry</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>has geometry</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>The corresponding geometry for a resource.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Location">Location</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#Geometry">Geometry</a>
+              
+                          [0..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    
+                    property profile
+                    <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location.geometry">geometry</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap#Location.geometry">dcat-ap:Location.geometry</a>)
+                      <br />Definition: <i>The corresponding geometry for a resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    
+                    property profile
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_geometry">geometry</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location.geometry">dcat-dap:Location.geometry</a>)
+                      <br />Definition: <i>Associates a spatial thing [SDW-BP] with a corresponding geometry.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    property
+                    
+                    <a href="http://www.w3.org/ns/locn#geometry">geometry</a> (<a href="http://www.w3.org/ns/locn#geometry">locn:geometry</a>)
+                      <br />Definition: <i>Associates any resource with the corresponding geometry.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>The range of this property allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses).</td>
+                  </tr>
+                </table>
+              </section>    <section id="Location.hasLocationRelationType">
+                <h4>has location relation type</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Location.hasLocationRelationType">https://model.ccmm.cz/research-data/Location.hasLocationRelationType</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>has location relation type</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Relation of the location to the dataset.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Location">Location</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#LocationRelationType">Location relation type</a>
+              
+                          [1..1]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#hasType">has type</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasType">https://model.ccmm.cz/vocabulary/ccmm#hasType</a>)
+                      <br />Definition: <i>Reference to the codelist value giving the specific type to the attribute.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>Use values from codelist https://vocabs.ccmm.cz/registry/codelist/LocationRelation/.</td>
+                  </tr>
+                </table>
+              </section>    <section id="Location.hasRelatedObject">
+                <h4>has related object</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Location.hasRelatedObject">https://model.ccmm.cz/research-data/Location.hasRelatedObject</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>has related object</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>Relation to the spatial object.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Location">Location</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#RelatedResource">Related resource</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#hasRelatedResource">has related resource</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>The relation is provided by the identifier of the related object. It shall be identifier of an existing spatial object in a registry, such as Place Named Authority List (http://publications.europa.eu/resource/authority/place), Register of Territorial Identification, Addresses and Real Estates or others.</td>
+                  </tr>
+                </table>
+              </section>    <section id="Location.label">
+                <h4>label</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/Location.label">https://model.ccmm.cz/research-data/Location.label</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>label</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>A human-readable name for the location object.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Location">Location</a>
+              
+                          [0..*]
+              
                     </td>
                   </tr>
                   <tr>
@@ -12937,7 +12728,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Location"><i>without assigned name</i></a>
+                      <a href="#Location">Location</a>
               
                           [0..*]
               
@@ -27038,12 +26829,12 @@
 
     <h2>Root</h2>
     The root of the JSON schema is
-        <a href="#json-object--location--"></a>
+        <a href="#json-object--location--location"></a>
 
 
-    <section id="json-object--location--">
+    <section id="json-object--location--location">
       <h2>
-        Object <i></i>
+        Object <i>Location</i>
       </h2>
 
       <table class="def">
@@ -27054,7 +26845,7 @@
 
           <tr>
             <th>Interpretation</th>
-            <td><a href="#Location"></a></td>
+            <td><a href="#Location">Location</a></td>
           </tr>
       </table>
 
@@ -27258,7 +27049,7 @@
           optional
           item of type
 
-              <a href="#json-object--location--"></a>
+              <a href="#json-object--location--geometry"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -32249,9 +32040,9 @@
   
 
     </section>
-    <section id="json-object--location--">
+    <section id="json-object--location--geometry">
       <h2>
-        Object <i></i>
+        Object <i>Geometry</i>
       </h2>
 
       <table class="def">
@@ -32262,7 +32053,7 @@
 
           <tr>
             <th>Interpretation</th>
-            <td><a href="#Geometry"></a></td>
+            <td><a href="#Geometry">Geometry</a></td>
           </tr>
       </table>
 
@@ -32518,7 +32309,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#Location"></a>
+        <a href="#Location">Location</a>
         (Spatial region or named place where the data was gathered or about which the data is focused.)
       </dd>
 
@@ -32797,7 +32588,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#Geometry"></a>
+        <a href="#Geometry">Geometry</a>
         (The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.)
       </dd>
 
@@ -39441,427 +39232,6 @@
       <dt>Content</dt>
       <dd>
           The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-
-</section>
-      </section>
-      <section id="structure-Provenance-Statement">
-      <h2>
-        Data structure specification for
-        Provenance Statement
-      </h2>
-      <p>Data structure for Provenance Statement. Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</p>
-
-      <section id="json-schema--provenance-statement">
-
-
-
-
-
-
-
-
-
-
-
-
-  <h1>
-
-      JSON structure for
-    Provenance Statement
-  </h1>
-
-    <dl>
-      <dt>IRI</dt>
-      <dd><code>https://model.ccmm.cz/research-data/provenance-statement/schema.json</code></dd>
-      <dt>Defined in</dt>
-      <dd><code><a href="../provenance-statement/schema.json">../provenance-statement/schema.json</a></code></dd>
-        <dt>Language version used</dt>
-        <dd><a href="https://json-schema.org/specification-links.html#2020-12-release" target="_blank">2020-12</a> (metaschema IRI: <code>https://json-schema.org/draft/2020-12/schema</code>)</dd>
-    </dl>
-
-    <h2>Root</h2>
-    The root of the JSON schema is
-        <a href="#json-object--provenance-statement--"></a>
-
-
-    <section id="json-object--provenance-statement--">
-      <h2>
-        Object <i></i>
-      </h2>
-
-      <table class="def">
-          <tr>
-            <th>Description</th>
-            <td>Information about entities, activities, and people involved in producing a piece of data or thing.</td>
-          </tr>
-
-          <tr>
-            <th>Interpretation</th>
-            <td><a href="#ProvenanceStatement"></a></td>
-          </tr>
-      </table>
-
-          <strong>
-    object
-  </strong>
-    with properties (<code>properties</code>):
-    <ul>
-        <li style="list-style-type: disclosure-closed;">
-          <code>id</code>:
-          optional
-          item of type
-
-                
-  
-  
-    string
-  (format: <code>iri</code>)
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
-          <code>type</code>:
-          optional
-          item of type
-
-                
-  
-  
-  
-  
-  
-  
-  
-        exactly one of the following (<code>oneOf</code>):
-    <ul>
-        <li>      
-    constant value
-    <code>&quot;provenance_statement&quot;</code>
-
-  
-  
-  
-  
-  
-  
-  
-
-</li>
-        <li>      
-  
-  
-    array of values <code>{0..*}</code> of type       
-  
-  
-    string
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-     and must contain: <code>&quot;provenance_statement&quot;</code>
-
-  
-  
-  
-  
-  
-  
-
-</li>
-    </ul>
-
-
-
-
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
-          <code>label</code>:
-            (<a href="#ProvenanceStatement.label" label="Provenance state label.">label</a>)
-          optional
-          item of type
-
-                
-  
-  
-    array of values <code>{0..*}</code> of type         <strong>
-    object
-  </strong>
-    with properties (<code>properties</code>):
-    <ul>
-        <li style="list-style-type: disclosure-closed;">
-          <code>@value</code>:
-          required
-          item of type
-
-                
-  
-  
-    string
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
-          <code>@language</code>:
-          required
-          item of type
-
-                
-  
-  
-    string
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-    </ul>
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-          
-
-  
-  
-  
-  
-  
-  
-
-
-        </li>
-    </ul>
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-    </section>
-</section>
-
-
-
-
-
-
-<section>
-<h3>Overview of XML Structure</h3>
-<p>
-  This section describes the XSD capturing the structure for <i>Provenance Statement</i>, which is defined in the file <a href="../provenance-statement/schema.xsd"><code>../provenance-statement/schema.xsd</code></a>.
-</p>
-
-    <dl>
-      <dt>Defined in namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferred prefix: <code>ccmm</code>)</dd>
-    </dl>
-
-<section>
-<h4>Imports</h4>
-<p>
-  List of schemas that are imported and used by this schema.
-</p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Schema Location</th>
-        <th>Documentation</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>xml</code></td>
-            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
-          <td></td>
-        </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h4>Root Entities of the XSD Schema</h4>
-  <ul>
-      <li>element <a href="#element-ccmm:provenance_statement"><code>provenance_statement</code></a></li>
-
-      <li> complex type <a href="#type-ccmm:provenance_statement"><code>provenance_statement</code></a></li>
-  </ul>
-</section>
-
-
-<section id="element-ccmm:provenance_statement">
-  <h4>Root element <code>&lt;provenance_statement&gt;</code></h4>
-  <dl>
-    
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:provenance_statement"><code>ccmm:provenance_statement</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-      </dl>
-</section>
-
-
-<section id="type-ccmm:provenance_statement">
-  <h4>Root complex type <code>provenance_statement</code></h4>
-  <dl>
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#ProvenanceStatement"></a>
-        (Information about entities, activities, and people involved in producing a piece of data or thing.)
-      </dd>
-
-
-        <dt>Content 
- - elements in this order
-</dt>
-      <ul style="margin-top: 0;">
-      <li>
-          element <a href="#element-ccmm:provenance_statement-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:provenance_statement-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
-      </li>
-  </ul>
-
-
-  </dl>
-</section>
-<section id="element-ccmm:provenance_statement-ccmm:iri">
-  <h4>Element <code>&lt;iri&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..1</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:provenance_statement"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:provenance_statement-ccmm:label">
-  <h4>Element <code>&lt;label&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#ProvenanceStatement.label"><strong>label</strong></a>
-          (Provenance state label.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:provenance_statement"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href=""><code></code></a>.
       </dd>
 
 
@@ -52721,7 +52091,7 @@
                 
   
   
-    array of values <code>{0..*}</code> of type     <a href="#json-object--dataset--"></a>
+    array of values <code>{0..*}</code> of type     <a href="#json-object--dataset--location"></a>
 
           
 
@@ -52842,28 +52212,6 @@
 
         </li>
         <li style="list-style-type: disclosure-closed;">
-          <code>provenance</code>:
-            (<a href="#Dataset.hasProvenance" label="A statement about the lineage of a Dataset.">has provenance</a>)
-          optional
-          item of type
-
-                
-  
-  
-    array of values <code>{0..*}</code> of type     <a href="#json-object--dataset--"></a>
-
-          
-
-  
-  
-  
-  
-  
-  
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
           <code>generated_by</code>:
             (<a href="#Dataset.wasGeneratedBy" label=" An activity that generated, or provides the business context for, the creation of the dataset. ">was generated by</a>)
           optional
@@ -52925,125 +52273,6 @@
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
             (<a href="#ProvenanceActivity.label" label="A human-readable name for the activity.">label</a>)
-          optional
-          item of type
-
-                
-  
-  
-    array of values <code>{0..*}</code> of type         <strong>
-    object
-  </strong>
-    with properties (<code>properties</code>):
-    <ul>
-        <li style="list-style-type: disclosure-closed;">
-          <code>@value</code>:
-          required
-          item of type
-
-                
-  
-  
-    string
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
-          <code>@language</code>:
-          required
-          item of type
-
-                
-  
-  
-    string
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-    </ul>
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-          
-
-  
-  
-  
-  
-  
-  
-
-
-        </li>
-    </ul>
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-    </section>
-    <section id="json-object--dataset--">
-      <h2>
-        Object <i></i>
-      </h2>
-
-      <table class="def">
-          <tr>
-            <th>Description</th>
-            <td>Information about entities, activities, and people involved in producing a piece of data or thing.</td>
-          </tr>
-
-          <tr>
-            <th>Interpretation</th>
-            <td><a href="#ProvenanceStatement"></a></td>
-          </tr>
-      </table>
-
-          <strong>
-    object
-  </strong>
-    with properties (<code>properties</code>):
-    <ul>
-        <li style="list-style-type: disclosure-closed;">
-          <code>label</code>:
-            (<a href="#ProvenanceStatement.label" label="Provenance state label.">label</a>)
           optional
           item of type
 
@@ -68602,9 +67831,9 @@
   
 
     </section>
-    <section id="json-object--dataset--">
+    <section id="json-object--dataset--location">
       <h2>
-        Object <i></i>
+        Object <i>Location</i>
       </h2>
 
       <table class="def">
@@ -68615,7 +67844,7 @@
 
           <tr>
             <th>Interpretation</th>
-            <td><a href="#Location"></a></td>
+            <td><a href="#Location">Location</a></td>
           </tr>
       </table>
 
@@ -68734,7 +67963,7 @@
           optional
           item of type
 
-              <a href="#json-object--dataset--"></a>
+              <a href="#json-object--dataset--geometry"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -73725,9 +72954,9 @@
   
 
     </section>
-    <section id="json-object--dataset--">
+    <section id="json-object--dataset--geometry">
       <h2>
-        Object <i></i>
+        Object <i>Geometry</i>
       </h2>
 
       <table class="def">
@@ -73738,7 +72967,7 @@
 
           <tr>
             <th>Interpretation</th>
-            <td><a href="#Geometry"></a></td>
+            <td><a href="#Geometry">Geometry</a></td>
           </tr>
       </table>
 
@@ -86640,12 +85869,6 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
-          <td><a href="../provenance-statement/schema.xsd">../provenance-statement/schema.xsd</a></td>
-          <td><a href=""></a></td>
-        </tr>
-        <tr>
-            <td><code>ccmm</code></td>
-            <td><a href="https://schema.ccmm.cz/research-data/1.2">https://schema.ccmm.cz/research-data/1.2</a></td>
           <td><a href="../provenance-activity/schema.xsd">../provenance-activity/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
@@ -86763,9 +85986,6 @@
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:validation_result"><code>&lt;validation_result&gt;</code></a> [0..*]
-      </li>
-      <li>
-          element <a href="#element-ccmm:dataset-ccmm:provenance"><code>&lt;provenance&gt;</code></a> [0..*]
       </li>
       <li>
           element <a href="#element-ccmm:dataset-ccmm:generated_by"><code>&lt;generated_by&gt;</code></a> [0..*]
@@ -87554,7 +86774,7 @@
 
         <dt>Meaning</dt>
       <dd>
-        <a href="#Location"></a>
+        <a href="#Location">Location</a>
         (Spatial region or named place where the data was gathered or about which the data is focused.)
       </dd>
 
@@ -87735,52 +86955,6 @@
       <dd>
         <a href="#ValidationResult">Validation result</a>
         (Class describing the result of validation testing. It may include validation of metadata, data and/or web services accessing the data.)
-      </dd>
-
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:dataset-ccmm:provenance">
-  <h4>Element <code>&lt;provenance&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#Dataset.hasProvenance"><strong>has provenance</strong></a>
-          (A statement about the lineage of a Dataset.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:dataset"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="#type-ccmm:provenance_statement"><code>ccmm:provenance_statement</code></a>.
-      </dd>
-
-
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#ProvenanceStatement"></a>
-        (Information about entities, activities, and people involved in producing a piece of data or thing.)
       </dd>
 
 
@@ -88481,12 +87655,12 @@
 
     <h2>Root</h2>
     The root of the JSON schema is
-        <a href="#json-object--geometry--"></a>
+        <a href="#json-object--geometry--geometry"></a>
 
 
-    <section id="json-object--geometry--">
+    <section id="json-object--geometry--geometry">
       <h2>
-        Object <i></i>
+        Object <i>Geometry</i>
       </h2>
 
       <table class="def">
@@ -88497,7 +87671,7 @@
 
           <tr>
             <th>Interpretation</th>
-            <td><a href="#Geometry"></a></td>
+            <td><a href="#Geometry">Geometry</a></td>
           </tr>
       </table>
 
@@ -88820,7 +87994,7 @@
   <dl>
         <dt>Meaning</dt>
       <dd>
-        <a href="#Geometry"></a>
+        <a href="#Geometry">Geometry</a>
         (The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.)
       </dd>
 
@@ -128198,13 +127372,13 @@
         <tbody>
             <tr><td><code>dcterms</code></td><td><a href="http://purl.org/dc/terms/"><code>http://purl.org/dc/terms/</code></a></td></tr>
             <tr><td><code>dcat-ap</code></td><td><a href="https://mff-uk.github.io/specifications/dcat-ap#"><code>https://mff-uk.github.io/specifications/dcat-ap#</code></a></td></tr>
+            <tr><td><code>dcat-dap</code></td><td><a href="https://mff-uk.github.io/specifications/dcat-dap#"><code>https://mff-uk.github.io/specifications/dcat-dap#</code></a></td></tr>
             <tr><td><code>rdfs</code></td><td><a href="http://www.w3.org/2000/01/rdf-schema#"><code>http://www.w3.org/2000/01/rdf-schema#</code></a></td></tr>
             <tr><td><code>rdf</code></td><td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></a></td></tr>
-            <tr><td><code>dcat-dap</code></td><td><a href="https://mff-uk.github.io/specifications/dcat-dap#"><code>https://mff-uk.github.io/specifications/dcat-dap#</code></a></td></tr>
-            <tr><td><code>dcat</code></td><td><a href="http://www.w3.org/ns/dcat#"><code>http://www.w3.org/ns/dcat#</code></a></td></tr>
             <tr><td><code>locn</code></td><td><a href="http://www.w3.org/ns/locn#"><code>http://www.w3.org/ns/locn#</code></a></td></tr>
             <tr><td><code>xsd</code></td><td><a href="http://www.w3.org/2001/XMLSchema#"><code>http://www.w3.org/2001/XMLSchema#</code></a></td></tr>
             <tr><td><code>foaf</code></td><td><a href="http://xmlns.com/foaf/0.1/"><code>http://xmlns.com/foaf/0.1/</code></a></td></tr>
+            <tr><td><code>dcat</code></td><td><a href="http://www.w3.org/ns/dcat#"><code>http://www.w3.org/ns/dcat#</code></a></td></tr>
             <tr><td><code>adms</code></td><td><a href="http://www.w3.org/ns/adms#"><code>http://www.w3.org/ns/adms#</code></a></td></tr>
             <tr><td><code>skos</code></td><td><a href="http://www.w3.org/2004/02/skos/core#"><code>http://www.w3.org/2004/02/skos/core#</code></a></td></tr>
             <tr><td><code>spdx</code></td><td><a href="http://spdx.org/rdf/terms#"><code>http://spdx.org/rdf/terms#</code></a></td></tr>
@@ -128273,10 +127447,6 @@
             <tr>
               <td>Description of structure model</td>
               <td><a href="../address/structure.ttl">../address/structure.ttl</a></td>
-            </tr>
-            <tr>
-              <td>Description of structure model</td>
-              <td><a href="../provenance-statement/structure.ttl">../provenance-statement/structure.ttl</a></td>
             </tr>
             <tr>
               <td>Description of structure model</td>
@@ -128482,12 +127652,6 @@
             <tr><td>XML schema</td><td><a href="../address/schema.xsd">../address/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../address/lifting.xslt">../address/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../address/lowering.xslt">../address/lowering.xslt</a></td></tr>
-            <tr><td>JSON schema</td><td><a href="../provenance-statement/schema.json">../provenance-statement/schema.json</a></td></tr>
-            <tr><td>JSON example</td><td><a href="../provenance-statement/example.json">../provenance-statement/example.json</a></td></tr>
-            <tr><td>JSON-LD context</td><td><a href="../provenance-statement/context.jsonld">../provenance-statement/context.jsonld</a></td></tr>
-            <tr><td>XML schema</td><td><a href="../provenance-statement/schema.xsd">../provenance-statement/schema.xsd</a></td></tr>
-            <tr><td>XSLT lifting</td><td><a href="../provenance-statement/lifting.xslt">../provenance-statement/lifting.xslt</a></td></tr>
-            <tr><td>XSLT lowering</td><td><a href="../provenance-statement/lowering.xslt">../provenance-statement/lowering.xslt</a></td></tr>
             <tr><td>JSON schema</td><td><a href="../subject/schema.json">../subject/schema.json</a></td></tr>
             <tr><td>JSON example</td><td><a href="../subject/example.json">../subject/example.json</a></td></tr>
             <tr><td>JSON-LD context</td><td><a href="../subject/context.jsonld">../subject/context.jsonld</a></td></tr>

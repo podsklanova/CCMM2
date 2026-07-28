@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://model.ccmm.cz/research-data/geometry/schema.json",
+  "title": "Geometry",
   "description": "The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.",
   "type": "object",
   "properties": {

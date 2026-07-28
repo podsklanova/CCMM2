@@ -83,7 +83,7 @@
           <xsl:value-of select="."/>
         </ns0:title>
       </xsl:for-each>
-      <xsl:for-each select="ccmm:access_url">
+      <xsl:for-each select="@access_url">
         <ns1:accessURL>
           <xsl:attribute name="rdf:resource">
             <xsl:value-of select="."/>

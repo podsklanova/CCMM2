@@ -16,7 +16,6 @@
   <xsl:import href="../distribution-data-service/lifting.xslt"/>
   <xsl:import href="../distribution-downloadable-file/lifting.xslt"/>
   <xsl:import href="../validation-result/lifting.xslt"/>
-  <xsl:import href="../provenance-statement/lifting.xslt"/>
   <xsl:import href="../provenance-activity/lifting.xslt"/>
   <xsl:import href="../file/lifting.xslt"/>
   <xsl:import href="../application-profile/lifting.xslt"/>
@@ -193,7 +192,7 @@
         </ns6:subject>
       </xsl:for-each>
       <xsl:for-each select="ccmm:keyword">
-        <ns2:keyword> <!--> -->
+        <ns2:keyword rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns2:keyword>
@@ -249,11 +248,6 @@
         <ns0:hasValidationResult>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742288707998-704b-3f0e-8e1a"/>
         </ns0:hasValidationResult>
-      </xsl:for-each>
-      <xsl:for-each select="ccmm:provenance">
-        <ns3:provenance>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742288763165-c843-1e73-9f91"/>
-        </ns3:provenance>
       </xsl:for-each>
       <xsl:for-each select="ccmm:generated_by">
         <ns4:wasGeneratedBy>

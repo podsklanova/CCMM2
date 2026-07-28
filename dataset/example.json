@@ -1192,7 +1192,7 @@
         "@container": "@set",
         "@context": {
           "description_text": {
-            "@id": "https://w3id.org/tib/datacite/property/description",
+            "@id": "http://purl.org/dc/terms/description",
             "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
           },
           "description_type": {
@@ -3218,20 +3218,6 @@
           },
           "validation_result": {
             "@id": "https://model.ccmm.cz/vocabulary/ccmm#ValidationResult",
-            "@context": {}
-          }
-        }
-      },
-      "provenance": {
-        "@id": "http://purl.org/dc/terms/provenance",
-        "@container": "@set",
-        "@context": {
-          "label": {
-            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
-            "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-          },
-          "provenance_statement": {
-            "@id": "http://purl.org/dc/terms/ProvenanceStatement",
             "@context": {}
           }
         }
