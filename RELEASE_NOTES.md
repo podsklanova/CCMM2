@@ -11,7 +11,7 @@ CHANGELOG
 * new language properties for primary/other language
 * namespaces changed to version 1.2
 * repository has mandatory attribution with publisher role
-* added provenance activity to descrtibe origin of dataset
+* added provenance activity to describe origin of dataset, removed provenance statement
 * datacite was reprofiled to official datacite linked data representation
 * added JSON schema, JSON-LD contexts and JSON examples
 
