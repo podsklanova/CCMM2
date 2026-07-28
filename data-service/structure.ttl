@@ -31,6 +31,7 @@
     kv:dataPsmIsReverse "false";
     kv:dataPsmPart "\"https://model.ccmm.cz/research-data/data-service/classReference-1765914061061-c3be-abe1-9f4f\"";
     kv:dataPsmTechnicalLabel "\"endpoint_url\"";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"isAttribute\":false}}";
     kv:iri "\"https://model.ccmm.cz/research-data/data-service/associationEnd-1742341140996-d8dd-3a23-9aec\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
 :attribute-1744293163653-c2b3-5baa-b5b6 a dsvs:structure-entity;

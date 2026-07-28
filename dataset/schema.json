@@ -3260,7 +3260,7 @@
         "properties": {
           "description_text": {
             "title": "description text",
-            "description": "Text describing the resource.",
+            "description": "A free-text account of the Dataset.",
             "type": "object",
             "required": [
               "@value",
@@ -3315,6 +3315,7 @@
       "description": "The geographical area covered by the dataset.",
       "type": "array",
       "items": {
+        "title": "Location",
         "description": "Spatial region or named place where the data was gathered or about which the data is focused.",
         "type": "object",
         "required": [
@@ -8510,40 +8511,6 @@
           "label": {
             "title": "label",
             "description": "Label of the validation result.",
-            "type": "array",
-            "items": {
-              "title": "Language tagged string",
-              "type": "object",
-              "required": [
-                "@value",
-                "@language"
-              ],
-              "properties": {
-                "@value": {
-                  "title": "Text v daném jazyce",
-                  "type": "string"
-                },
-                "@language": {
-                  "title": "Jazyk textu",
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "provenance": {
-      "title": "has provenance",
-      "description": "A statement about the lineage of a Dataset.",
-      "type": "array",
-      "items": {
-        "description": "Information about entities, activities, and people involved in producing a piece of data or thing.",
-        "type": "object",
-        "properties": {
-          "label": {
-            "title": "label",
-            "description": "Provenance state label.",
             "type": "array",
             "items": {
               "title": "Language tagged string",

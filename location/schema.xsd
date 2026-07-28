@@ -8,7 +8,7 @@
   <xs:complexType name="location" sawsdl:modelReference="http://purl.org/dc/terms/Location">
     <xs:annotation>
       <xs:documentation xml:lang="en">
-        Spatial region or named place where the data was gathered or about which the data is focused.
+        Location - Spatial region or named place where the data was gathered or about which the data is focused.
         Location is represented according to the Open Formal Standard for Spatial Data. Locations are represented as a reference to the named place, geographic region or specific geometry according to the standardized geometry object representation. 
         Every Location instance must have at least one of the following attributes/relations: bbox, location name, geometry and/or related object identifier.
       </xs:documentation>

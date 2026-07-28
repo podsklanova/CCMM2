@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://model.ccmm.cz/research-data/location/schema.json",
+  "title": "Location",
   "description": "Spatial region or named place where the data was gathered or about which the data is focused.",
   "type": "object",
   "required": [

@@ -61,6 +61,13 @@
     <xsl:variable name="id_test">
       <xsl:value-of select="c:id-key($id/*)"/>
     </xsl:variable>
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/dcat#accessURL&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+      <xsl:for-each select="current-group()[1]">
+        <xsl:attribute name="access_url">
+          <xsl:apply-templates select="sp:binding[@name=$obj]/sp:uri"/>
+        </xsl:attribute>
+      </xsl:for-each>
+    </xsl:for-each-group>
     <xsl:if test="not($no_iri)">
       <xsl:for-each select="$id/sp:uri">
         <ccmm:iri>
@@ -73,13 +80,6 @@
         <ccmm:title>
           <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
         </ccmm:title>
-      </xsl:for-each>
-    </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/dcat#accessURL&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
-      <xsl:for-each select="current-group()[1]">
-        <ccmm:access_url>
-          <xsl:apply-templates select="sp:binding[@name=$obj]/sp:uri"/>
-        </ccmm:access_url>
       </xsl:for-each>
     </xsl:for-each-group>
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://www.w3.org/ns/dcat#accessService&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">

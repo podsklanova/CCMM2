@@ -5,7 +5,7 @@
   <xs:complexType name="geometry" sawsdl:modelReference="http://www.w3.org/ns/locn#Geometry">
     <xs:annotation>
       <xs:documentation xml:lang="en">
-        The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.
+        Geometry - The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.
       </xs:documentation>
     </xs:annotation>
     <xs:sequence>
