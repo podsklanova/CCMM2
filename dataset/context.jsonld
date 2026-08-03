@@ -3229,12 +3229,12 @@
           "@id": "http://www.w3.org/2000/01/rdf-schema#label",
           "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
         },
-        "has_ro-crate_json_representation": {
+        "ro-crate_json_representation": {
           "@id": "https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation",
           "@type": "@id",
           "@container": "@set"
         },
-        "has_iso_5181_json_representation": {
+        "iso_5181_json_representation": {
           "@id": "https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation",
           "@type": "@id",
           "@container": "@set"
