@@ -47,6 +47,24 @@
           }
         }
       }
+    },
+    "ro-crate_json_representation": {
+      "title": "has RO-Crate JSON representation",
+      "description": "Link to the JSON-LD representation of provenance activity according to the RO-Crate specification.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "iri"
+      }
+    },
+    "iso_5181_json_representation": {
+      "title": "has iso 5181 json representation",
+      "description": "Link to the JSON representation of provenance activity according to the ISO/IEC 5181 standard.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "iri"
+      }
     }
   }
 }

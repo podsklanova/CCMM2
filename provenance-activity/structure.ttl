@@ -5,7 +5,7 @@
 <https://model.ccmm.cz/research-data/provenance-activity/> a dsvs:structure-entity;
     kv:dataPsmHumanDescription "{\"en\":\"Data structure for Provenance activity. An activity is something that occurs over a period of time and acts upon or with the origin or life cycle of dataset; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.\",\"cs\":\"Datová struktura pro Provenance activity. An activity is something that occurs over a period of time and acts upon or with the origin or life cycle of dataset; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.\"}";
     kv:dataPsmHumanLabel "{\"en\":\"Provenance activity\",\"cs\":\"Provenance activity\"}";
-    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/provenance-activity/class-1783430654863-c2ef-c58b-8bb9\",\"https://model.ccmm.cz/research-data/provenance-activity/attribute-1783431021651-65d7-d974-bce2\"]";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/provenance-activity/class-1783430654863-c2ef-c58b-8bb9\",\"https://model.ccmm.cz/research-data/provenance-activity/attribute-1783431021651-65d7-d974-bce2\",\"https://model.ccmm.cz/research-data/provenance-activity/class-1785759119196-e977-bd35-b13a\",\"https://model.ccmm.cz/research-data/provenance-activity/associationEnd-1785759119197-dc2f-90e7-a4be\",\"https://model.ccmm.cz/research-data/provenance-activity/class-1785759119198-3e9c-4c83-98ad\",\"https://model.ccmm.cz/research-data/provenance-activity/associationEnd-1785759119198-a461-7d7a-ac5d\"]";
     kv:dataPsmRoots "[\"https://model.ccmm.cz/research-data/provenance-activity/class-1783430654863-c2ef-c58b-8bb9\"]";
     kv:dataPsmTechnicalLabel "null";
     kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"namespace\":\"https://schema.ccmm.cz/research-data/1.2\",\"namespacePrefix\":\"ccmm\"}}";
@@ -18,7 +18,7 @@
     kv:dataPsmHumanLabel "null";
     kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/ProvenanceActivity\"";
     kv:dataPsmIsClosed "null";
-    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/provenance-activity/attribute-1783431021651-65d7-d974-bce2\"]";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/provenance-activity/attribute-1783431021651-65d7-d974-bce2\",\"https://model.ccmm.cz/research-data/provenance-activity/associationEnd-1785759119197-dc2f-90e7-a4be\",\"https://model.ccmm.cz/research-data/provenance-activity/associationEnd-1785759119198-a461-7d7a-ac5d\"]";
     kv:dataPsmTechnicalLabel "\"provenance_activity\"";
     kv:iri "\"https://model.ccmm.cz/research-data/provenance-activity/class-1783430654863-c2ef-c58b-8bb9\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
@@ -30,3 +30,45 @@
     kv:dataPsmTechnicalLabel "\"label\"";
     kv:iri "\"https://model.ccmm.cz/research-data/provenance-activity/attribute-1783431021651-65d7-d974-bce2\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Attribute\"]".
+:class-1785759119196-e977-bd35-b13a a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/Ro-crateJsonRepresentation\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[]";
+    kv:dataPsmTechnicalLabel "\"ro-crate_json_representation\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/provenance-activity/class-1785759119196-e977-bd35-b13a\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:associationEnd-1785759119197-dc2f-90e7-a4be a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/ProvenanceActivity.hasRo-crateJsonRepresentation\"";
+    kv:dataPsmIsDematerialize "null";
+    kv:dataPsmIsReverse "false";
+    kv:dataPsmPart "\"https://model.ccmm.cz/research-data/provenance-activity/class-1785759119196-e977-bd35-b13a\"";
+    kv:dataPsmTechnicalLabel "\"ro-crate_json_representation\"";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"isAttribute\":true}}";
+    kv:iri "\"https://model.ccmm.cz/research-data/provenance-activity/associationEnd-1785759119197-dc2f-90e7-a4be\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
+:class-1785759119198-3e9c-4c83-98ad a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/Iso5181JsonRepresentation\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[]";
+    kv:dataPsmTechnicalLabel "\"iso_5181_json_representation\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/provenance-activity/class-1785759119198-3e9c-4c83-98ad\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:associationEnd-1785759119198-a461-7d7a-ac5d a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/ProvenanceActivity.hasIso5181JsonRepresentation\"";
+    kv:dataPsmIsDematerialize "null";
+    kv:dataPsmIsReverse "false";
+    kv:dataPsmPart "\"https://model.ccmm.cz/research-data/provenance-activity/class-1785759119198-3e9c-4c83-98ad\"";
+    kv:dataPsmTechnicalLabel "\"iso_5181_json_representation\"";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"isAttribute\":true}}";
+    kv:iri "\"https://model.ccmm.cz/research-data/provenance-activity/associationEnd-1785759119198-a461-7d7a-ac5d\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/AssociationEnd\"]".
