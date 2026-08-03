@@ -4,6 +4,9 @@
   "title": "Attributed agent role type",
   "description": "Role of the agent in the attribution to the resource. ",
   "type": "object",
+  "required": [
+    "id"
+  ],
   "properties": {
     "id": {
       "type": "string",

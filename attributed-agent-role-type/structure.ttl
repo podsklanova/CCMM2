@@ -20,6 +20,7 @@
     kv:dataPsmIsClosed "null";
     kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/attributed-agent-role-type/attribute-1782312428997-5605-18a9-95a8\"]";
     kv:dataPsmTechnicalLabel "\"attributed_agent_role_type\"";
+    kv:instancesHaveIdentity "\"ALWAYS\"";
     kv:iri "\"https://model.ccmm.cz/research-data/attributed-agent-role-type/class-1782312422764-790c-7c4c-9803\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
 :attribute-1782312428997-5605-18a9-95a8 a dsvs:structure-entity;
