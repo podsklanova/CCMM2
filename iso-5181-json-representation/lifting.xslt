@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns1="https://model.ccmm.cz/vocabulary/ccmm#">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.2" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
-  <xsl:template match="/ccmm:provenance_activity">
+  <xsl:template match="/ccmm:iso_5181_json_representation">
     <rdf:RDF>
       <xsl:variable name="result" as="element()*">
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1783430654863-c2ef-c58b-8bb9"/>
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785758974732-9cfd-5ce3-a52d"/>
       </xsl:variable>
       <xsl:for-each select="$result">
         <xsl:copy>
@@ -31,7 +31,7 @@
       </xsl:copy>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1783430654863-c2ef-c58b-8bb9">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785758974732-9cfd-5ce3-a52d">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -53,28 +53,8 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation"/>
       <xsl:copy-of select="$arc"/>
-      <xsl:for-each select="ccmm:label">
-        <ns0:label>
-          <xsl:apply-templates select="@*"/>
-          <xsl:value-of select="."/>
-        </ns0:label>
-      </xsl:for-each>
-      <xsl:for-each select="@has_ro-crate_json_representation">
-        <ns1:hasRo-crateJsonRepresentation>
-          <xsl:attribute name="rdf:resource">
-            <xsl:value-of select="."/>
-          </xsl:attribute>
-        </ns1:hasRo-crateJsonRepresentation>
-      </xsl:for-each>
-      <xsl:for-each select="@has_iso_5181_json_representation">
-        <ns1:hasIso5181JsonRepresentation>
-          <xsl:attribute name="rdf:resource">
-            <xsl:value-of select="."/>
-          </xsl:attribute>
-        </ns1:hasIso5181JsonRepresentation>
-      </xsl:for-each>
     </rdf:Description>
   </xsl:template>
   <xsl:template match="@*|*"/>

@@ -39,6 +39,20 @@
     <xsl:variable name="id_test">
       <xsl:value-of select="c:id-key($id/*)"/>
     </xsl:variable>
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+      <xsl:for-each select="current-group()[1]">
+        <xsl:attribute name="has_ro-crate_json_representation">
+          <xsl:apply-templates select="sp:binding[@name=$obj]/sp:uri"/>
+        </xsl:attribute>
+      </xsl:for-each>
+    </xsl:for-each-group>
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+      <xsl:for-each select="current-group()[1]">
+        <xsl:attribute name="has_iso_5181_json_representation">
+          <xsl:apply-templates select="sp:binding[@name=$obj]/sp:uri"/>
+        </xsl:attribute>
+      </xsl:for-each>
+    </xsl:for-each-group>
     <xsl:if test="not($no_iri)">
       <xsl:for-each select="$id/sp:uri">
         <ccmm:iri>

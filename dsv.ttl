@@ -443,6 +443,36 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Activity>
 ];
     a dsv:ClassProfile.
+:Iso5181JsonRepresentation dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:comment;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation>.
+:Ro-crateJsonRepresentation dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#Ro-crateJsonRepresentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:comment;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#Ro-crateJsonRepresentation>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://model.ccmm.cz/vocabulary/ccmm#Ro-crateJsonRepresentation>.
 
 <https://model.ccmm.cz/research-data/Dataset.hasRelatedResource> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -568,12 +598,12 @@
     skos:scopeNote "Either links to IRI of address in address registry or describes the address using Address class attributes."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#hasAddress>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#hasAddress>
 ];
@@ -1282,6 +1312,44 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ProvenanceActivity.
 
+<https://model.ccmm.cz/research-data/ProvenanceActivity.hasIso5181JsonRepresentation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:comment;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation>;
+    dsv:domain :ProvenanceActivity;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Iso5181JsonRepresentation.
+
+<https://model.ccmm.cz/research-data/ProvenanceActivity.hasRo-crateJsonRepresentation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:comment;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation>;
+    dsv:domain :ProvenanceActivity;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Ro-crateJsonRepresentation.
+
 <https://model.ccmm.cz/research-data/Dataset.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;
@@ -1412,7 +1480,7 @@
     skos:prefLabel "alternate name"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#organization-name>
 ];

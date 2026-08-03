@@ -590,6 +590,26 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
+              "hasArtifact": "../iso-5181-json-representation/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../ro-crate-json-representation/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
               "hasArtifact": "../generator-configuration.ttl",
               "hasRole": "role:schema",
               "format": "filetype:RDF_TURTLE",
@@ -1624,6 +1644,50 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "../provenance-activity/context.jsonld",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON_LD",
+              "conformsTo": "http://www.w3.org/ns/json-ld"
+            },
+            {
+              "@id": "1cb420b1-1f31-4c09-9a60-463f3e31441a#jsonschema",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../iso-5181-json-representation/schema.json",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON",
+              "conformsTo": "https://json-schema.org/draft/2020-12/schema"
+            },
+            {
+              "@id": "1cb420b1-1f31-4c09-9a60-463f3e31441a#jsonLd",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../iso-5181-json-representation/context.jsonld",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON_LD",
+              "conformsTo": "http://www.w3.org/ns/json-ld"
+            },
+            {
+              "@id": "58ef4c27-6d8b-49ce-b2cf-d0f6022e6fae#jsonschema",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../ro-crate-json-representation/schema.json",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON",
+              "conformsTo": "https://json-schema.org/draft/2020-12/schema"
+            },
+            {
+              "@id": "58ef4c27-6d8b-49ce-b2cf-d0f6022e6fae#jsonLd",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../ro-crate-json-representation/context.jsonld",
               "hasRole": "role:schema",
               "format": "filetype:JSON_LD",
               "conformsTo": "http://www.w3.org/ns/json-ld"
@@ -9578,6 +9642,67 @@
                   </tr>
                 </table>
               </section>
+          </section>          <section id="Iso5181JsonRepresentation">
+            <h4>ISO 5181 JSON representation (@en)</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/Iso5181JsonRepresentation">https://model.ccmm.cz/research-data/Iso5181JsonRepresentation</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>ISO 5181 JSON representation (@en)</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Provides link to  the representation of provenance activity information in JSON format according to the ISO/IEC 5181 standard about data provenance. (@en)</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="https://techlib.github.io/CCMM-V/en/#Iso5181JsonRepresentation">ISO 5181 JSON representation (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation</a>)
+                  <br />Definice: <i>Provides link to  the representation of provenance activity information in JSON format according to the ISO/IEC 5181 standard about data provenance.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definice: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+          
+              <p><strong>Zpětné asociace</strong></p>
+              <ul>
+                  <li>z domény <a href="#ProvenanceActivity"></a> → <a href="#ProvenanceActivity.hasIso5181JsonRepresentation"></a></li>
+              </ul>
+          
+          
           </section>          <section id="Repository">
             <h4>Katalog</h4>
           
@@ -12163,14 +12288,147 @@
             </table>
           
               <p><strong>Vlastnosti</strong></p>
-              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ProvenanceActivity.label">label (@en)</a>.</p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#ProvenanceActivity.hasIso5181JsonRepresentation">has iso 5181 json representation (@en)</a>, <a href="#ProvenanceActivity.hasRo-crateJsonRepresentation">has RO-Crate JSON representation (@en)</a>, <a href="#ProvenanceActivity.label">label (@en)</a>.</p>
           
               <p><strong>Zpětné asociace</strong></p>
               <ul>
                   <li>z domény <a href="#Dataset"></a> → <a href="#Dataset.wasGeneratedBy"></a></li>
               </ul>
           
-              <section id="ProvenanceActivity.label">
+              <section id="ProvenanceActivity.hasIso5181JsonRepresentation">
+                <h4>has iso 5181 json representation (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/ProvenanceActivity.hasIso5181JsonRepresentation">https://model.ccmm.cz/research-data/ProvenanceActivity.hasIso5181JsonRepresentation</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>has iso 5181 json representation (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Link to the JSON representation of provenance activity according to the ISO/IEC 5181 standard. (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#ProvenanceActivity">Provenance activity (@en)</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#Iso5181JsonRepresentation">ISO 5181 JSON representation (@en)</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#hasIso5181JsonRepresentation">has iso 5181 json representation (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation</a>)
+                      <br />Definice: <i>Link to the JSON representation of provenance activity according to the ISO/IEC 5181 standard.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="ProvenanceActivity.hasRo-crateJsonRepresentation">
+                <h4>has RO-Crate JSON representation (@en)</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://model.ccmm.cz/research-data/ProvenanceActivity.hasRo-crateJsonRepresentation">https://model.ccmm.cz/research-data/ProvenanceActivity.hasRo-crateJsonRepresentation</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>has RO-Crate JSON representation (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Link to the JSON-LD representation of provenance activity according to the RO-Crate specification. (@en)</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#ProvenanceActivity">Provenance activity (@en)</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#Ro-crateJsonRepresentation">RO-Crate JSON representation (@en)</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="https://techlib.github.io/CCMM-V/en/#hasRo-crateJsonRepresentation">has RO-Crate JSON representation (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation</a>)
+                      <br />Definice: <i>Link to the JSON-LD representation of provenance activity according to the RO-Crate specification.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializuje
+                    vlastnost
+                    
+                    <a href="http://www.w3.org/2000/01/rdf-schema#seeAlso">seeAlso (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#seeAlso">rdfs:seeAlso</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="ProvenanceActivity.label">
                 <h4>label (@en)</h4>
               
                 <table class="def">
@@ -13561,6 +13819,67 @@
               
                 </table>
               </section>
+          </section>          <section id="Ro-crateJsonRepresentation">
+            <h4>RO-Crate JSON representation (@en)</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://model.ccmm.cz/vocabulary/ccmm#Ro-crateJsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#Ro-crateJsonRepresentation</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://model.ccmm.cz/research-data/Ro-crateJsonRepresentation">https://model.ccmm.cz/research-data/Ro-crateJsonRepresentation</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>RO-Crate JSON representation (@en)</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Representation of provenance activity in JSON-LD format corresponding to the RO-Crate specification. (@en)</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="https://techlib.github.io/CCMM-V/en/#Ro-crateJsonRepresentation">RO-Crate JSON representation (@en)</a> (<a href="https://model.ccmm.cz/vocabulary/ccmm#Ro-crateJsonRepresentation">https://model.ccmm.cz/vocabulary/ccmm#Ro-crateJsonRepresentation</a>)
+                  <br />Definice: <i>Representation of provenance activity in JSON-LD format corresponding to the RO-Crate specification.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definice: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+          
+              <p><strong>Zpětné asociace</strong></p>
+              <ul>
+                  <li>z domény <a href="#ProvenanceActivity"></a> → <a href="#ProvenanceActivity.hasRo-crateJsonRepresentation"></a></li>
+              </ul>
+          
+          
           </section>          <section id="Subject">
             <h4>Subject (@en)</h4>
           
@@ -51763,6 +52082,74 @@
   
   
   
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>has_ro-crate_json_representation</code>:
+            (<a href="#ProvenanceActivity.hasRo-crateJsonRepresentation" label="Link to the JSON-LD representation of provenance activity according to the RO-Crate specification.">has RO-Crate JSON representation</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>has_iso_5181_json_representation</code>:
+            (<a href="#ProvenanceActivity.hasIso5181JsonRepresentation" label="Link to the JSON representation of provenance activity according to the ISO/IEC 5181 standard.">has iso 5181 json representation</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
   
   
   
@@ -125620,6 +126007,74 @@
 
 
         </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>has_ro-crate_json_representation</code>:
+            (<a href="#ProvenanceActivity.hasRo-crateJsonRepresentation" label="Link to the JSON-LD representation of provenance activity according to the RO-Crate specification.">has RO-Crate JSON representation</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>has_iso_5181_json_representation</code>:
+            (<a href="#ProvenanceActivity.hasIso5181JsonRepresentation" label="Link to the JSON representation of provenance activity according to the ISO/IEC 5181 standard.">has iso 5181 json representation</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
     </ul>
   
 
@@ -125797,6 +126252,340 @@
       <dt>Obsah</dt>
       <dd>
           Obsahem elementu je typ <a href=""><code></code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
+      <section id="struktura-ISO-5181-JSON-representation">
+      <h2>
+        Specifikace struktury pro
+        ISO 5181 JSON representation
+      </h2>
+      <p>Datová struktura pro ISO 5181 JSON representation. Provides link to  the representation of provenance activity information in JSON format according to the ISO/IEC 5181 standard about data provenance.</p>
+
+      <section id="json-schema--iso-5181-json-representation">
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1>
+      JSON struktura pro    ISO 5181 JSON representation
+  </h1>
+
+    <dl>
+      <dt>IRI</dt>
+      <dd><code>https://model.ccmm.cz/research-data/iso-5181-json-representation/schema.json</code></dd>
+      <dt>Definováno v</dt>
+      <dd><code><a href="../iso-5181-json-representation/schema.json">../iso-5181-json-representation/schema.json</a></code></dd>
+        <dt>Verze použitého jazyka</dt>
+        <dd><a href="https://json-schema.org/specification-links.html#2020-12-release" target="_blank">2020-12</a> (metaschema IRI: <code>https://json-schema.org/draft/2020-12/schema</code>)</dd>
+    </dl>
+
+    <h2>Kořen</h2>
+    Kořenem JSON schématu je
+          
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+
+</section>
+
+
+
+
+
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Tato sekce popisuje XSD zachycující strukturu pro <i>ISO 5181 JSON representation</i>, jež je definováno v souboru <a href="../iso-5181-json-representation/schema.xsd"><code>../iso-5181-json-representation/schema.xsd</code></a>.
+</p>
+
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
+
+<section>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <i>Nic není importováno.</i>
+</section>
+
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:iso_5181_json_representation"><code>iso_5181_json_representation</code></a></li>
+
+      <li> komplexní typ <a href="#type-ccmm:iso_5181_json_representation"><code>iso_5181_json_representation</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:iso_5181_json_representation">
+  <h4>Kořenový element <code>&lt;iso_5181_json_representation&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:iso_5181_json_representation"><code>ccmm:iso_5181_json_representation</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:iso_5181_json_representation">
+  <h4>Kořenový komplexní typ <code>iso_5181_json_representation</code></h4>
+  <dl>
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Iso5181JsonRepresentation">ISO 5181 JSON representation</a>
+        (Provides link to  the representation of provenance activity information in JSON format according to the ISO/IEC 5181 standard about data provenance.)
+      </dd>
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:iso_5181_json_representation-ccmm:iri"><code>&lt;iri&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:iso_5181_json_representation-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:iso_5181_json_representation"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
+      <section id="struktura-RO-Crate-JSON-representation">
+      <h2>
+        Specifikace struktury pro
+        RO-Crate JSON representation
+      </h2>
+      <p>Datová struktura pro RO-Crate JSON representation. Representation of provenance activity in JSON-LD format corresponding to the RO-Crate specification.</p>
+
+      <section id="json-schema--ro-crate-json-representation">
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1>
+      JSON struktura pro    RO-Crate JSON representation
+  </h1>
+
+    <dl>
+      <dt>IRI</dt>
+      <dd><code>https://model.ccmm.cz/research-data/ro-crate-json-representation/schema.json</code></dd>
+      <dt>Definováno v</dt>
+      <dd><code><a href="../ro-crate-json-representation/schema.json">../ro-crate-json-representation/schema.json</a></code></dd>
+        <dt>Verze použitého jazyka</dt>
+        <dd><a href="https://json-schema.org/specification-links.html#2020-12-release" target="_blank">2020-12</a> (metaschema IRI: <code>https://json-schema.org/draft/2020-12/schema</code>)</dd>
+    </dl>
+
+    <h2>Kořen</h2>
+    Kořenem JSON schématu je
+          
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+
+</section>
+
+
+
+
+
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Tato sekce popisuje XSD zachycující strukturu pro <i>RO-Crate JSON representation</i>, jež je definováno v souboru <a href="../ro-crate-json-representation/schema.xsd"><code>../ro-crate-json-representation/schema.xsd</code></a>.
+</p>
+
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.2</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
+
+<section>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <i>Nic není importováno.</i>
+</section>
+
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:ro-crate_json_representation"><code>ro-crate_json_representation</code></a></li>
+
+      <li> komplexní typ <a href="#type-ccmm:ro-crate_json_representation"><code>ro-crate_json_representation</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:ro-crate_json_representation">
+  <h4>Kořenový element <code>&lt;ro-crate_json_representation&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:ro-crate_json_representation"><code>ccmm:ro-crate_json_representation</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:ro-crate_json_representation">
+  <h4>Kořenový komplexní typ <code>ro-crate_json_representation</code></h4>
+  <dl>
+        <dt>Význam</dt>
+      <dd>
+        <a href="#Ro-crateJsonRepresentation">RO-Crate JSON representation</a>
+        (Representation of provenance activity in JSON-LD format corresponding to the RO-Crate specification.)
+      </dd>
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:ro-crate_json_representation-ccmm:iri"><code>&lt;iri&gt;</code></a> [1..1]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:ro-crate_json_representation-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:ro-crate_json_representation"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
       </dd>
 
 
@@ -126038,6 +126827,14 @@
             <tr>
               <td>Popis strukturálního modelu</td>
               <td><a href="../provenance-activity/structure.ttl">../provenance-activity/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Popis strukturálního modelu</td>
+              <td><a href="../iso-5181-json-representation/structure.ttl">../iso-5181-json-representation/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Popis strukturálního modelu</td>
+              <td><a href="../ro-crate-json-representation/structure.ttl">../ro-crate-json-representation/structure.ttl</a></td>
             </tr>
             <tr><td>JSON schéma</td><td><a href="../agent/schema.json">../agent/schema.json</a></td></tr>
             <tr><td>Příklad JSONu</td><td><a href="../agent/example.json">../agent/example.json</a></td></tr>
@@ -126315,6 +127112,18 @@
             <tr><td>XML schéma</td><td><a href="../provenance-activity/schema.xsd">../provenance-activity/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../provenance-activity/lifting.xslt">../provenance-activity/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../provenance-activity/lowering.xslt">../provenance-activity/lowering.xslt</a></td></tr>
+            <tr><td>JSON schéma</td><td><a href="../iso-5181-json-representation/schema.json">../iso-5181-json-representation/schema.json</a></td></tr>
+            <tr><td>Příklad JSONu</td><td><a href="../iso-5181-json-representation/example.json">../iso-5181-json-representation/example.json</a></td></tr>
+            <tr><td>JSON-LD kontext</td><td><a href="../iso-5181-json-representation/context.jsonld">../iso-5181-json-representation/context.jsonld</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../iso-5181-json-representation/schema.xsd">../iso-5181-json-representation/schema.xsd</a></td></tr>
+            <tr><td>XSLT lifting</td><td><a href="../iso-5181-json-representation/lifting.xslt">../iso-5181-json-representation/lifting.xslt</a></td></tr>
+            <tr><td>XSLT lowering</td><td><a href="../iso-5181-json-representation/lowering.xslt">../iso-5181-json-representation/lowering.xslt</a></td></tr>
+            <tr><td>JSON schéma</td><td><a href="../ro-crate-json-representation/schema.json">../ro-crate-json-representation/schema.json</a></td></tr>
+            <tr><td>Příklad JSONu</td><td><a href="../ro-crate-json-representation/example.json">../ro-crate-json-representation/example.json</a></td></tr>
+            <tr><td>JSON-LD kontext</td><td><a href="../ro-crate-json-representation/context.jsonld">../ro-crate-json-representation/context.jsonld</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../ro-crate-json-representation/schema.xsd">../ro-crate-json-representation/schema.xsd</a></td></tr>
+            <tr><td>XSLT lifting</td><td><a href="../ro-crate-json-representation/lifting.xslt">../ro-crate-json-representation/lifting.xslt</a></td></tr>
+            <tr><td>XSLT lowering</td><td><a href="../ro-crate-json-representation/lowering.xslt">../ro-crate-json-representation/lowering.xslt</a></td></tr>
             <tr><td>Dokumentace</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>

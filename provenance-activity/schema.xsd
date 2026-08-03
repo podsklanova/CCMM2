@@ -25,6 +25,20 @@
       </xs:element>
       <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##other"/>
     </xs:sequence>
+    <xs:attribute name="has_ro-crate_json_representation" type="xs:anyURI" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">
+          has RO-Crate JSON representation - Link to the JSON-LD representation of provenance activity according to the RO-Crate specification.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="has_iso_5181_json_representation" type="xs:anyURI" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">
+          has iso 5181 json representation - Link to the JSON representation of provenance activity according to the ISO/IEC 5181 standard.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
   </xs:complexType>
   <xs:element name="provenance_activity" type="ccmm:provenance_activity"/>
 </xs:schema>
