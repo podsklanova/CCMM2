@@ -14,5 +14,6 @@
         "@context": {}
       }
     }
-  }
+  },
+  "id": "https://example.com/resource/resource"
 }

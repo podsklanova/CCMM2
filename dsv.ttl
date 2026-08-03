@@ -1601,7 +1601,7 @@
     skos:prefLabel "label"@en;
     skos:definition "Data service label"@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#DataService.title>;
-    dsv:cardinality cardinality:0n;
+    dsv:cardinality cardinality:1n;
     dsv:domain :DataService;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.

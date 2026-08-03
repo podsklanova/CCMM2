@@ -192,7 +192,7 @@
         </ns6:subject>
       </xsl:for-each>
       <xsl:for-each select="ccmm:keyword">
-        <ns2:keyword>
+        <ns2:keyword rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns2:keyword>
