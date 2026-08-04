@@ -805,7 +805,4 @@
     </distribution>
     <!-- placeholders for model extensions (kept to preserve the xd12h-dfz24.xml pattern) -->
     <validation_result />
-    <generated_by>
-        <iri>http://link-to-origin.com</iri>
-    </generated_by>
 </dataset>
