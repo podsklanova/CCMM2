@@ -277,7 +277,7 @@
                 </gml:Envelope>
             </gml>
         </bounding_box>
-        <title xml:lang="cs">Středočeský kraj</title>
+        <label xml:lang="cs">Středočeský kraj</label>
         <geometry>
             <gml>
                 <gml:MultiSurface gml:id="MS.AU.2.27"
@@ -417,9 +417,8 @@
         </resource_relation_type>
     </related_resource>
     <distribution>
-        <distribution_data_service>
+        <distribution_data_service access_url="https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi">
             <title>Služba WMS pro prohlížení dat o kvalitě ovzduší</title>
-            <access_url>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</access_url>
             <access_service>
                 <iri>https://gis.cenia.gov.cz/id/service/wms/chmu_ovzdusi</iri>
                 <label xml:lang="en">Endpoint of WMS service Air quality</label>
@@ -483,7 +482,7 @@
             <checksum>
                 <checksum_value>9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</checksum_value>
                 <algorithm>
-                    <iri>https://www.iana.org/go/rfc6920</iri>
+                    <iri>https://spdx.org/rdf/terms/#d4e4247</iri>
                 </algorithm>
             </checksum>
             <rights>
@@ -497,7 +496,7 @@
     </distribution>
     <validation_result/>
     <!-- validation is in the current state a placeholdoer for extensions -->
-    <provenance/>
+    <!--    <provenance_activity/>-->
     <!-- provenance is in the current state a placeholdoer for extensions -->
     <generated_by>
         <iri>http://link-to-origin.com</iri>
