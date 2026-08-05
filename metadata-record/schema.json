@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/research-data/metadata-record/schema.json",
+  "title": "Metadata Record",
+  "description": "Description of the metadata record of the dataset. ",
+  "type": "object",
+  "required": [
+    "qualified_relation",
+    "conforms_to_standard",
+    "original_repository"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Katalogizační záznam"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Katalogizační záznam"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "language": {
+      "title": "language",
+      "description": "A language used in the textual metadata describing titles, descriptions of the metadata record.",
+      "type": "array",
+      "items": {
+        "$ref": "../language-system/schema.json"
+      }
+    },
+    "qualified_relation": {
+      "title": "qualified relation",
+      "description": "Link to a description of a relationship between metadata record and agent with the specification of the role of agent in this relationship.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "../resource-to-agent-relationship/schema.json"
+      }
+    },
+    "date_updated": {
+      "title": "date updated",
+      "description": "Date on which the resource was changed.",
+      "type": "array",
+      "items": {
+        "title": "Date",
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "date_created": {
+      "title": "date created",
+      "description": "The date on which the metadata record was created.",
+      "type": "string",
+      "format": "date"
+    },
+    "conforms_to_standard": {
+      "title": "conforms to standard",
+      "description": "An established standard to which the metadata record conforms.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "../application-profile/schema.json"
+      }
+    },
+    "original_repository": {
+      "$ref": "../repository/schema.json"
+    }
+  }
+}

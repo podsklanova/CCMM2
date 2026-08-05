@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "beginning": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@context": "../time-instant/context.jsonld"
+    },
+    "end": {
+      "@id": "http://www.w3.org/2006/time#hasEnd",
+      "@context": "../time-instant/context.jsonld"
+    },
+    "Time interval": {
+      "@id": "http://www.w3.org/2006/time#Interval",
+      "@context": {}
+    }
+  }
+}
