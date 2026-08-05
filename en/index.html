@@ -14,8 +14,8 @@
         "adms:AssetDistribution",
         "prof:ResourceDescriptor"
       ],
-      "hasArtifact": ".",
-      "hasRole": "role:Guidance",
+      "hasArtifact": "",
+      "hasRole": "role:specification",
       "format": "filetype:HTML",
       "inSpecificationOf": [
         {
@@ -32,62 +32,562 @@
           },
           "isProfileOf": [
             {
-              "hasArtifact": [
-                "https://www.w3.org/2006/vcard/ns#"
-              ]
+              "title": {
+                "en": "vCard Ontology"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/2006/vcard/ns#"
+              }
             },
             {
-              "hasArtifact": [
-                "https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/voc/core-location.ttl"
-              ]
+              "title": {
+                "en": "Core Location Vocabulary 2.1.0"
+              },
+              "hasResource": {
+                "hasArtifact": "https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/voc/core-location.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/legacy_adms"
-              ]
+              "title": {
+                "en": "ADMS - Asset Description Metadata Schema"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/legacy_adms"
+              }
             },
             {
               "@id": "https://mff-uk.github.io/specifications/dcat-ap#",
-              "hasArtifact": [
-                "https://mff-uk.github.io/specifications/dcat-ap/"
-              ]
+              "title": {},
+              "hasResource": {
+                "hasArtifact": "https://mff-uk.github.io/specifications/dcat-ap/"
+              }
             },
             {
               "@id": "https://model.ccmm.cz/vocabulary/datacite#",
-              "hasArtifact": [
-                "https://michalmed.github.io/DataCite/en/"
-              ]
+              "title": {},
+              "hasResource": {
+                "hasArtifact": "https://michalmed.github.io/DataCite/en/"
+              }
             },
             {
               "@id": "https://model.ccmm.cz/vocabulary/ccmm#",
-              "hasArtifact": [
-                "https://techlib.github.io/CCMM-V/en/"
-              ]
+              "title": {},
+              "hasResource": {
+                "hasArtifact": "https://techlib.github.io/CCMM-V/en/"
+              }
             }
           ],
           "hasResource": [
             {
-              "@id": "https://model.ccmm.cz/research-data/dsv",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./dsv.ttl",
-              "hasRole": "role:Specification",
+              "hasArtifact": "../dsv.ttl",
+              "hasRole": "role:constraints",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": [
-                "dsv:ApplicationProfileSpecificationDocument",
-                "prof:Profile"
+                "prof:Profile",
+                "dsv:ApplicationProfile"
               ]
             },
             {
-              "@id": "https://model.ccmm.cz/research-data/d19697d9-b1fe-427a-874b-0a537119a6e7",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "./d19697d9-b1fe-427a-874b-0a537119a6e7.svg",
-              "hasRole": "role:Guidance",
+              "hasArtifact": "../shacl.ttl",
+              "hasRole": "role:constraints",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "https://www.w3.org/TR/shacl/"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../agent/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../distribution/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../contact-details/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../location/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../funding-reference/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../terms-of-use/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../resource-to-agent-relationship/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../resource-agent-role-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../application-profile/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../media-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../file/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../validation-result/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../subject-scheme/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../address/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../provenance-statement/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../subject/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../metadata-record/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../repository/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../dataset/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../identifier/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../alternate-title/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../geometry/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../documentation/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../data-service/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../checksum/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../organization/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../license-document/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../date-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../resource-relation-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../resource-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../location-relation-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../format/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../alternate-title-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../access-rights/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../language-system/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../identifier-scheme/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../time-instant/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../time-interval/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../checksum-algorithm/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../description-type/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../description/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../distribution-data-service/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../person/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../distribution-downloadable-file/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../time-representation/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../time-reference/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../related-resource/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../generator-configuration.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:StructureConfiguration"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../d19697d9-b1fe-427a-874b-0a537119a6e7.svg",
+              "hasRole": "role:guidance",
               "format": "filetype:SVG",
               "conformsTo": "https://www.w3.org/TR/SVG/"
             },
@@ -98,8 +598,8 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": ".",
-              "hasRole": "role:Guidance",
+              "hasArtifact": "",
+              "hasRole": "role:specification",
               "format": "filetype:HTML"
             }
           ]
@@ -164,8 +664,13 @@
                 },
                 "hasResource": {
                   "@id": "prof:hasResource",
-                  "@type": "@id",
-                  "@container": "@set"
+                  "@container": "@set",
+                  "@context": {
+                    "hasArtifact": {
+                      "@id": "prof:hasArtifact",
+                      "@type": "@id"
+                    }
+                  }
                 }
               }
             },
@@ -279,9 +784,9 @@
     <section>
       <h2>Overview</h2>
 
-        <a href="./d19697d9-b1fe-427a-874b-0a537119a6e7.svg">
+        <a href="../d19697d9-b1fe-427a-874b-0a537119a6e7.svg">
           <figure>
-            <img src="./d19697d9-b1fe-427a-874b-0a537119a6e7.svg" alt="View for Czech Core Metadata Model" />
+            <img src="../d19697d9-b1fe-427a-874b-0a537119a6e7.svg" alt="View for Czech Core Metadata Model" />
             <figcaption>View for Czech Core Metadata Model</figcaption>
           </figure>
         </a>
@@ -3368,6 +3873,36 @@
                       </ul>
               
                           </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
+                              <li>
+                                        profiles
+                    
+                    property profile
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
+                      <br />Definition: <i>The geographical area covered by the dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
+                      <br />Definition: <i>Spatial characteristics of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/coverage">Coverage</a> (<a href="http://purl.org/dc/terms/coverage">dcterms:coverage</a>)
+                      <br />Definition: <i>The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</i>
+                      <ul style="list-style-type: disclosure-closed;">
                       </ul>
               
                           </li>
@@ -8713,6 +9248,8 @@
                   <tr>
                     <td>Profiled relationship IRI(s)</td>
                     <td>
+                        
+                        <a href="http://www.w3.org/ns/dcat#qualifiedRelation">dcat:qualifiedRelation</a>
                     </td>
                   </tr>
                   <tr>
@@ -8751,6 +9288,25 @@
                       <td>Hierarchy</td>
                       <td>
                         <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    
+                    property profile
+                    <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_relation">qualified relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedRelation">dcat-dap:CataloguedResource.qualifiedRelation</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      profiles
+                    property
+                    
+                    <a href="http://www.w3.org/ns/dcat#qualifiedRelation">qualified relation</a> (<a href="http://www.w3.org/ns/dcat#qualifiedRelation">dcat:qualifiedRelation</a>)
+                      <br />Definition: <i>Link to a description of a relationship with another resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                              </li>
                         </ul>
                       </td>
                     </tr>
@@ -12163,6 +12719,8 @@
                   <tr>
                     <td>Profiled relationship IRI(s)</td>
                     <td>
+                        
+                        <a href="http://www.w3.org/2006/time#hasTime">time:hasTime</a>
                     </td>
                   </tr>
                   <tr>
@@ -12197,6 +12755,16 @@
                       <td>Hierarchy</td>
                       <td>
                         <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="http://www.w3.org/2006/time#hasTime">has time</a> (<a href="http://www.w3.org/2006/time#hasTime">time:hasTime</a>)
+                      <br />Definition: <i>Supports the association of a temporal entity (instant or interval) to any thing</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
                         </ul>
                       </td>
                     </tr>
@@ -12390,10 +12958,10 @@
   This section describes the XSD capturing the structure for <i>Agent</i>, which is defined in the file <a href="../agent/schema.xsd"><code>../agent/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -12575,10 +13143,10 @@
   This section describes the XSD capturing the structure for <i>Distribution</i>, which is defined in the file <a href="../distribution/schema.xsd"><code>../distribution/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -12760,10 +13328,10 @@
   This section describes the XSD capturing the structure for <i>Contact details</i>, which is defined in the file <a href="../contact-details/schema.xsd"><code>../contact-details/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -12842,9 +13410,6 @@
           element <a href="#element-ccmm:contact_details-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
       </li>
       <li>
-          element <a href="#element-ccmm:contact_details-ccmm:dataBox"><code>&lt;dataBox&gt;</code></a> [0..*]
-      </li>
-      <li>
           element <a href="#element-ccmm:contact_details-ccmm:data_box"><code>&lt;data_box&gt;</code></a> [0..*]
       </li>
       <li>
@@ -12880,47 +13445,6 @@
       <dt>Content</dt>
       <dd>
           The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:contact_details-ccmm:dataBox">
-  <h4>Element <code>&lt;dataBox&gt;</code></h4>
-
-  <dl>
-    <dt>Meaning</dt>
-    <dd>
-        <i>
-          
-          property
-          
-          
-        </i>
-
-          <a href="#ContactDetails.dataBox"><strong>data box</strong></a>
-          (Code of the data box.)
-
-    </dd>
-
-      <dt>Effective cardinality of the element relative to its parent element</dt>
-      <dd>0..*</dd>
-      <dt>Parent element</dt>
-      <dd><a href="#type-ccmm:contact_details"></a></dd>
-
-    
-      <dt>Element type</dt>
-        <div style="margin-left: 40px;">
-      <dt>Content</dt>
-      <dd>
-          The content of the element is of type <a href="http://www.w3.org/2001/XMLSchemastring"><code>xs:string</code></a>.
       </dd>
 
 
@@ -13125,10 +13649,10 @@
   This section describes the XSD capturing the structure for <i>Location</i>, which is defined in the file <a href="../location/schema.xsd"><code>../location/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -13512,10 +14036,10 @@
   This section describes the XSD capturing the structure for <i>Funding reference</i>, which is defined in the file <a href="../funding-reference/schema.xsd"><code>../funding-reference/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -13535,7 +14059,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../organization/schema.xsd">../organization/schema.xsd</a></td>
+          <td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -13796,12 +14320,7 @@
       </dd>
 
 
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#Agent">Organization</a>
-        (Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. )
-      </dd>
-
+    
 
 
     
@@ -13833,10 +14352,10 @@
   This section describes the XSD capturing the structure for <i>Terms of use</i>, which is defined in the file <a href="../terms-of-use/schema.xsd"><code>../terms-of-use/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -13874,7 +14393,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../organization/schema.xsd">../organization/schema.xsd</a></td>
+          <td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -14145,12 +14664,7 @@
       </dd>
 
 
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#Agent">Organization</a>
-        (Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. )
-      </dd>
-
+    
 
 
     
@@ -14182,10 +14696,10 @@
   This section describes the XSD capturing the structure for <i>Resource to Agent Relationship</i>, which is defined in the file <a href="../resource-to-agent-relationship/schema.xsd"><code>../resource-to-agent-relationship/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -14205,7 +14719,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../organization/schema.xsd">../organization/schema.xsd</a></td>
+          <td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -14343,12 +14857,7 @@
       </dd>
 
 
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#Agent">Organization</a>
-        (Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. )
-      </dd>
-
+    
 
 
     
@@ -14426,10 +14935,10 @@
   This section describes the XSD capturing the structure for <i>Resource agent role type</i>, which is defined in the file <a href="../resource-agent-role-type/schema.xsd"><code>../resource-agent-role-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -14610,10 +15119,10 @@
   This section describes the XSD capturing the structure for <i>Application profile</i>, which is defined in the file <a href="../application-profile/schema.xsd"><code>../application-profile/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -14794,10 +15303,10 @@
   This section describes the XSD capturing the structure for <i>Media Type</i>, which is defined in the file <a href="../media-type/schema.xsd"><code>../media-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -14978,10 +15487,10 @@
   This section describes the XSD capturing the structure for <i>File</i>, which is defined in the file <a href="../file/schema.xsd"><code>../file/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -15162,10 +15671,10 @@
   This section describes the XSD capturing the structure for <i>Validation result</i>, which is defined in the file <a href="../validation-result/schema.xsd"><code>../validation-result/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -15346,10 +15855,10 @@
   This section describes the XSD capturing the structure for <i>Subject scheme</i>, which is defined in the file <a href="../subject-scheme/schema.xsd"><code>../subject-scheme/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -15530,10 +16039,10 @@
   This section describes the XSD capturing the structure for <i>Address</i>, which is defined in the file <a href="../address/schema.xsd"><code>../address/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -16154,10 +16663,10 @@
   This section describes the XSD capturing the structure for <i>Provenance Statement</i>, which is defined in the file <a href="../provenance-statement/schema.xsd"><code>../provenance-statement/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -16338,10 +16847,10 @@
   This section describes the XSD capturing the structure for <i>Subject</i>, which is defined in the file <a href="../subject/schema.xsd"><code>../subject/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -16665,10 +17174,10 @@
   This section describes the XSD capturing the structure for <i>Metadata Record</i>, which is defined in the file <a href="../metadata-record/schema.xsd"><code>../metadata-record/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -17107,10 +17616,10 @@
   This section describes the XSD capturing the structure for <i>Repository</i>, which is defined in the file <a href="../repository/schema.xsd"><code>../repository/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -17291,10 +17800,10 @@
   This section describes the XSD capturing the structure for <i>Dataset</i>, which is defined in the file <a href="../dataset/schema.xsd"><code>../dataset/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -17392,7 +17901,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../distribution-data-service/schema.xsd">../distribution-data-service/schema.xsd</a></td>
+          <td><a href="../distribution/schema.xsd">../distribution/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -18390,12 +18899,7 @@
       </dd>
 
 
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#Distribution-DataService">Distribution - data service</a>
-        (Physical embodiment of the dataset distribution as a particular data service. )
-      </dd>
-
+    
 
 
     
@@ -18519,10 +19023,10 @@
   This section describes the XSD capturing the structure for <i>Identifier</i>, which is defined in the file <a href="../identifier/schema.xsd"><code>../identifier/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -18796,10 +19300,10 @@
   This section describes the XSD capturing the structure for <i>Alternate title</i>, which is defined in the file <a href="../alternate-title/schema.xsd"><code>../alternate-title/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -19035,10 +19539,10 @@
   This section describes the XSD capturing the structure for <i>Geometry</i>, which is defined in the file <a href="../geometry/schema.xsd"><code>../geometry/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -19307,10 +19811,10 @@
   This section describes the XSD capturing the structure for <i>Documentation</i>, which is defined in the file <a href="../documentation/schema.xsd"><code>../documentation/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -19491,10 +19995,10 @@
   This section describes the XSD capturing the structure for <i>Data service</i>, which is defined in the file <a href="../data-service/schema.xsd"><code>../data-service/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -19730,10 +20234,10 @@
   This section describes the XSD capturing the structure for <i>Checksum</i>, which is defined in the file <a href="../checksum/schema.xsd"><code>../checksum/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -19963,10 +20467,10 @@
   This section describes the XSD capturing the structure for <i>Organization</i>, which is defined in the file <a href="../organization/schema.xsd"><code>../organization/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -20334,10 +20838,10 @@
   This section describes the XSD capturing the structure for <i>License Document</i>, which is defined in the file <a href="../license-document/schema.xsd"><code>../license-document/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -20518,10 +21022,10 @@
   This section describes the XSD capturing the structure for <i>Date type</i>, which is defined in the file <a href="../date-type/schema.xsd"><code>../date-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -20702,10 +21206,10 @@
   This section describes the XSD capturing the structure for <i>Resource relation type</i>, which is defined in the file <a href="../resource-relation-type/schema.xsd"><code>../resource-relation-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -20886,10 +21390,10 @@
   This section describes the XSD capturing the structure for <i>Resource type</i>, which is defined in the file <a href="../resource-type/schema.xsd"><code>../resource-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -21070,10 +21574,10 @@
   This section describes the XSD capturing the structure for <i>Location relation type</i>, which is defined in the file <a href="../location-relation-type/schema.xsd"><code>../location-relation-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -21254,10 +21758,10 @@
   This section describes the XSD capturing the structure for <i>Format</i>, which is defined in the file <a href="../format/schema.xsd"><code>../format/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -21438,10 +21942,10 @@
   This section describes the XSD capturing the structure for <i>Alternate title type</i>, which is defined in the file <a href="../alternate-title-type/schema.xsd"><code>../alternate-title-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -21622,10 +22126,10 @@
   This section describes the XSD capturing the structure for <i>Access rights</i>, which is defined in the file <a href="../access-rights/schema.xsd"><code>../access-rights/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -21806,10 +22310,10 @@
   This section describes the XSD capturing the structure for <i>Language system</i>, which is defined in the file <a href="../language-system/schema.xsd"><code>../language-system/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -21990,10 +22494,10 @@
   This section describes the XSD capturing the structure for <i>Identifier scheme</i>, which is defined in the file <a href="../identifier-scheme/schema.xsd"><code>../identifier-scheme/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -22174,10 +22678,10 @@
   This section describes the XSD capturing the structure for <i>Time instant</i>, which is defined in the file <a href="../time-instant/schema.xsd"><code>../time-instant/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -22373,10 +22877,10 @@
   This section describes the XSD capturing the structure for <i>Time interval</i>, which is defined in the file <a href="../time-interval/schema.xsd"><code>../time-interval/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -22611,10 +23115,10 @@
   This section describes the XSD capturing the structure for <i>Checksum algorithm</i>, which is defined in the file <a href="../checksum-algorithm/schema.xsd"><code>../checksum-algorithm/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -22795,10 +23299,10 @@
   This section describes the XSD capturing the structure for <i>Description type</i>, which is defined in the file <a href="../description-type/schema.xsd"><code>../description-type/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -22979,10 +23483,10 @@
   This section describes the XSD capturing the structure for <i>Description</i>, which is defined in the file <a href="../description/schema.xsd"><code>../description/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -23218,10 +23722,10 @@
   This section describes the XSD capturing the structure for <i>Distribution - data service</i>, which is defined in the file <a href="../distribution-data-service/schema.xsd"><code>../distribution-data-service/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -23622,10 +24126,10 @@
   This section describes the XSD capturing the structure for <i>Person</i>, which is defined in the file <a href="../person/schema.xsd"><code>../person/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -24086,10 +24590,10 @@
   This section describes the XSD capturing the structure for <i>Distribution - downloadable file</i>, which is defined in the file <a href="../distribution-downloadable-file/schema.xsd"><code>../distribution-downloadable-file/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -24643,10 +25147,10 @@
   This section describes the XSD capturing the structure for <i>Time representation</i>, which is defined in the file <a href="../time-representation/schema.xsd"><code>../time-representation/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -24828,10 +25332,10 @@
   This section describes the XSD capturing the structure for <i>Time reference</i>, which is defined in the file <a href="../time-reference/schema.xsd"><code>../time-reference/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -24851,7 +25355,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/1.1">https://schema.ccmm.cz/research-data/1.1</a></td>
-          <td><a href="../time-interval/schema.xsd">../time-interval/schema.xsd</a></td>
+          <td><a href="../time-representation/schema.xsd">../time-representation/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -24998,12 +25502,7 @@
       </dd>
 
 
-        <dt>Meaning</dt>
-      <dd>
-        <a href="#TimeInterval">Time interval</a>
-        (A temporal entity with an extent or duration)
-      </dd>
-
+    
 
 
     
@@ -25122,10 +25621,10 @@
   This section describes the XSD capturing the structure for <i>Related resource</i>, which is defined in the file <a href="../related-resource/schema.xsd"><code>../related-resource/schema.xsd</code></a>.
 </p>
 
-  <dl>
-    <dt>Defined in namespace</dt>
-    <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
-  </dl>
+    <dl>
+      <dt>Defined in namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/1.1</code> (preferred prefix: <code>ccmm</code>)</dd>
+    </dl>
 
 <section>
 <h4>Imports</h4>
@@ -25744,7 +26243,7 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section id="attachments">
       <h2>Attachments</h2>
     
         <p>This specification includes the following attachments.</p>
@@ -25758,7 +26257,199 @@
         <tbody>
             <tr>
               <td>Application profile</td>
-              <td><a href="./dsv.ttl">./dsv.ttl</a></td>
+              <td><a href="../dsv.ttl">../dsv.ttl</a></td>
+            </tr>
+            <tr>
+              <td>SHACL validation rules</td>
+              <td><a href="../shacl.ttl">../shacl.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../agent/structure.ttl">../agent/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../distribution/structure.ttl">../distribution/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../contact-details/structure.ttl">../contact-details/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../location/structure.ttl">../location/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../funding-reference/structure.ttl">../funding-reference/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../terms-of-use/structure.ttl">../terms-of-use/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../resource-to-agent-relationship/structure.ttl">../resource-to-agent-relationship/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../resource-agent-role-type/structure.ttl">../resource-agent-role-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../application-profile/structure.ttl">../application-profile/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../media-type/structure.ttl">../media-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../file/structure.ttl">../file/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../validation-result/structure.ttl">../validation-result/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../subject-scheme/structure.ttl">../subject-scheme/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../address/structure.ttl">../address/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../provenance-statement/structure.ttl">../provenance-statement/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../subject/structure.ttl">../subject/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../metadata-record/structure.ttl">../metadata-record/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../repository/structure.ttl">../repository/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../dataset/structure.ttl">../dataset/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../identifier/structure.ttl">../identifier/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../alternate-title/structure.ttl">../alternate-title/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../geometry/structure.ttl">../geometry/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../documentation/structure.ttl">../documentation/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../data-service/structure.ttl">../data-service/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../checksum/structure.ttl">../checksum/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../organization/structure.ttl">../organization/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../license-document/structure.ttl">../license-document/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../date-type/structure.ttl">../date-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../resource-relation-type/structure.ttl">../resource-relation-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../resource-type/structure.ttl">../resource-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../location-relation-type/structure.ttl">../location-relation-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../format/structure.ttl">../format/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../alternate-title-type/structure.ttl">../alternate-title-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../access-rights/structure.ttl">../access-rights/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../language-system/structure.ttl">../language-system/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../identifier-scheme/structure.ttl">../identifier-scheme/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../time-instant/structure.ttl">../time-instant/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../time-interval/structure.ttl">../time-interval/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../checksum-algorithm/structure.ttl">../checksum-algorithm/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../description-type/structure.ttl">../description-type/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../description/structure.ttl">../description/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../distribution-data-service/structure.ttl">../distribution-data-service/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../person/structure.ttl">../person/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../distribution-downloadable-file/structure.ttl">../distribution-downloadable-file/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../time-representation/structure.ttl">../time-representation/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../time-reference/structure.ttl">../time-reference/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Description of structure model</td>
+              <td><a href="../related-resource/structure.ttl">../related-resource/structure.ttl</a></td>
             </tr>
             <tr><td>XML schema</td><td><a href="../agent/schema.xsd">../agent/schema.xsd</a></td></tr>
             <tr><td>XML schema</td><td><a href="../distribution/schema.xsd">../distribution/schema.xsd</a></td></tr>

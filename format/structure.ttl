@@ -1,0 +1,33 @@
+@prefix : <https://model.ccmm.cz/research-data/format/>.
+@prefix dsvs: <https://dataspecer.com/work-in-progress/>.
+@prefix kv: <https://dataspecer.com/work-in-progress/key-value/>.
+
+<https://model.ccmm.cz/research-data/format/> a dsvs:structure-entity;
+    kv:dataPsmHumanDescription "{\"en\":\"Data structure for Format. Format of downloadable file.\",\"cs\":\"Datová struktura pro Format. Format of downloadable file.\"}";
+    kv:dataPsmHumanLabel "{\"en\":\"Format\",\"cs\":\"Format\"}";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/format/class-1747685284971-4e81-5f45-a58b\",\"https://model.ccmm.cz/research-data/format/attribute-1747685288536-30aa-4970-a045\"]";
+    kv:dataPsmRoots "[\"https://model.ccmm.cz/research-data/format/class-1747685284971-4e81-5f45-a58b\"]";
+    kv:dataPsmTechnicalLabel "null";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"namespace\":\"https://schema.ccmm.cz/research-data/1.1\",\"namespacePrefix\":\"ccmm\"}}";
+    kv:iri "\"https://model.ccmm.cz/research-data/format/\"";
+    kv:jsonEnforceContext "\"no\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Schema\"]".
+:class-1747685284971-4e81-5f45-a58b a dsvs:structure-entity;
+    kv:dataPsmExtends "[]";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/Format\"";
+    kv:dataPsmIsClosed "null";
+    kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/format/attribute-1747685288536-30aa-4970-a045\"]";
+    kv:dataPsmTechnicalLabel "\"format\"";
+    kv:instancesHaveIdentity "\"ALWAYS\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/format/class-1747685284971-4e81-5f45-a58b\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Class\"]".
+:attribute-1747685288536-30aa-4970-a045 a dsvs:structure-entity;
+    kv:dataPsmDatatype "\"http://www.w3.org/1999/02/22-rdf-syntax-ns#langString\"";
+    kv:dataPsmHumanDescription "null";
+    kv:dataPsmHumanLabel "null";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/Format.label\"";
+    kv:dataPsmTechnicalLabel "\"label\"";
+    kv:iri "\"https://model.ccmm.cz/research-data/format/attribute-1747685288536-30aa-4970-a045\"";
+    kv:types "[\"https://ofn.gov.cz/slovník/psm/Attribute\"]".

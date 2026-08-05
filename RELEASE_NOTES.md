@@ -1,5 +1,11 @@
 CHANGELOG
 ---------------------------------------
+### 2026-02-27 - minor changes
+* added SHACL file
+* added configuration for generating structure in extensions
+* added ttl representation of classes
+* cleaning deprecated artifactsa from older versions of Dataspecer
+
 ### 2025-12-18 - Official release 1.1.0
 * minor changes in definitions, cardinalities and profiled classes of multiple CCMM classes,
 * added more samples,
