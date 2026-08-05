@@ -10,8 +10,7 @@
     <xs:annotation>
       <xs:documentation xml:lang="en">
         Related resource - Resource represents any resource, physical or digital, that is related to the described dataset.
-        Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc...
-        Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc...
+        Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc.
       </xs:documentation>
     </xs:annotation>
     <xs:sequence>

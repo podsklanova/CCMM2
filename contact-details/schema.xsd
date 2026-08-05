@@ -21,7 +21,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             email - Email address.
-            Email address in standard format, e.g. john.doe@domain.com
+            Email address in standard format, e.g., john.doe@domain.com
           </xs:documentation>
         </xs:annotation>
       </xs:element>

@@ -57,7 +57,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has geometry - The corresponding geometry for a resource.
-            The range of this property allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses).
+            The range of this property allows for any type of geometry specification. For example, the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses).
           </xs:documentation>
         </xs:annotation>
       </xs:element>

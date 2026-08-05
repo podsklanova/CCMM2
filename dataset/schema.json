@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://model.ccmm.cz/research-data/dataset/schema.json",
   "title": "Dataset",
-  "description": "A conceptual entity that represents the information published. ",
+  "description": "A conceptual entity that represents the information published.",
   "type": "object",
   "required": [
     "metadata_identification",
@@ -130,7 +130,7 @@
                   "anyOf": [
                     {
                       "title": "Organization",
-                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                       "type": "object",
                       "required": [
                         "name"
@@ -643,7 +643,7 @@
                           "type": "array",
                           "items": {
                             "title": "Organization",
-                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                             "type": "object",
                             "required": [
                               "name"
@@ -1038,7 +1038,7 @@
                       "anyOf": [
                         {
                           "title": "Organization",
-                          "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                          "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                           "type": "object",
                           "required": [
                             "name"
@@ -1551,7 +1551,7 @@
                               "type": "array",
                               "items": {
                                 "title": "Organization",
-                                "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                                "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                                 "type": "object",
                                 "required": [
                                   "name"
@@ -1852,7 +1852,7 @@
     },
     "identifier": {
       "title": "has identifier",
-      "description": "The identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue. ",
+      "description": "The identifier for the Dataset, e.g., the URI or other unique identifier in the context of the Catalogue.",
       "type": "array",
       "minItems": 1,
       "items": {
@@ -2004,7 +2004,7 @@
             "anyOf": [
               {
                 "title": "Organization",
-                "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                 "type": "object",
                 "required": [
                   "name"
@@ -2517,7 +2517,7 @@
                     "type": "array",
                     "items": {
                       "title": "Organization",
-                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                       "type": "object",
                       "required": [
                         "name"
@@ -3553,7 +3553,7 @@
                         "anyOf": [
                           {
                             "title": "Organization",
-                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                             "type": "object",
                             "required": [
                               "name"
@@ -4066,7 +4066,7 @@
                                 "type": "array",
                                 "items": {
                                   "title": "Organization",
-                                  "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                                  "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                                   "type": "object",
                                   "required": [
                                     "name"
@@ -4672,7 +4672,7 @@
               "anyOf": [
                 {
                   "title": "Organization",
-                  "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                  "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                   "type": "object",
                   "required": [
                     "name"
@@ -5185,7 +5185,7 @@
                       "type": "array",
                       "items": {
                         "title": "Organization",
-                        "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                        "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                         "type": "object",
                         "required": [
                           "name"
@@ -5613,7 +5613,7 @@
                   "anyOf": [
                     {
                       "title": "Organization",
-                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                       "type": "object",
                       "required": [
                         "name"
@@ -6126,7 +6126,7 @@
                           "type": "array",
                           "items": {
                             "title": "Organization",
-                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                             "type": "object",
                             "required": [
                               "name"
@@ -6895,7 +6895,7 @@
                                   "anyOf": [
                                     {
                                       "title": "Organization",
-                                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                                       "type": "object",
                                       "required": [
                                         "name"
@@ -7408,7 +7408,7 @@
                                           "type": "array",
                                           "items": {
                                             "title": "Organization",
-                                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                                             "type": "object",
                                             "required": [
                                               "name"
@@ -8054,7 +8054,7 @@
                 "type": "array",
                 "items": {
                   "title": "Access rights",
-                  "description": "A statement about the access rights to the resource",
+                  "description": "A statement about the access rights to the resource.",
                   "type": "object",
                   "properties": {
                     "label": {
@@ -8297,7 +8297,7 @@
               },
               "packaging_format": {
                 "title": "has packaging format",
-                "description": "The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.",
+                "description": "The format of the file in which one or more data files are grouped together, e.g., to enable a set of related files to be downloaded together.",
                 "type": "object",
                 "properties": {
                   "label": {
@@ -8327,7 +8327,7 @@
               },
               "compression_format": {
                 "title": "has compression format",
-                "description": "The format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.",
+                "description": "The format of the file in which the data is contained in a compressed form, e.g., to reduce the size of the downloadable file.",
                 "type": "object",
                 "properties": {
                   "label": {
@@ -8412,7 +8412,7 @@
                 "type": "array",
                 "items": {
                   "title": "Access rights",
-                  "description": "A statement about the access rights to the resource",
+                  "description": "A statement about the access rights to the resource.",
                   "type": "object",
                   "properties": {
                     "label": {

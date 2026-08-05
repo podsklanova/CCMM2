@@ -16,7 +16,7 @@
 :Dataset dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Conjunto de datos"@es, "Dataset"@en, "Dataset"@it, "Datová sada"@cs, "Jeu de données"@fr, "Σύνολο Δεδομένων"@el, "قائمة بيانات"@ar, "データセット"@ja, "Datasæt"@da;
-    skos:definition "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja, "A conceptual entity that represents the information published. "@en, "Konceptuální entita představující publikovaná data."@cs, "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it, "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es, "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr, "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el, "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da;
+    skos:definition "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja, "A conceptual entity that represents the information published."@en, "Konceptuální entita představující publikovaná data."@cs, "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it, "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es, "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr, "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el, "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da;
     dsv:specializes :Resource;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset>;
     a dsv:ClassProfile.
@@ -56,7 +56,7 @@
 :Organization dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Organization"@en;
-    skos:definition "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. "@en;
+    skos:definition "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."@en;
     skos:scopeNote "If the Agent is an organisation, the use of the Organization Ontology is recommended."@en;
     dsv:specializes :Agent;
     a dsv:ClassProfile;
@@ -89,14 +89,14 @@
     a dsv:TermProfile;
     skos:prefLabel "Subject"@en;
     skos:definition "Subject, classification code, or key phrase describing the resource."@en;
-    skos:scopeNote "Subjects are always concepts identified by IRI belonging to the vocabulary (subject scheme). For free text keywords use keyword. "@en;
+    skos:scopeNote "Subjects are always concepts identified by IRI belonging to a vocabulary (subject scheme). For free-text keywords use a keyword."@en;
     a dsv:ClassProfile;
     dsv:class <https://w3id.org/tib/datacite/class/Subject>.
 :RelatedResource dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Related resource"@en;
     skos:definition "Resource represents any resource, physical or digital, that is related to the described dataset."@en;
-    skos:scopeNote "Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc...\nExamples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc..."@en;
+    skos:scopeNote "Class is used for description of the resource together with the type of relation, for which is used value from codelist https://vocabs.ccmm.cz/registry/codelist/RelationType/. Distributions of the datasets SHALL NOT be modeled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. Examples of resources: other related dataset, used methodology, instrument used for measurement, conference or conference paper etc."@en;
     dsv:specializes :Resource;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>;
     a dsv:ClassProfile.
@@ -123,7 +123,7 @@
 :Address dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:definition "A spatial object that in a human-readable way identifies a fixed location. "@en;
-    skos:scopeNote "Address shall refer to the IRI identifier of an address from existing Address registry (e.g. RÚIAN for Czechia). In cases, where address identifier does not exist or cannot be used, fill address details using class attributes."@en;
+    skos:scopeNote "Address shall refer to the IRI identifier of an address from existing Address registry (e.g., RÚIAN for Czechia). In cases, where address identifier does not exist or cannot be used, fill address details using class attributes."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -191,7 +191,7 @@
 :MediaType dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Media type"@en;
-    skos:definition "A file format or physical medium.\n"@en;
+    skos:definition "A file format or physical medium."@en;
     skos:scopeNote "Use media type in a form of IRI from registry https://www.iana.org/assignments/media-types/media-types.xhtml."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#MediaType>;
     a dsv:ClassProfile.
@@ -274,7 +274,7 @@
     a dsv:TermProfile;
     skos:prefLabel "Checksum algorithm"@en;
     skos:definition "Algorithm used for Checksums."@en;
-    skos:scopeNote "Refere to the IRI,. e.g. instances of https://spdx.org/rdf/terms/#d4e2129 in SPDX Ontology."@en;
+    skos:scopeNote "Refers to an IRI,. e.g., instances of https://spdx.org/rdf/terms/#d4e2129 in SPDX Ontology."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>;
     a dsv:ClassProfile.
 :LicenseDocument dct:isPartOf <https://model.ccmm.cz/research-data/>;
@@ -341,7 +341,7 @@
 :AccessRights dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "Access rights"@en;
-    skos:definition "A statement about the access rights to the resource"@en;
+    skos:definition "A statement about the access rights to the resource."@en;
     skos:scopeNote "Use IRI identifier from the register http://purl.org/coar/access_right/."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>;
     a dsv:ClassProfile.
@@ -734,10 +734,10 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :SubjectScheme.
 
-<https://model.ccmm.cz/research-data/Dataset.hasLocation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+<https://model.ccmm.cz/research-data/Resource.hasLocation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has location"@en;
-    skos:scopeNote "In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g. the place from where the data were measured, administrative area to which the resource conforms or other."@en;
+    skos:scopeNote "In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g., the place from where the data were measured, administrative area to which the resource conforms or other."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.geographicalCoverage>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -773,7 +773,7 @@
 <https://model.ccmm.cz/research-data/Location.hasGeometry> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has geometry"@en;
-    skos:scopeNote "The range of this property allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses)."@en;
+    skos:scopeNote "The range of this property allows for any type of geometry specification. For example, the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses)."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Location.geometry>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1118,7 +1118,7 @@
 <https://model.ccmm.cz/research-data/Dataset.hasIdentifier> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has identifier"@en;
-    skos:definition "The identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue. "@en;
+    skos:definition "The identifier for the Dataset, e.g., the URI or other unique identifier in the context of the Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Dataset.otherIdentifier>;
     dsv:cardinality cardinality:1n;
     dsv:domain :Dataset;
@@ -1163,13 +1163,9 @@
 <https://model.ccmm.cz/research-data/Distribution-DownloadableFile.hasCompressionFormat> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has compression format"@en;
+    skos:definition "El formato de la distribución en el que los datos están en forma comprimida, e.g. para reducir el tamaño del archivo a bajar."@es, "Formát komprese souboru, ve kterém jsou data poskytována v komprimované podobě, např. ke snížení velikosti souboru ke stažení."@cs, "Il formato di compressione della distribuzione nel quale i dati sono in forma compressa, ad es. per ridurre le dimensioni del file da scaricare."@it, "The format of the file in which the data is contained in a compressed form, e.g., to reduce the size of the downloadable file."@en, "Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx for at reducere størrelsen af downloadfilen."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.compressionFormat>;
     dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.compressionFormat>
-], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedAsProperty skos:scopeNote;
@@ -1183,7 +1179,7 @@
 <https://model.ccmm.cz/research-data/Distribution-DownloadableFile.hasPackagingFormat> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "has packaging format"@en;
-    skos:definition "The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together."@en;
+    skos:definition "The format of the file in which one or more data files are grouped together, e.g., to enable a set of related files to be downloaded together."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#Distribution.packagingFormat>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1427,7 +1423,7 @@
     a dsv:TermProfile;
     skos:prefLabel "email"@en;
     skos:definition "Email address."@en;
-    skos:scopeNote "Email address in standard format, e.g. john.doe@domain.com"@en;
+    skos:scopeNote "Email address in standard format, e.g., john.doe@domain.com"@en;
     dsv:cardinality cardinality:0n;
     dsv:property <https://model.ccmm.cz/vocabulary/ccmm#email>;
     dsv:domain :ContactDetails;
@@ -1761,7 +1757,7 @@
     a dsv:TermProfile;
     skos:prefLabel "address area"@en;
     skos:definition "The name of a geographic area that groups Addresses."@en;
-    skos:scopeNote " This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit. "@en;
+    skos:scopeNote " This would typically be part of a city, a neighbourhood or village, e.g., Montmartre. Address area is not an administrative unit. "@en;
     dsv:property <http://www.w3.org/ns/locn#addressArea>;
     dsv:domain :Address;
     a dsv:DatatypePropertyProfile;
@@ -1908,7 +1904,7 @@
     a dsv:TermProfile;
     skos:prefLabel "label"@en;
     skos:definition "Identifier scheme label"@en;
-    skos:scopeNote "E.g. DOI, ORCID etc..."@en;
+    skos:scopeNote "For example, DOI, ORCID etc."@en;
     dsv:property rdfs:label;
     dsv:domain :IdentifierScheme;
     a dsv:DatatypePropertyProfile;

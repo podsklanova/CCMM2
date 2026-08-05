@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://model.ccmm.cz/research-data/media-type/schema.json",
   "title": "Media type",
-  "description": "A file format or physical medium.\n",
+  "description": "A file format or physical medium.",
   "type": "object",
   "properties": {
     "id": {

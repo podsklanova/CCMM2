@@ -5,7 +5,7 @@
     <xs:annotation>
       <xs:documentation xml:lang="en">
         Checksum algorithm - Algorithm used for Checksums.
-        Refere to the IRI,. e.g. instances of https://spdx.org/rdf/terms/#d4e2129 in SPDX Ontology.
+        Refers to an IRI,. e.g., instances of https://spdx.org/rdf/terms/#d4e2129 in SPDX Ontology.
       </xs:documentation>
     </xs:annotation>
     <xs:sequence>

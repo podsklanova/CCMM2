@@ -246,7 +246,7 @@
                         "anyOf": [
                           {
                             "title": "Organization",
-                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                            "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                             "type": "object",
                             "required": [
                               "name"
@@ -759,7 +759,7 @@
                                 "type": "array",
                                 "items": {
                                   "title": "Organization",
-                                  "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                                  "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                                   "type": "object",
                                   "required": [
                                     "name"
@@ -1405,7 +1405,7 @@
       "type": "array",
       "items": {
         "title": "Access rights",
-        "description": "A statement about the access rights to the resource",
+        "description": "A statement about the access rights to the resource.",
         "type": "object",
         "properties": {
           "label": {

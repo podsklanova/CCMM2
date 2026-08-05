@@ -174,7 +174,7 @@
 
 <https://model.ccmm.cz/research-data/rdfs%3AResourceShape/69a57d1a> a sh:PropertyShape;
     sh:name "has location"@en;
-    sh:description "In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g. the place from where the data were measured, administrative area to which the resource conforms or other."@en;
+    sh:description "In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g., the place from where the data were measured, administrative area to which the resource conforms or other."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://purl.org/dc/terms/spatial>;
     sh:class <http://purl.org/dc/terms/Location>.
@@ -541,7 +541,7 @@
 
 <https://model.ccmm.cz/research-data/vcard%3AKindShape/-4e9e5e85> a sh:PropertyShape;
     sh:name "email"@en;
-    sh:description "Email address in standard format, e.g. john.doe@domain.com"@en;
+    sh:description "Email address in standard format, e.g., john.doe@domain.com"@en;
     sh:nodeKind sh:Literal;
     sh:path <https://model.ccmm.cz/vocabulary/ccmm#email>;
     sh:datatype xsd:string.
@@ -625,7 +625,7 @@
 
 <https://model.ccmm.cz/research-data/locn%3AAddressShape/-2d4b50b7> a sh:PropertyShape;
     sh:name "address area"@en;
-    sh:description " This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit. "@en;
+    sh:description " This would typically be part of a city, a neighbourhood or village, e.g., Montmartre. Address area is not an administrative unit. "@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/locn#addressArea>;
     sh:datatype xsd:string.
@@ -964,7 +964,7 @@
 
 <https://model.ccmm.cz/research-data/dcterms%3ALocationShape/297a0486> a sh:PropertyShape;
     sh:name "has geometry"@en;
-    sh:description "The range of this property allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses)."@en;
+    sh:description "The range of this property allows for any type of geometry specification. For example, the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral), or represented by a class, as geosparql:Geometry (or any of its subclasses)."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/locn#geometry>;
     sh:maxCount 1;
@@ -1243,7 +1243,7 @@
 
 <https://model.ccmm.cz/research-data/ccmm%3AIdentifierSchemeShape/-717362e4> a sh:PropertyShape;
     sh:name "label"@en;
-    sh:description "E.g. DOI, ORCID etc..."@en;
+    sh:description "For example, DOI, ORCID etc."@en;
     sh:nodeKind sh:Literal;
     sh:path rdfs:label;
     sh:datatype rdf:langString.

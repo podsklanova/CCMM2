@@ -32,7 +32,7 @@
         Σύνολο Δεδομένων - Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.
       </xs:documentation>
       <xs:documentation xml:lang="en">
-        Dataset - A conceptual entity that represents the information published. 
+        Dataset - A conceptual entity that represents the information published.
       </xs:documentation>
       <xs:documentation xml:lang="es">
         Conjunto de datos - Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.
@@ -59,7 +59,7 @@
       <xs:element maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="http://www.w3.org/ns/adms#identifier">
         <xs:annotation>
           <xs:documentation xml:lang="en">
-            has identifier - The identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue. 
+            has identifier - The identifier for the Dataset, e.g., the URI or other unique identifier in the context of the Catalogue.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -198,7 +198,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has location - The geographical area covered by the dataset.
-            In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g. the place from where the data were measured, administrative area to which the resource conforms or other.
+            In the CCMM spatial coverage does not only cover the area of resource, it may be connected to the resource in some other way, e.g., the place from where the data were measured, administrative area to which the resource conforms or other.
           </xs:documentation>
         </xs:annotation>
       </xs:element>

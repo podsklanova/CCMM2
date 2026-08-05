@@ -228,7 +228,7 @@
                             "anyOf": [
                               {
                                 "title": "Organization",
-                                "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                                "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                                 "type": "object",
                                 "required": [
                                   "name"
@@ -741,7 +741,7 @@
                                     "type": "array",
                                     "items": {
                                       "title": "Organization",
-                                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+                                      "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.",
                                       "type": "object",
                                       "required": [
                                         "name"
@@ -1387,7 +1387,7 @@
           "type": "array",
           "items": {
             "title": "Access rights",
-            "description": "A statement about the access rights to the resource",
+            "description": "A statement about the access rights to the resource.",
             "type": "object",
             "properties": {
               "label": {
@@ -1630,7 +1630,7 @@
         },
         "packaging_format": {
           "title": "has packaging format",
-          "description": "The format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.",
+          "description": "The format of the file in which one or more data files are grouped together, e.g., to enable a set of related files to be downloaded together.",
           "type": "object",
           "properties": {
             "label": {
@@ -1660,7 +1660,7 @@
         },
         "compression_format": {
           "title": "has compression format",
-          "description": "The format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.",
+          "description": "The format of the file in which the data is contained in a compressed form, e.g., to reduce the size of the downloadable file.",
           "type": "object",
           "properties": {
             "label": {
@@ -1745,7 +1745,7 @@
           "type": "array",
           "items": {
             "title": "Access rights",
-            "description": "A statement about the access rights to the resource",
+            "description": "A statement about the access rights to the resource.",
             "type": "object",
             "properties": {
               "label": {

@@ -59,7 +59,7 @@
 :associationEnd-1742339898946-573f-1501-9041 a dsvs:structure-entity;
     kv:dataPsmHumanDescription "null";
     kv:dataPsmHumanLabel "null";
-    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/Dataset.hasLocation\"";
+    kv:dataPsmInterpretation "\"https://model.ccmm.cz/research-data/Resource.hasLocation\"";
     kv:dataPsmIsDematerialize "null";
     kv:dataPsmIsReverse "false";
     kv:dataPsmPart "\"https://model.ccmm.cz/research-data/dataset/classReference-1783675219597-572b-c5cd-b68e\"";
