@@ -8,7 +8,7 @@
     kv:dataPsmParts "[\"https://model.ccmm.cz/research-data/resource-attribution/class-1782311692513-fbfd-95df-9c5a\",\"https://model.ccmm.cz/research-data/resource-attribution/associationEnd-1782312130950-891a-1350-b6ff\",\"https://model.ccmm.cz/research-data/resource-attribution/or-1782312248373-8a69-2198-8f46\",\"https://model.ccmm.cz/research-data/resource-attribution/classReference-1782312259368-0bc0-bff4-9485\",\"https://model.ccmm.cz/research-data/resource-attribution/classReference-1782312265163-06e0-3aef-bac8\",\"https://model.ccmm.cz/research-data/resource-attribution/associationEnd-1782312455679-37a5-cd2d-bbaf\",\"https://model.ccmm.cz/research-data/resource-attribution/classReference-1782312484116-a7c9-7c3a-969e\"]";
     kv:dataPsmRoots "[\"https://model.ccmm.cz/research-data/resource-attribution/class-1782311692513-fbfd-95df-9c5a\"]";
     kv:dataPsmTechnicalLabel "null";
-    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"namespace\":\"https://schema.ccmm.cz/research-data/1.2\",\"namespacePrefix\":\"ccmm\"}}";
+    kv:extensions "{\"https://ofn.gov.cz/slovník/psm/extensions/xml\":{\"namespace\":\"https://schema.ccmm.cz/research-data/2.0\",\"namespacePrefix\":\"ccmm\"}}";
     kv:iri "\"https://model.ccmm.cz/research-data/resource-attribution/\"";
     kv:jsonEnforceContext "\"no\"";
     kv:types "[\"https://ofn.gov.cz/slovník/psm/Schema\"]".
