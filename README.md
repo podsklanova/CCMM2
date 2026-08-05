@@ -39,7 +39,7 @@ Each class folder ocntains lifting and lowering files, that may be used to enric
 
 ## JSON schema
 
-From the version 1.2.0, json schemas, json-ld contects and json examples are generated for each class.
+From the version 2.0.0, JSON schemas and JSON-LD contexts are generated for each class.
 
 ## Dataspecer project
 
