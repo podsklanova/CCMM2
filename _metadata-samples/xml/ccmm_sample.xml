@@ -54,8 +54,8 @@
         <date_updated>2025-07-25</date_updated>
         <date_created>2025-04-28</date_created>
         <conforms_to_standard>
-            <iri>https://model.ccmm.cz/research-data/1.1.0</iri>
-            <label xml:lang="">CCMM RD 1.1.0</label>
+            <iri>https://model.ccmm.cz/research-data/1.2.0</iri>
+            <label xml:lang="">CCMM RD 1.2.0</label>
         </conforms_to_standard>
         <conforms_to_standard>
             <iri>https://www.iso.org/standard/80275.html</iri>
