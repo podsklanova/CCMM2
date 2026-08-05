@@ -28,16 +28,16 @@
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/3c2712c8>.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/6f082f62> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/4d77775c> a sh:PropertyShape;
     sh:name "publication year"@en;
-    sh:description "If TimeReference with dateType \"Issued\" is present, year in that date and publicationYear must be the same“"@en;
+    sh:description "If TimeReference with dateType \"Issued\" is present, year in that date and publicationYear must be the same."@en;
     sh:nodeKind sh:Literal;
-    sh:path <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>;
+    sh:path <https://w3id.org/tib/datacite/property/publicationYear>;
     sh:maxCount 1;
     sh:minCount 1;
     sh:datatype xsd:gYear.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/6f082f62>.
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/4d77775c>.
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/6ca3a6c0> a sh:PropertyShape;
     sh:name "keyword"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
@@ -55,13 +55,13 @@
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/63b3b548>.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-42b44d26> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape/3b0b6cdc> a sh:PropertyShape;
     sh:name "has funding reference"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
-    sh:path <https://model.ccmm.cz/vocabulary/datacite#hasFundingReference>;
+    sh:path <https://w3id.org/tib/datacite/property/fundingReference>;
     sh:class <https://w3id.org/tib/datacite/class/FundingReference>.
 
-<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/-42b44d26>.
+<https://model.ccmm.cz/research-data/dcat%3ADatasetShape> sh:property <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/3b0b6cdc>.
 
 <https://model.ccmm.cz/research-data/dcat%3ADatasetShape/3c18bf07> a sh:PropertyShape;
     sh:name "has distribution"@en;
@@ -1290,15 +1290,15 @@
     sh:closed false;
     sh:targetClass <https://model.ccmm.cz/vocabulary/ccmm#TimeReference>.
 
-<https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape/-55217a61> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape/-6c98a651> a sh:PropertyShape;
     sh:name "date information"@en;
     sh:description "Write any additional information needed to understand the meaning of event that happened in the given time."@en;
     sh:nodeKind sh:Literal;
-    sh:path <https://model.ccmm.cz/vocabulary/datacite#dateInformation>;
+    sh:path <https://w3id.org/tib/datacite/property/dateInformation>;
     sh:maxCount 1;
     sh:datatype rdf:langString.
 
-<https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape> sh:property <https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape/-55217a61>.
+<https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape> sh:property <https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape/-6c98a651>.
 
 <https://model.ccmm.cz/research-data/ccmm%3ATimeReferenceShape/6c5961b8> a sh:PropertyShape;
     sh:name "has date type"@en;

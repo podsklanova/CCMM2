@@ -25,7 +25,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" name="date_information" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#dateInformation">
+      <xs:element minOccurs="0" name="date_information" sawsdl:modelReference="https://w3id.org/tib/datacite/property/dateInformation">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             date information - Additional information to the date in text form.

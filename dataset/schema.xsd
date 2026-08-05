@@ -92,11 +92,11 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element name="publication_year" type="xs:gYear" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear">
+      <xs:element name="publication_year" type="xs:gYear" sawsdl:modelReference="https://w3id.org/tib/datacite/property/publicationYear">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             publication year - The year when the item was or will be made publicly available.
-            If TimeReference with dateType &#34;Issued&#34; is present, year in that date and publicationYear must be the same“
+            If TimeReference with dateType &#34;Issued&#34; is present, year in that date and publicationYear must be the same.
           </xs:documentation>
         </xs:annotation>
       </xs:element>
@@ -202,7 +202,7 @@
           </xs:documentation>
         </xs:annotation>
       </xs:element>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="funding_reference" type="ccmm:funding_reference" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasFundingReference">
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="funding_reference" type="ccmm:funding_reference" sawsdl:modelReference="https://w3id.org/tib/datacite/property/fundingReference">
         <xs:annotation>
           <xs:documentation xml:lang="en">
             has funding reference - Has reference for funding of a dataset acquisition.
