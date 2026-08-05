@@ -8,7 +8,7 @@
   <xsl:import href="../media-type/lowering.xslt"/>
   <xsl:import href="../checksum/lowering.xslt"/>
   <xsl:import href="../access-rights/lowering.xslt"/>
-  <xsl:import href="../license-document/lowering.xslt"/>
+  <xsl:import href="../licence-document/lowering.xslt"/>
   <xsl:import href="../checksum-algorithm/lowering.xslt"/>
   <xsl:import href="../data-service/lowering.xslt"/>
   <xsl:import href="../documentation/lowering.xslt"/>

@@ -15,13 +15,13 @@
     </xsl:for-each-group>
   </xsl:template>
   <xsl:template match="sp:result[sp:binding[@name=$pred]/sp:uri/text()=$type and sp:binding[@name=$obj]/sp:uri/text()=&#34;http://purl.org/dc/terms/LicenseDocument&#34;]">
-    <ccmm:license_document>
-      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747640270910-1022-e495-9645">
+    <ccmm:licence_document>
+      <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785943107074-47da-df8e-9e09">
         <xsl:with-param name="id">
           <xsl:copy-of select="sp:binding[@name=$subj]/*"/>
         </xsl:with-param>
       </xsl:call-template>
-    </ccmm:license_document>
+    </ccmm:licence_document>
   </xsl:template>
   <xsl:template match="@xml:lang">
     <xsl:copy-of select="."/>
@@ -33,7 +33,7 @@
   <xsl:template match="sp:uri">
     <xsl:value-of select="."/>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747640270910-1022-e495-9645">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785943107074-47da-df8e-9e09">
     <xsl:param name="id"/>
     <xsl:param name="no_iri" select="false()"/>
     <xsl:variable name="id_test">

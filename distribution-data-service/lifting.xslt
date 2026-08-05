@@ -4,7 +4,7 @@
   <xsl:import href="../application-profile/lifting.xslt"/>
   <xsl:import href="../documentation/lifting.xslt"/>
   <xsl:import href="../access-rights/lifting.xslt"/>
-  <xsl:import href="../license-document/lifting.xslt"/>
+  <xsl:import href="../licence-document/lifting.xslt"/>
   <xsl:import href="../related-resource/lifting.xslt"/>
   <xsl:import href="../identifier/lifting.xslt"/>
   <xsl:import href="../alternate-title/lifting.xslt"/>
@@ -112,7 +112,7 @@
       </xsl:for-each>
       <xsl:for-each select="ccmm:licence">
         <ns0:license>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747640270910-1022-e495-9645"/>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785943107074-47da-df8e-9e09"/>
         </ns0:license>
       </xsl:for-each>
       <xsl:for-each select="ccmm:description">
