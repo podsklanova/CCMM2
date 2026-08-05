@@ -24,7 +24,8 @@
     <!-- (1..n) Conforms to standard: this is the minimal variant with an IRI -->
     <date_updated>2025-07-25</date_updated>
     <conforms_to_standard>
-        <iri>https://model.ccmm.cz/research-data/1.1.0</iri>
+      <iri>https://model.ccmm.cz/research-data/1.2.0</iri>
+      <label xml:lang="">CCMM RD 1.2.0</label>
     </conforms_to_standard>
        <original_repository>
             <iri>https://data.narodni-repozitar.cz</iri>
