@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset
-    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.2 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/1.2.0/dataset/schema.xsd"
-    xmlns="https://schema.ccmm.cz/research-data/1.2" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.2 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/2.0.0/dataset/schema.xsd"
+    xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <iri>https://organization.cz/dataset_server/dataset_id</iri>
     <metadata_identification>
@@ -495,10 +495,6 @@
         </distribution_downloadable_file>
     </distribution>
     <validation_result/>
-    <!-- validation is in the current state a placeholdoer for extensions -->
-    <!--    <provenance_activity/>-->
-    <!-- provenance is in the current state a placeholdoer for extensions -->
-    <generated_by>
-        <iri>http://link-to-origin.com</iri>
-    </generated_by>
+    <!-- provenance activity allows pointing to json representation according to RO-Crate or ISO 5181 -->
+    <generated_by ro-crate_json_representation="https://link.to/ro-crate-json"/>
 </dataset>
