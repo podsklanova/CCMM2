@@ -471,7 +471,7 @@
               }
             },
             "date_information": {
-              "@id": "https://model.ccmm.cz/vocabulary/datacite#dateInformation",
+              "@id": "https://w3id.org/tib/datacite/property/dateInformation",
               "@container": "@language"
             },
             "time_reference": {

@@ -5,7 +5,6 @@
     <xs:annotation>
       <xs:documentation xml:lang="en">
         Media type - A file format or physical medium.
-
         Use media type in a form of IRI from registry https://www.iana.org/assignments/media-types/media-types.xhtml.
       </xs:documentation>
     </xs:annotation>

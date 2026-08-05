@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://model.ccmm.cz/research-data/access-rights/schema.json",
   "title": "Access rights",
-  "description": "A statement about the access rights to the resource",
+  "description": "A statement about the access rights to the resource.",
   "type": "object",
   "required": [
     "id"

@@ -6,7 +6,7 @@
     <xs:annotation>
       <xs:documentation xml:lang="en">
         Subject - Subject, classification code, or key phrase describing the resource.
-        Subjects are always concepts identified by IRI belonging to the vocabulary (subject scheme). For free text keywords use keyword. 
+        Subjects are always concepts identified by IRI belonging to a vocabulary (subject scheme). For free-text keywords use a keyword.
       </xs:documentation>
     </xs:annotation>
     <xs:sequence>

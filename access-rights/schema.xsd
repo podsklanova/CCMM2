@@ -4,7 +4,7 @@
   <xs:complexType name="access_rights" sawsdl:modelReference="http://purl.org/dc/terms/RightsStatement">
     <xs:annotation>
       <xs:documentation xml:lang="en">
-        Access rights - A statement about the access rights to the resource
+        Access rights - A statement about the access rights to the resource.
         Use IRI identifier from the register http://purl.org/coar/access_right/.
       </xs:documentation>
     </xs:annotation>

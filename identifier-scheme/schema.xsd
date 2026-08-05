@@ -14,7 +14,7 @@
         <xs:annotation>
           <xs:documentation xml:lang="en">
             label - Identifier scheme label
-            E.g. DOI, ORCID etc...
+            For example, DOI, ORCID etc.
           </xs:documentation>
         </xs:annotation>
         <xs:complexType>
