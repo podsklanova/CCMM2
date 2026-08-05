@@ -485,15 +485,10 @@
 
 <https://model.ccmm.cz/research-data/Dataset.hasFundingReference> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
+    skos:prefLabel "has funding reference"@en;
     skos:definition "Has reference for funding of a dataset acquisition."@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#hasFundingReference>
-];
     dsv:cardinality cardinality:0n;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#hasFundingReference>;
+    dsv:property <https://w3id.org/tib/datacite/property/fundingReference>;
     dsv:domain :Dataset;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :FundingReference.
@@ -1378,15 +1373,10 @@
 <https://model.ccmm.cz/research-data/Dataset.publicationYear> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "publication year"@en;
-    skos:scopeNote "If TimeReference with dateType \"Issued\" is present, year in that date and publicationYear must be the same“"@en;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:comment;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>
-];
+    skos:definition "The year when the item was or will be made publicly available."@en;
+    skos:scopeNote "If TimeReference with dateType \"Issued\" is present, year in that date and publicationYear must be the same."@en;
     dsv:cardinality cardinality:11;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear>;
+    dsv:property <https://w3id.org/tib/datacite/property/publicationYear>;
     dsv:domain :Dataset;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#gYear>.
@@ -1569,7 +1559,7 @@
     skos:definition "Additional information to the date in text form."@en;
     skos:scopeNote "Write any additional information needed to understand the meaning of event that happened in the given time."@en;
     dsv:cardinality cardinality:01;
-    dsv:property <https://model.ccmm.cz/vocabulary/datacite#dateInformation>;
+    dsv:property <https://w3id.org/tib/datacite/property/dateInformation>;
     dsv:domain :TimeReference;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.

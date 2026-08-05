@@ -3260,7 +3260,7 @@
         "properties": {
           "description_text": {
             "title": "description text",
-            "description": "A free-text account of the Dataset.",
+            "description": "A free-text account of the Data Service.",
             "type": "object",
             "required": [
               "@value",

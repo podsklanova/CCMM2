@@ -178,7 +178,7 @@
         </ccmm:qualified_attribution>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/publicationYear&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:publication_year>
           <xsl:apply-templates select="sp:binding[@name=$obj]/sp:literal"/>
@@ -280,7 +280,7 @@
         </ccmm:location>
       </xsl:for-each>
     </xsl:for-each-group>
-    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://model.ccmm.cz/vocabulary/datacite#hasFundingReference&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
+    <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;https://w3id.org/tib/datacite/property/fundingReference&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:funding_reference>
           <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1742235374506-6369-b2fd-b1bf">
