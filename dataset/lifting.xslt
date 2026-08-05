@@ -22,7 +22,7 @@
   <xsl:import href="../format/lifting.xslt"/>
   <xsl:import href="../media-type/lifting.xslt"/>
   <xsl:import href="../checksum/lifting.xslt"/>
-  <xsl:import href="../license-document/lifting.xslt"/>
+  <xsl:import href="../licence-document/lifting.xslt"/>
   <xsl:import href="../checksum-algorithm/lifting.xslt"/>
   <xsl:import href="../data-service/lifting.xslt"/>
   <xsl:import href="../documentation/lifting.xslt"/>

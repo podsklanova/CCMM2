@@ -6,7 +6,7 @@
   <xsl:import href="../media-type/lifting.xslt"/>
   <xsl:import href="../checksum/lifting.xslt"/>
   <xsl:import href="../access-rights/lifting.xslt"/>
-  <xsl:import href="../license-document/lifting.xslt"/>
+  <xsl:import href="../licence-document/lifting.xslt"/>
   <xsl:import href="../checksum-algorithm/lifting.xslt"/>
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
   <xsl:template match="/ccmm:distribution-downloadable-file">
@@ -124,7 +124,7 @@
       </xsl:for-each>
       <xsl:for-each select="ccmm:licence">
         <ns0:license>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747640270910-1022-e495-9645"/>
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785943107074-47da-df8e-9e09"/>
         </ns0:license>
       </xsl:for-each>
       <xsl:for-each select="ccmm:description">

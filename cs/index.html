@@ -330,16 +330,6 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": "../license-document/structure.ttl",
-              "hasRole": "role:schema",
-              "format": "filetype:RDF_TURTLE",
-              "conformsTo": "dsv:Structure"
-            },
-            {
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
               "hasArtifact": "../date-type/structure.ttl",
               "hasRole": "role:schema",
               "format": "filetype:RDF_TURTLE",
@@ -601,6 +591,16 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "../ro-crate-json-representation/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../licence-document/structure.ttl",
               "hasRole": "role:schema",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": "dsv:Structure"
@@ -1072,28 +1072,6 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "../organization/context.jsonld",
-              "hasRole": "role:schema",
-              "format": "filetype:JSON_LD",
-              "conformsTo": "http://www.w3.org/ns/json-ld"
-            },
-            {
-              "@id": "2fea9b2a-6741-4b89-9438-99181dc0c6f9#jsonschema",
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
-              "hasArtifact": "../license-document/schema.json",
-              "hasRole": "role:schema",
-              "format": "filetype:JSON",
-              "conformsTo": "https://json-schema.org/draft/2020-12/schema"
-            },
-            {
-              "@id": "2fea9b2a-6741-4b89-9438-99181dc0c6f9#jsonLd",
-              "@type": [
-                "adms:AssetDistribution",
-                "prof:ResourceDescriptor"
-              ],
-              "hasArtifact": "../license-document/context.jsonld",
               "hasRole": "role:schema",
               "format": "filetype:JSON_LD",
               "conformsTo": "http://www.w3.org/ns/json-ld"
@@ -1688,6 +1666,28 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "../ro-crate-json-representation/context.jsonld",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON_LD",
+              "conformsTo": "http://www.w3.org/ns/json-ld"
+            },
+            {
+              "@id": "517a892a-8642-4436-9f04-95bb623c492f#jsonschema",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../licence-document/schema.json",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON",
+              "conformsTo": "https://json-schema.org/draft/2020-12/schema"
+            },
+            {
+              "@id": "517a892a-8642-4436-9f04-95bb623c492f#jsonLd",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../licence-document/context.jsonld",
               "hasRole": "role:schema",
               "format": "filetype:JSON_LD",
               "conformsTo": "http://www.w3.org/ns/json-ld"
@@ -4585,7 +4585,7 @@
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="#LicenseDocument">License document (@en)</a>
+                      <a href="#LicenceDocument">Licence document (@en)</a>
               
                           [0..1]
               
@@ -7071,7 +7071,7 @@
                   <tr>
                     <td>Obor hodnot</td>
                     <td>
-                      <a href="#LicenseDocument">License document (@en)</a>
+                      <a href="#LicenceDocument">Licence document (@en)</a>
               
                           [1..1]
               
@@ -10911,8 +10911,8 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="LicenseDocument">
-            <h4>License document (@en)</h4>
+          </section>          <section id="LicenceDocument">
+            <h4>Licence document (@en)</h4>
           
             <table class="def">
               <tr>
@@ -10924,11 +10924,11 @@
               </tr>
               <tr>
                 <td>IRI</td>
-                <td><a href="https://model.ccmm.cz/research-data/LicenseDocument">https://model.ccmm.cz/research-data/LicenseDocument</a></td>
+                <td><a href="https://model.ccmm.cz/research-data/LicenceDocument">https://model.ccmm.cz/research-data/LicenceDocument</a></td>
               </tr>
               <tr>
                 <td>Název</td>
-                <td>License document (@en)</td>
+                <td>Licence document (@en)</td>
               </tr>
               <tr>
                 <td>Definice</td>
@@ -10983,12 +10983,12 @@
           
               <tr>
                 <td>Popis použití v profilu</td>
-                <td>The IRI shall point to the document with the license text. (@en)</td>
+                <td>The IRI shall point to the document with the licence text. (@en)</td>
               </tr>
             </table>
           
               <p><strong>Vlastnosti</strong></p>
-              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#LicenseDocument.label">label (@en)</a>.</p>
+              <p>Pro tento profil třídy jsou definovány následující vlastnosti: <a href="#LicenceDocument.label">label (@en)</a>.</p>
           
               <p><strong>Zpětné asociace</strong></p>
               <ul>
@@ -10996,7 +10996,7 @@
                   <li>z domény <a href="#DataService"></a> → <a href="#DataService.hasLicence"></a></li>
               </ul>
           
-              <section id="LicenseDocument.label">
+              <section id="LicenceDocument.label">
                 <h4>label (@en)</h4>
               
                 <table class="def">
@@ -11009,7 +11009,7 @@
                   </tr>
                   <tr>
                     <td>IRI</td>
-                    <td><a href="https://model.ccmm.cz/research-data/LicenseDocument.label">https://model.ccmm.cz/research-data/LicenseDocument.label</a></td>
+                    <td><a href="https://model.ccmm.cz/research-data/LicenceDocument.label">https://model.ccmm.cz/research-data/LicenceDocument.label</a></td>
                   </tr>
                   <tr>
                     <td>Název</td>
@@ -11017,12 +11017,12 @@
                   </tr>
                   <tr>
                     <td>Definice</td>
-                    <td>Label of the license document. (@en)</td>
+                    <td>Label of the licence document. (@en)</td>
                   </tr>
                   <tr>
                     <td>Definiční obor</td>
                     <td>
-                      <a href="#LicenseDocument">License document (@en)</a>
+                      <a href="#LicenceDocument">Licence document (@en)</a>
               
                       
                     </td>
@@ -18708,7 +18708,7 @@
           povinná
           položka typu
 
-              <a href="#json-object--distribution--license-document"></a>
+              <a href="#json-object--distribution--licence-document"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -18807,9 +18807,9 @@
   
 
     </section>
-    <section id="json-object--distribution--license-document">
+    <section id="json-object--distribution--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -18820,7 +18820,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -18831,7 +18831,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -20105,7 +20105,7 @@
           povinná
           položka typu
 
-              <a href="#json-object--distribution--license-document"></a>
+              <a href="#json-object--distribution--licence-document"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -20204,9 +20204,9 @@
   
 
     </section>
-    <section id="json-object--distribution--license-document">
+    <section id="json-object--distribution--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -20217,7 +20217,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -20228,7 +20228,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -20806,7 +20806,7 @@
           nepovinná
           položka typu
 
-              <a href="#json-object--distribution--license-document"></a>
+              <a href="#json-object--distribution--licence-document"></a>
 
         </li>
     </ul>
@@ -20824,9 +20824,9 @@
   
 
     </section>
-    <section id="json-object--distribution--license-document">
+    <section id="json-object--distribution--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -20837,7 +20837,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -20848,7 +20848,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -52508,7 +52508,7 @@
           povinná
           položka typu
 
-              <a href="#json-object--dataset--license-document"></a>
+              <a href="#json-object--dataset--licence-document"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -52607,9 +52607,9 @@
   
 
     </section>
-    <section id="json-object--dataset--license-document">
+    <section id="json-object--dataset--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -52620,7 +52620,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -52631,7 +52631,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -53905,7 +53905,7 @@
           povinná
           položka typu
 
-              <a href="#json-object--dataset--license-document"></a>
+              <a href="#json-object--dataset--licence-document"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -54004,9 +54004,9 @@
   
 
     </section>
-    <section id="json-object--dataset--license-document">
+    <section id="json-object--dataset--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -54017,7 +54017,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -54028,7 +54028,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -54606,7 +54606,7 @@
           nepovinná
           položka typu
 
-              <a href="#json-object--dataset--license-document"></a>
+              <a href="#json-object--dataset--licence-document"></a>
 
         </li>
     </ul>
@@ -54624,9 +54624,9 @@
   
 
     </section>
-    <section id="json-object--dataset--license-document">
+    <section id="json-object--dataset--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -54637,7 +54637,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -54648,7 +54648,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -88139,7 +88139,7 @@
           nepovinná
           položka typu
 
-              <a href="#json-object--data-service--license-document"></a>
+              <a href="#json-object--data-service--licence-document"></a>
 
         </li>
     </ul>
@@ -88157,9 +88157,9 @@
   
 
     </section>
-    <section id="json-object--data-service--license-document">
+    <section id="json-object--data-service--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -88170,7 +88170,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -88181,7 +88181,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -93076,7 +93076,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/2.0">https://schema.ccmm.cz/research-data/2.0</a></td>
-          <td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td>
+          <td><a href="../licence-document/schema.xsd">../licence-document/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
     </tbody>
@@ -93294,13 +93294,13 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:license_document"><code>ccmm:license_document</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:licence_document"><code>ccmm:licence_document</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#LicenseDocument">License document</a>
+        <a href="#LicenceDocument">Licence document</a>
         (A legal document giving official permission to do something with a resource and describing conditions under which it may be done.)
       </dd>
 
@@ -95328,423 +95328,6 @@
         (Contact details such as telephone, e-mail address etc.)
       </dd>
 
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-
-</section>
-      </section>
-      <section id="struktura-License-Document">
-      <h2>
-        Specifikace struktury pro
-        License Document
-      </h2>
-      <p>Datová struktura pro License Document. A legal document giving official permission to do something with a resource.</p>
-
-      <section id="json-schema--license-document">
-
-
-
-
-
-
-
-
-
-
-
-
-  <h1>
-      JSON struktura pro    License Document
-  </h1>
-
-    <dl>
-      <dt>IRI</dt>
-      <dd><code>https://model.ccmm.cz/research-data/license-document/schema.json</code></dd>
-      <dt>Definováno v</dt>
-      <dd><code><a href="../license-document/schema.json">../license-document/schema.json</a></code></dd>
-        <dt>Verze použitého jazyka</dt>
-        <dd><a href="https://json-schema.org/specification-links.html#2020-12-release" target="_blank">2020-12</a> (metaschema IRI: <code>https://json-schema.org/draft/2020-12/schema</code>)</dd>
-    </dl>
-
-    <h2>Kořen</h2>
-    Kořenem JSON schématu je
-        <a href="#json-object--license-document--license-document"></a>
-
-
-    <section id="json-object--license-document--license-document">
-      <h2>
-        Objekt <i>License document</i>
-      </h2>
-
-      <table class="def">
-          <tr>
-            <th>Popis</th>
-            <td>A legal document giving official permission to do something with a resource and describing conditions under which it may be done.</td>
-          </tr>
-
-          <tr>
-            <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
-          </tr>
-      </table>
-
-          <strong>
-    objekt
-  </strong>
-    s vlastnostmi (<code>properties</code>):
-    <ul>
-        <li style="list-style-type: disclosure-closed;">
-          <code>id</code>:
-          nepovinná
-          položka typu
-
-                
-  
-  
-    řetězec
-  (formát: <code>iri</code>)
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
-          <code>type</code>:
-          nepovinná
-          položka typu
-
-                
-  
-  
-  
-  
-  
-  
-  
-        právě jedno z následujících (<code>oneOf</code>):
-    <ul>
-        <li>      
-    konstantní hodnota
-    <code>&quot;license_document&quot;</code>
-
-  
-  
-  
-  
-  
-  
-  
-
-</li>
-        <li>      
-  
-      pole hodnot <code>{0..*}</code> typu       
-  
-  
-    řetězec
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-     a musí obsahovat: <code>&quot;license_document&quot;</code>
-  
-  
-  
-  
-  
-  
-  
-
-</li>
-    </ul>
-
-
-
-
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
-          <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
-          nepovinná
-          položka typu
-
-                
-  
-      pole hodnot <code>{0..*}</code> typu         <strong>
-    objekt
-  </strong>
-    s vlastnostmi (<code>properties</code>):
-    <ul>
-        <li style="list-style-type: disclosure-closed;">
-          <code>@value</code>:
-          povinná
-          položka typu
-
-                
-  
-  
-    řetězec
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-        <li style="list-style-type: disclosure-closed;">
-          <code>@language</code>:
-          povinná
-          položka typu
-
-                
-  
-  
-    řetězec
-  
-  
-
-
-  
-  
-  
-  
-  
-
-
-        </li>
-    </ul>
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-          
-  
-  
-  
-  
-  
-  
-  
-
-
-        </li>
-    </ul>
-  
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-
-    </section>
-</section>
-
-
-
-
-
-
-<section>
-<h3>Přehled XML struktury</h3>
-<p>
-  Tato sekce popisuje XSD zachycující strukturu pro <i>License Document</i>, jež je definováno v souboru <a href="../license-document/schema.xsd"><code>../license-document/schema.xsd</code></a>.
-</p>
-
-    <dl>
-      <dt>Definováno v namespace</dt>
-      <dd><code>https://schema.ccmm.cz/research-data/2.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
-    </dl>
-
-<section>
-<h4>Importy</h4>
-<p>
-  Seznam schémat, jež jsou tímto schématem importovány a použity.
-</p>
-  <table class="def">
-    <thead>
-      <tr>
-        <th>Prefix</th>
-        <th>Namespace</th>
-        <th>Lokace schématu</th>
-        <th>Dokumentace</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>xml</code></td>
-            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
-          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
-          <td></td>
-        </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h4>Kořenové entity XSD schématu</h4>
-  <ul>
-      <li>element <a href="#element-ccmm:license_document"><code>license_document</code></a></li>
-
-      <li> komplexní typ <a href="#type-ccmm:license_document"><code>license_document</code></a></li>
-  </ul>
-</section>
-
-
-<section id="element-ccmm:license_document">
-  <h4>Kořenový element <code>&lt;license_document&gt;</code></h4>
-  <dl>
-    
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:license_document"><code>ccmm:license_document</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-      </dl>
-</section>
-
-
-<section id="type-ccmm:license_document">
-  <h4>Kořenový komplexní typ <code>license_document</code></h4>
-  <dl>
-        <dt>Význam</dt>
-      <dd>
-        <a href="#LicenseDocument">License document</a>
-        (A legal document giving official permission to do something with a resource and describing conditions under which it may be done.)
-      </dd>
-
-
-        <dt>Obsah 
- - elementy v tomto pořadí
-</dt>
-      <ul style="margin-top: 0;">
-      <li>
-          element <a href="#element-ccmm:license_document-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
-      </li>
-      <li>
-          element <a href="#element-ccmm:license_document-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
-      </li>
-  </ul>
-
-
-  </dl>
-</section>
-<section id="element-ccmm:license_document-ccmm:iri">
-  <h4>Element <code>&lt;iri&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..1</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:license_document"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
-      </dd>
-
-
-    
-
-
-    
-  </div>
-
-    
-  </dl>
-</section>
-<section id="element-ccmm:license_document-ccmm:label">
-  <h4>Element <code>&lt;label&gt;</code></h4>
-
-  <dl>
-    <dt>Význam</dt>
-    <dd>
-        <i>
-          
-          vlastnost
-          
-          
-        </i>
-
-          <a href="#LicenseDocument.label"><strong>label</strong></a>
-          (Label of the license document.)
-
-    </dd>
-
-      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
-      <dd>0..*</dd>
-      <dt>Nadřazený element</dt>
-      <dd><a href="#type-ccmm:license_document"></a></dd>
-
-    
-      <dt>Typ elementu</dt>
-        <div style="margin-left: 40px;">
-      <dt>Obsah</dt>
-      <dd>
-          Obsahem elementu je typ <a href=""><code></code></a>.
-      </dd>
-
-
-    
 
 
     
@@ -102302,7 +101885,7 @@
           povinná
           položka typu
 
-              <a href="#json-object--distribution-data-service--license-document"></a>
+              <a href="#json-object--distribution-data-service--licence-document"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -102401,9 +101984,9 @@
   
 
     </section>
-    <section id="json-object--distribution-data-service--license-document">
+    <section id="json-object--distribution-data-service--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -102414,7 +101997,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -102425,7 +102008,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -103003,7 +102586,7 @@
           nepovinná
           položka typu
 
-              <a href="#json-object--distribution-data-service--license-document"></a>
+              <a href="#json-object--distribution-data-service--licence-document"></a>
 
         </li>
     </ul>
@@ -103021,9 +102604,9 @@
   
 
     </section>
-    <section id="json-object--distribution-data-service--license-document">
+    <section id="json-object--distribution-data-service--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -103034,7 +102617,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -103045,7 +102628,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -107952,7 +107535,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/2.0">https://schema.ccmm.cz/research-data/2.0</a></td>
-          <td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td>
+          <td><a href="../licence-document/schema.xsd">../licence-document/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -108381,13 +107964,13 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:license_document"><code>ccmm:license_document</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:licence_document"><code>ccmm:licence_document</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#LicenseDocument">License document</a>
+        <a href="#LicenceDocument">Licence document</a>
         (A legal document giving official permission to do something with a resource and describing conditions under which it may be done.)
       </dd>
 
@@ -111382,7 +110965,7 @@
           povinná
           položka typu
 
-              <a href="#json-object--distribution-downloadable-file--license-document"></a>
+              <a href="#json-object--distribution-downloadable-file--licence-document"></a>
 
         </li>
         <li style="list-style-type: disclosure-closed;">
@@ -111481,9 +111064,9 @@
   
 
     </section>
-    <section id="json-object--distribution-downloadable-file--license-document">
+    <section id="json-object--distribution-downloadable-file--licence-document">
       <h2>
-        Objekt <i>License document</i>
+        Objekt <i>Licence document</i>
       </h2>
 
       <table class="def">
@@ -111494,7 +111077,7 @@
 
           <tr>
             <th>Interpretace</th>
-            <td><a href="#LicenseDocument">License document</a></td>
+            <td><a href="#LicenceDocument">Licence document</a></td>
           </tr>
       </table>
 
@@ -111505,7 +111088,7 @@
     <ul>
         <li style="list-style-type: disclosure-closed;">
           <code>label</code>:
-            (<a href="#LicenseDocument.label" label="Label of the license document.">label</a>)
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
           nepovinná
           položka typu
 
@@ -112683,7 +112266,7 @@
         <tr>
             <td><code>ccmm</code></td>
             <td><a href="https://schema.ccmm.cz/research-data/2.0">https://schema.ccmm.cz/research-data/2.0</a></td>
-          <td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td>
+          <td><a href="../licence-document/schema.xsd">../licence-document/schema.xsd</a></td>
           <td><a href=""></a></td>
         </tr>
         <tr>
@@ -113396,13 +112979,13 @@
         <div style="margin-left: 40px;">
       <dt>Obsah</dt>
       <dd>
-          Obsahem elementu je typ <a href="#type-ccmm:license_document"><code>ccmm:license_document</code></a>.
+          Obsahem elementu je typ <a href="#type-ccmm:licence_document"><code>ccmm:licence_document</code></a>.
       </dd>
 
 
         <dt>Význam</dt>
       <dd>
-        <a href="#LicenseDocument">License document</a>
+        <a href="#LicenceDocument">Licence document</a>
         (A legal document giving official permission to do something with a resource and describing conditions under which it may be done.)
       </dd>
 
@@ -126586,6 +126169,423 @@
 
 </section>
       </section>
+      <section id="struktura-Licence-document">
+      <h2>
+        Specifikace struktury pro
+        Licence document
+      </h2>
+      <p>Datová struktura pro Licence document. A legal document giving official permission to do something with a resource and describing conditions under which it may be done.</p>
+
+      <section id="json-schema--licence-document">
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1>
+      JSON struktura pro    Licence document
+  </h1>
+
+    <dl>
+      <dt>IRI</dt>
+      <dd><code>https://model.ccmm.cz/research-data/licence-document/schema.json</code></dd>
+      <dt>Definováno v</dt>
+      <dd><code><a href="../licence-document/schema.json">../licence-document/schema.json</a></code></dd>
+        <dt>Verze použitého jazyka</dt>
+        <dd><a href="https://json-schema.org/specification-links.html#2020-12-release" target="_blank">2020-12</a> (metaschema IRI: <code>https://json-schema.org/draft/2020-12/schema</code>)</dd>
+    </dl>
+
+    <h2>Kořen</h2>
+    Kořenem JSON schématu je
+        <a href="#json-object--licence-document--licence-document"></a>
+
+
+    <section id="json-object--licence-document--licence-document">
+      <h2>
+        Objekt <i>Licence document</i>
+      </h2>
+
+      <table class="def">
+          <tr>
+            <th>Popis</th>
+            <td>A legal document giving official permission to do something with a resource and describing conditions under which it may be done.</td>
+          </tr>
+
+          <tr>
+            <th>Interpretace</th>
+            <td><a href="#LicenceDocument">Licence document</a></td>
+          </tr>
+      </table>
+
+          <strong>
+    objekt
+  </strong>
+    s vlastnostmi (<code>properties</code>):
+    <ul>
+        <li style="list-style-type: disclosure-closed;">
+          <code>id</code>:
+          nepovinná
+          položka typu
+
+                
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>type</code>:
+          nepovinná
+          položka typu
+
+                
+  
+  
+  
+  
+  
+  
+  
+        právě jedno z následujících (<code>oneOf</code>):
+    <ul>
+        <li>      
+    konstantní hodnota
+    <code>&quot;licence_document&quot;</code>
+
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+        <li>      
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+     a musí obsahovat: <code>&quot;licence_document&quot;</code>
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+    </ul>
+
+
+
+
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>label</code>:
+            (<a href="#LicenceDocument.label" label="Label of the licence document.">label</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu         <strong>
+    objekt
+  </strong>
+    s vlastnostmi (<code>properties</code>):
+    <ul>
+        <li style="list-style-type: disclosure-closed;">
+          <code>@value</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>@language</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+        </li>
+    </ul>
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+    </ul>
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+    </section>
+</section>
+
+
+
+
+
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Tato sekce popisuje XSD zachycující strukturu pro <i>Licence document</i>, jež je definováno v souboru <a href="../licence-document/schema.xsd"><code>../licence-document/schema.xsd</code></a>.
+</p>
+
+    <dl>
+      <dt>Definováno v namespace</dt>
+      <dd><code>https://schema.ccmm.cz/research-data/2.0</code> (preferovaný prefix: <code>ccmm</code>)</dd>
+    </dl>
+
+<section>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <table class="def">
+    <thead>
+      <tr>
+        <th>Prefix</th>
+        <th>Namespace</th>
+        <th>Lokace schématu</th>
+        <th>Dokumentace</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>xml</code></td>
+            <td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td>
+          <td><a href="http://www.w3.org/2001/xml.xsd">http://www.w3.org/2001/xml.xsd</a></td>
+          <td></td>
+        </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li>element <a href="#element-ccmm:licence_document"><code>licence_document</code></a></li>
+
+      <li> komplexní typ <a href="#type-ccmm:licence_document"><code>licence_document</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-ccmm:licence_document">
+  <h4>Kořenový element <code>&lt;licence_document&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-ccmm:licence_document"><code>ccmm:licence_document</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-ccmm:licence_document">
+  <h4>Kořenový komplexní typ <code>licence_document</code></h4>
+  <dl>
+        <dt>Význam</dt>
+      <dd>
+        <a href="#LicenceDocument">Licence document</a>
+        (A legal document giving official permission to do something with a resource and describing conditions under which it may be done.)
+      </dd>
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-ccmm:licence_document-ccmm:iri"><code>&lt;iri&gt;</code></a> [0..1]
+      </li>
+      <li>
+          element <a href="#element-ccmm:licence_document-ccmm:label"><code>&lt;label&gt;</code></a> [0..*]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-ccmm:licence_document-ccmm:iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:licence_document"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-ccmm:licence_document-ccmm:label">
+  <h4>Element <code>&lt;label&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#LicenceDocument.label"><strong>label</strong></a>
+          (Label of the licence document.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-ccmm:licence_document"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href=""><code></code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
 
     <section>
       <h2>Použité prefixy</h2>
@@ -126711,10 +126711,6 @@
             </tr>
             <tr>
               <td>Popis strukturálního modelu</td>
-              <td><a href="../license-document/structure.ttl">../license-document/structure.ttl</a></td>
-            </tr>
-            <tr>
-              <td>Popis strukturálního modelu</td>
               <td><a href="../date-type/structure.ttl">../date-type/structure.ttl</a></td>
             </tr>
             <tr>
@@ -126820,6 +126816,10 @@
             <tr>
               <td>Popis strukturálního modelu</td>
               <td><a href="../ro-crate-json-representation/structure.ttl">../ro-crate-json-representation/structure.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Popis strukturálního modelu</td>
+              <td><a href="../licence-document/structure.ttl">../licence-document/structure.ttl</a></td>
             </tr>
             <tr><td>JSON schéma</td><td><a href="../agent/schema.json">../agent/schema.json</a></td></tr>
             <tr><td>Příklad JSONu</td><td><a href="../agent/example.json">../agent/example.json</a></td></tr>
@@ -126941,12 +126941,6 @@
             <tr><td>XML schéma</td><td><a href="../organization/schema.xsd">../organization/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../organization/lifting.xslt">../organization/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../organization/lowering.xslt">../organization/lowering.xslt</a></td></tr>
-            <tr><td>JSON schéma</td><td><a href="../license-document/schema.json">../license-document/schema.json</a></td></tr>
-            <tr><td>Příklad JSONu</td><td><a href="../license-document/example.json">../license-document/example.json</a></td></tr>
-            <tr><td>JSON-LD kontext</td><td><a href="../license-document/context.jsonld">../license-document/context.jsonld</a></td></tr>
-            <tr><td>XML schéma</td><td><a href="../license-document/schema.xsd">../license-document/schema.xsd</a></td></tr>
-            <tr><td>XSLT lifting</td><td><a href="../license-document/lifting.xslt">../license-document/lifting.xslt</a></td></tr>
-            <tr><td>XSLT lowering</td><td><a href="../license-document/lowering.xslt">../license-document/lowering.xslt</a></td></tr>
             <tr><td>JSON schéma</td><td><a href="../date-type/schema.json">../date-type/schema.json</a></td></tr>
             <tr><td>Příklad JSONu</td><td><a href="../date-type/example.json">../date-type/example.json</a></td></tr>
             <tr><td>JSON-LD kontext</td><td><a href="../date-type/context.jsonld">../date-type/context.jsonld</a></td></tr>
@@ -127109,6 +127103,12 @@
             <tr><td>XML schéma</td><td><a href="../ro-crate-json-representation/schema.xsd">../ro-crate-json-representation/schema.xsd</a></td></tr>
             <tr><td>XSLT lifting</td><td><a href="../ro-crate-json-representation/lifting.xslt">../ro-crate-json-representation/lifting.xslt</a></td></tr>
             <tr><td>XSLT lowering</td><td><a href="../ro-crate-json-representation/lowering.xslt">../ro-crate-json-representation/lowering.xslt</a></td></tr>
+            <tr><td>JSON schéma</td><td><a href="../licence-document/schema.json">../licence-document/schema.json</a></td></tr>
+            <tr><td>Příklad JSONu</td><td><a href="../licence-document/example.json">../licence-document/example.json</a></td></tr>
+            <tr><td>JSON-LD kontext</td><td><a href="../licence-document/context.jsonld">../licence-document/context.jsonld</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../licence-document/schema.xsd">../licence-document/schema.xsd</a></td></tr>
+            <tr><td>XSLT lifting</td><td><a href="../licence-document/lifting.xslt">../licence-document/lifting.xslt</a></td></tr>
+            <tr><td>XSLT lowering</td><td><a href="../licence-document/lowering.xslt">../licence-document/lowering.xslt</a></td></tr>
             <tr><td>Dokumentace</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>

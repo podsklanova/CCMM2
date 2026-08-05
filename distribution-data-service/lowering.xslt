@@ -4,7 +4,7 @@
   <xsl:import href="../application-profile/lowering.xslt"/>
   <xsl:import href="../documentation/lowering.xslt"/>
   <xsl:import href="../access-rights/lowering.xslt"/>
-  <xsl:import href="../license-document/lowering.xslt"/>
+  <xsl:import href="../licence-document/lowering.xslt"/>
   <xsl:import href="../related-resource/lowering.xslt"/>
   <xsl:import href="../identifier/lowering.xslt"/>
   <xsl:import href="../alternate-title/lowering.xslt"/>
@@ -129,7 +129,7 @@
     <xsl:for-each-group select="//sp:result[sp:binding[@name=$subj]/*[$id_test = c:id-key(.)] and sp:binding[@name=$pred]/sp:uri/text()=&#34;http://purl.org/dc/terms/license&#34;]" group-by="c:id-key(sp:binding[@name=$obj]/*[1])">
       <xsl:for-each select="current-group()[1]">
         <ccmm:licence>
-          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747640270910-1022-e495-9645">
+          <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785943107074-47da-df8e-9e09">
             <xsl:with-param name="id">
               <xsl:copy-of select="sp:binding[@name=$obj]/*"/>
             </xsl:with-param>

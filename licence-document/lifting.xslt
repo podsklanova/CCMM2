@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/2.0" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
-  <xsl:template match="/ccmm:license_document">
+  <xsl:template match="/ccmm:licence_document">
     <rdf:RDF>
       <xsl:variable name="result" as="element()*">
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747640270910-1022-e495-9645"/>
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785943107074-47da-df8e-9e09"/>
       </xsl:variable>
       <xsl:for-each select="$result">
         <xsl:copy>
@@ -31,7 +31,7 @@
       </xsl:copy>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1747640270910-1022-e495-9645">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785943107074-47da-df8e-9e09">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>

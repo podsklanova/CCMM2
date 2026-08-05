@@ -1076,17 +1076,17 @@
 <https://model.ccmm.cz/research-data/spdx%3AChecksumAlgorithmShape> sh:property <https://model.ccmm.cz/research-data/spdx%3AChecksumAlgorithmShape/d24eae0>.
 
 <https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape> a sh:NodeShape;
-    rdfs:seeAlso <https://model.ccmm.cz/research-data/LicenseDocument>;
+    rdfs:seeAlso <https://model.ccmm.cz/research-data/LicenceDocument>;
     sh:closed false;
     sh:targetClass <http://purl.org/dc/terms/LicenseDocument>.
 
-<https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape/612eb810> a sh:PropertyShape;
+<https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape/5e804c00> a sh:PropertyShape;
     sh:name "label"@en;
     sh:nodeKind sh:Literal;
     sh:path rdfs:label;
     sh:datatype rdf:langString.
 
-<https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape> sh:property <https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape/612eb810>.
+<https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape> sh:property <https://model.ccmm.cz/research-data/dcterms%3ALicenseDocumentShape/5e804c00>.
 
 <https://model.ccmm.cz/research-data/skos%3AConceptShape> a sh:NodeShape;
     rdfs:seeAlso <https://model.ccmm.cz/research-data/LocationRelationType>;

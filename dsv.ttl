@@ -277,11 +277,11 @@
     skos:scopeNote "Refers to an IRI,. e.g., instances of https://spdx.org/rdf/terms/#d4e2129 in SPDX Ontology."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#ChecksumAlgorithm>;
     a dsv:ClassProfile.
-:LicenseDocument dct:isPartOf <https://model.ccmm.cz/research-data/>;
+:LicenceDocument dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
-    skos:prefLabel "License document"@en;
+    skos:prefLabel "Licence document"@en;
     skos:definition "A legal document giving official permission to do something with a resource and describing conditions under which it may be done."@en;
-    skos:scopeNote "The IRI shall point to the document with the license text."@en;
+    skos:scopeNote "The IRI shall point to the document with the licence text."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap#LicenceDocument>;
     a dsv:ClassProfile.
 :LocationRelationType dct:isPartOf <https://model.ccmm.cz/research-data/>;
@@ -1210,7 +1210,7 @@
     dsv:cardinality cardinality:11;
     dsv:domain :Distribution;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :LicenseDocument.
+    dsv:objectPropertyRange :LicenceDocument.
 
 <https://model.ccmm.cz/research-data/DataService.hasLicence> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1229,7 +1229,7 @@
 ];
     dsv:domain :DataService;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :LicenseDocument.
+    dsv:objectPropertyRange :LicenceDocument.
 
 <https://model.ccmm.cz/research-data/Dataset.accessRights> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
@@ -1803,12 +1803,12 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
 
-<https://model.ccmm.cz/research-data/LicenseDocument.label> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+<https://model.ccmm.cz/research-data/LicenceDocument.label> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     skos:prefLabel "label"@en;
-    skos:definition "Label of the license document."@en;
+    skos:definition "Label of the licence document."@en;
     dsv:property rdfs:label;
-    dsv:domain :LicenseDocument;
+    dsv:domain :LicenceDocument;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 

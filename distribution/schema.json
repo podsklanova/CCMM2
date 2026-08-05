@@ -1285,7 +1285,7 @@
                 "properties": {
                   "label": {
                     "title": "label",
-                    "description": "Label of the license document.",
+                    "description": "Label of the licence document.",
                     "type": "array",
                     "items": {
                       "title": "Language tagged string",
@@ -1423,7 +1423,7 @@
           "properties": {
             "label": {
               "title": "label",
-              "description": "Label of the license document.",
+              "description": "Label of the licence document.",
               "type": "array",
               "items": {
                 "title": "Language tagged string",
@@ -1781,7 +1781,7 @@
           "properties": {
             "label": {
               "title": "label",
-              "description": "Label of the license document.",
+              "description": "Label of the licence document.",
               "type": "array",
               "items": {
                 "title": "Language tagged string",
