@@ -443,21 +443,21 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Activity>
 ];
     a dsv:ClassProfile.
-:Iso5181JsonRepresentation dct:isPartOf <https://model.ccmm.cz/research-data/>;
+:CommonProvenanceModelJsonRepresentation dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation>
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#CPMJsonRepresentation>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation>
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#CPMJsonRepresentation>
 ];
     a dsv:ClassProfile;
-    dsv:class <https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation>.
+    dsv:class <https://model.ccmm.cz/vocabulary/ccmm#CPMJsonRepresentation>.
 :Ro-crateJsonRepresentation dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
@@ -1303,25 +1303,6 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ProvenanceActivity.
 
-<https://model.ccmm.cz/research-data/ProvenanceActivity.hasIso5181JsonRepresentation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
-    a dsv:TermProfile;
-    dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:label;
-  dsv:reusedAsProperty skos:prefLabel;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty rdfs:comment;
-  dsv:reusedAsProperty skos:definition;
-  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation>
-];
-    dsv:cardinality cardinality:0n;
-    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation>;
-    dsv:domain :ProvenanceActivity;
-    a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :Iso5181JsonRepresentation.
-
 <https://model.ccmm.cz/research-data/ProvenanceActivity.hasRo-crateJsonRepresentation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
@@ -1340,6 +1321,25 @@
     dsv:domain :ProvenanceActivity;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Ro-crateJsonRepresentation.
+
+<https://model.ccmm.cz/research-data/ProvenanceActivity.hasCommonProvenanceModelJsonRepresentation> dct:isPartOf <https://model.ccmm.cz/research-data/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasCPMJsonRepresentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty rdfs:comment;
+  dsv:reusedAsProperty skos:definition;
+  dsv:reusedFromResource <https://model.ccmm.cz/vocabulary/ccmm#hasCPMJsonRepresentation>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://model.ccmm.cz/vocabulary/ccmm#hasCPMJsonRepresentation>;
+    dsv:domain :ProvenanceActivity;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :CommonProvenanceModelJsonRepresentation.
 
 <https://model.ccmm.cz/research-data/Dataset.title> dct:isPartOf <https://model.ccmm.cz/research-data/>;
     a dsv:TermProfile;

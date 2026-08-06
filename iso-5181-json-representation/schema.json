@@ -1,6 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://model.ccmm.cz/research-data/iso-5181-json-representation/schema.json",
-  "type": "string",
-  "format": "iri"
-}

@@ -4,8 +4,8 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "id": "@id",
     "type": "@type",
-    "iso_5181_json_representation": {
-      "@id": "https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation",
+    "common_provenance_model_json_representation": {
+      "@id": "https://model.ccmm.cz/vocabulary/ccmm#CPMJsonRepresentation",
       "@context": {}
     }
   }
