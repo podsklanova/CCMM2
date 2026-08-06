@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset
-    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.2 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/2.0.0/dataset/schema.xsd"
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/2.0 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/2.0.0/dataset/schema.xsd"
     xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- Landing IRI for this dataset -->
@@ -38,8 +38,8 @@
         <date_created>2025-04-03</date_created>
         <!-- Standards the source record and this record conform to -->
         <conforms_to_standard>
-            <iri>https://model.ccmm.cz/research-data/1.2.0</iri>
-            <label xml:lang="">CCMM RD 1.2.0</label>
+            <iri>https://model.ccmm.cz/research-data/2.0.0</iri>
+            <label xml:lang="">CCMM RD 2.0.0</label>
         </conforms_to_standard>
         <conforms_to_standard>
             <iri>https://data.narodni-repozitar.cz/schemas/nr_datasets/nr-datasets-v1.0.0.json</iri>

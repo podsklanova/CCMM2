@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset
-  xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.2 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/2.0.0/dataset/schema.xsd"
+  xsi:schemaLocation="https://schema.ccmm.cz/research-data/2.0 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/2.0.0/dataset/schema.xsd"
   xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
   <!-- Metadata_identification: Data Manager -->
   <metadata_identification>
+    <!--(1..*) shall contain at least one agent with role Data Manager-->
     <qualified_attribution>
       <attributed_agent>
         <person>
@@ -20,12 +21,15 @@
       </role>
     </qualified_attribution>
 
-    <!-- (1..n) Conforms to standard: this is the minimal variant with an IRI -->
+    <!-- (1..1) date updated -->
     <date_updated>2025-07-25</date_updated>
+    <!-- (1..*) Conforms to standard: this is the minimal variant with an IRI -->
     <conforms_to_standard>
-      <iri>https://model.ccmm.cz/research-data/1.2.0</iri>
-      <label xml:lang="">CCMM RD 1.2.0</label>
+      <iri>https://model.ccmm.cz/research-data/2.0.0</iri>
+      <label xml:lang="">CCMM RD 2.0.0</label>
     </conforms_to_standard>
+    <!-- (1..1) original repository -->
+    <!-- (!..*) shall contain at least one agent with role Publisher -->
        <original_repository>
             <iri>https://data.narodni-repozitar.cz</iri>
             <label xml:lang="cs">Původní repozitář</label>
@@ -56,10 +60,10 @@
   <!-- (1-1) Title; without alternate title type "translated title" – if provided, it must include the type -->
   <title>Datová sada pro Údaje o zdravotní gramotnosti a depresi seniorů ve věku 65 a více let</title>
 
-  <!-- Qualified relation: The usage note for “qualified relation” specifies that
+  <!-- Qualified attribution: The usage note for “qualified attribution” specifies that
        each dataset shall have at least two qualified relations: one with role “Creator” 
        and the second with role "Publisher". -->
-    <!-- Creator -->
+  <!-- Creator -->
   <qualified_attribution>
     <attributed_agent>
       <person>
@@ -72,7 +76,7 @@
       <iri>https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator</iri>
     </role>
   </qualified_attribution>
-    <!-- Publisher -->
+  <!-- Publisher -->
   <qualified_attribution>
     <attributed_agent>
       <organization>
@@ -87,7 +91,7 @@
   <!-- (1-1) Publication year -->
   <publication_year>2026</publication_year>
 
-  <!-- (1..n) Must contain at least one time reference "Created"; it must include either 
+  <!-- (1..*) Must contain at least one time reference "Created"; it must include either 
        a time_instant or a time_interval -->
   <time_reference>
        <temporal_representation>
@@ -99,12 +103,13 @@
             <iri>https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created</iri>
        </date_type>
   </time_reference>
-
+  
+  <!-- (1-1) Specify one access rights -->
   <access_rights>
     <iri>http://purl.org/coar/access_right/c_f1cf</iri>
   </access_rights>
 
-  <!-- (1-*) Specify at least one subject with iri and title -->
+  <!-- (1-*) Specify at least one subject. At least one subject must be a value from FRASCATI FORD vocabulary. There must be title, classification_code and subject_scheme. -->
   <subject>
     <iri>https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304</iri>
     <title xml:lang="cs">Veřejné a environmentální zdraví</title>
@@ -114,6 +119,7 @@
     </subject_scheme>
   </subject>
   
+  <!-- (1-*) Specify at least one description -->
   <description>
     <description_text xml:lang="cs">Toto je jen ukázka metadat pro neexistující datovou sadu.</description_text>
   </description>

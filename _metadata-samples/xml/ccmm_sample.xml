@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset
-    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.2 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/2.0.0/dataset/schema.xsd"
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/2.0 https://raw.githubusercontent.com/techlib/CCMM/refs/heads/2.0.0/dataset/schema.xsd"
     xmlns="https://schema.ccmm.cz/research-data/2.0" xmlns:gml="http://www.opengis.net/gml/3.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <iri>https://organization.cz/dataset_server/dataset_id</iri>
@@ -54,8 +54,8 @@
         <date_updated>2025-07-25</date_updated>
         <date_created>2025-04-28</date_created>
         <conforms_to_standard>
-            <iri>https://model.ccmm.cz/research-data/1.2.0</iri>
-            <label xml:lang="">CCMM RD 1.2.0</label>
+            <iri>https://model.ccmm.cz/research-data/2.0.0</iri>
+            <label xml:lang="">CCMM RD 2.0.0</label>
         </conforms_to_standard>
         <conforms_to_standard>
             <iri>https://www.iso.org/standard/80275.html</iri>
