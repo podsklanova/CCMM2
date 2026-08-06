@@ -8,13 +8,13 @@
       "@id": "http://www.w3.org/2000/01/rdf-schema#label",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "ro-crate_json_representation": {
-      "@id": "https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation",
+    "common_provenance_model_json_representation": {
+      "@id": "https://model.ccmm.cz/vocabulary/ccmm#hasCPMJsonRepresentation",
       "@type": "@id",
       "@container": "@set"
     },
-    "iso_5181_json_representation": {
-      "@id": "https://model.ccmm.cz/vocabulary/ccmm#hasIso5181JsonRepresentation",
+    "ro-crate_json_representation": {
+      "@id": "https://model.ccmm.cz/vocabulary/ccmm#hasRo-crateJsonRepresentation",
       "@type": "@id",
       "@container": "@set"
     },

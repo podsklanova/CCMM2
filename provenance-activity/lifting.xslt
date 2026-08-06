@@ -61,19 +61,19 @@
           <xsl:value-of select="."/>
         </ns0:label>
       </xsl:for-each>
+      <xsl:for-each select="@common_provenance_model_json_representation">
+        <ns1:hasCPMJsonRepresentation>
+          <xsl:attribute name="rdf:resource">
+            <xsl:value-of select="."/>
+          </xsl:attribute>
+        </ns1:hasCPMJsonRepresentation>
+      </xsl:for-each>
       <xsl:for-each select="@ro-crate_json_representation">
         <ns1:hasRo-crateJsonRepresentation>
           <xsl:attribute name="rdf:resource">
             <xsl:value-of select="."/>
           </xsl:attribute>
         </ns1:hasRo-crateJsonRepresentation>
-      </xsl:for-each>
-      <xsl:for-each select="@iso_5181_json_representation">
-        <ns1:hasIso5181JsonRepresentation>
-          <xsl:attribute name="rdf:resource">
-            <xsl:value-of select="."/>
-          </xsl:attribute>
-        </ns1:hasIso5181JsonRepresentation>
       </xsl:for-each>
     </rdf:Description>
   </xsl:template>

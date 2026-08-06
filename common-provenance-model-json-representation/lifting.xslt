@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xmlns:ccmm="https://schema.ccmm.cz/research-data/2.0" xmlns:c="https://schemas.dataspecer.com/xsd/core/">
   <xsl:output method="xml" version="1.0" encoding="utf-8" media-type="application/rdf+xml" indent="yes"/>
-  <xsl:template match="/ccmm:iso_5181_json_representation">
+  <xsl:template match="/ccmm:common_provenance_model_json_representation">
     <rdf:RDF>
       <xsl:variable name="result" as="element()*">
-        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785758974732-9cfd-5ce3-a52d"/>
+        <xsl:call-template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785999961149-3305-94dd-9b25"/>
       </xsl:variable>
       <xsl:for-each select="$result">
         <xsl:copy>
@@ -31,7 +31,7 @@
       </xsl:copy>
     </xsl:for-each>
   </xsl:template>
-  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785758974732-9cfd-5ce3-a52d">
+  <xsl:template name="_https_003a_002f_002fofn.gov.cz_002fclass_002f1785999961149-3305-94dd-9b25">
     <xsl:param name="arc" select="()"/>
     <xsl:param name="no_iri" select="false()"/>
     <rdf:Description>
@@ -53,7 +53,7 @@
         </id>
       </xsl:variable>
       <xsl:copy-of select="$id//@*"/>
-      <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#Iso5181JsonRepresentation"/>
+      <rdf:type rdf:resource="https://model.ccmm.cz/vocabulary/ccmm#CPMJsonRepresentation"/>
       <xsl:copy-of select="$arc"/>
     </rdf:Description>
   </xsl:template>
