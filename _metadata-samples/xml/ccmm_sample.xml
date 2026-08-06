@@ -495,6 +495,6 @@
         </distribution_downloadable_file>
     </distribution>
     <validation_result/>
-    <!-- provenance activity allows pointing to json representation according to RO-Crate or ISO 5181 -->
+    <!-- provenance activity allows pointing to json representation according to RO-Crate or CPM -->
     <generated_by ro-crate_json_representation="https://link.to/ro-crate-json"/>
 </dataset>
