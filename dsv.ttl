@@ -1201,11 +1201,6 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:scopeNote;
-  dsv:reusedAsProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
 ];
     dsv:cardinality cardinality:11;
     dsv:domain :Distribution;
