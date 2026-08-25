@@ -56,7 +56,7 @@
       <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:label">
-        <ns0:label>
+        <ns0:label rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns0:label>
