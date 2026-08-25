@@ -57,7 +57,7 @@
       <rdf:type rdf:resource="https://w3id.org/tib/datacite/class/Description"/>
       <xsl:copy-of select="$arc"/>
       <xsl:for-each select="ccmm:description_text">
-        <ns0:description>
+        <ns0:description rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">
           <xsl:apply-templates select="@*"/>
           <xsl:value-of select="."/>
         </ns0:description>
