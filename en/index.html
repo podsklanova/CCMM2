@@ -1884,8 +1884,9 @@
     
     <p>CCMM draws on the FAIR principles because metadata developed according to the principles increase data visibility, improve search, support standard persistent identifiers (PIDs), and lead to more efficient monitoring of research and associated research data.</p>
     
-    <p>While the values are frequently recorded primarily in Czech and secondarily in English, the language choice depends on a research community. CCMM supports any language and any combination of languages.
-    Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) is a communication protocol for metadata sharing in digital repositories most integrated with CCMM. To transfer metadata recorded in CCMM through OAI-PMH, use the namespace https://model.ccmm.cz/research-data and the most recent version of the Dataset schema, e.g., https://model.ccmm.cz/research-data/2.0.0/dataset/schema.xsd . The recommended prefix is ccmm-xm.</p>
+    <p>While the values are frequently recorded primarily in Czech and secondarily in English, the language choice depends on a research community. CCMM supports any language and any combination of languages.</p>
+    
+    <p>Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH), a communication protocol for sharing digital repository metadata, is a tool for transferring metadata recorded in CCMM. To do so, use the namespace https://model.ccmm.cz/research-data and the most recent version of the Dataset schema, e.g., https://model.ccmm.cz/research-data/2.0.0/dataset/schema.xsd. The recommended prefix is ccmm-xm.</p>
     
     <p>CCMM uses preferred PIDs, although the final choices are up to metadata administrators. The preferred PIDs are <a href="https://orcid.org/" target="_blank">ORCID</a> for persons and <a href="https://ror.org/" target="_blank">ROR</a> for organizations.</p>
     
@@ -1895,7 +1896,7 @@
     
     <p>CCMM has been developed as an RDF graph that consists of classes, their attributes, and relations between the classes. The topmost element is Dataset. A list of all main and support classes is at the end of this introduction.</p>
     
-    <p>In GitHub, the model is serialized in two formats: as an RDF graph in turtle—dsv.ttl, and as an xsd tree in a series of .xsd files. Dataset, the primary element of the model, is also the root element for the .xsd files.</p>  
+    <p>In GitHub, the model is serialized in two formats: as an RDF graph in turtle (the file dsv.ttl) and as an xsd tree in a series of .xsd files. Dataset, the primary element of the model, is also the root element for the .xsd files.</p>  
     
     <p>Because the main focus of the modeling tool Dataspecer is metadata models and application profiles, it is the development environment for CCMM.</p>
     
